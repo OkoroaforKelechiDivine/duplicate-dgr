@@ -1,0 +1,42 @@
+@import 'default.scss';
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 6rem;
+
+    .brand-logo {
+        img {
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+
+    .nav-links {
+        display: inline-flex;
+        align-items: center;
+        gap: 4rem;
+        list-style: none;
+        font-family: $ff-primary;
+
+        li {
+            font-size: $fs-xs;
+            &.active a{
+                color: $text-red-400;
+            }
+
+            &:hover a{
+                color: $text-red-400;
+            }
+
+            a {
+                text-decoration: none;
+                color: $text-black;   
+            }
+        } 
+
+    
+    }
+}
