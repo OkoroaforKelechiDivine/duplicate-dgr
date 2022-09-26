@@ -98,10 +98,32 @@ select {
   justify-content: space-between;
   width: 100%;
   padding: 1rem 6rem;
+  border-bottom: 2px solid #BFBFBF;
+  background-color: #ffffff;
 }
 .navbar .brand-logo img {
   width: 6rem;
   height: 6rem;
+}
+.navbar .toggle-menu {
+  display: none;
+  padding: 0.5rem 0.98rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.navbar .toggle-menu::after {
+  content: url("../Assets/icon-open.svg");
+}
+.navbar .toggle-menu.active::after {
+  content: url("../Assets/icon-close.png");
+}
+.navbar .toggle-menu.active {
+  border: 2px solid #1A1818;
+}
+@media screen and (max-width: 1400px) {
+  .navbar .toggle-menu {
+    display: block;
+  }
 }
 .navbar .nav-links {
   display: inline-flex;
@@ -113,15 +135,48 @@ select {
 .navbar .nav-links li {
   font-size: 1.4rem;
 }
-.navbar .nav-links li.active a {
-  color: #890006;
-}
-.navbar .nav-links li:hover a {
+.navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
 }
 .navbar .nav-links li a {
   text-decoration: none;
   color: #1A1818;
+}
+.navbar .nav-links li a i {
+  transform: scale(0.7);
+}
+@media screen and (max-width: 1400px) {
+  .navbar .nav-links {
+    display: none;
+    min-height: 100vh;
+    height: auto;
+    gap: 2rem;
+    flex-direction: column;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 10rem;
+    align-items: start;
+    font-family: "Suranna", serif;
+    font-size: 2.4rem;
+    z-index: 2;
+  }
+  .navbar .nav-links.active {
+    display: flex;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .navbar .brand-logo img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .navbar .nav-links {
+    padding-top: 6rem;
+  }
 }
 
 * {

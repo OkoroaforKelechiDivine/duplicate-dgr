@@ -6,11 +6,36 @@
     justify-content: space-between;
     width: 100%;
     padding: 1rem 6rem;
+    border-bottom: 2px solid $text-gray-200;
+    background-color: $text-white;
 
     .brand-logo {
         img {
             width: 6rem;
             height: 6rem;
+        }
+    }
+
+    .toggle-menu {
+        display: none;
+        padding: .5rem .98rem;
+        border-radius: .4rem;
+        cursor: pointer;
+        
+        &::after {
+            content: url('../Assets/icon-open.svg');
+        }
+
+        &.active::after {
+            content: url('../Assets/icon-close.png');
+        }
+        
+        &.active {
+            border: 2px solid $text-black;
+        } 
+
+        @media screen and (max-width: 1400px) {
+            display: block;
         }
     }
 
@@ -23,20 +48,53 @@
 
         li {
             font-size: $fs-xs;
-            &.active a{
-                color: $text-red-400;
-            }
 
-            &:hover a{
+            &:hover a, &:focus a, &.active a{
                 color: $text-red-400;
             }
 
             a {
                 text-decoration: none;
-                color: $text-black;   
+                color: $text-black; 
+                
+                i {
+                    transform: scale(.7);
+                }
             }
-        } 
+        }  
+        @media screen and (max-width: 1400px) {
+            display: none;
+            min-height: 100vh;
+            height: auto;
+            gap: 2rem;
+            flex-direction: column;
+            text-align: left;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 10rem;
+            align-items: start;
+            font-family: $ff-secondary;
+            font-size: 2.4rem;
+            z-index: 2;
+            
+            &.active {
+                display: flex;
+            }
+        }
+    }
+    @media screen and (max-width: 600px) {
+        padding: 1rem;
+        
+        .brand-logo {
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
 
-    
+        .nav-links {
+            padding-top: 6rem;
+        }
     }
 }
