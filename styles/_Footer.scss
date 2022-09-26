@@ -8,6 +8,7 @@ footer {
     padding-bottom: 0;
     flex-direction: column;
     font-family: $ff-primary;
+    margin-top: 3rem;
 
     .main-footer {
         display: flex;
@@ -44,7 +45,7 @@ footer {
                 list-style: none;
                 padding: 0;
                 li {
-                    margin: 1.1rem 0;
+                    margin: 3rem 0;
                     a {
                         color: $text-gray-200;
                         font-size: $fs-xs;
@@ -70,7 +71,7 @@ footer {
                 color: $text-gray-200;
                 font-size: $fs-xs;
                 text-decoration: none;
-                margin: 1.1rem 0;
+                margin: 1.5rem 0;
             }
 
             hr {
@@ -125,25 +126,6 @@ footer {
         .copyright {
             padding: 2rem 0;
             font-size: $fs-xs;
-        }
-
-        .quick-links, .services {
-           
-            p {
-                font-weight: $fw-b;
-                font-size: $fs-sm;
-                color: $text-white;
-            }
-
-            ul {
-                li {
-                    margin: 1.8rem 0;
-                    a {
-                        color: $text-gray-200;
-                        font-size: $fs-xs;
-                    }  
-                }
-            }
         }
     }
 }

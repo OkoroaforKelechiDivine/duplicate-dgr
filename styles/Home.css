@@ -289,6 +289,7 @@ footer {
   padding-bottom: 0;
   flex-direction: column;
   font-family: "DM Sans", sans-serif;
+  margin-top: 3rem;
 }
 footer .main-footer {
   display: flex;
@@ -320,7 +321,7 @@ footer .main-footer .quick-links ul, footer .main-footer .services ul {
   padding: 0;
 }
 footer .main-footer .quick-links ul li, footer .main-footer .services ul li {
-  margin: 1.1rem 0;
+  margin: 3rem 0;
 }
 footer .main-footer .quick-links ul li a, footer .main-footer .services ul li a {
   color: #BFBFBF;
@@ -343,7 +344,7 @@ footer .main-footer .contact > a {
   color: #BFBFBF;
   font-size: 1.4rem;
   text-decoration: none;
-  margin: 1.1rem 0;
+  margin: 1.5rem 0;
 }
 footer .main-footer .contact hr {
   width: 100%;
@@ -390,18 +391,6 @@ footer .copyright {
   }
   footer .copyright {
     padding: 2rem 0;
-    font-size: 1.4rem;
-  }
-  footer .quick-links p, footer .services p {
-    font-weight: 700;
-    font-size: 1.6rem;
-    color: #ffffff;
-  }
-  footer .quick-links ul li, footer .services ul li {
-    margin: 1.8rem 0;
-  }
-  footer .quick-links ul li a, footer .services ul li a {
-    color: #BFBFBF;
     font-size: 1.4rem;
   }
 }
