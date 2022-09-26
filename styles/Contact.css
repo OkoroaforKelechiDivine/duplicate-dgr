@@ -1,1 +1,411 @@
-/*# sourceMappingURL=Contact.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+/* 
+color palette  
+*/
+/* font weight variables */
+/* opacity */
+/* font family */
+/* font sizes */
+/*shadow variables */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  width: 100vw;
+  overflow: hidden;
+  /* background-color: grey; */
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 6rem;
+  border-bottom: 2px solid #BFBFBF;
+  background-color: #ffffff;
+}
+.navbar .brand-logo {
+  z-index: 3;
+}
+.navbar .brand-logo img {
+  width: 6rem;
+  height: 6rem;
+}
+.navbar .toggle-menu {
+  display: none;
+  padding: 0.5rem 0.98rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  z-index: 3;
+}
+.navbar .toggle-menu::after {
+  content: url("../Assets/icon-open.svg");
+}
+.navbar .toggle-menu.active::after {
+  content: url("../Assets/icon-close.png");
+}
+.navbar .toggle-menu.active {
+  border: 2px solid #1A1818;
+}
+@media screen and (max-width: 1400px) {
+  .navbar .toggle-menu {
+    display: block;
+  }
+}
+.navbar .nav-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+  font-family: "DM Sans", sans-serif;
+}
+.navbar .nav-links li {
+  font-size: 1.4rem;
+}
+.navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
+  color: #890006;
+}
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: #1A1818;
+}
+.navbar .nav-links li a i {
+  transform: scale(0.7);
+}
+@media screen and (max-width: 1400px) {
+  .navbar .nav-links {
+    display: none;
+    background: #ffffff;
+    min-height: 100vh;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+    flex-direction: column;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 10rem;
+    align-items: start;
+    font-family: "Suranna", serif;
+    font-size: 2.4rem;
+  }
+  .navbar .nav-links.active {
+    display: flex;
+    z-index: 2;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .navbar .brand-logo img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .navbar .nav-links {
+    padding-top: 6rem;
+  }
+}
+
+/* 
+color palette  
+*/
+/* font weight variables */
+/* opacity */
+/* font family */
+/* font sizes */
+/*shadow variables */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  width: 100vw;
+  overflow: hidden;
+  /* background-color: grey; */
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+footer {
+  display: flex;
+  width: 100%;
+  background: #1A1818;
+  padding: 5rem 6rem;
+  padding-bottom: 0;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+}
+footer .main-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+footer .main-footer .footer-links, footer .main-footer .brand-logo, footer .main-footer .contact {
+  flex-basis: 26rem;
+}
+footer .main-footer .brand-logo img {
+  padding: 1rem;
+  background: #ffffff;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 0.7rem;
+}
+footer .main-footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+footer .main-footer .quick-links p, footer .main-footer .services p {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #ffffff;
+}
+footer .main-footer .quick-links ul, footer .main-footer .services ul {
+  list-style: none;
+  padding: 0;
+}
+footer .main-footer .quick-links ul li, footer .main-footer .services ul li {
+  margin: 1.1rem 0;
+}
+footer .main-footer .quick-links ul li a, footer .main-footer .services ul li a {
+  color: #BFBFBF;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+footer .main-footer .contact {
+  display: flex;
+  flex-direction: column;
+}
+footer .main-footer .contact p {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+}
+footer .main-footer .contact > a {
+  display: inline-flex;
+  gap: 1rem;
+  color: #BFBFBF;
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin: 1.1rem 0;
+}
+footer .main-footer .contact hr {
+  width: 100%;
+}
+footer .main-footer .contact .social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+@media screen and (max-width: 1000px) {
+  footer .main-footer {
+    flex-direction: column;
+    align-items: start;
+  }
+  footer .main-footer .footer-links, footer .main-footer .brand-logo, footer .main-footer .contact {
+    flex-basis: 0;
+  }
+}
+footer > hr {
+  margin-top: 5rem;
+  width: 100%;
+}
+footer .copyright {
+  text-align: center;
+  padding: 3rem 0;
+  color: #BFBFBF;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 5rem 1rem;
+    padding-bottom: 0;
+  }
+  footer .main-footer .brand-logo img {
+    padding: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.4rem;
+  }
+  footer > hr {
+    margin-top: 3rem;
+  }
+  footer .copyright {
+    padding: 2rem 0;
+    font-size: 1.4rem;
+  }
+  footer .quick-links p, footer .services p {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #ffffff;
+  }
+  footer .quick-links ul li, footer .services ul li {
+    margin: 1.8rem 0;
+  }
+  footer .quick-links ul li a, footer .services ul li a {
+    color: #BFBFBF;
+    font-size: 1.4rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}/*# sourceMappingURL=Contact.css.map */

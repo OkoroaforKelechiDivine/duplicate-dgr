@@ -1,0 +1,149 @@
+@import 'default.scss';
+
+footer {
+    display: flex;
+    width: 100%;
+    background: $text-black;
+    padding: 5rem 6rem;
+    padding-bottom: 0;
+    flex-direction: column;
+    font-family: $ff-primary;
+
+    .main-footer {
+        display: flex;
+        justify-content: space-between;
+        gap:5rem;
+        // flex-wrap: wrap;
+   
+        .footer-links, .brand-logo, .contact {
+            flex-basis: 26rem;
+        }
+
+        .brand-logo img {
+            padding: 1rem;
+            background: $text-white;
+            width: 6rem;
+            height: 6rem;
+            border-radius: .7rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            gap: 5rem;
+        }
+        .quick-links, .services {
+           
+            p {
+                font-weight: $fw-b;
+                font-size: $fs-md;
+                color: $text-white;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    margin: 1.1rem 0;
+                    a {
+                        color: $text-gray-200;
+                        font-size: $fs-xs;
+                        text-decoration: none;
+                    }  
+                }
+            }
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-weight: $fw-b;
+                font-size: $fs-md;
+                color: $text-white;
+                margin-bottom: .8rem;
+            }
+            
+            &>a {
+                display: inline-flex;
+                gap: 1rem;
+                color: $text-gray-200;
+                font-size: $fs-xs;
+                text-decoration: none;
+                margin: 1.1rem 0;
+            }
+
+            hr {
+                width: 100%;
+            }
+
+            .social-links {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-top: 2.5rem;
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            align-items: start;
+                 
+            .footer-links, .brand-logo, .contact {
+                flex-basis: 0;
+            }
+        }
+    }
+
+    &>hr {
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .copyright {
+        text-align: center;
+        padding: 3rem 0;
+        color: $text-gray-200;
+        font-size: $fs-sm;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 5rem 1rem;
+        padding-bottom: 0;
+        
+        .main-footer .brand-logo img {
+            padding: .5rem;
+            width: 4rem;
+            height: 4rem;
+            border-radius: .4rem;
+        }
+
+        &>hr {
+            margin-top: 3rem;
+        }
+    
+        .copyright {
+            padding: 2rem 0;
+            font-size: $fs-xs;
+        }
+
+        .quick-links, .services {
+           
+            p {
+                font-weight: $fw-b;
+                font-size: $fs-sm;
+                color: $text-white;
+            }
+
+            ul {
+                li {
+                    margin: 1.8rem 0;
+                    a {
+                        color: $text-gray-200;
+                        font-size: $fs-xs;
+                    }  
+                }
+            }
+        }
+    }
+}
