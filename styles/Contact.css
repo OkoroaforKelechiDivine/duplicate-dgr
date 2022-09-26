@@ -84,6 +84,7 @@ select {
   padding: 1rem 6rem;
   border-bottom: 2px solid #BFBFBF;
   background-color: #ffffff;
+  margin: 0;
 }
 .navbar .brand-logo {
   z-index: 3;
@@ -150,6 +151,7 @@ select {
     align-items: start;
     font-family: "Suranna", serif;
     font-size: 2.4rem;
+    transition: all 1s;
   }
   .navbar .nav-links.active {
     display: flex;
@@ -321,8 +323,20 @@ footer .main-footer .contact .social-links {
   width: 100%;
   margin-top: 2.5rem;
 }
+@media screen and (max-width: 600px) {
+  footer .main-footer .contact .social-links {
+    margin-top: 1.5rem;
+  }
+}
 footer .main-footer .contact .social-links img {
   width: 1.6rem;
+  height: 1.6rem;
+}
+@media screen and (max-width: 600px) {
+  footer .main-footer .contact .social-links img {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
 }
 @media screen and (max-width: 1000px) {
   footer .main-footer {
@@ -353,6 +367,9 @@ footer .copyright {
     width: 4rem;
     height: 4rem;
     border-radius: 0.4rem;
+  }
+  footer .main-footer .contact > a img {
+    width: 1rem;
   }
   footer > hr {
     margin-top: 3rem;
