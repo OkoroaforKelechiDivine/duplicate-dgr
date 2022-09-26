@@ -446,7 +446,6 @@ select {
   background: #890006;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 7rem;
 }
 .contact-us .contact, .contact-us form {
   flex: 1;
@@ -535,14 +534,55 @@ select {
   .contact-us {
     flex-direction: column;
   }
+  .contact-us .contact {
+    padding-bottom: 10rem;
+  }
+  .contact-us .contact h1 {
+    width: 100%;
+  }
+  .contact-us form textarea {
+    max-width: 150rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .contact-us {
     flex-direction: column;
+    margin: 7rem 6rem;
+    padding: 7rem 4rem;
+  }
+  .contact-us .contact, .contact-us form {
+    flex: 1;
+  }
+  .contact-us .contact h1 {
+    font-size: 3.6rem;
+    color: #ffffff;
+    width: 80%;
+    line-height: 6rem;
+  }
+  .contact-us .contact .contact-address {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-us .contact .social-links {
+    gap: 5rem;
+  }
+  .contact-us form {
+    padding: 4rem;
+  }
+  .contact-us form .input-field {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .contact-us form textarea {
+    max-width: 75rem;
   }
 }
-@media screen and (max-width: 520px) {
-  .contact-us .contact-us {
-    padding: 8rem 5rem;
+@media screen and (max-width: 600px) {
+  .contact-us {
+    margin: 5rem 0;
+    padding: 4rem 1rem;
+  }
+  .contact-us form {
+    padding: 4rem 1rem;
   }
 }/*# sourceMappingURL=Contact.css.map */

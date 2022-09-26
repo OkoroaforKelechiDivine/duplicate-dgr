@@ -13,7 +13,6 @@
     background: $text-red-400;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 7rem;
 
     .contact, form {
         flex: 1;
@@ -107,17 +106,71 @@
 
     @media screen and (max-width: 1400px) {
         flex-direction: column;        
+        
+        .contact {
+            padding-bottom: 10rem;
+
+            h1{ width: 100%; }
+        }
+
+        form {
+            textarea {
+                max-width: 150rem;
+            }
+        }
     }
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
+        margin: 7rem 6rem;
+        padding: 7rem 4rem;
+
+        .contact, form {
+            flex: 1;
+        }
+
+        .contact {
+        
+            
+            h1 {
+                font-size: $fs-lg;
+                color: $text-white;
+                width:80%;
+                line-height: 6rem;
+            }
+            
+            .contact-address {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .social-links {
+                gap: 5rem;
+            }
+        }
+
+        form {
+            padding: 4rem;
+            
+            .input-field {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            textarea {
+                max-width: 75rem;
+            }
+        }
+
+
     }
 
-    @media screen and (max-width: 520px) {
-        .contact-us {
-            padding: 8rem 5rem;
-            
+    @media screen and (max-width: 600px) {
+        margin: 5rem 0;
+        padding: 4rem 1rem;
+
+        form {
+            padding: 4rem 1rem;
         }
-        
     }
 }
