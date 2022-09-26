@@ -1,6 +1,123 @@
 @use 'Navbar.scss';
 @use 'Footer.scss';
+@import 'default.scss';
 
 *{
     box-sizing: border-box;
+}
+
+.contact-us {
+    display:flex;
+    margin: 7rem 6rem;
+    padding: 12rem 8rem;
+    background: $text-red-400;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7rem;
+
+    .contact, form {
+        flex: 1;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-bottom: 5rem;
+        
+        h1 {
+            font-family: $ff-secondary;
+            font-size: $fs-xxl;
+            color: $text-white;
+            font-weight: $fw-r;
+            width: 50%;
+            line-height: 6.8rem;
+        }
+        
+        .contact-address {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                display: inline-flex;
+                gap: 2rem;
+                margin: 3rem 0;
+                color: $text-white;
+                text-decoration: none;
+                font-family: $ff-primary;
+                font-size: $fs-md;
+            }
+        }
+        .social-links {
+            display: flex;
+            align-items: center;
+            gap: 6.5rem;
+        }
+    }
+
+    form {
+        background: $text-white;
+        padding: 8rem;
+        font-family: $ff-primary;
+
+        label {
+            color: $text-black;
+            font-size: $fs-md;
+        }
+
+        input, textarea {
+            border: 2px solid $text-gray-100;
+            padding: 1.4rem;
+            font-size: $fs-sm;
+            width:100%;
+            margin-top: .6rem;
+
+            &::placeholder {
+                color: $text-gray-100;
+            }
+        }
+        
+        .input-field {
+            margin: 3rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+
+            .email-address, .phone-number {
+                flex: 1;
+            }
+        }
+        
+        textarea {
+            max-width: 100rem;
+        }
+
+        #submit {
+            background: $text-red-400;
+            color: $text-white;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            font-size: $fs-md;
+            margin-top: 4rem;
+            padding : 1.4rem 0;
+        }
+    }
+
+    @media screen and (max-width: 1400px) {
+        flex-direction: column;        
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 520px) {
+        .contact-us {
+            padding: 8rem 5rem;
+            
+        }
+        
+    }
 }

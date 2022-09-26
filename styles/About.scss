@@ -1,12 +1,8 @@
 @use 'Navbar.scss';
 @use 'Footer.scss';
+@import 'default.scss';
 
 *{
     box-sizing: border-box;
 }
 
-.contact-us {
-    display:flex;
-    margin: 7rem 6rem;
-    
-}

@@ -11,41 +11,20 @@ color palette
 /* font sizes */
 /*shadow variables */
 /* Box sizing rules */
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
 html,
 body {
   overflow-x: hidden;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
   margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
-  list-style: none;
+  font-size: 62.5%;
 }
 
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
-  font-size: 62.5%;
 }
 
 /* Set core body defaults */
@@ -140,7 +119,7 @@ select {
   font-family: "DM Sans", sans-serif;
 }
 .navbar .nav-links li {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
@@ -197,41 +176,20 @@ color palette
 /* font sizes */
 /*shadow variables */
 /* Box sizing rules */
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
 html,
 body {
   overflow-x: hidden;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
   margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
-  list-style: none;
+  font-size: 62.5%;
 }
 
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
-  font-size: 62.5%;
 }
 
 /* Set core body defaults */
@@ -294,10 +252,13 @@ footer {
 footer .main-footer {
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 7rem;
 }
 footer .main-footer .footer-links, footer .main-footer .brand-logo, footer .main-footer .contact {
   flex-basis: 26rem;
+}
+footer .main-footer .brand-logo, footer .main-footer .contact {
+  flex: 1;
 }
 footer .main-footer .brand-logo img {
   padding: 1rem;
@@ -307,8 +268,9 @@ footer .main-footer .brand-logo img {
   border-radius: 0.7rem;
 }
 footer .main-footer .footer-links {
+  flex: 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 5rem;
 }
 footer .main-footer .quick-links p, footer .main-footer .services p {
@@ -331,6 +293,7 @@ footer .main-footer .quick-links ul li a, footer .main-footer .services ul li a 
 footer .main-footer .contact {
   display: flex;
   flex-direction: column;
+  margin-right: 3rem;
 }
 footer .main-footer .contact p {
   font-weight: 700;
@@ -355,6 +318,9 @@ footer .main-footer .contact .social-links {
   align-items: center;
   width: 100%;
   margin-top: 2.5rem;
+}
+footer .main-footer .contact .social-links img {
+  width: 1.6rem;
 }
 @media screen and (max-width: 1000px) {
   footer .main-footer {
