@@ -5,13 +5,123 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 1rem 6rem;
+    padding: 0 6rem;
     border-bottom: 2px solid $text-gray-200;
     background-color: $text-white;
     margin: 0;
 
     @media screen and (min-width: 1400px) {
         height: 10rem;
+
+        .nav-links {
+            display: inline-flex;
+            align-items: center;
+            gap: 4rem;
+            list-style: none;
+            font-family: $ff-secondary;
+    
+            li {
+                font-size: $fs-md;
+                position: relative;
+    
+                &:hover , &:focus , &.active {
+                    &>a {
+                        color: $text-red-400;
+                        border-bottom: 1px solid $text-red-400;
+                    }
+    
+                    i {
+                        transform: rotate(180deg) scale(.7);
+                    }
+                }
+    
+                &>a {
+                    text-decoration: none;
+                    color: $text-black; 
+                    
+                    i {
+                        transform: scale(.7);
+                    }
+                }
+    
+                .dropdown {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    background: $text-white;
+                    width: 30rem;
+    
+                    li {
+                        i {
+                            transform: scale(.7);
+                            transition: .3s
+                        }
+                    }
+                }
+    
+                &:hover .dropdown, &.active .dropdown {
+                    display: block;
+                    list-style: none;
+                    padding: 2rem 3rem;
+                    li {
+                        font-size: $fs-sm;
+                        margin: 2rem 0;
+                        span {
+                            display: flex;
+                            align-items: center;
+                            opacity: .7;
+                            font-size: $fs-sm;
+        
+                            img {
+                                width: $fs-md;
+                                margin-right: 1rem;
+                                opacity: .7;
+                            }
+        
+                            i {
+                                transform: scale(.7);
+                                transition: .3s;
+                                margin-left: .5rem;
+                            }
+    
+                        }
+    
+                        &.active{
+                            span {
+                                opacity: 1;
+        
+                                img {
+                                    opacity: 1;
+                                }
+                                i {
+                                    transform: rotate(180deg) scale(.7);
+                                }
+                            }
+                        }
+    
+                        a {
+                            color: $text-black;
+                        }
+    
+                        .mini-dropdown {
+                            display: none;
+                            list-style: none;
+                            padding:1rem 3rem;
+    
+                            li {
+                                margin: 1.5rem 0;
+                            }
+                        }
+    
+                        &.active .mini-dropdown {
+                            display: block;
+                        
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .brand-logo {
