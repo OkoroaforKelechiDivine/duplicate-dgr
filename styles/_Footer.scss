@@ -27,8 +27,8 @@ footer {
         .brand-logo img {
             padding: 1rem;
             background: $text-white;
-            width: 6rem;
-            height: 6rem;
+            width: 8rem;
+            height: 8rem;
             border-radius: .7rem;
         }
 
@@ -41,8 +41,12 @@ footer {
         .quick-links, .services {
             p {
                 font-weight: $fw-b;
-                font-size: $fs-md;
+                font-size: $fs-lg;
                 color: $text-white;
+
+                @media screen and (max-width: 600px) {
+                    font-size: $fs-md;                    
+                }
             }
 
             ul {
@@ -52,8 +56,11 @@ footer {
                     margin: 3rem 0;
                     a {
                         color: $text-gray-200;
-                        font-size: $fs-xs;
+                        font-size: $fs-md;
                         text-decoration: none;
+                        @media screen and (max-width: 600px) {
+                            font-size: $fs-sm;                    
+                        }
                     }  
                 }
             }
@@ -65,18 +72,26 @@ footer {
 
             p {
                 font-weight: $fw-b;
-                font-size: $fs-md;
+                font-size: $fs-lg;
                 color: $text-white;
                 margin-bottom: .8rem;
+
+                @media screen and (max-width: 600px) {
+                    font-size: $fs-md;                    
+                }
             }
             
             &>a {
                 display: inline-flex;
                 gap: 1rem;
                 color: $text-gray-200;
-                font-size: $fs-xs;
+                font-size: $fs-md;
                 text-decoration: none;
                 margin: 1.5rem 0;
+
+                @media screen and (max-width: 600px) {
+                    font-size: $fs-sm;                    
+                }
             }
 
             hr {
@@ -95,12 +110,12 @@ footer {
                 }
 
                 img {
-                    width: 1.6rem;
-                    height: 1.6rem;                        
+                    width: $fs-md;
+                    height: $fs-md;                        
 
                     @media screen and (max-width: 600px) {
-                        width: 1.4rem;
-                        height: 1.4rem;                        
+                        width: $fs-sm;
+                        height: $fs-sm;                        
                     }
                 }
             }
@@ -108,6 +123,7 @@ footer {
         @media screen and (max-width: 1000px) {
             flex-direction: column;
             align-items: start;
+            gap:1rem;
                  
             .footer-links, .brand-logo, .contact {
                 flex-basis: 0;
@@ -124,7 +140,7 @@ footer {
         text-align: center;
         padding: 3rem 0;
         color: $text-gray-200;
-        font-size: $fs-sm;
+        font-size: $fs-md;
     }
 
     @media screen and (max-width: 600px) {
@@ -132,9 +148,9 @@ footer {
         padding-bottom: 0;
         
         .main-footer .brand-logo img {
-            padding: .5rem;
-            width: 4rem;
-            height: 4rem;
+            padding: .8rem;
+            width: 6rem;
+            height: 6rem;
             border-radius: .4rem;
         }
 
@@ -148,7 +164,7 @@ footer {
     
         .copyright {
             padding: 2rem 0;
-            font-size: $fs-xs;
+            font-size: $fs-sm;
         }
     }
 }

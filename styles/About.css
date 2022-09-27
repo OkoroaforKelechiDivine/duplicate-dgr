@@ -267,8 +267,8 @@ footer .main-footer .brand-logo, footer .main-footer .contact {
 footer .main-footer .brand-logo img {
   padding: 1rem;
   background: #ffffff;
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 0.7rem;
 }
 footer .main-footer .footer-links {
@@ -279,8 +279,13 @@ footer .main-footer .footer-links {
 }
 footer .main-footer .quick-links p, footer .main-footer .services p {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3.6rem;
   color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  footer .main-footer .quick-links p, footer .main-footer .services p {
+    font-size: 2rem;
+  }
 }
 footer .main-footer .quick-links ul, footer .main-footer .services ul {
   list-style: none;
@@ -291,8 +296,13 @@ footer .main-footer .quick-links ul li, footer .main-footer .services ul li {
 }
 footer .main-footer .quick-links ul li a, footer .main-footer .services ul li a {
   color: #BFBFBF;
-  font-size: 1.4rem;
+  font-size: 2rem;
   text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  footer .main-footer .quick-links ul li a, footer .main-footer .services ul li a {
+    font-size: 1.6rem;
+  }
 }
 footer .main-footer .contact {
   display: flex;
@@ -301,17 +311,27 @@ footer .main-footer .contact {
 }
 footer .main-footer .contact p {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3.6rem;
   color: #ffffff;
   margin-bottom: 0.8rem;
+}
+@media screen and (max-width: 600px) {
+  footer .main-footer .contact p {
+    font-size: 2rem;
+  }
 }
 footer .main-footer .contact > a {
   display: inline-flex;
   gap: 1rem;
   color: #BFBFBF;
-  font-size: 1.4rem;
+  font-size: 2rem;
   text-decoration: none;
   margin: 1.5rem 0;
+}
+@media screen and (max-width: 600px) {
+  footer .main-footer .contact > a {
+    font-size: 1.6rem;
+  }
 }
 footer .main-footer .contact hr {
   width: 100%;
@@ -329,19 +349,20 @@ footer .main-footer .contact .social-links {
   }
 }
 footer .main-footer .contact .social-links img {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
 }
 @media screen and (max-width: 600px) {
   footer .main-footer .contact .social-links img {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.6rem;
+    height: 1.6rem;
   }
 }
 @media screen and (max-width: 1000px) {
   footer .main-footer {
     flex-direction: column;
     align-items: start;
+    gap: 1rem;
   }
   footer .main-footer .footer-links, footer .main-footer .brand-logo, footer .main-footer .contact {
     flex-basis: 0;
@@ -355,7 +376,7 @@ footer .copyright {
   text-align: center;
   padding: 3rem 0;
   color: #BFBFBF;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 @media screen and (max-width: 600px) {
   footer {
@@ -363,9 +384,9 @@ footer .copyright {
     padding-bottom: 0;
   }
   footer .main-footer .brand-logo img {
-    padding: 0.5rem;
-    width: 4rem;
-    height: 4rem;
+    padding: 0.8rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 0.4rem;
   }
   footer .main-footer .contact > a img {
@@ -376,7 +397,7 @@ footer .copyright {
   }
   footer .copyright {
     padding: 2rem 0;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -505,7 +526,7 @@ select {
 }
 .hero-section .about-dgr p {
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 3.3rem;
   color: #1A1818;
   font-family: "DM Sans", sans-serif;
@@ -515,7 +536,7 @@ select {
     padding: 3.4rem 2rem;
   }
   .hero-section .about-dgr p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 3rem;
   }
 }
@@ -639,4 +660,68 @@ select {
   .vision .vision-illustration img {
     box-shadow: 7px 7px 5px 7px #BFBFBF;
   }
+}
+
+.services-section {
+  background: rgba(191, 191, 191, 0.4);
+  padding: 15.4rem 6rem;
+}
+.services-section .main-title {
+  font-size: 6.4rem;
+  font-family: "Suranna", serif;
+  font-weight: 300;
+  color: #1A1818;
+  margin-bottom: 10rem;
+}
+.services-section .services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.services-section .services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 35rem;
+  flex-basis: 31rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 2rem;
+}
+.services-section .services .service h1 {
+  font-size: 3.6rem;
+  font-family: "Suranna", serif;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+.services-section .services .service a {
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+.services-section .services .service a:hover {
+  text-decoration: underline;
+}
+.services-section .services .service:nth-child(1) {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/service_1.png");
+}
+.services-section .services .service:nth-child(2) {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/service_2.png");
+}
+.services-section .services .service:nth-child(3) {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/service_3.png");
+}
+.services-section .services .service:nth-child(4) {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/service_4.png");
+}
+.services-section .services .service:nth-child(1), .services-section .services .service:nth-child(2), .services-section .services .service:nth-child(3), .services-section .services .service:nth-child(4) {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.3rem;
 }/*# sourceMappingURL=About.css.map */
