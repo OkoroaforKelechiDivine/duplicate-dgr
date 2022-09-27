@@ -7,16 +7,13 @@
 }
 
 .bg-about {
-    background: url('../Assets/about-bg.svg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    object-fit: cover;
     z-index: -1;
-    // background-position: center;
 }
 
 .hero-section {
@@ -77,9 +74,126 @@
 
 .mission {
     padding: 10.4rem 6rem;
-    background-color: $text-red-100;
+    background-color: rgba(137, 0, 6, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .title {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        h1 {
+            font-size: $fs-xxl;
+            font-family: $ff-secondary;
+            color: $text-red-400;
+            width: 30%;
+            font-weight: $fw-r;
+            line-height: 7rem;
+
+            @media screen and (max-width: 768px) {
+                font-size: $fs-xl;  
+                line-height: 5.5rem;
+            }
+        }
+        img {
+            transform: translate(-70%, -80%) scale(.8);
+        }
+    }
+
+    .mission-text {
+        text-align: right;
+        border-top: 1px solid $text-red-400;
+        padding: 5rem 5rem 0 11rem ;
+        font-family: $ff-primary;
+        flex: 1.5;
+        font-size: $fs-md;
+    }
+
+    @media screen and (max-width: 920px) {
+        flex-direction: column;
+        .mission-text {
+            text-align: right;
+            flex: 1;
+            font-size: $fs-md;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        padding: 7.4rem 3rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        .mission-text {
+            text-align: right;
+            border-top: 1px solid $text-red-400;
+            padding: 2rem 2rem 0 4rem ;
+            font-size: $fs-sm;
+        }
+    }
 }
 
 .vision {
+    background: transparent;
+    padding: 15.4rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    .vision-text {
+        flex: .7;
+        h1 {
+            color: $text-black;
+            font-size: $fs-xxl;
+            font-family: $ff-secondary;
+        }
 
+        p {
+            color: $text-black;
+            font-family: $ff-primary;
+            font-size: $fs-md;
+            text-align: left;
+            width: 80%;
+        }
+    }
+
+    .vision-illustration {
+        flex: .7;
+        display: flex;
+        justify-content: end;
+        img {
+            width: 100%;
+            max-width: 75rem;
+            height: 100%;
+            max-height: 80rem;
+            box-shadow: 15px 15px 5px 15px $text-gray-200;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 7rem;
+        padding: 8.4rem 6rem;
+
+        .vision-text p {
+            width: 100%;
+            font-size: $fs-sm;  
+        }
+
+        .vision-text h1 {
+            font-size: $fs-xl;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 7.4rem 3rem;
+
+        .vision-illustration img {
+            box-shadow: 7px 7px 5px 7px $text-gray-200;
+        }
+    }
 }
+

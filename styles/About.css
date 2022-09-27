@@ -457,14 +457,13 @@ select {
 }
 
 .bg-about {
-  background: url("../Assets/about-bg.svg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -1;
 }
 
@@ -523,5 +522,121 @@ select {
 
 .mission {
   padding: 10.4rem 6rem;
-  background-color: #FFE2E4;
+  background-color: rgba(137, 0, 6, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.mission .title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.mission .title h1 {
+  font-size: 6.4rem;
+  font-family: "Suranna", serif;
+  color: #890006;
+  width: 30%;
+  font-weight: 300;
+  line-height: 7rem;
+}
+@media screen and (max-width: 768px) {
+  .mission .title h1 {
+    font-size: 4.8rem;
+    line-height: 5.5rem;
+  }
+}
+.mission .title img {
+  transform: translate(-70%, -80%) scale(0.8);
+}
+.mission .mission-text {
+  text-align: right;
+  border-top: 1px solid #890006;
+  padding: 5rem 5rem 0 11rem;
+  font-family: "DM Sans", sans-serif;
+  flex: 1.5;
+  font-size: 2rem;
+}
+@media screen and (max-width: 920px) {
+  .mission {
+    flex-direction: column;
+  }
+  .mission .mission-text {
+    text-align: right;
+    flex: 1;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mission {
+    padding: 7.4rem 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mission .mission-text {
+    text-align: right;
+    border-top: 1px solid #890006;
+    padding: 2rem 2rem 0 4rem;
+    font-size: 1.6rem;
+  }
+}
+
+.vision {
+  background: transparent;
+  padding: 15.4rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.vision .vision-text {
+  flex: 0.7;
+}
+.vision .vision-text h1 {
+  color: #1A1818;
+  font-size: 6.4rem;
+  font-family: "Suranna", serif;
+}
+.vision .vision-text p {
+  color: #1A1818;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  text-align: left;
+  width: 80%;
+}
+.vision .vision-illustration {
+  flex: 0.7;
+  display: flex;
+  justify-content: end;
+}
+.vision .vision-illustration img {
+  width: 100%;
+  max-width: 75rem;
+  height: 100%;
+  max-height: 80rem;
+  box-shadow: 15px 15px 5px 15px #BFBFBF;
+}
+@media screen and (max-width: 768px) {
+  .vision {
+    flex-direction: column;
+    gap: 7rem;
+    padding: 8.4rem 6rem;
+  }
+  .vision .vision-text p {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+  .vision .vision-text h1 {
+    font-size: 4.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .vision {
+    padding: 7.4rem 3rem;
+  }
+  .vision .vision-illustration img {
+    box-shadow: 7px 7px 5px 7px #BFBFBF;
+  }
 }/*# sourceMappingURL=About.css.map */
