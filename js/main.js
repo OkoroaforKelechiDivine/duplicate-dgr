@@ -1,4 +1,12 @@
 const toggleNavButton = document.querySelector('#toggle-menu');
+const miniMenu = document .querySelectorAll('.nav-link .dropdown li');
+
+miniMenu.forEach(drpdn => {
+    drpdn.addEventListener('click', () => {
+        console.log('clicked')
+        drpdn.classList.toggle('active');
+    })
+})
 
 toggleNavButton.addEventListener('click', (e) => {
     e.target.classList.toggle('active');

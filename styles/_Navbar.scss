@@ -47,21 +47,96 @@
         align-items: center;
         gap: 4rem;
         list-style: none;
-        font-family: $ff-primary;
+        font-family: $ff-secondary;
 
         li {
             font-size: $fs-md;
 
-            &:hover a, &:focus a, &.active a{
-                color: $text-red-400;
+            &:hover , &:focus , &.active {
+                a {
+                    color: $text-red-400;
+                }
+
+                i {
+                    transform: rotate(180deg) scale(.7);
+                }
             }
 
-            a {
+            &>a {
                 text-decoration: none;
                 color: $text-black; 
                 
                 i {
                     transform: scale(.7);
+                }
+            }
+
+            .dropdown {
+                display: none;
+
+                li {
+                    i {
+                        transform: scale(.7);
+                        transition: .3s
+                    }
+                }
+            }
+
+            &:hover .dropdown, &.active .dropdown {
+                display: block;
+                list-style: none;
+                padding: 1rem 3rem;
+                li {
+                    span {
+                        display: flex;
+                        align-items: center;
+                        opacity: .7;
+    
+                        img {
+                            width: $fs-md;
+                            margin-right: 1rem;
+                            opacity: .7;
+                        }
+    
+                        i {
+                            transform: scale(.7);
+                            transition: .3s;
+                            margin-left: .5rem;
+                        }
+
+                    }
+
+                    &.active{
+                        span {
+                            opacity: 1;
+    
+                            img {
+                                opacity: 1;
+                            }
+                            i {
+                                transform: rotate(180deg) scale(.7);
+                            }
+                        }
+                    }
+
+                    a {
+                        color: $text-black;
+                    }
+
+                    .mini-dropdown {
+                        display: none;
+                        list-style: none;
+                        padding:1rem 3rem;
+
+                        li {
+                            margin: 1.5rem 0;
+                        }
+                    }
+
+                    &.active .mini-dropdown {
+                        display: block;
+                    
+                    }
                 }
             }
         }  
@@ -74,13 +149,13 @@
             gap: 2rem;
             flex-direction: column;
             text-align: left;
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
             padding-top: 10rem;
             align-items: start;
             font-family: $ff-secondary;
-            font-size: 2.4rem;
+            font-size: $fs-md;
             transition: all 1s;
             
             &.active {
