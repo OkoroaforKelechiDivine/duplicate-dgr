@@ -10,6 +10,10 @@
     background-color: $text-white;
     margin: 0;
 
+    @media screen and (min-width: 1400px) {
+        height: 10rem;
+    }
+
     .brand-logo {
         z-index: 3;
         img {
