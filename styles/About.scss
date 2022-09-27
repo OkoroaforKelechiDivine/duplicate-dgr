@@ -274,3 +274,91 @@
     }
 }
 
+.subscribe-section{
+    padding: 15.4rem 6rem;
+    background: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        padding: 10.4rem 3rem;        
+    }
+
+    .subscribe {
+        width: 100%;
+        max-width: 130rem;
+        background: $text-red-400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10.4rem 4rem;
+
+        h1 {
+            font-size: $fs-xxl;
+            text-align: center;
+            font-family: $ff-secondary;
+            color: $text-white;
+            font-weight: $fw-r;
+            line-height: 2rem;
+
+            @media screen and (max-width: 600px) {
+                font-size: $fs-lg;  
+                line-height: 4.2rem;              
+            }
+        }
+
+        p {
+            font-size: $fs-md;
+            color: $text-white;
+            font-family: $ff-primary;
+            text-align: center;
+            width: 100%;
+            max-width: 78rem;
+            margin: 2rem 0;
+
+            @media screen and (max-width: 600px) {
+                font-size: $fs-sm;                
+            }
+        }
+
+        form {
+            display: flex;
+            width: 100%;
+            max-width: 60rem;
+            font-family: $ff-primary;
+            margin-top: 4rem;
+
+            @media screen and (max-width: 600px) {
+                flex-direction: column;
+                gap: 3rem;                
+            }
+
+            input, button {
+                border: none;
+                padding: 1.5rem 2.5rem;
+                font-size: $fs-md;
+                outline: none;
+
+                @media screen and (max-width: 500px) {
+                    font-size: $fs-sm;                    
+                }
+            }
+
+            input {
+                background-color: $text-white;
+                color: $text-black;
+                flex:4;
+            }
+
+            button {
+                background-color: $text-black;
+                color: $text-white;
+                flex:1;
+                cursor: pointer;
+            }
+        }
+    }
+}
