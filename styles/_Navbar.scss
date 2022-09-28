@@ -301,9 +301,9 @@
         @media screen and (max-width: 1400px) {
             display: none;
             background: $text-white;
+            height: auto;
             min-height: 100vh;
             width: 100%;
-            height: auto;
             gap: 2rem;
             flex-direction: column;
             text-align: left;
