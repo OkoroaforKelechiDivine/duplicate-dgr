@@ -100,7 +100,7 @@ select {
     align-items: center;
     gap: 4rem;
     list-style: none;
-    font-family: "Suranna", serif;
+    font-family: "DM Sans", sans-serif;
   }
   .navbar .nav-links li {
     font-size: 2rem;
