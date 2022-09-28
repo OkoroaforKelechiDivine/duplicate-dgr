@@ -58,10 +58,11 @@
                     display: none;
                     position: absolute;
                     left: 0;
-                    top: 180%;
+                    top: 140%;
                     background: $text-white;
                     width: 30rem;
                     transition: 1s;
+                    z-index: 2;
 
                     
     
