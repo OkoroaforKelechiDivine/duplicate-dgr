@@ -124,7 +124,7 @@ select {
   }
   .navbar .nav-links li:nth-child(3) .dropdown {
     width: 45rem;
-    height: 35rem;
+    height: 31.5rem;
   }
   .navbar .nav-links li .dropdown {
     display: none;
@@ -671,6 +671,87 @@ select {
   z-index: -1;
 }
 
+.hero-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 7rem);
+  background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  position: relative;
+}
+.hero-section .carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1.3rem;
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.hero-section .carousel-button:first-of-type {
+  left: -0.1rem;
+}
+.hero-section .carousel-button:last-of-type {
+  right: 1.8rem;
+}
+
+.hero-section h1 {
+  width: 90%;
+  max-width: 50rem;
+  font-size: 6.4rem;
+  line-height: 7rem;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Suranna", serif;
+}
+
+.hero-section .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-section p {
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  width: 90%;
+  max-width: 67rem;
+  margin-bottom: 7rem;
+}
+
+.hero-section a {
+  background: #ffffff;
+  box-shadow: 0 0 5px #1A1818;
+  padding: 1.5rem 4.5rem;
+  color: #1A1818;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  position: relative;
+}
+.hero-section a i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5%;
+  padding: 0.9rem;
+  background-color: #890006;
+  color: #ffffff;
+  box-shadow: -5px 5px 40px rgba(0, 0, 0, 0.72);
+}
+.hero-section a:hover {
+  transform: scale(1.02);
+}
+
 .subscribe-section {
   padding: 15.4rem 6rem;
   background: transparent;
@@ -756,4 +837,22 @@ select {
   color: #ffffff;
   flex: 1;
   cursor: pointer;
+}
+
+@-webkit-keyframes animate-bg {
+  from {
+    background-size: 150% 150%;
+  }
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes animate-bg {
+  from {
+    background-size: 150% 150%;
+  }
+  to {
+    background-size: 100% 100%;
+  }
 }/*# sourceMappingURL=Home.css.map */

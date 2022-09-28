@@ -16,6 +16,94 @@
     z-index: -1;
 }
 
+.hero-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 7rem);
+    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url('../Assets/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    position: relative;
+
+    .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 1.3rem;
+        background: none;
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: $fs-md;
+        cursor: pointer;
+
+
+
+        &:first-of-type {
+            left: -.1rem;
+        }
+
+        &:last-of-type {
+            right: 1.8rem;
+        }
+    }
+}
+
+.hero-section h1 {
+    width:90%;
+    max-width: 50rem;
+    font-size: $fs-xxl;
+    line-height: 7rem;
+    color: $text-white;
+    font-weight: $fw-r;
+    font-family: $ff-secondary;
+}
+
+.hero-section .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-section p{
+    color: $text-white;
+    font-family: $ff-primary;
+    font-size: $fs-sm;
+    width: 90%;
+    max-width: 67rem;
+    margin-bottom: 7rem;
+}
+
+.hero-section a {
+    background: $text-white;
+    box-shadow: 0 0 5px  $text-black;
+    padding: 1.5rem 4.5rem;
+    color: $text-black;
+    text-decoration: none;
+    font-family: $ff-primary;
+    font-size: $fs-sm;
+    position: relative;
+
+    i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -5%;
+        padding: .9rem;
+        background-color: $text-red-400;
+        color: $text-white;
+        box-shadow: -5px 5px 40px rgba(0, 0, 0, 0.72);
+    }
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
 .subscribe-section{
     padding: 15.4rem 6rem;
     background: transparent;
@@ -102,5 +190,15 @@
                 cursor: pointer;
             }
         }
+    }
+}
+
+@keyframes animate-bg {
+    from {
+        background-size: 150% 150%;
+    }
+
+    to {
+        background-size:100% 100%;
     }
 }
