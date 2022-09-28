@@ -9,12 +9,16 @@
     border-bottom: 2px solid $text-gray-200;
     background-color: $text-white;
     margin: 0;
+    height: 10rem;
 
     @media screen and (min-width: 1400px) {
-        height: 10rem;
 
         & .nav-links li:hover .dropdown li:nth-child(2).active .mini-dropdown {
             transform: translateY(-5.3rem);
+        }
+
+        & .nav-links li:hover .dropdown li:nth-child(1).active .mini-dropdown {
+            transform: translateY(-1.3rem);
         }
 
         .nav-links {
@@ -32,6 +36,7 @@
                 &:hover , &:focus , &.active {
                     &>a {
                         color: $text-red-400;
+                        padding-bottom: .5rem;
                         border-bottom: 1px solid $text-red-400;
                     }
     
@@ -50,7 +55,7 @@
                 }
     
                 &:nth-child(3) .dropdown {
-                    width: 42rem;
+                    width: 45rem;
                     height: 35rem;
                 }
 
@@ -58,11 +63,12 @@
                     display: none;
                     position: absolute;
                     left: 0;
-                    top: 140%;
+                    top: 170%;
                     background: $text-white;
                     width: 30rem;
                     transition: 1s;
                     z-index: 2;
+                    box-shadow: 0 0 20px 8px rgba($color: #000000, $alpha: .2);
 
                     
     
@@ -91,16 +97,17 @@
                     li {
                         font-size: $fs-sm;
                         margin: 2rem 0;
+                        cursor: pointer;
                         span {
                             display: flex;
                             align-items: center;
-                            opacity: .7;
+                            opacity: .55;
                             font-size: $fs-sm;
         
                             img {
                                 width: $fs-md;
                                 margin-right: 1rem;
-                                opacity: .7;
+                                opacity: .55;
                             }
         
                             i {
@@ -131,7 +138,7 @@
                         .mini-dropdown::before {
                             content: "";
                             position: absolute;
-                            left: -6%;
+                            left: -3%;
                             height: 100%;
                             width: 2px;
                             background: $text-gray-400;
@@ -237,6 +244,7 @@
                 list-style: none;
                 padding: 1rem 3rem;
                 li {
+                    margin: .8rem 0;
                     span {
                         display: flex;
                         align-items: center;
@@ -276,7 +284,7 @@
                     .mini-dropdown {
                         display: none;
                         list-style: none;
-                        padding:1rem 3rem;
+                        padding:0rem 4rem;
 
                         li {
                             margin: 1.5rem 0;
@@ -302,6 +310,7 @@
             position: absolute;
             top: 0;
             left: 0;
+            // margin: 0;
             padding-top: 10rem;
             align-items: start;
             font-family: $ff-secondary;
@@ -315,17 +324,17 @@
         }
     }
     @media screen and (max-width: 600px) {
-        padding: 1rem;
+        padding: 2rem;
         
         .brand-logo {
             img {
-                width: 3rem;
-                height: 3rem;
+                width: 4.5rem;
+                height: 4.5rem;
             }
         }
 
         .nav-links {
-            padding-top: 6rem;
+            padding-top: 9rem;
         }
     }
 }
