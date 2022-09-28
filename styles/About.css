@@ -90,6 +90,9 @@ select {
   .navbar {
     height: 10rem;
   }
+  .navbar .nav-links li:hover .dropdown li:nth-child(2).active .mini-dropdown {
+    transform: translateY(-5.3rem);
+  }
   .navbar .nav-links {
     display: inline-flex;
     align-items: center;
@@ -100,6 +103,7 @@ select {
   .navbar .nav-links li {
     font-size: 2rem;
     position: relative;
+    transition: 0.5s;
   }
   .navbar .nav-links li:hover > a, .navbar .nav-links li:focus > a, .navbar .nav-links li.active > a {
     color: #890006;
@@ -115,17 +119,25 @@ select {
   .navbar .nav-links li > a i {
     transform: scale(0.7);
   }
+  .navbar .nav-links li:nth-child(3) .dropdown {
+    width: 42rem;
+    height: 35rem;
+  }
   .navbar .nav-links li .dropdown {
     display: none;
     position: absolute;
     left: 0;
-    top: 100%;
+    top: 180%;
     background: #ffffff;
     width: 30rem;
+    transition: 1s;
   }
   .navbar .nav-links li .dropdown li i {
     transform: scale(0.7);
-    transition: 0.3s;
+    transition: 0.5s;
+  }
+  .navbar .nav-links li .dropdown li:nth-child(2):hover .dropdown li .mini-dropdown, .navbar .nav-links li .dropdown li:nth-child(2).active .dropdown li .mini-dropdown {
+    transform: translateY(-5rem);
   }
   .navbar .nav-links li:hover .dropdown, .navbar .nav-links li.active .dropdown {
     display: block;
@@ -164,13 +176,25 @@ select {
   .navbar .nav-links li:hover .dropdown li a, .navbar .nav-links li.active .dropdown li a {
     color: #1A1818;
   }
+  .navbar .nav-links li:hover .dropdown li .mini-dropdown::before, .navbar .nav-links li.active .dropdown li .mini-dropdown::before {
+    content: "";
+    position: absolute;
+    left: -8%;
+    height: 100%;
+    width: 2px;
+    background: #545454;
+  }
   .navbar .nav-links li:hover .dropdown li .mini-dropdown, .navbar .nav-links li.active .dropdown li .mini-dropdown {
     display: none;
     list-style: none;
-    padding: 1rem 3rem;
+    padding: 0;
+    position: absolute;
+    left: 43%;
+    top: 0;
   }
   .navbar .nav-links li:hover .dropdown li .mini-dropdown li, .navbar .nav-links li.active .dropdown li .mini-dropdown li {
     margin: 1.5rem 0;
+    width: 100%;
   }
   .navbar .nav-links li:hover .dropdown li.active .mini-dropdown, .navbar .nav-links li.active .dropdown li.active .mini-dropdown {
     display: block;

@@ -3,7 +3,8 @@ const miniMenu = document .querySelectorAll('.nav-link .dropdown li span');
 
 miniMenu.forEach(drpdn => {
     drpdn.addEventListener('click', () => {
-        console.log('clicked')
+        console.log('clicked');
+        miniMenu.forEach(drpdn => drpdn.parentElement.classList.remove('active'))
         drpdn.parentElement.classList.toggle('active');
     })
 })
