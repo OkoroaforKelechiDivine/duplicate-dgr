@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: calc(100vh - 7rem);
+    min-height: calc(100vh - 7rem);
     background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url('../Assets/hero-bg.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -72,6 +72,7 @@
 .hero-section p{
     color: $text-white;
     font-family: $ff-primary;
+    line-height: 4rem;
     font-size: $fs-sm;
     width: 90%;
     max-width: 67rem;
@@ -102,6 +103,57 @@
     &:hover {
         transform: scale(1.02);
     }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-section {
+        padding: 2rem;
+        text-align: left;
+        align-items: start;
+        // justify-content: start;
+        
+        .hero-content {
+            align-items: start;
+        }
+        
+        h1 {
+            font-size: $fs-xl;
+            line-height: 5.3rem;
+        }
+
+        p {
+            line-height: 3.5rem;
+        }
+
+        .carousel-control {
+            margin-top: 7rem;
+        }
+        .carousel-button {
+            position: static;
+            // top: 50%;
+            // transform: translateY(-50%);
+            padding: 1rem 1.6rem;
+            background: none;
+            border: 2px solid #fff;
+            color: #fff;
+            font-size: $fs-md;
+            cursor: pointer;
+    
+    
+    
+            &:first-of-type {
+                left: none;
+            }
+    
+            &:last-of-type {
+                right: none;
+                margin-left: 1rem;
+            }
+        }
+        
+    }
+
+
 }
 
 .subscribe-section{

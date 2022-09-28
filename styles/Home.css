@@ -677,7 +677,7 @@ select {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: calc(100vh - 7rem);
+  min-height: calc(100vh - 7rem);
   background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -722,6 +722,7 @@ select {
 .hero-section p {
   color: #ffffff;
   font-family: "DM Sans", sans-serif;
+  line-height: 4rem;
   font-size: 1.6rem;
   width: 90%;
   max-width: 67rem;
@@ -752,6 +753,42 @@ select {
   transform: scale(1.02);
 }
 
+@media screen and (max-width: 600px) {
+  .hero-section {
+    padding: 2rem;
+    text-align: left;
+    align-items: start;
+  }
+  .hero-section .hero-content {
+    align-items: start;
+  }
+  .hero-section h1 {
+    font-size: 4.8rem;
+    line-height: 5.3rem;
+  }
+  .hero-section p {
+    line-height: 3.5rem;
+  }
+  .hero-section .carousel-control {
+    margin-top: 7rem;
+  }
+  .hero-section .carousel-button {
+    position: static;
+    padding: 1rem 1.6rem;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .hero-section .carousel-button:first-of-type {
+    left: none;
+  }
+  .hero-section .carousel-button:last-of-type {
+    right: none;
+    margin-left: 1rem;
+  }
+}
 .subscribe-section {
   padding: 15.4rem 6rem;
   background: transparent;
