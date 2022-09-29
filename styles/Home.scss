@@ -541,7 +541,7 @@ section.services.s_03 {
             font-family: $ff-secondary;
             color: $text-white;
             font-weight: $fw-r;
-            line-height: 2rem;
+            // line-height: 2rem;
 
             @media screen and (max-width: 600px) {
                 font-size: $fs-lg;  

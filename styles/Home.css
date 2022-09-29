@@ -1141,7 +1141,6 @@ section.services.s_03 .service .service-details a {
   font-family: "Suranna", serif;
   color: #ffffff;
   font-weight: 300;
-  line-height: 2rem;
 }
 @media screen and (max-width: 600px) {
   .subscribe-section .subscribe h1 {
