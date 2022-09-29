@@ -851,6 +851,115 @@ select {
   }
 }
 
+section.services {
+  width: 100%;
+  padding: 10.4rem 6rem;
+  background: rgba(255, 226, 228, 0.23);
+}
+@media screen and (max-width: 768px) {
+  section.services {
+    padding: 8rem 2rem;
+  }
+}
+section.services .header {
+  width: 100%;
+  max-width: 100rem;
+  margin-bottom: 6rem;
+}
+section.services .header h1 {
+  font-size: 6.4rem;
+  line-height: 7rem;
+  width: 100%;
+  color: #890006;
+  font-weight: 300;
+  border-bottom: 2px solid #FFE2E4;
+  padding-bottom: 2rem;
+}
+section.services .service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20%;
+}
+section.services .service .illustration {
+  flex: 1;
+}
+section.services .service .illustration img {
+  width: 100%;
+  max-height: 80rem;
+  box-shadow: 15px 15px 5px 15px #BFBFBF;
+}
+section.services .service .service-details {
+  flex: 1;
+}
+section.services .service .service-details .number {
+  color: #BFBFBF;
+  font-size: 12rem;
+  font-family: "Suranna", serif;
+}
+section.services .service .service-details h1 {
+  color: #1A1818;
+  font-family: "Suranna", serif;
+  font-size: 4.8rem;
+}
+section.services .service .service-details p {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  margin: 2rem 0;
+  margin-bottom: 3.5rem;
+  color: #1A1818;
+  font-family: "DM Sans", sans-serif;
+}
+section.services .service .service-details a {
+  text-decoration: underline;
+  color: #890006;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  transition: 0.9s;
+}
+section.services .service .service-details a i {
+  transform: scale(0.8);
+}
+section.services .service .service-details a:hover {
+  letter-spacing: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  section.services .service {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  section.services .service .illustration {
+    flex: 1;
+  }
+  section.services .service .illustration img {
+    width: 100%;
+    max-height: 80rem;
+    box-shadow: 8px 8px 5px 8px #BFBFBF;
+  }
+}
+
+section.services.s_02, section.services.s_04 {
+  background: transparent;
+}
+section.services.s_02 .service, section.services.s_04 .service {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 768px) {
+  section.services.s_02 .service, section.services.s_04 .service {
+    flex-direction: column;
+  }
+}
+section.services.s_02 .service .service-details a, section.services.s_04 .service .service-details a {
+  color: #1A1818;
+}
+
+section.services.s_03 {
+  background: rgba(55, 128, 207, 0.05);
+}
+section.services.s_03 .service .service-details a {
+  color: #3780CF;
+}
+
 .subscribe-section {
   padding: 15.4rem 6rem;
   background: transparent;

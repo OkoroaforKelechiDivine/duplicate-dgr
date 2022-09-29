@@ -223,6 +223,132 @@
     }
 }
 
+section.services {
+    width: 100%;
+    padding: 10.4rem 6rem;
+    background: rgba($color: $text-red-100, $alpha: 0.23);
+
+    @media screen and (max-width: 768px) {
+        padding: 8rem 2rem;
+    }
+    .header {
+        width: 100%;
+        max-width: 100rem;
+        margin-bottom: 6rem;
+        
+        h1 {
+            font-size: $fs-xxl;
+            line-height: 7rem;
+            width: 100%;
+            color: $text-red-400;
+            font-weight: $fw-r;
+            border-bottom: 2px solid $text-red-100;
+            padding-bottom: 2rem;
+        }
+    }
+
+    .service {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20%;
+
+        .illustration {
+          flex: 1; 
+
+          img {
+            width: 100%;
+            max-height: 80rem;
+            box-shadow: 15px 15px 5px 15px $text-gray-200;
+          } 
+        }
+
+        .service-details {
+            flex: 1;
+            .number {
+                color: $text-gray-200;
+                font-size: 12rem;
+                font-family: $ff-secondary;
+            }
+
+            h1 {
+                color: $text-black;
+                font-family: $ff-secondary;
+                font-size: $fs-xl;
+            }
+
+            p {
+                font-size: $fs-md;
+                line-height: 3.5rem;
+                margin: 2rem 0;
+                margin-bottom: 3.5rem;
+                color: $text-black;
+                font-family: $ff-primary;
+            }
+
+            a {
+                text-decoration: underline;
+                color: $text-red-400;
+                font-family: $ff-primary;
+                font-size: $fs-md;
+                transition: .9s;
+                i {
+                    transform: scale(.8);
+                }
+
+                &:hover {
+                    letter-spacing: .5rem;
+                }
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            flex-direction: column; 
+            gap: 4rem;    
+            
+            .illustration {
+                flex: 1; 
+      
+                img {
+                  width: 100%;
+                  max-height: 80rem;
+                  box-shadow: 8px 8px 5px 8px $text-gray-200;
+                } 
+              }
+        }
+    }
+}
+
+section.services.s_02, section.services.s_04 {
+    background: transparent;
+    .service {
+        flex-direction: row-reverse;
+        @media screen and (max-width:768px) {
+            flex-direction: column;            
+        }
+
+        .service-details {
+            a {
+                color: $text-black
+            }
+        }
+
+    }
+}
+
+section.services.s_03 {
+    background: rgba($color: #3780CF, $alpha: .05);
+    .service {
+        .service-details {
+            a {
+                color: #3780CF
+            }
+        }
+
+    }
+}
+
+
 
 .subscribe-section{
     padding: 15.4rem 6rem;
