@@ -960,6 +960,11 @@ section.services.s_03 .service .service-details a {
   color: #3780CF;
 }
 
+.featured-projects {
+  background: transparent;
+  padding: 15.4rem 6rem;
+  font-family: "DM Sans", sans-serif;
+}
 .subscribe-section {
   padding: 15.4rem 6rem;
   background: transparent;
