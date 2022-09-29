@@ -193,7 +193,15 @@
             padding: 1.4rem 4rem;
             font-size: $fs-sm;
             font-family: $ff-primary;
-            color: $text-white
+            color: $text-white;
+            transition: .5s;
+
+            &:hover {
+                color: $text-red-400;
+                background: transparent;
+                box-shadow: 0 0 5px ;
+            }
+
         }
     }
 
@@ -244,6 +252,10 @@ section.services {
             font-weight: $fw-r;
             border-bottom: 2px solid $text-red-100;
             padding-bottom: 2rem;
+
+            @media screen and (max-width: 600px) {
+                font-size: $fs-xl;               
+            }
         }
     }
 
@@ -275,6 +287,10 @@ section.services {
                 color: $text-black;
                 font-family: $ff-secondary;
                 font-size: $fs-xl;
+
+                @media screen and (max-width: 600px) {
+                    font-size: $fs-lg;
+                }
             }
 
             p {
@@ -352,12 +368,149 @@ section.services.s_03 {
     background: transparent;
     padding: 15.4rem 6rem;
     font-family: $ff-primary;
-    
-    .header {
 
+    @media screen and (max-width: 768px) {
+        padding: 8rem 2rem;
     }
+
+    .header {
+        width: 100%;
+        max-width: 100rem;
+        margin-bottom: 6rem;
+        
+        h1 {
+            font-size: $fs-xxl;
+            line-height: 7rem;
+            width: 100%;
+            font-family: $ff-secondary;
+            color: $text-black;
+            border-bottom: 2px solid $text-gray-200;
+            padding-bottom: 2rem;
+
+            @media screen and (max-width: 600px) {
+                font-size: $fs-xl;               
+            }
+        }
+    }
+
+    .featured-project {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20%;
+
+        .illustration {
+          flex: 1; 
+
+          img {
+            width: 100%;
+            max-height: 80rem;
+            box-shadow: 15px 15px 5px 15px $text-gray-200;
+          } 
+        }
+
+        .about-featured-project {
+            flex:1;
+            h1 {
+                font-size: $fs-xl;
+                font-family: $ff-secondary;
+            }
+
+            p {
+                font-size: $fs-md;
+                font-family: $ff-primary; 
+            }
+
+            .details {
+                display: grid;
+                width: 100%;
+                max-width: 50rem;
+                gap: 2rem;
+                font-family: $ff-primary;
+                grid-template-columns: 1fr 1fr;
+
+                .detail {
+                    p {
+                        font-size: $fs-md;
+                        line-height: 1rem;
+                    }
+
+                    small {
+                        font-size: $fs-sm;
+                    }
+                }
+                .detail:nth-child(odd) {
+                    grid-column: 1;
+                }
+
+                .detail:nth-child(even) {
+                    grid-column: 2;
+                }
+            }
+            button {
+                margin-top: 4rem;
+                padding: 1.2rem 5rem;
+                font-size: $fs-sm;
+                border: none;
+                background: $text-black;
+                color: $text-white;
+                cursor: pointer;
+                transition: .5s;
+
+                &:hover {
+                    transform: scale(1.03);
+                    background: transparent;
+                    color: $text-black;
+                    box-shadow: 0 0 2px 2px;
+                }
+            }
+        }
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 4rem;
+            
+            .illustration {
+                flex: 1; 
+      
+                img {
+                  width: 100%;
+                  max-height: 80rem;
+                  box-shadow: 7px 7px 5px 7px $text-gray-200;
+                } 
+            }
+
+            .about-featured-project h1 {
+                font-size: $fs-lg;
+            }
+        }
+    }
+
 }
 
+.luxury {
+    width: 100%;
+    text-align: center;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(137, 0, 6, 0.16) 0%, rgba(0, 0, 0, 0.6) 85.5%), url('../Assets/luxury.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 3rem;
+    h1 {
+        font-size: clamp($fs-lg, $fs-xl, $fs-xxl);
+        color: $text-white;
+        font-family: $ff-secondary;
+        font-weight: $fw-r;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+        text-align: left;
+        justify-content: start;
+    }
+}
 
 .subscribe-section{
     padding: 15.4rem 6rem;

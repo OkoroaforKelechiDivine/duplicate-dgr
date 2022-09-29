@@ -827,6 +827,12 @@ select {
   font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
   color: #ffffff;
+  transition: 0.5s;
+}
+.mission .mission-text button:hover {
+  color: #890006;
+  background: transparent;
+  box-shadow: 0 0 5px;
 }
 @media screen and (max-width: 768px) {
   .mission {
@@ -875,6 +881,11 @@ section.services .header h1 {
   border-bottom: 2px solid #FFE2E4;
   padding-bottom: 2rem;
 }
+@media screen and (max-width: 600px) {
+  section.services .header h1 {
+    font-size: 4.8rem;
+  }
+}
 section.services .service {
   display: flex;
   align-items: center;
@@ -901,6 +912,11 @@ section.services .service .service-details h1 {
   color: #1A1818;
   font-family: "Suranna", serif;
   font-size: 4.8rem;
+}
+@media screen and (max-width: 600px) {
+  section.services .service .service-details h1 {
+    font-size: 3.6rem;
+  }
 }
 section.services .service .service-details p {
   font-size: 2rem;
@@ -965,6 +981,136 @@ section.services.s_03 .service .service-details a {
   padding: 15.4rem 6rem;
   font-family: "DM Sans", sans-serif;
 }
+@media screen and (max-width: 768px) {
+  .featured-projects {
+    padding: 8rem 2rem;
+  }
+}
+.featured-projects .header {
+  width: 100%;
+  max-width: 100rem;
+  margin-bottom: 6rem;
+}
+.featured-projects .header h1 {
+  font-size: 6.4rem;
+  line-height: 7rem;
+  width: 100%;
+  font-family: "Suranna", serif;
+  color: #1A1818;
+  border-bottom: 2px solid #BFBFBF;
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .featured-projects .header h1 {
+    font-size: 4.8rem;
+  }
+}
+.featured-projects .featured-project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20%;
+}
+.featured-projects .featured-project .illustration {
+  flex: 1;
+}
+.featured-projects .featured-project .illustration img {
+  width: 100%;
+  max-height: 80rem;
+  box-shadow: 15px 15px 5px 15px #BFBFBF;
+}
+.featured-projects .featured-project .about-featured-project {
+  flex: 1;
+}
+.featured-projects .featured-project .about-featured-project h1 {
+  font-size: 4.8rem;
+  font-family: "Suranna", serif;
+}
+.featured-projects .featured-project .about-featured-project p {
+  font-size: 2rem;
+  font-family: "DM Sans", sans-serif;
+}
+.featured-projects .featured-project .about-featured-project .details {
+  display: grid;
+  width: 100%;
+  max-width: 50rem;
+  gap: 2rem;
+  font-family: "DM Sans", sans-serif;
+  grid-template-columns: 1fr 1fr;
+}
+.featured-projects .featured-project .about-featured-project .details .detail p {
+  font-size: 2rem;
+  line-height: 1rem;
+}
+.featured-projects .featured-project .about-featured-project .details .detail small {
+  font-size: 1.6rem;
+}
+.featured-projects .featured-project .about-featured-project .details .detail:nth-child(odd) {
+  grid-column: 1;
+}
+.featured-projects .featured-project .about-featured-project .details .detail:nth-child(even) {
+  grid-column: 2;
+}
+.featured-projects .featured-project .about-featured-project button {
+  margin-top: 4rem;
+  padding: 1.2rem 5rem;
+  font-size: 1.6rem;
+  border: none;
+  background: #1A1818;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.featured-projects .featured-project .about-featured-project button:hover {
+  transform: scale(1.03);
+  background: transparent;
+  color: #1A1818;
+  box-shadow: 0 0 2px 2px;
+}
+@media screen and (max-width: 768px) {
+  .featured-projects .featured-project {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .featured-projects .featured-project .illustration {
+    flex: 1;
+  }
+  .featured-projects .featured-project .illustration img {
+    width: 100%;
+    max-height: 80rem;
+    box-shadow: 7px 7px 5px 7px #BFBFBF;
+  }
+  .featured-projects .featured-project .about-featured-project h1 {
+    font-size: 3.6rem;
+  }
+}
+
+.luxury {
+  width: 100%;
+  text-align: center;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(137, 0, 6, 0.16) 0%, rgba(0, 0, 0, 0.6) 85.5%), url("../Assets/luxury.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 3rem;
+}
+.luxury h1 {
+  font-size: 4.8rem;
+  color: #ffffff;
+  font-family: "Suranna", serif;
+  font-weight: 300;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .luxury {
+    text-align: left;
+    justify-content: start;
+  }
+}
+
 .subscribe-section {
   padding: 15.4rem 6rem;
   background: transparent;

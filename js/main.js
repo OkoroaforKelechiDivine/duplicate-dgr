@@ -34,6 +34,7 @@ carouselButtonNext.addEventListener('click', () => {
         currentBg++;
     } else {
         currentBg = 0;
+        document.querySelector('.hero-section').style.animation = `animate-bg 2s ease-in-out 0`;
     }
     
     document.querySelector('.hero-section').style.background = `linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url(${heroBGs[currentBg]})`;
@@ -48,6 +49,8 @@ carouselButtonPrev.addEventListener('click', () => {
         currentBg--;
     } else {
         currentBg = 2;
+        document.querySelector('.hero-section').style.animation = `animate-bg 2s ease-in-out 0`;
+
     }
     
     document.querySelector('.hero-section').style.background = `linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url(${heroBGs[currentBg]})`;
