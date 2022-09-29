@@ -205,7 +205,7 @@
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 998px) {
         flex-direction: column;
         padding: 15.4rem 2rem;
 
@@ -236,7 +236,7 @@ section.services {
     padding: 10.4rem 6rem;
     background: rgba($color: $text-red-100, $alpha: 0.23);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 998px) {
         padding: 8rem 2rem;
     }
     .header {
@@ -318,7 +318,7 @@ section.services {
             }
         }
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:998px) {
             flex-direction: column; 
             gap: 4rem;    
             
@@ -369,7 +369,7 @@ section.services.s_03 {
     padding: 15.4rem 6rem;
     font-family: $ff-primary;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 998px) {
         padding: 8rem 2rem;
     }
 

@@ -834,7 +834,7 @@ select {
   background: transparent;
   box-shadow: 0 0 5px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
   .mission {
     flex-direction: column;
     padding: 15.4rem 2rem;
@@ -862,7 +862,7 @@ section.services {
   padding: 10.4rem 6rem;
   background: rgba(255, 226, 228, 0.23);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
   section.services {
     padding: 8rem 2rem;
   }
@@ -939,7 +939,7 @@ section.services .service .service-details a i {
 section.services .service .service-details a:hover {
   letter-spacing: 0.5rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
   section.services .service {
     flex-direction: column;
     gap: 4rem;
@@ -981,7 +981,7 @@ section.services.s_03 .service .service-details a {
   padding: 15.4rem 6rem;
   font-family: "DM Sans", sans-serif;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
   .featured-projects {
     padding: 8rem 2rem;
   }
