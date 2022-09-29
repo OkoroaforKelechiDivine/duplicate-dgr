@@ -41,12 +41,8 @@ footer {
         .quick-links, .services {
             p {
                 font-weight: $fw-b;
-                font-size: $fs-lg;
+                font-size: $fs-md;
                 color: $text-white;
-
-                @media screen and (max-width: 600px) {
-                    font-size: $fs-md;                    
-                }
             }
 
             ul {
@@ -56,10 +52,10 @@ footer {
                     margin: 3rem 0;
                     a {
                         color: $text-gray-200;
-                        font-size: $fs-md;
+                        font-size: $fs-sm;
                         text-decoration: none;
                         @media screen and (max-width: 600px) {
-                            font-size: $fs-sm;                    
+                            font-size: $fs-xs;                    
                         }
                     }  
                 }
@@ -72,30 +68,33 @@ footer {
 
             p {
                 font-weight: $fw-b;
-                font-size: $fs-lg;
+                font-size: $fs-md;
                 color: $text-white;
                 margin-bottom: .8rem;
-
-                @media screen and (max-width: 600px) {
-                    font-size: $fs-md;                    
-                }
             }
             
             &>a {
                 display: inline-flex;
                 gap: 1rem;
                 color: $text-gray-200;
-                font-size: $fs-md;
+                font-size: $fs-sm;
                 text-decoration: none;
                 margin: 1.5rem 0;
 
+                img {
+                    width: 1.8rem;
+                }
+
                 @media screen and (max-width: 600px) {
-                    font-size: $fs-sm;                    
+                    font-size: $fs-xs;                    
                 }
             }
 
             hr {
                 width: 100%;
+                height: 1px;
+                background-color: #545454;
+                border: none;
             }
 
             .social-links {
@@ -110,8 +109,8 @@ footer {
                 }
 
                 img {
-                    width: $fs-md;
-                    height: $fs-md;                        
+                    width: 2.4rem;
+                    height: 2.4rem;                        
 
                     @media screen and (max-width: 600px) {
                         width: $fs-sm;
@@ -134,13 +133,17 @@ footer {
     &>hr {
         margin-top: 5rem;
         width: 100%;
+        width: 100%;
+        height: 1px;
+        background-color: #545454;
+        border: none;
     }
 
     .copyright {
         text-align: center;
-        padding: 3rem 0;
+        padding: 3.5rem 0;
         color: $text-gray-200;
-        font-size: $fs-md;
+        font-size: $fs-sm;
     }
 
     @media screen and (max-width: 600px) {

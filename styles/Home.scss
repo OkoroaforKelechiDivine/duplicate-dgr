@@ -25,7 +25,8 @@
     min-height: calc(100vh - 7rem);
     background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url('../Assets/hero-bg.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     text-align: center;
     position: relative;
     padding-bottom: 5rem;
@@ -43,11 +44,11 @@
 
 
         &:first-of-type {
-            left: -.1rem;
+            left: -.3rem;
         }
 
         &:last-of-type {
-            right: -.1rem;
+            right: -.3rem;
         }
     }
 }
@@ -117,12 +118,14 @@
         }
         
         h1 {
-            font-size: $fs-xl;
-            line-height: 5.3rem;
+            font-size: $fs-lg;
+            line-height: 4.3rem;
         }
 
         p {
-            line-height: 3.5rem;
+            line-height: 2.5rem;
+            font-size: $fs-xs;
+            color: $text-gray-100;
         }
 
         .carousel-control {
@@ -143,6 +146,8 @@
     
             &:first-of-type {
                 left: none;
+                border-color: $text-gray-300;
+                color: $text-gray-300
             }
     
             &:last-of-type {
@@ -168,21 +173,23 @@
             font-size: $fs-xxl;
             color: $text-red-400;
             font-weight: $fw-r;
+            width: 50%;
+            max-width: 7rem;
         }
 
         img {
-            transform: translate(-7%, -60%);
+            transform: translate(77%, -60%);
         }
     }
 
     .mission-text {
         flex:1;
         text-align: left;
-        border-top: 2px solid $text-red-400;
+        border-top: 1px solid $text-gray-200;
         padding: 4rem 4rem 4rem 12rem;
 
         p {
-            font-size: $fs-md;
+            font-size: $fs-sm;
             font-family: $ff-primary;
             line-height: 4rem;
         }
@@ -207,25 +214,34 @@
 
     @media screen and (max-width: 998px) {
         flex-direction: column;
-        padding: 15.4rem 2rem;
+        padding: 3.4rem 2rem;
 
     .title {
         flex: 1;
         display: flex;
         align-items: center;
         h1 {
-            font-size: $fs-xl;
+            font-size: $fs-lg;
             color: $text-red-400;
             font-weight: $fw-r;
+            line-height: 4.2rem;
         }
 
         img {
-            transform: translate(7%, -40%) scale(.8);
+            transform: translate(-14%, -25%) scale(.4);
         }
     }
 
     .mission-text {
         padding: 0;
+        p {
+            line-height: 3rem;
+            font-size: $fs-xs;
+        }
+
+        button {
+            font-size: $fs-xs;
+        }
     }
 
     }
@@ -250,11 +266,12 @@ section.services {
             width: 100%;
             color: $text-red-400;
             font-weight: $fw-r;
-            border-bottom: 2px solid $text-red-100;
+            border-bottom: 1px solid $text-gray-300;
             padding-bottom: 2rem;
 
             @media screen and (max-width: 600px) {
-                font-size: $fs-xl;               
+                font-size: $fs-lg;   
+                padding-bottom: 0;            
             }
         }
     }
@@ -271,14 +288,14 @@ section.services {
           img {
             width: 100%;
             max-height: 80rem;
-            box-shadow: 15px 15px 5px 15px $text-gray-200;
+            box-shadow: 15px 15px 5px 12px rgba($color: $text-gray-200, $alpha: .3);
           } 
         }
 
         .service-details {
             flex: 1;
             .number {
-                color: $text-gray-200;
+                color: #DBDBDB;
                 font-size: 12rem;
                 font-family: $ff-secondary;
             }
@@ -286,15 +303,15 @@ section.services {
             h1 {
                 color: $text-black;
                 font-family: $ff-secondary;
-                font-size: $fs-xl;
+                font-size: $fs-lg;
 
                 @media screen and (max-width: 600px) {
-                    font-size: $fs-lg;
+                    font-size: 2.8rem;
                 }
             }
 
             p {
-                font-size: $fs-md;
+                font-size: $fs-sm;
                 line-height: 3.5rem;
                 margin: 2rem 0;
                 margin-bottom: 3.5rem;
@@ -306,7 +323,7 @@ section.services {
                 text-decoration: underline;
                 color: $text-red-400;
                 font-family: $ff-primary;
-                font-size: $fs-md;
+                font-size: $fs-sm;
                 transition: .9s;
                 i {
                     transform: scale(.8);
@@ -318,7 +335,7 @@ section.services {
             }
         }
 
-        @media screen and (max-width:998px) {
+        @media screen and (max-width:768px) {
             flex-direction: column; 
             gap: 4rem;    
             
@@ -333,12 +350,34 @@ section.services {
               }
         }
     }
+
+    @media screen and (max-width: 600px) {
+        padding: 2rem;
+    }
+    
+}
+
+div.service.service-01 {
+    .service-details .number{
+        color: rgba($color: $text-red-400, $alpha: .1);
+    }
 }
 
 section.services.s_02, section.services.s_04 {
     background: transparent;
     .service {
         flex-direction: row-reverse;
+        
+        .illustration {
+            flex: 1; 
+  
+            img {
+              width: 100%;
+              max-height: 80rem;
+              box-shadow: 15px 15px 5px 12px rgba($color: $text-gray-200, $alpha: .7);
+            } 
+          }
+
         @media screen and (max-width:768px) {
             flex-direction: column;            
         }
@@ -357,7 +396,7 @@ section.services.s_03 {
     .service {
         .service-details {
             a {
-                color: #3780CF
+                color: #0E2E51
             }
         }
 
@@ -417,7 +456,7 @@ section.services.s_03 {
             }
 
             p {
-                font-size: $fs-md;
+                font-size: $fs-sm;
                 font-family: $ff-primary; 
             }
 
@@ -437,6 +476,16 @@ section.services.s_03 {
 
                     small {
                         font-size: $fs-sm;
+                        display: flex;
+                        align-items: center;
+
+                        .yellow {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            background: #ffa800;
+                            border-radius: 100%;
+                            margin-left: .8rem;
+                        }
                     }
                 }
                 .detail:nth-child(odd) {
@@ -482,6 +531,10 @@ section.services.s_03 {
             .about-featured-project h1 {
                 font-size: $fs-lg;
             }
+
+            .about-featured-project p {
+                font-size: $fs-xs;
+            }
         }
     }
 
@@ -522,18 +575,25 @@ section.services.s_03 {
     justify-content: center;
 
     @media screen and (max-width: 768px) {
-        padding: 10.4rem 3rem;        
+        padding: 7.4rem 0;
+        text-align: left;        
     }
 
     .subscribe {
         width: 100%;
-        max-width: 130rem;
+        max-width: 140rem;
         background: $text-red-400;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         padding: 10.4rem 4rem;
+
+        @media screen and (max-width: 768px) {
+            padding: 7.4rem 2rem;
+            justify-content: start;
+            align-items: start;            
+        }
 
         h1 {
             font-size: $fs-xxl;
@@ -545,7 +605,10 @@ section.services.s_03 {
 
             @media screen and (max-width: 600px) {
                 font-size: $fs-lg;  
-                line-height: 4.2rem;              
+                line-height: 4.2rem;
+                width: 100%;
+                max-width: 21rem; 
+                text-align: left;             
             }
         }
 
@@ -559,7 +622,8 @@ section.services.s_03 {
             margin: 2rem 0;
 
             @media screen and (max-width: 600px) {
-                font-size: $fs-sm;                
+                font-size: $fs-xs;
+                text-align: left;                
             }
         }
 
@@ -599,15 +663,5 @@ section.services.s_03 {
                 cursor: pointer;
             }
         }
-    }
-}
-
-@keyframes animate-bg {
-    from {
-        background-size: 150% 150%;
-    }
-
-    to {
-        background-size:100% 100%;
     }
 }

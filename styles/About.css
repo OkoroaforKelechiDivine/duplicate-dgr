@@ -35,8 +35,10 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   width: 100vw;
+  max-width: 170rem;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
   /* background-color: grey; */
 }
 
@@ -380,8 +382,10 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   width: 100vw;
+  max-width: 170rem;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
   /* background-color: grey; */
 }
 
@@ -458,13 +462,8 @@ footer .main-footer .footer-links {
 }
 footer .main-footer .quick-links p, footer .main-footer .services p {
   font-weight: 700;
-  font-size: 3.6rem;
+  font-size: 2rem;
   color: #ffffff;
-}
-@media screen and (max-width: 600px) {
-  footer .main-footer .quick-links p, footer .main-footer .services p {
-    font-size: 2rem;
-  }
 }
 footer .main-footer .quick-links ul, footer .main-footer .services ul {
   list-style: none;
@@ -475,12 +474,12 @@ footer .main-footer .quick-links ul li, footer .main-footer .services ul li {
 }
 footer .main-footer .quick-links ul li a, footer .main-footer .services ul li a {
   color: #BFBFBF;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-decoration: none;
 }
 @media screen and (max-width: 600px) {
   footer .main-footer .quick-links ul li a, footer .main-footer .services ul li a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 footer .main-footer .contact {
@@ -490,30 +489,31 @@ footer .main-footer .contact {
 }
 footer .main-footer .contact p {
   font-weight: 700;
-  font-size: 3.6rem;
+  font-size: 2rem;
   color: #ffffff;
   margin-bottom: 0.8rem;
-}
-@media screen and (max-width: 600px) {
-  footer .main-footer .contact p {
-    font-size: 2rem;
-  }
 }
 footer .main-footer .contact > a {
   display: inline-flex;
   gap: 1rem;
   color: #BFBFBF;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-decoration: none;
   margin: 1.5rem 0;
 }
+footer .main-footer .contact > a img {
+  width: 1.8rem;
+}
 @media screen and (max-width: 600px) {
   footer .main-footer .contact > a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 footer .main-footer .contact hr {
   width: 100%;
+  height: 1px;
+  background-color: #545454;
+  border: none;
 }
 footer .main-footer .contact .social-links {
   display: flex;
@@ -528,8 +528,8 @@ footer .main-footer .contact .social-links {
   }
 }
 footer .main-footer .contact .social-links img {
-  width: 2rem;
-  height: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 @media screen and (max-width: 600px) {
   footer .main-footer .contact .social-links img {
@@ -550,12 +550,16 @@ footer .main-footer .contact .social-links img {
 footer > hr {
   margin-top: 5rem;
   width: 100%;
+  width: 100%;
+  height: 1px;
+  background-color: #545454;
+  border: none;
 }
 footer .copyright {
   text-align: center;
-  padding: 3rem 0;
+  padding: 3.5rem 0;
   color: #BFBFBF;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 @media screen and (max-width: 600px) {
   footer {
@@ -614,8 +618,10 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   width: 100vw;
+  max-width: 170rem;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
   /* background-color: grey; */
 }
 
@@ -920,12 +926,13 @@ select {
 }
 @media screen and (max-width: 768px) {
   .subscribe-section {
-    padding: 10.4rem 3rem;
+    padding: 7.4rem 0;
+    text-align: left;
   }
 }
 .subscribe-section .subscribe {
   width: 100%;
-  max-width: 130rem;
+  max-width: 140rem;
   background: #890006;
   display: flex;
   align-items: center;
@@ -933,18 +940,27 @@ select {
   flex-direction: column;
   padding: 10.4rem 4rem;
 }
+@media screen and (max-width: 768px) {
+  .subscribe-section .subscribe {
+    padding: 7.4rem 2rem;
+    justify-content: start;
+    align-items: start;
+  }
+}
 .subscribe-section .subscribe h1 {
   font-size: 6.4rem;
   text-align: center;
   font-family: "Suranna", serif;
   color: #ffffff;
   font-weight: 300;
-  line-height: 2rem;
 }
 @media screen and (max-width: 600px) {
   .subscribe-section .subscribe h1 {
     font-size: 3.6rem;
     line-height: 4.2rem;
+    width: 100%;
+    max-width: 21rem;
+    text-align: left;
   }
 }
 .subscribe-section .subscribe p {
@@ -958,7 +974,8 @@ select {
 }
 @media screen and (max-width: 600px) {
   .subscribe-section .subscribe p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    text-align: left;
   }
 }
 .subscribe-section .subscribe form {
