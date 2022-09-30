@@ -14,6 +14,11 @@
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 400px) {
+        margin: 0;
+        padding: 0;        
+    }
+
     .contact, form {
         flex: 1;
     }
@@ -79,6 +84,7 @@
         label {
             color: $text-black;
             font-size: $fs-md;
+            font-weight: $fw-b;
 
             @media screen and (max-width: 600px) {
                 font-size: $fs-sm;
@@ -86,11 +92,11 @@
         }
 
         input, textarea {
-            border: 2px solid $text-gray-200;
+            border: 1px solid $text-gray-200;
             padding: 1.4rem;
             font-size: $fs-sm;
             width:100%;
-            margin-top: .6rem;
+            margin-top: 1.2rem;
             border-radius: .4rem;
 
             @media screen and (max-width: 600px) {
@@ -125,7 +131,7 @@
             cursor: pointer;
             border: none;
             outline: none;
-            font-size: $fs-md;
+            font-size: $fs-xs;
             margin-top: 4rem;
             padding : 1.4rem 0;
         }
@@ -163,8 +169,8 @@
                 font-size: $fs-lg;
                 color: $text-white;
                 width:100%;
+                max-width: 27rem;
                 line-height: 4rem;
-                text-align: center;
             }
             
             .contact-address {
@@ -192,12 +198,16 @@
     }
 
     @media screen and (max-width: 600px) {
-        margin: 5rem 2rem;
-        padding: 4rem 3rem;
+        margin: 5rem 0rem;
+        padding: 4rem 2rem;
 
 
         form {
-            padding: 4rem 1rem;
+            padding: 6rem 2rem;
+
+            label {
+
+            }
         }
     }
 }

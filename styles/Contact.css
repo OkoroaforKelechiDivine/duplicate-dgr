@@ -35,7 +35,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   width: 100vw;
-  max-width: 170rem;
+  max-width: 200rem;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
@@ -382,7 +382,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   width: 100vw;
-  max-width: 170rem;
+  max-width: 200rem;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
@@ -618,7 +618,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   width: 100vw;
-  max-width: 170rem;
+  max-width: 200rem;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
@@ -673,6 +673,12 @@ select {
   background: #890006;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 400px) {
+  .contact-us {
+    margin: 0;
+    padding: 0;
+  }
 }
 .contact-us .contact, .contact-us form {
   flex: 1;
@@ -735,6 +741,7 @@ select {
 .contact-us form label {
   color: #1A1818;
   font-size: 2rem;
+  font-weight: 700;
 }
 @media screen and (max-width: 600px) {
   .contact-us form label {
@@ -742,11 +749,11 @@ select {
   }
 }
 .contact-us form input, .contact-us form textarea {
-  border: 2px solid #BFBFBF;
+  border: 1px solid #BFBFBF;
   padding: 1.4rem;
   font-size: 1.6rem;
   width: 100%;
-  margin-top: 0.6rem;
+  margin-top: 1.2rem;
   border-radius: 0.4rem;
 }
 @media screen and (max-width: 600px) {
@@ -783,7 +790,7 @@ select {
   cursor: pointer;
   border: none;
   outline: none;
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-top: 4rem;
   padding: 1.4rem 0;
 }
@@ -814,8 +821,8 @@ select {
     font-size: 3.6rem;
     color: #ffffff;
     width: 100%;
+    max-width: 27rem;
     line-height: 4rem;
-    text-align: center;
   }
   .contact-us .contact .contact-address {
     display: flex;
@@ -837,10 +844,10 @@ select {
 }
 @media screen and (max-width: 600px) {
   .contact-us {
-    margin: 5rem 2rem;
-    padding: 4rem 3rem;
+    margin: 5rem 0rem;
+    padding: 4rem 2rem;
   }
   .contact-us form {
-    padding: 4rem 1rem;
+    padding: 6rem 2rem;
   }
 }/*# sourceMappingURL=Contact.css.map */

@@ -38,7 +38,7 @@ carouselButtonNext.addEventListener('click', () => {
     
     document.querySelector('.hero-section').style.background = `linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url(${heroBGs[currentBg]})`;
     document.querySelector('.hero-section').style.backgroundRepeat = 'no-repeat';
-    document.querySelector('.hero-section').style.backgroundSize = `center`;
+    document.querySelector('.hero-section').style.backgroundSize = `cover`;
 });
 
 carouselButtonPrev.addEventListener('click', () => {
@@ -50,6 +50,6 @@ carouselButtonPrev.addEventListener('click', () => {
     
     document.querySelector('.hero-section').style.background = `linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url(${heroBGs[currentBg]})`;
     document.querySelector('.hero-section').style.backgroundRepeat = 'no-repeat';
-    document.querySelector('.hero-section').style.backgroundSize = `center`;
+    document.querySelector('.hero-section').style.backgroundSize = `cover`;
 });
 
