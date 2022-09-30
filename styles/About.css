@@ -90,7 +90,7 @@ select {
   margin: 0;
   height: 10rem;
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) {
   .navbar .nav-links li:hover .dropdown li:nth-child(2).active .mini-dropdown {
     transform: translateY(-4rem);
   }
@@ -231,7 +231,7 @@ select {
 .navbar .toggle-menu.active {
   border: 2px solid #1A1818;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   .navbar .toggle-menu {
     display: block;
   }
@@ -312,7 +312,7 @@ select {
 .navbar .nav-links li:hover .dropdown li.active .mini-dropdown, .navbar .nav-links li.active .dropdown li.active .mini-dropdown {
   display: block;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   .navbar .nav-links {
     display: none;
     background: #ffffff;
