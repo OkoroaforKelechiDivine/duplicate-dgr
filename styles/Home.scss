@@ -441,7 +441,8 @@ section.services.s_03 {
             padding-bottom: 2rem;
 
             @media screen and (max-width: 600px) {
-                font-size: $fs-xl;               
+                font-size: $fs-lg;  
+                padding-bottom: .2rem;
             }
         }
     }
@@ -543,7 +544,7 @@ section.services.s_03 {
             }
 
             .about-featured-project h1 {
-                font-size: $fs-lg;
+                font-size: 2.4rem;
             }
 
             .about-featured-project p {
@@ -566,7 +567,7 @@ section.services.s_03 {
     background-repeat: no-repeat;
     padding: 0 3rem;
     h1 {
-        font-size: clamp($fs-lg, $fs-xl, $fs-xxl);
+        font-size: clamp($fs-md, 7vw , $fs-xl);
         color: $text-white;
         font-family: $ff-secondary;
         font-weight: $fw-r;
