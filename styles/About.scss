@@ -276,21 +276,21 @@
 }
 
 .subscribe-section{
-    padding: 15.4rem 6rem;
+    padding: 15.4rem 10rem;
     background: transparent;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 600px) {
         padding: 7.4rem 0;
         text-align: left;        
     }
 
     .subscribe {
         width: 100%;
-        max-width: 180rem;
+        max-width: 108rem;
         background: $text-red-400;
         display: flex;
         align-items: center;
@@ -298,7 +298,7 @@
         flex-direction: column;
         padding: 10.4rem 4rem;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 600px) {
             padding: 6rem 2rem;
             justify-content: start;
             align-items: start;            
@@ -372,7 +372,7 @@
                 flex:1;
                 cursor: pointer;
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 600px) {
                     margin-bottom: 1rem;
                 }
             }

@@ -160,7 +160,7 @@
 
 .mission {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     padding: 15.4rem 6rem;
@@ -178,7 +178,7 @@
         }
 
         img {
-            transform: translate(45%, -50%);
+            transform: translate(45%, -63%);
         }
     }
 
@@ -187,6 +187,7 @@
         text-align: left;
         border-top: 1px solid $text-gray-200;
         padding: 4rem 4rem 4rem 12rem;
+        margin-top: 10rem;
 
         p {
             font-size: $fs-sm;
@@ -234,6 +235,7 @@
 
     .mission-text {
         padding: 0;
+        margin-top: 0;
         padding-top: 1rem;
 
         p {
@@ -587,21 +589,21 @@ section.services.s_03 {
 }
 
 .subscribe-section{
-    padding: 15.4rem 6rem;
+    padding: 15.4rem 10rem;
     background: transparent;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 600px) {
         padding: 7.4rem 0;
         text-align: left;        
     }
 
     .subscribe {
         width: 100%;
-        max-width: 180rem;
+        max-width: 108rem;
         background: $text-red-400;
         display: flex;
         align-items: center;
@@ -609,7 +611,7 @@ section.services.s_03 {
         flex-direction: column;
         padding: 10.4rem 4rem;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 600px) {
             padding: 6rem 2rem;
             justify-content: start;
             align-items: start;            
@@ -683,7 +685,7 @@ section.services.s_03 {
                 flex:1;
                 cursor: pointer;
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 600px) {
                     margin-bottom: 1rem;
                 }
             }

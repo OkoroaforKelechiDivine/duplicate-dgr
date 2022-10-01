@@ -900,14 +900,14 @@ select {
 }
 
 .subscribe-section {
-  padding: 15.4rem 6rem;
+  padding: 15.4rem 10rem;
   background: transparent;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .subscribe-section {
     padding: 7.4rem 0;
     text-align: left;
@@ -915,7 +915,7 @@ select {
 }
 .subscribe-section .subscribe {
   width: 100%;
-  max-width: 180rem;
+  max-width: 108rem;
   background: #890006;
   display: flex;
   align-items: center;
@@ -923,7 +923,7 @@ select {
   flex-direction: column;
   padding: 10.4rem 4rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .subscribe-section .subscribe {
     padding: 6rem 2rem;
     justify-content: start;
@@ -996,7 +996,7 @@ select {
   flex: 1;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .subscribe-section .subscribe form button {
     margin-bottom: 1rem;
   }
