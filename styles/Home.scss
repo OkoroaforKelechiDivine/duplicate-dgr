@@ -228,7 +228,7 @@
         }
 
         img {
-            transform: translate(-14%, -25%) scale(.4);
+            transform: translate(-19%, -25%) scale(.4);
         }
     }
 
@@ -432,13 +432,14 @@ section.services.s_03 {
         margin-bottom: 6rem;
         
         h1 {
-            font-size: $fs-xxl;
+            font-size: $fs-xl;
             line-height: 7rem;
             width: 100%;
             font-family: $ff-secondary;
             color: $text-black;
             border-bottom: 2px solid $text-gray-200;
             padding-bottom: 2rem;
+            font-weight: 400;
 
             @media screen and (max-width: 600px) {
                 font-size: $fs-lg;  
@@ -468,11 +469,13 @@ section.services.s_03 {
             h1 {
                 font-size: $fs-xl;
                 font-family: $ff-secondary;
+                font-weight: 400;
             }
 
             p {
                 font-size: $fs-sm;
                 font-family: $ff-primary; 
+                opacity: .7;
             }
 
             .details {
