@@ -228,12 +228,14 @@
         }
 
         img {
-            transform: translate(-19%, -25%) scale(.4);
+            transform: translate(-19%, -22%) scale(.4);
         }
     }
 
     .mission-text {
         padding: 0;
+        padding-top: 1rem;
+
         p {
             line-height: 3rem;
             font-size: $fs-xs;
@@ -271,12 +273,12 @@ section.services {
         margin-bottom: 6rem;
         
         h1 {
-            font-size: $fs-xxl;
+            font-size: $fs-xl;
             line-height: 7rem;
             width: 100%;
             color: $text-red-400;
             font-weight: $fw-r;
-            border-bottom: 1px solid $text-gray-300;
+            border-bottom: 1px solid rgba($color: $text-red-400, $alpha: .2);
             padding-bottom: 2rem;
 
             @media screen and (max-width: 600px) {
@@ -317,10 +319,10 @@ section.services {
             h1 {
                 color: $text-black;
                 font-family: $ff-secondary;
-                font-size: $fs-lg;
+                font-size: $fs-xl;
 
                 @media screen and (max-width: 600px) {
-                    font-size: 2.8rem;
+                    font-size: 2.4rem;
                 }
             }
 
@@ -555,7 +557,6 @@ section.services.s_03 {
             }
         }
     }
-
 }
 
 .luxury {
