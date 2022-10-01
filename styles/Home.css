@@ -804,7 +804,7 @@ select {
   max-width: 7rem;
 }
 .mission .title img {
-  transform: translate(77%, -60%);
+  transform: translate(45%, -50%);
 }
 .mission .mission-text {
   flex: 1;
@@ -935,6 +935,7 @@ section.services .service .service-details h1 {
   color: #1A1818;
   font-family: "Suranna", serif;
   font-size: 4.8rem;
+  font-weight: 400;
 }
 @media screen and (max-width: 600px) {
   section.services .service .service-details h1 {
@@ -1194,17 +1195,18 @@ section.services.s_03 .service .service-details a {
 }
 @media screen and (max-width: 768px) {
   .subscribe-section .subscribe {
-    padding: 7.4rem 2rem;
+    padding: 6rem 2rem;
     justify-content: start;
     align-items: start;
   }
 }
 .subscribe-section .subscribe h1 {
-  font-size: 6.4rem;
+  font-size: 4.8rem;
   text-align: center;
   font-family: "Suranna", serif;
   color: #ffffff;
   font-weight: 300;
+  margin: 0;
 }
 @media screen and (max-width: 600px) {
   .subscribe-section .subscribe h1 {
@@ -1223,11 +1225,14 @@ section.services.s_03 .service .service-details a {
   width: 100%;
   max-width: 78rem;
   margin: 2rem 0;
+  line-height: 3rem;
 }
 @media screen and (max-width: 600px) {
   .subscribe-section .subscribe p {
     font-size: 1.4rem;
     text-align: left;
+    line-height: 2.5rem;
+    margin: 3rem 0;
   }
 }
 .subscribe-section .subscribe form {
@@ -1240,19 +1245,15 @@ section.services.s_03 .service .service-details a {
 @media screen and (max-width: 600px) {
   .subscribe-section .subscribe form {
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.3rem;
+    margin-top: 0.9rem;
   }
 }
 .subscribe-section .subscribe form input, .subscribe-section .subscribe form button {
   border: none;
   padding: 1.5rem 2.5rem;
-  font-size: 2rem;
+  font-size: 1.4rem;
   outline: none;
-}
-@media screen and (max-width: 500px) {
-  .subscribe-section .subscribe form input, .subscribe-section .subscribe form button {
-    font-size: 1.6rem;
-  }
 }
 .subscribe-section .subscribe form input {
   background-color: #ffffff;
@@ -1264,4 +1265,9 @@ section.services.s_03 .service .service-details a {
   color: #ffffff;
   flex: 1;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .subscribe-section .subscribe form button {
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=Home.css.map */
