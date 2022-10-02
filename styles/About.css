@@ -800,6 +800,8 @@ select {
   font-size: 6.4rem;
   font-family: "Suranna", serif;
   font-weight: 400;
+  border-bottom: 1px solid rgba(191, 191, 191, 0.6);
+  padding-bottom: 1rem;
 }
 .vision .vision-text p {
   color: #1A1818;
@@ -824,7 +826,7 @@ select {
   .vision {
     flex-direction: column;
     gap: 7rem;
-    padding: 8.4rem 6rem;
+    padding: 8rem 6rem;
   }
   .vision .vision-text p {
     width: 100%;
@@ -836,7 +838,7 @@ select {
 }
 @media screen and (max-width: 600px) {
   .vision {
-    padding: 7.4rem 3rem;
+    padding: 4rem 3rem;
   }
   .vision .vision-illustration img {
     box-shadow: 7px 7px 5px 7px #BFBFBF;
@@ -845,7 +847,7 @@ select {
 
 .services-section {
   background: rgba(191, 191, 191, 0.4);
-  padding: 15.4rem 6rem;
+  padding: 9rem 6rem;
 }
 @media screen and (max-width: 768px) {
   .services-section {
@@ -857,7 +859,7 @@ select {
   font-family: "Suranna", serif;
   font-weight: 300;
   color: #1A1818;
-  margin-bottom: 10rem;
+  margin-bottom: 11rem;
 }
 @media screen and (max-width: 768px) {
   .services-section .main-title {
@@ -872,6 +874,7 @@ select {
   align-items: center;
   width: 100%;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 .services-section .services .service {
   display: flex;
@@ -901,6 +904,10 @@ select {
   font-family: "DM Sans", sans-serif;
   font-size: 1.4rem;
   text-decoration: none;
+  opacity: 0.7;
+}
+.services-section .services .service a i {
+  font-size: 0.9rem;
 }
 .services-section .services .service a:hover {
   text-decoration: underline;
