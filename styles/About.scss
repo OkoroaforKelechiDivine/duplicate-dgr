@@ -95,12 +95,16 @@
             line-height: 7rem;
 
             @media screen and (max-width: 768px) {
-                font-size: $fs-xl;  
-                line-height: 5.5rem;
+                font-size: $fs-lg;  
+                line-height: 4.2rem;
             }
         }
         img {
             transform: translate(-70%, -80%) scale(.8);
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
         }
     }
 
@@ -115,6 +119,8 @@
 
     @media screen and (max-width: 920px) {
         flex-direction: column;
+        align-items: start;
+        padding: 5rem 2rem;
         .mission-text {
             text-align: right;
             flex: 1;
@@ -123,15 +129,15 @@
     }
 
     @media screen and (max-width:768px) {
-        padding: 7.4rem 3rem;
+        padding: 5.4rem 3rem;
     }
 
     @media screen and (max-width: 480px) {
         .mission-text {
             text-align: right;
             border-top: 1px solid $text-red-400;
-            padding: 2rem 2rem 0 4rem ;
-            font-size: $fs-sm;
+            padding: 1rem 1rem 0 3rem ;
+            font-size: $fs-xs;
         }
     }
 }
@@ -150,6 +156,7 @@
             color: $text-black;
             font-size: $fs-xxl;
             font-family: $ff-secondary;
+            font-weight: 400;
         }
 
         p {
@@ -181,11 +188,11 @@
 
         .vision-text p {
             width: 100%;
-            font-size: $fs-sm;  
+            font-size: $fs-xs;  
         }
 
         .vision-text h1 {
-            font-size: $fs-xl;
+            font-size: $fs-lg;
         }
     }
 
@@ -202,7 +209,9 @@
     background: rgba($color: $text-gray-200, $alpha: .4);
     padding: 15.4rem 6rem;
 
-
+    @media screen and (max-width: 768px) {
+        padding:5rem 2rem;        
+    }
 
     .main-title {
         font-size: $fs-xxl;
@@ -210,6 +219,11 @@
         font-weight: $fw-r;
         color: $text-black;
         margin-bottom: 10rem;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 2rem;
+            font-size: $fs-lg;            
+        }
     }
 
     .services {
@@ -237,6 +251,10 @@
                 font-weight: $fw-r;
                 color: $text-white;
                 margin-bottom: 1.5rem;
+
+                @media screen and (max-width: 500px) {
+                    font-size: 2.8rem;                    
+                }
             }
 
             a {
