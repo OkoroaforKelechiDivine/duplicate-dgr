@@ -810,7 +810,7 @@ select {
   flex: 1;
   text-align: left;
   border-top: 1px solid #BFBFBF;
-  padding: 4rem 4rem 4rem 12rem;
+  padding: 4rem 0 4rem 12rem;
   margin-top: 10rem;
 }
 .mission .mission-text p {
@@ -836,6 +836,7 @@ select {
   .mission {
     flex-direction: column;
     padding: 3.4rem 2rem;
+    padding-right: 0;
   }
   .mission .title {
     flex: 1;
@@ -949,7 +950,7 @@ section.services .service .service-details p {
   line-height: 3.5rem;
   margin: 2rem 0;
   margin-bottom: 3.5rem;
-  color: #1A1818;
+  color: #545454;
   font-family: "DM Sans", sans-serif;
 }
 section.services .service .service-details a {
@@ -1220,20 +1221,18 @@ section.services.s_03 .service .service-details a {
   }
 }
 .subscribe-section .subscribe p {
-  font-size: 2rem;
-  color: #ffffff;
+  font-size: 1.4rem;
   font-family: "DM Sans", sans-serif;
   text-align: center;
   width: 100%;
   max-width: 78rem;
   margin: 2rem 0;
-  line-height: 3rem;
+  line-height: 2.5rem;
+  color: #FFEBEC;
 }
 @media screen and (max-width: 600px) {
   .subscribe-section .subscribe p {
-    font-size: 1.4rem;
     text-align: left;
-    line-height: 2.5rem;
     margin: 3rem 0;
   }
 }

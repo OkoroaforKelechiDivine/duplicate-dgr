@@ -186,7 +186,7 @@
         flex:1;
         text-align: left;
         border-top: 1px solid $text-gray-200;
-        padding: 4rem 4rem 4rem 12rem;
+        padding: 4rem 0 4rem 12rem;
         margin-top: 10rem;
 
         p {
@@ -216,6 +216,7 @@
     @media screen and (max-width: 998px) {
         flex-direction: column;
         padding: 3.4rem 2rem;
+        padding-right: 0;
 
     .title {
         flex: 1;
@@ -334,7 +335,7 @@ section.services {
                 line-height: 3.5rem;
                 margin: 2rem 0;
                 margin-bottom: 3.5rem;
-                color: $text-black;
+                color: #545454;
                 font-family: $ff-primary;
             }
 
@@ -636,19 +637,19 @@ section.services.s_03 {
         }
 
         p {
-            font-size: $fs-md;
-            color: $text-white;
+            font-size: $fs-xs;
             font-family: $ff-primary;
             text-align: center;
             width: 100%;
             max-width: 78rem;
             margin: 2rem 0;
-            line-height: 3rem;
+            line-height: 2.5rem;
+            color: #FFEBEC;
+
+            
 
             @media screen and (max-width: 600px) {
-                font-size: $fs-xs;
                 text-align: left; 
-                line-height: 2.5rem;
                 margin: 3rem 0;
             }
         }

@@ -149,12 +149,15 @@
             font-weight: 400;
             border-bottom: 1px solid rgba($color: $text-gray-200, $alpha: .6);
             padding-bottom: 1rem;
+            width: 80%;
         }
 
         p {
             color: $text-black;
             font-family: $ff-primary;
-            font-size: $fs-md;
+            font-size: $fs-sm;
+            line-height: 2.5rem;
+            color: #545454;
             text-align: left;
             width: 80%;
         }
@@ -169,7 +172,7 @@
             max-width: 75rem;
             height: 100%;
             max-height: 80rem;
-            box-shadow: 15px 15px 5px 15px $text-gray-200;
+            box-shadow: 10px 10px 5px 10px $text-gray-200;
         }
     }
 
@@ -180,7 +183,6 @@
 
         .vision-text p {
             width: 100%;
-            font-size: $fs-xs;  
         }
 
         .vision-text h1 {
@@ -221,7 +223,7 @@
     .services {
         display: flex;
         flex-wrap: wrap;
-        gap: 5rem;
+        gap: 3.5rem;
         align-items: center;
         width: 100%;
         justify-content: center;
@@ -339,19 +341,17 @@
         }
 
         p {
-            font-size: $fs-md;
-            color: $text-white;
+            font-size: $fs-xs;
+            color: #FFEBEC;
             font-family: $ff-primary;
             text-align: center;
             width: 100%;
             max-width: 78rem;
             margin: 2rem 0;
-            line-height: 3rem;
+            line-height: 2.5rem;
 
             @media screen and (max-width: 600px) {
-                font-size: $fs-xs;
                 text-align: left; 
-                line-height: 2.5rem;
                 margin: 3rem 0;
             }
         }

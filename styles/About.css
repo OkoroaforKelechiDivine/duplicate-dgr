@@ -791,11 +791,14 @@ select {
   font-weight: 400;
   border-bottom: 1px solid rgba(191, 191, 191, 0.6);
   padding-bottom: 1rem;
+  width: 80%;
 }
 .vision .vision-text p {
   color: #1A1818;
   font-family: "DM Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #545454;
   text-align: left;
   width: 80%;
 }
@@ -809,7 +812,7 @@ select {
   max-width: 75rem;
   height: 100%;
   max-height: 80rem;
-  box-shadow: 15px 15px 5px 15px #BFBFBF;
+  box-shadow: 10px 10px 5px 10px #BFBFBF;
 }
 @media screen and (max-width: 768px) {
   .vision {
@@ -819,7 +822,6 @@ select {
   }
   .vision .vision-text p {
     width: 100%;
-    font-size: 1.4rem;
   }
   .vision .vision-text h1 {
     font-size: 3.6rem;
@@ -859,7 +861,7 @@ select {
 .services-section .services {
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 3.5rem;
   align-items: center;
   width: 100%;
   justify-content: center;
@@ -968,20 +970,18 @@ select {
   }
 }
 .subscribe-section .subscribe p {
-  font-size: 2rem;
-  color: #ffffff;
+  font-size: 1.4rem;
+  color: #FFEBEC;
   font-family: "DM Sans", sans-serif;
   text-align: center;
   width: 100%;
   max-width: 78rem;
   margin: 2rem 0;
-  line-height: 3rem;
+  line-height: 2.5rem;
 }
 @media screen and (max-width: 600px) {
   .subscribe-section .subscribe p {
-    font-size: 1.4rem;
     text-align: left;
-    line-height: 2.5rem;
     margin: 3rem 0;
   }
 }

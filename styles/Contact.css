@@ -799,7 +799,7 @@ select {
   margin-top: 4rem;
   padding: 1.4rem 0;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   .contact-us {
     flex-direction: column;
   }
