@@ -688,18 +688,14 @@ select {
 }
 .hero-section .about-dgr p {
   width: 100%;
-  font-size: 2rem;
-  line-height: 3.3rem;
-  color: #1A1818;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #5e5e5e;
   font-family: "DM Sans", sans-serif;
 }
 @media screen and (max-width: 600px) {
   .hero-section .about-dgr {
     padding: 3.4rem 2rem;
-  }
-  .hero-section .about-dgr p {
-    font-size: 1.6rem;
-    line-height: 3rem;
   }
 }
 

@@ -46,19 +46,14 @@
         background: transparent;
         p {
             width: 100%;
-            font-size: $fs-md;
-            line-height: 3.3rem;
-            color: $text-black;
+            font-size: $fs-sm;
+            line-height: 2.5rem;
+            color: #5e5e5e;
             font-family: $ff-primary;
         }
 
         @media screen and (max-width: 600px) {
             padding: 3.4rem 2rem ;
-
-            p {
-                font-size: $fs-sm;
-                line-height: 3rem;
-            }
         }
     }
 }
