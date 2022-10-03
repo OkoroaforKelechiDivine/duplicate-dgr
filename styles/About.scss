@@ -74,10 +74,10 @@
         h1 {
             font-size: $fs-xxl;
             font-family: $ff-secondary;
-            color: $text-red-400;
+            color: #890006;
             width: 30%;
             font-weight: $fw-r;
-            line-height: 7rem;
+            line-height: 6.4rem;
 
             @media screen and (max-width: 768px) {
                 font-size: $fs-lg;  
@@ -95,7 +95,7 @@
 
     .mission-text {
         text-align: right;
-        border-top: 1px solid $text-red-400;
+        border-top: 1px solid #FFA7AB;
         padding: 5rem 5rem 0 11rem ;
         font-family: $ff-primary;
         flex: 1.5;
