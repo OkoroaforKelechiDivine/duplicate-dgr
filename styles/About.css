@@ -763,9 +763,9 @@ select {
 }
 @media screen and (max-width: 480px) {
   .mission .mission-text {
-    text-align: right;
+    text-align: left;
     border-top: 1px solid #890006;
-    padding: 1rem 1rem 0 3rem;
+    padding: 1rem 1rem 0 0;
     font-size: 1.4rem;
   }
 }
