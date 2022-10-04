@@ -727,7 +727,7 @@ select {
 .hero-section p {
   color: #ffffff;
   font-family: "DM Sans", sans-serif;
-  line-height: 4rem;
+  line-height: 2.5rem;
   font-size: 1.6rem;
   width: 90%;
   max-width: 67rem;
@@ -775,7 +775,7 @@ select {
     line-height: 4.3rem;
   }
   .hero-section p {
-    line-height: 2.5rem;
+    line-height: 1.5rem;
     font-size: 1.4rem;
     color: #F1F1F1;
   }
