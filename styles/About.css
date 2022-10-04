@@ -734,7 +734,7 @@ select {
   }
 }
 .mission .title img {
-  transform: translate(-70%, -80%) scale(0.8);
+  transform: translate(-1%, -50%) scale(0.8);
 }
 @media screen and (max-width: 768px) {
   .mission .title img {
@@ -742,12 +742,13 @@ select {
   }
 }
 .mission .mission-text {
-  text-align: right;
-  border-top: 1px solid #FFA7AB;
+  margin-top: 65px;
+  text-align: left;
+  border-top: 1px solid #dfd7d7;
   padding: 5rem 5rem 0 11rem;
   font-family: "DM Sans", sans-serif;
   flex: 1.5;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #545454;
 }
 @media screen and (max-width: 920px) {
@@ -757,7 +758,7 @@ select {
     padding: 5rem 2rem;
   }
   .mission .mission-text {
-    text-align: right;
+    text-align: left;
     flex: 1;
     font-size: 2rem;
   }
