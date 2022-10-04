@@ -751,9 +751,9 @@ select {
   font-family: "DM Sans", sans-serif;
 }
 .contact-us form label {
-  color: #1A1818;
-  font-size: 2rem;
-  font-weight: 700;
+  color: #545454;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 @media screen and (max-width: 600px) {
   .contact-us form label {
@@ -762,17 +762,11 @@ select {
 }
 .contact-us form input, .contact-us form textarea {
   border: 1px solid #BFBFBF;
-  padding: 1.4rem 3rem;
-  font-size: 1.6rem;
+  padding: 1.2rem 2.3rem;
+  font-size: 1.4rem;
   width: 100%;
   margin-top: 1.2rem;
   border-radius: 0.4rem;
-}
-@media screen and (max-width: 600px) {
-  .contact-us form input, .contact-us form textarea {
-    font-size: 1.4rem;
-    padding: 1.2rem 2.3rem;
-  }
 }
 .contact-us form input::-moz-placeholder, .contact-us form textarea::-moz-placeholder {
   color: #989898;

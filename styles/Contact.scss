@@ -105,9 +105,9 @@
         font-family: $ff-primary;
 
         label {
-            color: $text-black;
-            font-size: $fs-md;
-            font-weight: $fw-b;
+            color: #545454;
+            font-size: $fs-xs;
+            font-weight: 500;
 
             @media screen and (max-width: 600px) {
                 font-size: $fs-sm;
@@ -116,16 +116,11 @@
 
         input, textarea {
             border: 1px solid $text-gray-200;
-            padding: 1.4rem 3rem;
-            font-size: $fs-sm;
+            padding:1.2rem 2.3rem;
+            font-size: $fs-xs;
             width:100%;
             margin-top: 1.2rem;
             border-radius: .4rem;
-
-            @media screen and (max-width: 600px) {
-                font-size: $fs-xs;
-                padding:1.2rem 2.3rem;
-            }
 
             &::placeholder {
                 color: $text-gray-300;
