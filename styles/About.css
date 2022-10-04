@@ -716,6 +716,7 @@ select {
 }
 .mission .title h1 {
   font-size: 6.4rem;
+  text-align: left;
   font-family: "Suranna", serif;
   color: #890006;
   width: 30%;
