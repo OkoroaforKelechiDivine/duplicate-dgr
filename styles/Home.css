@@ -692,6 +692,12 @@ select {
 .hero-section .carousel-button:last-of-type {
   right: -0.3rem;
 }
+.hero-section #scroll_button {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .hero-section h1 {
   width: 90%;
@@ -745,6 +751,9 @@ select {
 }
 
 @media screen and (max-width: 600px) {
+  #scroll_button {
+    display: none;
+  }
   .hero-section {
     padding: 2rem;
     text-align: left;

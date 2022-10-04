@@ -8,7 +8,7 @@ console.log(window.innerWidth)
 miniMenu.forEach(drpdn => {
     drpdn.addEventListener('click', () => {
         console.log('clicked');
-        if(window.innerWidth > 1400) {
+        if(window.innerWidth > 1000) {
             miniMenu.forEach(drpdn => drpdn.parentElement.classList.remove('active'));
         }
         drpdn.parentElement.classList.toggle('active');
@@ -29,27 +29,29 @@ const heroBGs = [
 
 let currentBg = 0;
 
-carouselButtonNext.addEventListener('click', () => {
-    if (currentBg+1 < heroBGs.length){
-        currentBg++;
-    } else {
-        currentBg = 0;
+const changeBg = (type) => {
+    if (type === 'next') {
+        if (currentBg+1 < heroBGs.length){
+            currentBg++;
+        } else {
+            currentBg = 0;
+        }
+    } else if (type === 'prev') {
+        if (currentBg <= 2 && currentBg > 0){
+            currentBg--;
+        } else {
+            currentBg = 2;
+        }
     }
     
     document.querySelector('.hero-section').style.background = `linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url(${heroBGs[currentBg]})`;
     document.querySelector('.hero-section').style.backgroundRepeat = 'no-repeat';
     document.querySelector('.hero-section').style.backgroundSize = `cover`;
-});
+}
 
-carouselButtonPrev.addEventListener('click', () => {
-    if (currentBg <= 2 && currentBg > 0){
-        currentBg--;
-    } else {
-        currentBg = 2;
-    }
-    
-    document.querySelector('.hero-section').style.background = `linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url(${heroBGs[currentBg]})`;
-    document.querySelector('.hero-section').style.backgroundRepeat = 'no-repeat';
-    document.querySelector('.hero-section').style.backgroundSize = `cover`;
-});
+carouselButtonNext.addEventListener('click', changeBg('next'));
+
+carouselButtonPrev.addEventListener('click', changeBg('prev'));
+
+document.getElementById('scroll_button').addEventListener('click', changeBg('next'))
 

@@ -51,6 +51,13 @@
             right: -.3rem;
         }
     }
+
+    #scroll_button {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .hero-section h1 {
@@ -107,6 +114,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    #scroll_button {
+        display: none;
+    }
+
     .hero-section {
         padding: 2rem;
         text-align: left;

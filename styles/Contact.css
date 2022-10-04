@@ -666,6 +666,9 @@ select {
   margin-bottom: 20rem;
   padding: 12rem 8rem;
   background: #890006;
+  background-image: url("../Assets/Rectangle.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
 }
@@ -708,15 +711,14 @@ select {
   align-items: center;
   gap: 3.2rem;
   margin: 3rem 0;
-  color: #ffffff;
+  color: #F1F1F1;
   text-decoration: none;
   font-family: "DM Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   opacity: 0.7;
 }
 @media screen and (max-width: 600px) {
   .contact-us .contact .contact-address a {
-    font-size: 1.4rem;
     gap: 1.2rem;
     margin: 1rem 0;
   }
