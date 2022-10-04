@@ -73,12 +73,17 @@
                 font-size: $fs-xs;
                 opacity: .7;
 
+                &:nth-child(3) {
+                    text-decoration: underline;
+                }
+
                 @media screen and (max-width: 600px) {
                     gap: 1.2rem;
                     margin: 1rem 0;
 
                     img {
                         transform: scale(.6);
+                        text-decoration: none;
                     }
                 }
             }
