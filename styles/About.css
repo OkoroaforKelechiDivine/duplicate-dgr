@@ -743,6 +743,7 @@ select {
   font-family: "DM Sans", sans-serif;
   flex: 1.5;
   font-size: 2rem;
+  color: #545454;
 }
 @media screen and (max-width: 920px) {
   .mission {
