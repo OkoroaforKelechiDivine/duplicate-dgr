@@ -799,6 +799,7 @@ select {
   font-size: 1.4rem;
   margin-top: 4rem;
   padding: 1.4rem 0;
+  font-weight: 500;
 }
 @media screen and (max-width: 1000px) {
   .contact-us {
