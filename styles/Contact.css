@@ -494,11 +494,15 @@ footer .main-footer .contact > a {
   gap: 1rem;
   color: #BFBFBF;
   font-size: 1.4rem;
-  text-decoration: none;
   margin: 1.5rem 0;
+  text-decoration: none;
+}
+footer .main-footer .contact > a:nth-child(3) {
+  text-decoration: underline;
 }
 footer .main-footer .contact > a img {
   width: 1.9rem;
+  text-decoration: none;
 }
 footer .main-footer .contact hr {
   width: 100%;

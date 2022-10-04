@@ -75,11 +75,16 @@ footer {
                 gap: 1rem;
                 color: $text-gray-200;
                 font-size: $fs-xs;
-                text-decoration: none;
                 margin: 1.5rem 0;
+                text-decoration: none;
+                
+                &:nth-child(3) {
+                    text-decoration: underline;
+                }
 
                 img {
                     width: 1.9rem;
+                    text-decoration: none;
                 }
             }
 
