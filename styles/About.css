@@ -704,7 +704,7 @@ select {
   padding: 10.4rem 6rem;
   background-color: rgba(137, 0, 6, 0.05);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
 }
