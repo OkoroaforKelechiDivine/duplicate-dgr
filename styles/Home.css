@@ -930,7 +930,7 @@ section.services .service .illustration {
 section.services .service .illustration img {
   width: 100%;
   max-height: 80rem;
-  box-shadow: 15px 15px 5px 12px rgba(191, 191, 191, 0.3);
+  box-shadow: 15px 15px 2px 12px white;
 }
 section.services .service .service-details {
   flex: 1;
@@ -988,7 +988,7 @@ section.services .service .service-details a:hover {
   section.services .service .illustration img {
     width: 100%;
     max-height: 80rem;
-    box-shadow: 8px 8px 5px 8px #BFBFBF;
+    box-shadow: 8px 8px 2px 8px white;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1014,6 +1014,11 @@ section.services.s_02 .service .illustration img, section.services.s_04 .service
   width: 100%;
   max-height: 80rem;
   box-shadow: 15px 15px 5px 12px rgba(191, 191, 191, 0.7);
+}
+@media screen and (max-width: 600px) {
+  section.services.s_02 .service .illustration img, section.services.s_04 .service .illustration img {
+    box-shadow: 8px 8px 5px 8px rgba(191, 191, 191, 0.7);
+  }
 }
 @media screen and (max-width: 768px) {
   section.services.s_02 .service, section.services.s_04 .service {
