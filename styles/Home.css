@@ -679,8 +679,8 @@ select {
   text-align: center;
   position: relative;
   padding-bottom: 10rem;
-  -webkit-animation: animateBg 30s ease-in-out infinite alternate;
-          animation: animateBg 30s ease-in-out infinite alternate;
+  -webkit-animation: animateBg 30s ease-in-out infinite;
+          animation: animateBg 30s ease-in-out infinite;
 }
 .hero-section .carousel-button {
   position: absolute;
@@ -775,7 +775,7 @@ select {
     line-height: 4.3rem;
   }
   .hero-section p {
-    line-height: 1.5rem;
+    line-height: 2.5rem;
     font-size: 1.4rem;
     color: #F1F1F1;
   }
