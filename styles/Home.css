@@ -758,7 +758,7 @@ select {
   transform: scale(1.02);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   #scroll_button {
     display: none;
   }
