@@ -30,15 +30,18 @@ const heroBGs = [
 let currentBg = 0;
 
 const changeBg = (type) => {
+    console.log('background changed')
     if (type === 'next') {
         if (currentBg+1 < heroBGs.length){
             currentBg++;
+            console.log('next-image-generated')
         } else {
             currentBg = 0;
         }
     } else if (type === 'prev') {
         if (currentBg <= 2 && currentBg > 0){
             currentBg--;
+            console.log('prev-image-generated')
         } else {
             currentBg = 2;
         }
@@ -49,9 +52,9 @@ const changeBg = (type) => {
     document.querySelector('.hero-section').style.backgroundSize = `cover`;
 }
 
-carouselButtonNext.addEventListener('click', changeBg('next'));
+carouselButtonNext.addEventListener('click', () => changeBg('next'));
 
-carouselButtonPrev.addEventListener('click', changeBg('prev'));
+carouselButtonPrev.addEventListener('click', () => changeBg('prev'));
 
-document.getElementById('scroll_button').addEventListener('click', changeBg('next'))
+document.getElementById('scroll_button').addEventListener('click', () => changeBg('next'))
 
