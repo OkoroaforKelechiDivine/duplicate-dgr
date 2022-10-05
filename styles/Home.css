@@ -22,6 +22,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* Set core root defaults */
@@ -370,6 +371,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* Set core root defaults */
@@ -593,6 +595,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* Set core root defaults */
@@ -734,7 +737,7 @@ select {
   margin-bottom: 7rem;
 }
 
-.hero-section a {
+.hero-section .hero-content a {
   background: #ffffff;
   box-shadow: 0 0 5px #1A1818;
   padding: 1.5rem 4.5rem;
@@ -744,7 +747,7 @@ select {
   font-size: 1.6rem;
   position: relative;
 }
-.hero-section a i {
+.hero-section .hero-content a i {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -754,7 +757,7 @@ select {
   color: #ffffff;
   box-shadow: -5px 5px 40px rgba(0, 0, 0, 0.72);
 }
-.hero-section a:hover {
+.hero-section .hero-content a:hover {
   transform: scale(1.02);
 }
 
