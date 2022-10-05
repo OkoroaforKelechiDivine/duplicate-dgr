@@ -679,8 +679,7 @@ select {
 }
 @media screen and (max-width: 400px) {
   .contact-us {
-    margin: 5rem 0;
-    margin-bottom: 10rem;
+    margin: 5rem 0 10rem;
     padding: 0;
   }
 }
