@@ -682,8 +682,8 @@ select {
   text-align: center;
   position: relative;
   padding-bottom: 10rem;
-  -webkit-animation: animateBg 30s ease-in-out infinite;
-          animation: animateBg 30s ease-in-out infinite;
+  -webkit-animation: animateBg 10s ease-in-out infinite;
+          animation: animateBg 10s ease-in-out infinite;
 }
 .hero-section .carousel-button {
   position: absolute;
@@ -808,7 +808,7 @@ select {
   0% {
     background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg.png");
     background-repeat: no-repeat;
-    background-size: 130% 130%;
+    background-size: 110% 110%;
     background-position: center;
   }
   30% {
@@ -820,7 +820,7 @@ select {
   35% {
     background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-1.jpeg");
     background-repeat: no-repeat;
-    background-size: 130% 130%;
+    background-size: 110% 110%;
     background-position: center;
   }
   65% {
@@ -832,13 +832,13 @@ select {
   70% {
     background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-2.jpeg");
     background-repeat: no-repeat;
-    background-size: 130% 130%;
+    background-size: 110% 110%;
     background-position: center;
   }
   100% {
     background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-2.jpeg");
     background-repeat: no-repeat;
-    background-size: 110% 110%;
+    background-size: 100% 100%;
     background-position: center;
   }
 }
@@ -846,7 +846,7 @@ select {
   0% {
     background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg.png");
     background-repeat: no-repeat;
-    background-size: 130% 130%;
+    background-size: 110% 110%;
     background-position: center;
   }
   30% {
@@ -858,7 +858,7 @@ select {
   35% {
     background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-1.jpeg");
     background-repeat: no-repeat;
-    background-size: 130% 130%;
+    background-size: 110% 110%;
     background-position: center;
   }
   65% {
@@ -870,13 +870,13 @@ select {
   70% {
     background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-2.jpeg");
     background-repeat: no-repeat;
-    background-size: 130% 130%;
+    background-size: 110% 110%;
     background-position: center;
   }
   100% {
     background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-2.jpeg");
     background-repeat: no-repeat;
-    background-size: 110% 110%;
+    background-size: 100% 100%;
     background-position: center;
   }
 }
