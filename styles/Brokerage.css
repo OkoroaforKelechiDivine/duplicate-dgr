@@ -4,32 +4,21 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
-/*
-color palette
-*/
-/* font weight variables */
-/* opacity */
-/* font family */
-/* font sizes */
-/*shadow variables */
-/* Box sizing rules */
+
 * {
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     overflow-x: hidden;
     margin: 0;
     font-size: 62.5%;
 }
 
-/* Set core root defaults */
 html:focus-within {
     scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
@@ -39,38 +28,27 @@ body {
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-    /* background-color: grey; */
 }
 
-/* A elements that don't have a class get default styles */
 a:not([class]) {
     -webkit-text-decoration-skip: ink;
     text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
-img,
-picture {
+img, picture {
     max-width: 100%;
     display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
+input, button, textarea, select {
     font: inherit;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
     html:focus-within {
         scroll-behavior: auto;
     }
-    *,
-    *::before,
-    *::after {
+    *, *::before, *::after {
         -webkit-animation-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
         -webkit-animation-iteration-count: 1 !important;
@@ -79,6 +57,7 @@ select {
         scroll-behavior: auto !important;
     }
 }
+
 .navbar {
     display: flex;
     align-items: center;
@@ -91,6 +70,7 @@ select {
     margin: 0;
     height: 10rem;
 }
+
 @media screen and (min-width: 1000px) {
     .navbar .nav-links li:hover .dropdown li:nth-child(2).active .mini-dropdown {
         transform: translateY(-4rem);
@@ -209,13 +189,16 @@ select {
         display: block;
     }
 }
+
 .navbar .brand-logo {
     z-index: 3;
 }
+
 .navbar .brand-logo img {
     width: 6rem;
     height: 6rem;
 }
+
 .navbar .toggle-menu {
     display: none;
     padding: 0.5rem 0.98rem;
@@ -223,20 +206,25 @@ select {
     cursor: pointer;
     z-index: 3;
 }
+
 .navbar .toggle-menu::after {
     content: url("../Assets/icon-open.svg");
 }
+
 .navbar .toggle-menu.active::after {
     content: url("../Assets/icon-close.png");
 }
+
 .navbar .toggle-menu.active {
     border: 2px solid #1A1818;
 }
+
 @media screen and (max-width: 1000px) {
     .navbar .toggle-menu {
         display: block;
     }
 }
+
 .navbar .nav-links {
     display: inline-flex;
     align-items: center;
@@ -244,75 +232,95 @@ select {
     list-style: none;
     font-family: "Suranna", serif;
 }
+
 .navbar .nav-links li {
     font-size: 2rem;
 }
+
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
     color: #890006;
 }
+
 .navbar .nav-links li:hover i, .navbar .nav-links li:focus i, .navbar .nav-links li.active i {
     transform: rotate(180deg) scale(0.7);
 }
+
 .navbar .nav-links li > a {
     text-decoration: none;
     color: #1A1818;
 }
+
 .navbar .nav-links li > a i {
     transform: scale(0.7);
 }
+
 .navbar .nav-links li .dropdown {
     display: none;
 }
+
 .navbar .nav-links li .dropdown li i {
     transform: scale(0.7);
     transition: 0.3s;
 }
+
 .navbar .nav-links li:hover .dropdown, .navbar .nav-links li.active .dropdown {
     display: block;
     list-style: none;
     padding: 1rem 3rem;
 }
+
 .navbar .nav-links li:hover .dropdown li, .navbar .nav-links li.active .dropdown li {
     margin: 0.8rem 0;
 }
+
 .navbar .nav-links li:hover .dropdown li span, .navbar .nav-links li.active .dropdown li span {
     display: flex;
     align-items: center;
     opacity: 0.7;
 }
+
 .navbar .nav-links li:hover .dropdown li span img, .navbar .nav-links li.active .dropdown li span img {
     width: 2rem;
     margin-right: 1rem;
     opacity: 0.7;
 }
+
 .navbar .nav-links li:hover .dropdown li span i, .navbar .nav-links li.active .dropdown li span i {
     transform: scale(0.7);
     transition: 0.3s;
     margin-left: 0.5rem;
 }
+
 .navbar .nav-links li:hover .dropdown li.active span, .navbar .nav-links li.active .dropdown li.active span {
     opacity: 1;
 }
+
 .navbar .nav-links li:hover .dropdown li.active span img, .navbar .nav-links li.active .dropdown li.active span img {
     opacity: 1;
 }
+
 .navbar .nav-links li:hover .dropdown li.active span i, .navbar .nav-links li.active .dropdown li.active span i {
     transform: rotate(180deg) scale(0.7);
 }
+
 .navbar .nav-links li:hover .dropdown li a, .navbar .nav-links li.active .dropdown li a {
     color: #1A1818;
 }
+
 .navbar .nav-links li:hover .dropdown li .mini-dropdown, .navbar .nav-links li.active .dropdown li .mini-dropdown {
     display: none;
     list-style: none;
     padding: 0rem 4rem;
 }
+
 .navbar .nav-links li:hover .dropdown li .mini-dropdown li, .navbar .nav-links li.active .dropdown li .mini-dropdown li {
     margin: 1.5rem 0;
 }
+
 .navbar .nav-links li:hover .dropdown li.active .mini-dropdown, .navbar .nav-links li.active .dropdown li.active .mini-dropdown {
     display: block;
 }
+
 @media screen and (max-width: 1000px) {
     .navbar .nav-links {
         display: none;
@@ -337,6 +345,7 @@ select {
         z-index: 2;
     }
 }
+
 @media screen and (max-width: 600px) {
     .navbar {
         padding: 2rem;
@@ -352,32 +361,20 @@ select {
     }
 }
 
-/*
-color palette
-*/
-/* font weight variables */
-/* opacity */
-/* font family */
-/* font sizes */
-/*shadow variables */
-/* Box sizing rules */
 * {
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     overflow-x: hidden;
     margin: 0;
     font-size: 62.5%;
 }
 
-/* Set core root defaults */
 html:focus-within {
     scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
@@ -387,38 +384,27 @@ body {
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-    /* background-color: grey; */
 }
 
-/* A elements that don't have a class get default styles */
 a:not([class]) {
     -webkit-text-decoration-skip: ink;
     text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
-img,
-picture {
+img, picture {
     max-width: 100%;
     display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
+input, button, textarea, select {
     font: inherit;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
     html:focus-within {
         scroll-behavior: auto;
     }
-    *,
-    *::before,
-    *::after {
+    *, *::before, *::after {
         -webkit-animation-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
         -webkit-animation-iteration-count: 1 !important;
@@ -427,6 +413,7 @@ select {
         scroll-behavior: auto !important;
     }
 }
+
 footer {
     display: flex;
     width: 100%;
@@ -437,17 +424,21 @@ footer {
     font-family: "DM Sans", sans-serif;
     margin-top: 3rem;
 }
+
 footer .main-footer {
     display: flex;
     justify-content: space-between;
     gap: 7rem;
 }
+
 footer .main-footer .footer-links, footer .main-footer .brand-logo, footer .main-footer .contact {
     flex-basis: 26rem;
 }
+
 footer .main-footer .brand-logo, footer .main-footer .contact {
     flex: 1;
 }
+
 footer .main-footer .brand-logo img {
     padding: 1rem;
     background: #ffffff;
@@ -455,40 +446,48 @@ footer .main-footer .brand-logo img {
     height: 8rem;
     border-radius: 0.7rem;
 }
+
 footer .main-footer .footer-links {
     flex: 2;
     display: flex;
     justify-content: space-around;
     gap: 5rem;
 }
+
 footer .main-footer .quick-links p, footer .main-footer .services p {
     font-weight: 700;
     font-size: 2rem;
     color: #ffffff;
 }
+
 footer .main-footer .quick-links ul, footer .main-footer .services ul {
     list-style: none;
     padding: 0;
 }
+
 footer .main-footer .quick-links ul li, footer .main-footer .services ul li {
     margin: 3rem 0;
 }
+
 footer .main-footer .quick-links ul li a, footer .main-footer .services ul li a {
     color: #BFBFBF;
     font-size: 1.4rem;
     text-decoration: none;
 }
+
 footer .main-footer .contact {
     display: flex;
     flex-direction: column;
     margin-right: 3rem;
 }
+
 footer .main-footer .contact p {
     font-weight: 700;
     font-size: 2rem;
     color: #ffffff;
     margin-bottom: 0.8rem;
 }
+
 footer .main-footer .contact > a {
     display: inline-flex;
     gap: 1rem;
@@ -497,19 +496,23 @@ footer .main-footer .contact > a {
     margin: 1.5rem 0;
     text-decoration: none;
 }
+
 footer .main-footer .contact > a:nth-child(3) {
     text-decoration: underline;
 }
+
 footer .main-footer .contact > a img {
     width: 1.9rem;
     text-decoration: none;
 }
+
 footer .main-footer .contact hr {
     width: 100%;
     height: 1px;
     background-color: #545454;
     border: none;
 }
+
 footer .main-footer .contact .social-links {
     display: flex;
     justify-content: space-between;
@@ -517,25 +520,30 @@ footer .main-footer .contact .social-links {
     width: 100%;
     margin-top: 2.5rem;
 }
+
 @media screen and (max-width: 600px) {
     footer .main-footer .contact .social-links {
         margin-top: 1.5rem;
     }
 }
+
 footer .main-footer .contact .social-links img {
     width: 2.2rem;
     height: 2.2rem;
 }
+
 @media screen and (max-width: 1000px) {
     footer .main-footer {
         flex-direction: column;
         align-items: start;
         gap: 3rem;
     }
+
     footer .main-footer .footer-links, footer .main-footer .brand-logo, footer .main-footer .contact {
         flex-basis: 0;
     }
 }
+
 footer > hr {
     margin-top: 5rem;
     width: 100%;
@@ -544,63 +552,58 @@ footer > hr {
     background-color: #545454;
     border: none;
 }
+
 footer .copyright {
     text-align: center;
     padding: 3.5rem 0;
     color: #BFBFBF;
     font-size: 1.2rem;
 }
+
 @media screen and (max-width: 600px) {
     footer {
         padding: 5rem 1rem;
         padding-bottom: 0;
     }
+
     footer .main-footer .brand-logo img {
         padding: 0.8rem;
         width: 6rem;
         height: 6rem;
         border-radius: 0.4rem;
     }
+
     footer .main-footer {
         margin-bottom: 3rem;
     }
+
     footer .main-footer .contact > a img {
         width: 1.9rem;
     }
+
     footer > hr {
         margin-top: 3rem;
     }
+
     footer .copyright {
         padding: 2rem 0;
     }
 }
 
-/*
-color palette
-*/
-/* font weight variables */
-/* opacity */
-/* font family */
-/* font sizes */
-/*shadow variables */
-/* Box sizing rules */
 * {
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     overflow-x: hidden;
     margin: 0;
     font-size: 62.5%;
 }
 
-/* Set core root defaults */
 html:focus-within {
     scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
@@ -610,38 +613,28 @@ body {
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-    /* background-color: grey; */
 }
 
-/* A elements that don't have a class get default styles */
 a:not([class]) {
     -webkit-text-decoration-skip: ink;
     text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
-img,
-picture {
+img, picture {
     max-width: 100%;
     display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
+input, button, textarea, select {
     font: inherit;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
     html:focus-within {
         scroll-behavior: auto;
     }
-    *,
-    *::before,
-    *::after {
+
+    *, *::before, *::after {
         -webkit-animation-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
         -webkit-animation-iteration-count: 1 !important;
@@ -650,6 +643,7 @@ select {
         scroll-behavior: auto !important;
     }
 }
+
 * {
     box-sizing: border-box;
 }
@@ -658,6 +652,7 @@ select {
     width: 100%;
     z-index: -1;
 }
+
 .hero-section .heroimg {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Assets/hero-img.png");
     background-repeat: no-repeat;
@@ -671,26 +666,31 @@ select {
     align-items: center;
     justify-content: center;
 }
+
 .hero-section .heroimg h1 {
     color: #ffffff;
     font-family: "Suranna", serif;
     font-size: 6.4rem;
     font-weight: 300;
 }
+
 @media screen and (max-width: 600px) {
     .hero-section .heroimg {
         height: 30vh;
         min-height: 25rem;
         max-height: 35rem;
     }
+
     .hero-section .heroimg h1 {
         font-size: 3.6rem;
     }
 }
+
 .hero-section .about-dgr {
     padding: 10.4rem 6rem;
     background: transparent;
 }
+
 .hero-section .about-dgr p {
     width: 100%;
     font-size: 1.6rem;
@@ -698,6 +698,7 @@ select {
     color: #5e5e5e;
     font-family: "DM Sans", sans-serif;
 }
+
 @media screen and (max-width: 600px) {
     .hero-section .about-dgr {
         padding: 3.4rem 2rem;
@@ -712,12 +713,14 @@ select {
     justify-content: space-between;
     width: 100%;
 }
+
 .mission .title {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: start;
 }
+
 .mission .title h1 {
     font-size: 6.4rem;
     text-align: left;
@@ -727,20 +730,24 @@ select {
     font-weight: 300;
     line-height: 6.4rem;
 }
+
 @media screen and (max-width: 768px) {
     .mission .title h1 {
         font-size: 3.6rem;
         line-height: 4.2rem;
     }
 }
+
 .mission .title img {
     transform: translate(-1%, -50%) scale(0.8);
 }
+
 @media screen and (max-width: 768px) {
     .mission .title img {
         display: none;
     }
 }
+
 .mission .mission-text {
     margin-top: 65px;
     text-align: left;
@@ -751,23 +758,27 @@ select {
     font-size: 1.6rem;
     color: #545454;
 }
+
 @media screen and (max-width: 920px) {
     .mission {
         flex-direction: column;
         align-items: start;
         padding: 5rem 2rem;
     }
+
     .mission .mission-text {
         text-align: left;
         flex: 1;
         font-size: 2rem;
     }
 }
+
 @media screen and (max-width: 768px) {
     .mission {
         padding: 5.4rem 3rem;
     }
 }
+
 @media screen and (max-width: 480px) {
     .mission .mission-text {
         text-align: left;
@@ -785,9 +796,11 @@ select {
     justify-content: space-between;
     width: 100%;
 }
+
 .vision .vision-text {
     flex: 0.7;
 }
+
 .vision .vision-text h1 {
     color: #1A1818;
     font-size: 6.4rem;
@@ -797,6 +810,7 @@ select {
     padding-bottom: 1rem;
     width: 80%;
 }
+
 .vision .vision-text p {
     color: #1A1818;
     font-family: "DM Sans", sans-serif;
@@ -806,11 +820,13 @@ select {
     text-align: left;
     width: 80%;
 }
+
 .vision .vision-illustration {
     flex: 0.7;
     display: flex;
     justify-content: end;
 }
+
 .vision .vision-illustration img {
     width: 100%;
     max-width: 75rem;
@@ -818,23 +834,28 @@ select {
     max-height: 80rem;
     box-shadow: 10px 10px 5px 10px #BFBFBF;
 }
+
 @media screen and (max-width: 768px) {
     .vision {
         flex-direction: column;
         gap: 7rem;
         padding: 8rem 6rem;
     }
+
     .vision .vision-text p {
         width: 100%;
     }
+
     .vision .vision-text h1 {
         font-size: 3.6rem;
     }
 }
+
 @media screen and (max-width: 600px) {
     .vision {
         padding: 4rem 3rem;
     }
+
     .vision .vision-illustration img {
         box-shadow: 7px 7px 5px 7px #BFBFBF;
     }
@@ -844,11 +865,13 @@ select {
     background: rgba(191, 191, 191, 0.4);
     padding: 9rem 6rem;
 }
+
 @media screen and (max-width: 768px) {
     .services-section {
         padding: 5rem 2rem;
     }
 }
+
 .services-section .main-title {
     font-size: 6.4rem;
     font-family: "Suranna", serif;
@@ -856,12 +879,14 @@ select {
     color: #1A1818;
     margin-bottom: 11rem;
 }
+
 @media screen and (max-width: 768px) {
     .services-section .main-title {
         margin-bottom: 2rem;
         font-size: 3.6rem;
     }
 }
+
 .services-section .services {
     display: flex;
     flex-wrap: wrap;
@@ -871,6 +896,7 @@ select {
     justify-content: center;
     margin-bottom: 3rem;
 }
+
 .services-section .services .service {
     display: flex;
     flex-direction: column;
@@ -882,6 +908,7 @@ select {
     background-size: 100% 100%;
     padding: 2rem;
 }
+
 .services-section .services .service h1 {
     font-size: 3.6rem;
     font-family: "Suranna", serif;
@@ -889,11 +916,13 @@ select {
     color: #ffffff;
     margin-bottom: 1.5rem;
 }
+
 @media screen and (max-width: 500px) {
     .services-section .services .service h1 {
         font-size: 2.8rem;
     }
 }
+
 .services-section .services .service a {
     color: #ffffff;
     font-family: "DM Sans", sans-serif;
@@ -901,24 +930,31 @@ select {
     text-decoration: none;
     opacity: 0.7;
 }
+
 .services-section .services .service a i {
     font-size: 0.9rem;
 }
+
 .services-section .services .service a:hover {
     text-decoration: underline;
 }
+
 .services-section .services .service:nth-child(1) {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/service_1.png");
 }
+
 .services-section .services .service:nth-child(2) {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/service_2.png");
 }
+
 .services-section .services .service:nth-child(3) {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/service_3.png");
 }
+
 .services-section .services .service:nth-child(4) {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/service_4.png");
 }
+
 .services-section .services .service:nth-child(1), .services-section .services .service:nth-child(2), .services-section .services .service:nth-child(3), .services-section .services .service:nth-child(4) {
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -933,12 +969,14 @@ select {
     align-items: center;
     justify-content: center;
 }
+
 @media screen and (max-width: 600px) {
     .subscribe-section {
         padding: 7.4rem 0;
         text-align: left;
     }
 }
+
 .subscribe-section .subscribe {
     width: 100%;
     max-width: 108rem;
@@ -949,6 +987,7 @@ select {
     flex-direction: column;
     padding: 10.4rem 4rem;
 }
+
 @media screen and (max-width: 600px) {
     .subscribe-section .subscribe {
         padding: 6rem 2rem;
@@ -956,6 +995,7 @@ select {
         align-items: start;
     }
 }
+
 .subscribe-section .subscribe h1 {
     font-size: 4.8rem;
     text-align: center;
@@ -964,6 +1004,7 @@ select {
     font-weight: 300;
     margin: 0;
 }
+
 @media screen and (max-width: 600px) {
     .subscribe-section .subscribe h1 {
         font-size: 3.6rem;
@@ -973,6 +1014,7 @@ select {
         text-align: left;
     }
 }
+
 .subscribe-section .subscribe p {
     font-size: 1.4rem;
     color: #FFEBEC;
@@ -983,12 +1025,14 @@ select {
     margin: 2rem 0;
     line-height: 2.5rem;
 }
+
 @media screen and (max-width: 600px) {
     .subscribe-section .subscribe p {
         text-align: left;
         margin: 3rem 0;
     }
 }
+
 .subscribe-section .subscribe form {
     display: flex;
     width: 100%;
@@ -996,6 +1040,7 @@ select {
     font-family: "DM Sans", sans-serif;
     margin-top: 4rem;
 }
+
 @media screen and (max-width: 600px) {
     .subscribe-section .subscribe form {
         flex-direction: column;
@@ -1003,25 +1048,29 @@ select {
         margin-top: 0.9rem;
     }
 }
+
 .subscribe-section .subscribe form input, .subscribe-section .subscribe form button {
     border: none;
     padding: 1.5rem 2.5rem;
     font-size: 1.4rem;
     outline: none;
 }
+
 .subscribe-section .subscribe form input {
     background-color: #ffffff;
     color: #1A1818;
     flex: 4;
 }
+
 .subscribe-section .subscribe form button {
     background-color: #1A1818;
     color: #ffffff;
     flex: 1;
     cursor: pointer;
 }
+
 @media screen and (max-width: 600px) {
     .subscribe-section .subscribe form button {
         margin-bottom: 1rem;
     }
-}/*# sourceMappingURL=About.css.map */
+}
