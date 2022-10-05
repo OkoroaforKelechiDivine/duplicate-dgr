@@ -56,5 +56,3 @@ carouselButtonNext.addEventListener('click', () => changeBg('next'));
 
 carouselButtonPrev.addEventListener('click', () => changeBg('prev'));
 
-document.getElementById('scroll_button').addEventListener('click', () => changeBg('next'))
-

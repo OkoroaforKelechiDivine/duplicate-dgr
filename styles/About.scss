@@ -86,7 +86,7 @@
             }
         }
         img {
-            transform: translate(-70%, -80%) scale(.8);
+            transform: translate(-20%, -50%) scale(.6);
 
             @media screen and (max-width: 768px) {
                 display: none;
@@ -226,6 +226,10 @@
         justify-content: center;
         margin-bottom: 3rem;
 
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            gap: 2.2rem;
+        }
+
         .service {
             display: flex;
             flex-direction: column;
@@ -236,6 +240,10 @@
             background-repeat: no-repeat;
             background-size: 100% 100%;
             padding: 2rem;
+
+            @media screen and (min-width: 768px) and (max-width: 1200px) {
+                flex-basis: 26rem;             
+            }    
 
             h1 {
                 font-size: $fs-lg;

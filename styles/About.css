@@ -22,6 +22,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* Set core root defaults */
@@ -370,6 +371,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* Set core root defaults */
@@ -593,6 +595,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* Set core root defaults */
@@ -734,7 +737,7 @@ select {
   }
 }
 .mission .title img {
-  transform: translate(-1%, -50%) scale(0.8);
+  transform: translate(-20%, -50%) scale(0.6);
 }
 @media screen and (max-width: 768px) {
   .mission .title img {
@@ -742,13 +745,12 @@ select {
   }
 }
 .mission .mission-text {
-  margin-top: 65px;
-  text-align: left;
-  border-top: 1px solid #dfd7d7;
+  text-align: right;
+  border-top: 1px solid #FFA7AB;
   padding: 5rem 5rem 0 11rem;
   font-family: "DM Sans", sans-serif;
   flex: 1.5;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #545454;
 }
 @media screen and (max-width: 920px) {
@@ -758,7 +760,7 @@ select {
     padding: 5rem 2rem;
   }
   .mission .mission-text {
-    text-align: left;
+    text-align: right;
     flex: 1;
     font-size: 2rem;
   }
@@ -871,6 +873,11 @@ select {
   justify-content: center;
   margin-bottom: 3rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .services-section .services {
+    gap: 2.2rem;
+  }
+}
 .services-section .services .service {
   display: flex;
   flex-direction: column;
@@ -881,6 +888,11 @@ select {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 2rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .services-section .services .service {
+    flex-basis: 26rem;
+  }
 }
 .services-section .services .service h1 {
   font-size: 3.6rem;
