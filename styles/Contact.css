@@ -141,6 +141,10 @@ select {
     z-index: 2;
     box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.2);
   }
+  .navbar .nav-links li .dropdown li:hover > a, .navbar .nav-links li .dropdown li:focus > a, .navbar .nav-links li .dropdown li.active > a {
+    border-bottom: none;
+    padding-bottom: inherit;
+  }
   .navbar .nav-links li .dropdown li i {
     transform: scale(0.7);
     transition: 0.5s;
@@ -701,7 +705,8 @@ select {
   font-size: 6.4rem;
   color: #ffffff;
   font-weight: 300;
-  width: 50%;
+  width: 72%;
+  max-width: 45rem;
   line-height: 6.8rem;
 }
 @media screen and (max-width: 600px) {
@@ -854,6 +859,11 @@ select {
   }
   .contact-us form textarea {
     max-width: 75rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .contact-us form {
+    padding: 6rem 3rem;
   }
 }
 @media screen and (max-width: 600px) {

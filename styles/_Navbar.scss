@@ -74,6 +74,12 @@
                     
     
                     li {
+                        &:hover, &:focus, &.active {
+                            &>a {
+                                border-bottom: none;
+                                padding-bottom: inherit;
+                            }
+                        }
                         i {
                             transform: scale(.7);
                             transition: .5s
