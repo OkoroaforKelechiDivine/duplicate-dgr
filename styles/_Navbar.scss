@@ -40,12 +40,12 @@
                         padding-bottom: .5rem;
                         border-bottom: 1px solid $text-red-400;
                     }
-    
+
                     i {
                         transform: rotate(180deg) scale(.7);
                     }
                 }
-    
+
                 &>a {
                     text-decoration: none;
                     color: $text-black; 
@@ -71,8 +71,8 @@
                     z-index: 2;
                     box-shadow: 0 0 20px 8px rgba($color: #000000, $alpha: .2);
 
-                    
-    
+
+
                     li {
                         i {
                             transform: scale(.7);
@@ -85,12 +85,12 @@
                                     .mini-dropdown {
                                         transform: translateY(-5rem);
                                     }
-                                }   
+                                }
                             }
                         }
                     }
                 }
-    
+
                 &:hover .dropdown, &.active .dropdown {
                     display: block;
                     list-style: none;
@@ -104,25 +104,25 @@
                             align-items: center;
                             opacity: .55;
                             font-size: $fs-sm;
-        
+
                             img {
                                 width: $fs-md;
                                 margin-right: 1rem;
                                 opacity: .55;
                             }
-        
+
                             i {
                                 transform: scale(.7);
                                 transition: .3s;
                                 margin-left: .5rem;
                             }
-    
+
                         }
-    
+
                         &.active{
                             span {
                                 opacity: 1;
-        
+
                                 img {
                                     opacity: 1;
                                 }
@@ -131,11 +131,11 @@
                                 }
                             }
                         }
-    
+
                         a {
                             color: $text-black;
                         }
-    
+
                         .mini-dropdown::before {
                             content: "";
                             position: absolute;
@@ -151,16 +151,16 @@
                             position: absolute;
                             left: 43%;
                             top: 0;
-                        
+
                             li {
                                 margin: 1.5rem 0;
                                 width: 100%;
                             }
                         }
-    
+
                         &.active .mini-dropdown {
                             display: block;
-                        
+
                         }
                     }
                 }
