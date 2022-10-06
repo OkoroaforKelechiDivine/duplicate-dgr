@@ -690,6 +690,27 @@ select {
   -webkit-animation: animateBg 18s ease-in-out infinite;
           animation: animateBg 18s ease-in-out infinite;
 }
+.hero-section .animated-link {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  font-family: "DM Sans", sans-serif;
+  transition: 0.4s;
+  text-decoration: none;
+}
+.hero-section .animated-link:hover {
+  color: #0E2E51;
+}
+@media screen and (max-width: 768px) {
+  .hero-section .animated-link {
+    font-size: 1.6rem;
+    right: 3rem;
+    bottom: 1rem;
+  }
+}
 .hero-section .carousel-button {
   position: absolute;
   top: 50%;
@@ -811,37 +832,31 @@ select {
 }
 @-webkit-keyframes animateBg {
   0% {
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg.png");
     background-repeat: no-repeat;
     background-size: 110% 110%;
     background-position: center;
   }
   30% {
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
   }
   35% {
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-1.jpeg");
     background-repeat: no-repeat;
     background-size: 110% 110%;
     background-position: center;
   }
   65% {
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-1.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
   }
   70% {
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-2.jpeg");
     background-repeat: no-repeat;
     background-size: 110% 110%;
     background-position: center;
   }
   100% {
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-2.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -849,37 +864,31 @@ select {
 }
 @keyframes animateBg {
   0% {
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg.png");
     background-repeat: no-repeat;
     background-size: 110% 110%;
     background-position: center;
   }
   30% {
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
   }
   35% {
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-1.jpeg");
     background-repeat: no-repeat;
     background-size: 110% 110%;
     background-position: center;
   }
   65% {
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-1.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
   }
   70% {
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-2.jpeg");
     background-repeat: no-repeat;
     background-size: 110% 110%;
     background-position: center;
   }
   100% {
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url("../Assets/hero-bg-2.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;

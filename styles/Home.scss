@@ -32,6 +32,29 @@
     padding-bottom: 10rem;
     animation: animateBg 18s ease-in-out infinite;
 
+    .animated-link {
+        position: absolute;
+        bottom: 3rem;
+        left: 3rem;
+        font-size: $fs-md;
+        color: #fff;
+        font-weight: 300;
+        font-family: $ff-primary;
+        transition: .4s;
+        text-decoration: none;
+        &:hover {
+            color: #0E2E51;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: $fs-sm;
+            right: 3rem;
+            bottom: 1rem;
+            // left: none;
+
+        }
+    }
+
     .carousel-button {
         position: absolute;
         top: 50%;
@@ -172,42 +195,36 @@
 
 @keyframes animateBg {
     0% {
-        background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url('../Assets/hero-bg.png');
         background-repeat: no-repeat;
         background-size: 110% 110%;
         background-position: center;
     }
 
     30% {
-        background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url('../Assets/hero-bg.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
     }
 
     35% {
-        background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url('../Assets/hero-bg-1.jpeg');
         background-repeat: no-repeat;
         background-size: 110% 110%;
         background-position: center;
     }
 
     65%{
-        background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url('../Assets/hero-bg-1.jpeg');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
     }
 
     70% {
-        background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url('../Assets/hero-bg-2.jpeg');
         background-repeat: no-repeat;
         background-size: 110% 110%;
         background-position: center;
     }
 
     100% {
-        background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url('../Assets/hero-bg-2.jpeg');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;

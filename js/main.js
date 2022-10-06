@@ -3,6 +3,7 @@ const miniMenu = document .querySelectorAll('.nav-link .dropdown li span');
 const carouselButtonPrev = document.getElementById('carousel-button-prev');
 const carouselButtonNext = document.getElementById('carousel-button-next');
 const navLinks = document.querySelectorAll('nav .nav-links>.nav-link');
+const animatedLink = document.querySelector('.animated-link');
 
 navLinks.forEach((link, idx) => {
     link.addEventListener('click', () => {
@@ -30,37 +31,44 @@ toggleNavButton.addEventListener('click', (e) => {
 
 // Carousel 
 const heroBGs = [
-    './Assets/hero-bg.png',
-    './Assets/hero-bg-1.jpeg',
-    './Assets/hero-bg-2.jpeg'
+    {
+        imgUrl: './Assets/hero-bg.png',
+        link: '',
+        to : ''
+    },
+    {
+        imgUrl: './Assets/hero-bg-1.jpeg',
+        link: '../pages/about.html',
+        to : 'About Us'
+    },
+    {
+        imgUrl: './Assets/hero-bg-2.jpeg',
+        link: '../pages/contact.html',
+        to : 'Contact Us'
+    }
 ];
 
 let currentBg = 0;
 
-const changeBg = (type) => {
-    console.log('background changed')
-    if (type === 'next') {
-        if (currentBg+1 < heroBGs.length){
-            currentBg++;
-            console.log('next-image-generated')
-        } else {
-            currentBg = 0;
-        }
-    } else if (type === 'prev') {
-        if (currentBg <= 2 && currentBg > 0){
-            currentBg--;
-            console.log('prev-image-generated')
-        } else {
-            currentBg = 2;
-        }
+const changeBg = () => {
+    console.log('background changed', currentBg)
+    currentBg++;
+    
+    if (currentBg+1 > heroBGs.length){
+        currentBg = 0;
+        console.log('next-image-generated')
     }
     
-    document.querySelector('.hero-section').style.background = `linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url(${heroBGs[currentBg]})`;
+    document.querySelector('.hero-section').style.background = `linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url(${heroBGs[currentBg].imgUrl})`;
     document.querySelector('.hero-section').style.backgroundRepeat = 'no-repeat';
     document.querySelector('.hero-section').style.backgroundSize = `cover`;
+
+    animatedLink.innerText = heroBGs[currentBg].to;
+    animatedLink.href = heroBGs[currentBg].link;
+
+
 }
 
-carouselButtonNext.addEventListener('click', () => changeBg('next'));
+setInterval(changeBg, 6000);
 
-carouselButtonPrev.addEventListener('click', () => changeBg('prev'));
 
