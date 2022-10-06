@@ -130,7 +130,7 @@ select {
     transform: scale(0.7);
   }
   .navbar .nav-links li:nth-child(3) .dropdown {
-    width: 49rem;
+    width: 53rem;
     height: 31.5rem;
   }
   .navbar .nav-links li .dropdown {
@@ -213,6 +213,9 @@ select {
   .navbar .nav-links li:hover .dropdown li .mini-dropdown li, .navbar .nav-links li.active .dropdown li .mini-dropdown li {
     margin: 1.5rem 0;
     width: 100%;
+  }
+  .navbar .nav-links li:hover .dropdown li .mini-dropdown li:hover, .navbar .nav-links li.active .dropdown li .mini-dropdown li:hover {
+    color: #890006;
   }
   .navbar .nav-links li:hover .dropdown li.active .mini-dropdown, .navbar .nav-links li.active .dropdown li.active .mini-dropdown {
     display: block;

@@ -60,7 +60,7 @@
                 }
     
                 &:nth-child(3) .dropdown {
-                    width: 49rem;
+                    width: 53rem;
                     height: 31.5rem;
                 }
 
@@ -166,6 +166,10 @@
                             li {
                                 margin: 1.5rem 0;
                                 width: 100%;
+
+                                &:hover {
+                                    color: $text-red-400;
+                                }
                             }
                         }
 

@@ -50,13 +50,21 @@ const heroBGs = [
 
 let currentBg = 0;
 
-const changeBg = () => {
+const changeBg = (type) => {
     console.log('background changed', currentBg)
-    currentBg++;
-    
-    if (currentBg+1 > heroBGs.length){
-        currentBg = 0;
-        console.log('next-image-generated')
+    if(type === 'next') {
+        currentBg++;
+        if (currentBg+1 > heroBGs.length ){
+            currentBg = 0;
+            console.log('next-image-generated')
+        }
+    } 
+    if (type === 'prev') {
+        currentBg--;
+        if (currentBg < 0 ){
+            currentBg = 2;
+            console.log('prev-image-generated')
+        }
     }
     
     document.querySelector('.hero-section').style.background = `linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.7) 85.5%), url(${heroBGs[currentBg].imgUrl})`;
@@ -67,10 +75,12 @@ const changeBg = () => {
     animatedLink.href = heroBGs[currentBg].link;
 }
 
-setInterval(changeBg, 6000);
+setInterval(() => {
+    changeBg('next')
+}, 6000);
 
-carouselButtonNext.addEventListener('click', changeBg)
+carouselButtonNext.addEventListener('click', () => changeBg('next'))
 
-carouselButtonPrev.addEventListener('click', changeBg)
+carouselButtonPrev.addEventListener('click', () => changeBg('prev'))
 
 
