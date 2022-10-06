@@ -98,7 +98,7 @@
                     }
                 }
 
-                &:hover .dropdown, &.active .dropdown {
+                &.active .dropdown {
                     display: block;
                     list-style: none;
                     padding: 2rem 3rem;
@@ -189,6 +189,8 @@
         border-radius: .4rem;
         cursor: pointer;
         z-index: 3;
+
+        
         
         &::after {
             content: url('../Assets/icon-open.svg');

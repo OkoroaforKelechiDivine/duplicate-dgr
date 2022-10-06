@@ -59,7 +59,7 @@ const changeBg = () => {
         console.log('next-image-generated')
     }
     
-    document.querySelector('.hero-section').style.background = `linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.4) 85.5%), url(${heroBGs[currentBg].imgUrl})`;
+    document.querySelector('.hero-section').style.background = `linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.7) 85.5%), url(${heroBGs[currentBg].imgUrl})`;
     document.querySelector('.hero-section').style.backgroundRepeat = 'no-repeat';
     document.querySelector('.hero-section').style.backgroundSize = `cover`;
 
