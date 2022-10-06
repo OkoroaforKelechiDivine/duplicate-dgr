@@ -22,6 +22,14 @@
             transform: translateY(-0.4rem);
         }
 
+        & .nav-links li:hover .dropdown li.active .mini-dropdown {
+            display: none;
+        }
+
+        & .nav-links li:hover .dropdown li.active .mini-dropdown {
+            display: none;
+        }
+
         .nav-links {
             display: inline-flex;
             align-items: center;
@@ -98,7 +106,7 @@
                     }
                 }
 
-                &.active .dropdown {
+                &:hover .dropdown, &.active .dropdown {
                     display: block;
                     list-style: none;
                     padding: 2rem 3rem;
@@ -173,6 +181,9 @@
                 }
             }
         }
+        & .nav-links li:hover .dropdown {
+            display: none;
+        }
     }
 
     .brand-logo {
@@ -189,8 +200,6 @@
         border-radius: .4rem;
         cursor: pointer;
         z-index: 3;
-
-        
         
         &::after {
             content: url('../Assets/icon-open.svg');
