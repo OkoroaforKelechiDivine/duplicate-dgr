@@ -100,7 +100,7 @@
         padding: 5rem 5rem 0 11rem ;
         font-family: $ff-primary;
         flex: 1.5;
-        font-size: $fs-md;
+        font-size: $fs-sm;
         color: #545454;
     }
 
@@ -111,7 +111,6 @@
         .mission-text {
             // text-align: right;
             flex: 1;
-            font-size: $fs-md;
         }
     }
 
@@ -124,7 +123,7 @@
             text-align: left;
             border-top: 1px solid $text-red-400;
             padding: 1rem 1rem 0 0;
-            font-size: $fs-xs;
+            font-size: $fs-sm;
         }
     }
 }
