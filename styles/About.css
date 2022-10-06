@@ -888,8 +888,8 @@ select {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  height: 35rem;
-  flex-basis: 31rem;
+  height: 32rem;
+  flex-basis: 28rem;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 2rem;
