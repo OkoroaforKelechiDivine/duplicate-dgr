@@ -214,7 +214,7 @@ select {
     margin: 1.5rem 0;
     width: 100%;
   }
-  .navbar .nav-links li:hover .dropdown li .mini-dropdown li:hover, .navbar .nav-links li.active .dropdown li .mini-dropdown li:hover {
+  .navbar .nav-links li:hover .dropdown li .mini-dropdown li:hover > a, .navbar .nav-links li.active .dropdown li .mini-dropdown li:hover > a {
     color: #890006;
   }
   .navbar .nav-links li:hover .dropdown li.active .mini-dropdown, .navbar .nav-links li.active .dropdown li.active .mini-dropdown {
