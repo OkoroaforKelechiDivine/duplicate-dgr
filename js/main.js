@@ -2,6 +2,11 @@ const toggleNavButton = document.querySelector('#toggle-menu');
 const miniMenu = document .querySelectorAll('.nav-link .dropdown li span');
 const carouselButtonPrev = document.getElementById('carousel-button-prev');
 const carouselButtonNext = document.getElementById('carousel-button-next');
+const navLinks = document.querySelectorAll('nav .nav-links>.nav-link');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => link.classList.toggle('active'))
+})
 
 console.log(window.innerWidth)
 
