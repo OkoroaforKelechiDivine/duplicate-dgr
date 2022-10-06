@@ -144,6 +144,7 @@ select {
   .navbar .nav-links li .dropdown li:hover > a, .navbar .nav-links li .dropdown li:focus > a, .navbar .nav-links li .dropdown li.active > a {
     border-bottom: none;
     padding-bottom: inherit;
+    color: #890006;
   }
   .navbar .nav-links li .dropdown li i {
     transform: scale(0.7);
