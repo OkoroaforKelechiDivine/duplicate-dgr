@@ -12,7 +12,7 @@
     margin: 0;
     height: 10rem;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 81rem) {
 
         & .nav-links li:hover .dropdown li:nth-child(2).active .mini-dropdown {
             transform: translateY(-4.0rem);
@@ -202,7 +202,7 @@
             border: 2px solid $text-black;
         } 
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 80rem) {
             display: block;
         }
     }
@@ -306,7 +306,7 @@
                 }
             }
         }  
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 80rem) {
             display: none;
             background: $text-white;
             height: auto;
