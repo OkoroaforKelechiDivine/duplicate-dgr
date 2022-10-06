@@ -716,7 +716,7 @@ select {
   color: #ffffff;
   font-weight: 300;
   width: 72%;
-  max-width: 38rem;
+  max-width: 42rem;
   line-height: 6.8rem;
 }
 @media screen and (max-width: 600px) {
