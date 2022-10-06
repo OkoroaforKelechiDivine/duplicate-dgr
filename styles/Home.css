@@ -682,8 +682,8 @@ select {
   text-align: center;
   position: relative;
   padding-bottom: 10rem;
-  -webkit-animation: animateBg 10s ease-in-out infinite;
-          animation: animateBg 10s ease-in-out infinite;
+  -webkit-animation: animateBg 18s ease-in-out infinite;
+          animation: animateBg 18s ease-in-out infinite;
 }
 .hero-section .carousel-button {
   position: absolute;

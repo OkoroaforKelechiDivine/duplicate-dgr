@@ -4,8 +4,11 @@ const carouselButtonPrev = document.getElementById('carousel-button-prev');
 const carouselButtonNext = document.getElementById('carousel-button-next');
 const navLinks = document.querySelectorAll('nav .nav-links>.nav-link');
 
-navLinks.forEach(link => {
-    link.addEventListener('click', () => link.classList.toggle('active'))
+navLinks.forEach((link, idx) => {
+    link.addEventListener('click', () => {
+        navLinks.forEach((link, i) => i !== idx ? link.classList.remove('active'): console.log('Do Nothing'))
+        link.classList.toggle('active')
+    })
 })
 
 console.log(window.innerWidth)
