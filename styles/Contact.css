@@ -102,9 +102,6 @@ select {
   .navbar .nav-links li:hover .dropdown li.active .mini-dropdown {
     display: none;
   }
-  .navbar .nav-links li:hover .dropdown li.active .mini-dropdown {
-    display: none;
-  }
   .navbar .nav-links {
     display: inline-flex;
     align-items: center;
@@ -133,7 +130,7 @@ select {
     transform: scale(0.7);
   }
   .navbar .nav-links li:nth-child(3) .dropdown {
-    width: 45rem;
+    width: 49rem;
     height: 31.5rem;
   }
   .navbar .nav-links li .dropdown {

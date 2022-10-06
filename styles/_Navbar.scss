@@ -26,10 +26,6 @@
             display: none;
         }
 
-        & .nav-links li:hover .dropdown li.active .mini-dropdown {
-            display: none;
-        }
-
         .nav-links {
             display: inline-flex;
             align-items: center;
@@ -64,7 +60,7 @@
                 }
     
                 &:nth-child(3) .dropdown {
-                    width: 45rem;
+                    width: 49rem;
                     height: 31.5rem;
                 }
 
