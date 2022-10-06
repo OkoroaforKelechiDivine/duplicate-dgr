@@ -65,10 +65,12 @@ const changeBg = () => {
 
     animatedLink.innerText = heroBGs[currentBg].to;
     animatedLink.href = heroBGs[currentBg].link;
-
-
 }
 
 setInterval(changeBg, 6000);
+
+carouselButtonNext.addEventListener('click', changeBg)
+
+carouselButtonPrev.addEventListener('click', changeBg)
 
 
