@@ -231,6 +231,19 @@
                 background: linear-gradient(180deg, rgba(255,255,255, .1) 0%, rgba(0,0,0, .6) 75%), url('../Assets/agp.png') ;
             }
 
+            &.ldp {
+                background: linear-gradient(180deg, rgba(255,255,255, .1) 0%, rgba(0,0,0, .6) 75%), url('../Assets/ldp.png') ;
+            }
+            
+            &.pmg {
+                background: linear-gradient(180deg, rgba(255,255,255, .1) 0%, rgba(0,0,0, .6) 75%), url('../Assets/pmg.png') ;
+            }
+
+            &.smm {
+                background: linear-gradient(180deg, rgba(255,255,255, .1) 0%, rgba(0,0,0, .6) 75%), url('../Assets/smm.png') ;
+            }
+
+
             // &.cph {
             //     background: linear-gradient(180deg, rgba(255,255,255, .1) 0%, rgba(0,0,0, .6) 75%), url('../Assets/service_4.png') ;
             // }
@@ -281,8 +294,7 @@
                 border-radius: .3rem;
             }
 
-            &.ldp {
-                background: linear-gradient(180deg, rgba(255,255,255, .1) 0%, rgba(0,0,0, .6) 75%), url('../Assets/ldp.png') ;
+            &.ldp, &.smm {
                 background-size: 100% 110%;
             }
         }

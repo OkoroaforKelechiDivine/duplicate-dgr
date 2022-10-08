@@ -877,13 +877,21 @@ select {
 .services-section .services .service.agp {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/agp.png");
 }
+.services-section .services .service.ldp {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/ldp.png");
+}
+.services-section .services .service.pmg {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/pmg.png");
+}
+.services-section .services .service.smm {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/smm.png");
+}
 .services-section .services .service:nth-child(odd), .services-section .services .service:nth-child(even) {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 0.3rem;
 }
-.services-section .services .service.ldp {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/ldp.png");
+.services-section .services .service.ldp, .services-section .services .service.smm {
   background-size: 100% 110%;
 }
 
