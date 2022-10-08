@@ -325,9 +325,11 @@
 
     .contact {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         flex-direction: column;
         padding-bottom: 5rem;
+        gap: 5rem;
+        // height: 100%;
         
         h1 {
             font-family: $ff-secondary;

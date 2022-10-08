@@ -919,9 +919,9 @@ select {
 }
 .contact-us .contact {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   padding-bottom: 5rem;
+  gap: 5rem;
 }
 .contact-us .contact h1 {
   font-family: "Suranna", serif;
