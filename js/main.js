@@ -4,6 +4,11 @@ const carouselButtonPrev = document.getElementById('carousel-button-prev');
 const carouselButtonNext = document.getElementById('carousel-button-next');
 const navLinks = document.querySelectorAll('nav .nav-links>.nav-link');
 const animatedLink = document.querySelector('.animated-link');
+const currentCountryCode = document.getElementById('current_country_code');
+const currentCountryFlag = document.getElementById('current_country_flag');
+const countryCodeList = document.querySelector('cc-dropdown');
+const countryCodeOptions = document.querySelectorAll('.country_code')
+
 
 navLinks.forEach((link, idx) => {
     link.addEventListener('click', () => {
