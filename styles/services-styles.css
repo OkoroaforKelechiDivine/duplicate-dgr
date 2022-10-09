@@ -697,4 +697,64 @@ select {
   .heroimg h1 {
     font-size: 3.6rem;
   }
+}
+
+.ret-details {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 7rem 6rem;
+  padding: 6rem 0;
+  gap: 14rem;
+}
+.ret-details .back {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 0.4rem;
+  color: #1A1818;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "DM Sans", sans-serif;
+}
+.ret-details .back i {
+  font-size: 1.2rem;
+}
+.ret-details .overview-illustration, .ret-details .ret-details-text {
+  flex: 1;
+}
+.ret-details .overview-illustration.type-a img {
+  box-shadow: -7rem -5.2rem 0 #0E2E51;
+}
+.ret-details .overview-illustration img {
+  transform: translate(7rem, 7rem);
+}
+.ret-details .ret-details-text p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  color: #1A1818;
+  font-family: "DM Sans", sans-serif;
+}
+.ret-details .ret-details-text .title {
+  color: #989898;
+}
+@media screen and (max-width: 768px) {
+  .ret-details {
+    flex-direction: column;
+    margin: 2rem 1.3rem;
+    padding: 3rem 0;
+    gap: 0;
+  }
+  .ret-details .overview-illustration img {
+    transform: translate(0rem, 0rem) scale(0.7);
+  }
+  .ret-details .ret-details-text p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .ret-details .ret-details-text .title {
+    line-height: 2.5rem;
+  }
 }/*# sourceMappingURL=services-styles.css.map */
