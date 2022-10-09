@@ -764,6 +764,18 @@ select {
     line-height: 2.5rem;
   }
 }
+.ret-details dl dd, .ret-details dl dt {
+  padding: 0;
+  margin: 0.8rem 0;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  color: #1A1818;
+  font-family: "DM Sans", sans-serif;
+}
+.ret-details dl dt {
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
 
 .why-dgr {
   display: flex;

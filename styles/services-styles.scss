@@ -95,8 +95,6 @@
             line-height: 2.5rem;
             color: $text-black;
             font-family: $ff-primary;
-
-
         }
 
         .title {
@@ -124,6 +122,22 @@
             .title {
                 line-height: 2.5rem;
             }
+        }
+    }
+
+    dl {
+        dd, dt {
+            padding: 0;
+            margin: .8rem 0;
+            font-size: $fs-xs;
+            line-height: 2.5rem;
+            color: $text-black;
+            font-family: $ff-primary;
+        }
+
+        dt {
+            margin-top: 3rem;
+            margin-bottom: .5rem;
         }
     }
 }
