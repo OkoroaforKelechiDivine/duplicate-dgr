@@ -797,7 +797,15 @@ select {
   padding-bottom: 1rem;
   border-bottom: 1px solid #BFBFBF;
   width: 100%;
+}
+.why-dgr .why-dgr-text h1.type-a {
   color: #0E2E51;
+}
+.why-dgr .why-dgr-text h1.type-b {
+  color: #890006;
+}
+.why-dgr .why-dgr-text h1.type-c {
+  color: #1A1818;
 }
 @media screen and (max-width: 768px) {
   .why-dgr .why-dgr-text h1 {

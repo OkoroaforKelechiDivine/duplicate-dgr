@@ -101,5 +101,3 @@ setInterval(() => {
 carouselButtonNext.addEventListener('click', () => changeBg('next'))
 
 carouselButtonPrev.addEventListener('click', () => changeBg('prev'))
-
-
