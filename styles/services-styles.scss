@@ -135,6 +135,7 @@
     padding: 6rem;
     margin: 10rem 0;
 
+
     &.type-lb {
         background-color: rgba($color: #0E2E51, $alpha: 0.05);
     }
@@ -169,6 +170,10 @@
             border-bottom: 1px solid #BFBFBF;
             width: 100%;
             color: #0E2E51;
+
+            @media screen and (max-width: 768px) {  
+                font-size: 2.4rem;                
+            }
         }
 
         p {
@@ -188,6 +193,10 @@
             background-color: $text-white;
             width: 100%;
             padding: 3.2rem 6.7rem;
+
+            @media screen and (max-width: 998px) {
+                padding: 3.2rem 5rem;                
+            }
             
             h2 {
                 font-size: 2.4rem;
@@ -223,9 +232,11 @@
                     .country-code {
                         position: relative;
                         padding: .8rem 1.5rem;
+                        width: 30%;
                         display: flex;
+                        flex:1;
                         align-items: center;
-                        gap: .8rem;
+                        gap: .3rem;
                         border-right: 1px solid #989898;
                         padding-right: 1rem;
                         img {
@@ -282,6 +293,7 @@
                     input {
                         padding: 0 1rem;
                         border: none;
+                        flex:3;
 
                     }
                 }
@@ -313,6 +325,21 @@
                 padding: 1.1rem 0;
                 font-size: $fs-xs;
                 font-family: $ff-primary;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        margin: 0;
+        padding:5rem 2rem 8rem 2rem;
+        gap:0;
+
+        .why-dgr-text {
+            width: 100%;
+
+            form {
+                display: none;
             }
         }
     }
