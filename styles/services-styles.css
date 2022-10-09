@@ -897,7 +897,7 @@ select {
   display: none;
 }
 .why-dgr .why-dgr-text form .input-field .phone .country-code .cc_dropdown.active {
-  display: flex;
+  display: block;
 }
 .why-dgr .why-dgr-text form .input-field .phone .country-code .cc_dropdown::-webkit-scrollbar {
   width: 3px;
