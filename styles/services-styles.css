@@ -864,6 +864,7 @@ select {
   color: #545454;
   font-size: 1.4rem;
   font-family: "DM Sans", sans-serif;
+  outline: none;
 }
 .why-dgr .why-dgr-text form .input-field input::-moz-placeholder {
   color: #545454;
@@ -946,6 +947,7 @@ select {
   color: #545454;
   font-size: 1.4rem;
   font-family: "DM Sans", sans-serif;
+  outline: none;
 }
 .why-dgr .why-dgr-text form textarea {
   padding: 1.1rem 1.5rem;
