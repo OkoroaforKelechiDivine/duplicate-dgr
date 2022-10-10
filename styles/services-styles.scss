@@ -243,6 +243,10 @@
                     flex: 1;
                     padding: 1.1rem 1.5rem;
                     border: 1px solid #989898 ;
+                    color: #545454;
+                    font-size: $fs-xs;
+                    font-family: $ff-primary;
+                    outline: none;
 
                     &::placeholder {
                         color: #545454;
@@ -322,6 +326,10 @@
                         padding: 0 1rem;
                         border: none;
                         flex:3;
+                        color: #545454;
+                        font-size: $fs-xs;
+                        font-family: $ff-primary;
+                        outline: none;
 
                     }
                 }

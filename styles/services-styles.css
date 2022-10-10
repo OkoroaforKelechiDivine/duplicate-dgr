@@ -861,6 +861,10 @@ select {
   flex: 1;
   padding: 1.1rem 1.5rem;
   border: 1px solid #989898;
+  color: #545454;
+  font-size: 1.4rem;
+  font-family: "DM Sans", sans-serif;
+  outline: none;
 }
 .why-dgr .why-dgr-text form .input-field input::-moz-placeholder {
   color: #545454;
@@ -940,6 +944,10 @@ select {
   padding: 0 1rem;
   border: none;
   flex: 3;
+  color: #545454;
+  font-size: 1.4rem;
+  font-family: "DM Sans", sans-serif;
+  outline: none;
 }
 .why-dgr .why-dgr-text form textarea {
   padding: 1.1rem 1.5rem;
