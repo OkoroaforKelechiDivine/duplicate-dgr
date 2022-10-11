@@ -816,6 +816,11 @@ select {
 .why-dgr .why-dgr-text h1.type-b {
   color: #890006;
 }
+
+.text-area{
+  font-size: 1.6rem;
+}
+
 .why-dgr .why-dgr-text h1.type-c {
   color: #1A1818;
 }
