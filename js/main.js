@@ -9,19 +9,12 @@ const currentCountryFlag = document.getElementById('current_country_flag');
 const countryCodeList = document.querySelector('.cc_dropdown');
 const countryCodeOptions = document.querySelectorAll('.country_code');
 
-currentCountryCode.addEventListener('click', () => {
-    countryCodeList.classList.toggle('active')
-})
 
-countryCodeOptions.forEach(option => {
-    option.addEventListener('click', () => {
-        // alert('clicked');
-        currentCountryFlag.src = option.children[0].src;
-        currentCountryCode.innerText = option.children[1].innerText;
-        console.log(option.children[1].innerText)
-        countryCodeList.classList.remove('active');
-    })
-})
+toggleNavButton.addEventListener('click', (e) => {
+    // alert('clicked')
+    e.target.classList.toggle('active');
+    document.querySelector('.nav-links').classList.toggle('active');
+});
 
 
 navLinks.forEach((link, idx) => {
@@ -43,10 +36,6 @@ miniMenu.forEach(drpdn => {
     })
 })
 
-toggleNavButton.addEventListener('click', (e) => {
-    e.target.classList.toggle('active');
-    document.querySelector('.nav-links').classList.toggle('active');
-});
 
 // Carousel 
 const heroBGs = [
@@ -89,7 +78,7 @@ const changeBg = (type) => {
     document.querySelector('.hero-section').style.background = `linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.7) 85.5%), url(${heroBGs[currentBg].imgUrl})`;
     document.querySelector('.hero-section').style.backgroundRepeat = 'no-repeat';
     document.querySelector('.hero-section').style.backgroundSize = `cover`;
-
+    
     animatedLink.innerText = heroBGs[currentBg].to;
     animatedLink.href = heroBGs[currentBg].link;
 }
@@ -101,3 +90,17 @@ setInterval(() => {
 carouselButtonNext.addEventListener('click', () => changeBg('next'))
 
 carouselButtonPrev.addEventListener('click', () => changeBg('prev'))
+
+currentCountryCode.addEventListener('click', () => {
+    countryCodeList.classList.toggle('active')
+})
+
+countryCodeOptions.forEach(option => {
+    option.addEventListener('click', () => {
+        // alert('clicked');
+        currentCountryFlag.src = option.children[0].src;
+        currentCountryCode.innerText = option.children[1].innerText;
+        console.log(option.children[1].innerText)
+        countryCodeList.classList.remove('active');
+    })
+})
