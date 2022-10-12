@@ -10,6 +10,7 @@ const countryCodeList = document.querySelector('.cc_dropdown');
 const countryCodeOptions = document.querySelectorAll('.country_code');
 
 
+
 toggleNavButton.addEventListener('click', (e) => {
     // alert('clicked')
     e.target.classList.toggle('active');
