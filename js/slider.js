@@ -10,6 +10,16 @@ const thumb_2 = container[1].querySelector(".slider-thumb");
 const tooltip_2 = container[1].querySelector(".tooltip");
 const progress_2 = container[1].querySelector(".progress");
 
+const filterToggle = document.getElementById('filter');
+
+filterToggle.addEventListener('click' , () => {
+    document.getElementById('filter-projects').classList.toggle('show')
+    if(document.getElementById('filter-projects').classList.contains('show')) {
+        document.getElementById('filter-button').innerText = 'X'
+    } else {
+        document.getElementById('filter-button').innerText = 'Filter'
+    }
+})
 
 function customSlider() {
     // alert('working')

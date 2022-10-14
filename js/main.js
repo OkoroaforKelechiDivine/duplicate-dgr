@@ -8,16 +8,6 @@ const currentCountryCode = document.getElementById('current_country_code');
 const currentCountryFlag = document.getElementById('current_country_flag');
 const countryCodeList = document.querySelector('.cc_dropdown');
 const countryCodeOptions = document.querySelectorAll('.country_code');
-const filterToggle = document.getElementById('filter')
-
-filterToggle.addEventListener('click' , () => {
-    document.getElementById('filter-projects').classList.toggle('show')
-    if(document.getElementById('filter-projects').classList.contains('show')) {
-        document.getElementById('filter-button').innerText = 'X'
-    } else {
-        document.getElementById('filter-button').innerText = 'Filter'
-    }
-})
 
 toggleNavButton.addEventListener('click', (e) => {
     // alert('clicked')
@@ -113,4 +103,5 @@ countryCodeOptions.forEach(option => {
         countryCodeList.classList.remove('active');
     })
 })
+
 
