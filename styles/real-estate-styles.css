@@ -1020,7 +1020,17 @@ select {
   justify-content: space-between;
   gap: 2rem;
 }
-.contact-us form .input-field .email-address, .contact-us form .input-field .phone-number, .contact-us form .input-field .property-type, .contact-us form .input-field .fullname {
+
+.property-type select{
+  cursor: pointer;
+}
+
+.text-area{
+  resize: none;
+  overflow: hidden;
+}
+
+.contact-us form .input-field .email-address, .contact-us form .input-field .phone-number, .contact-us form .input-field .property-type, .contact-us form .input-field .full-name {
   flex: 1;
 }
 .contact-us form textarea {

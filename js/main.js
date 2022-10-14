@@ -103,5 +103,3 @@ countryCodeOptions.forEach(option => {
         countryCodeList.classList.remove('active');
     })
 })
-
-
