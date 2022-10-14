@@ -424,6 +424,10 @@
             gap: 4.1rem;
             align-items: center;
             margin: 0;
+
+            @media screen and (max-width: 600px) {
+                gap: 2rem;                
+            }
             // height: 10rem
 
             p {
