@@ -405,6 +405,11 @@
         color: $text-white;
         font-family: $ff-primary;
 
+        @media screen and (max-width: 600px) {
+            padding: 1.2rem;
+            padding-bottom: 0; 
+        }
+
         h2 {
             font-family: $ff-secondary;
             font-size: $fs-lg;

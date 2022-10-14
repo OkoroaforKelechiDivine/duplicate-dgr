@@ -1040,6 +1040,12 @@ select {
   color: #ffffff;
   font-family: "DM Sans", sans-serif;
 }
+@media screen and (max-width: 600px) {
+  .projects-section .project-card {
+    padding: 1.2rem;
+    padding-bottom: 0;
+  }
+}
 .projects-section .project-card h2 {
   font-family: "Suranna", serif;
   font-size: 3.6rem;
