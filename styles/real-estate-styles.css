@@ -667,12 +667,6 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
-#message{
-  resize: none;
-  height: 50vh;
-}
-
 .heroimg {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../Assets/reb-hero-img.png");
   background-repeat: no-repeat;
