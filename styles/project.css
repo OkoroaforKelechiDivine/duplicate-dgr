@@ -830,6 +830,7 @@ select {
   border: none;
   padding: 0;
   width: 100%;
+  background: none;
   outline: none;
   font-size: 1.6rem;
 }
