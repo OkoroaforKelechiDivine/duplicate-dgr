@@ -2,6 +2,7 @@
 @use 'Footer.scss';
 @import 'default.scss';
 
+
 .heroimg {
     background: linear-gradient(180deg, rgba(26, 24, 24, 0) 0%, rgba(26, 24, 24, 0.9) 100%) , url('../Assets/dgr_proj_illustration.jpg');
     background-repeat: no-repeat;
@@ -34,7 +35,110 @@
 }
 
 .filter {
+    width: 100%;
+    padding:10rem 6rem;
+    font-family: $ff-primary;
     
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.15);
+        
+        &>div {
+            background: #fff;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:2.2rem 3.7rem; 
+            
+            h3 {
+                font-size: $fs-md;
+                font-weight: $fw-b;
+                line-height: 0;
+            }
+            
+            p {
+                font-size: $fs-sm;
+                line-height: 0;
+                display: flex;
+                align-items: center;
+                gap:.5rem;
+
+                i {
+                    transform: scale(.9);
+                }
+            }
+        }
+
+        button {
+            background-color: $text-red-400;
+            width: 18.8rem;
+            border: none;
+            outline: none;
+            padding: 2.9rem;
+            font-size: $fs-sm; 
+            color: $text-white;
+            cursor: pointer;
+        }
+    }
+    
+    .filter-projects {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        padding: 8.5rem 3.7rem 5.4rem 3.7rem;
+        box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.1);
+        
+        .groups {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .line {
+                width: 1px;
+                background: #BFBFBF;
+            }
+
+            .group {
+                .form-control {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 3rem; 
+
+                    label {
+                        font-size: $fs-md;
+                        line-height: 6.4rem;
+                        color: $text-black;
+                    }
+
+                    input, select {
+                        color: #545454;
+                        padding: 2.5rem 1.6rem;
+                        font-size: $-fs-sm;
+                        border: 1px solid #BFBFBF;
+                        &::placeholder {
+                            color: #545454;
+                        }
+                    }
+                }
+            }
+        }
+        button {
+            background: #890006;
+            width: 100%;
+            max-width: 500px;
+            color: $text-white;
+            font-size: $fs-xs;
+            padding: .7rem 0;
+
+
+        }
+    }
 }
 
 

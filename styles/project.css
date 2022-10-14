@@ -695,4 +695,90 @@ select {
   .heroimg h1 {
     font-size: 3.6rem;
   }
+}
+
+.filter {
+  width: 100%;
+  padding: 10rem 6rem;
+  font-family: "DM Sans", sans-serif;
+}
+.filter .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.15);
+}
+.filter .header > div {
+  background: #fff;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2rem 3.7rem;
+}
+.filter .header > div h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 0;
+}
+.filter .header > div p {
+  font-size: 1.6rem;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.filter .header > div p i {
+  transform: scale(0.9);
+}
+.filter .header button {
+  background-color: #890006;
+  width: 18.8rem;
+  border: none;
+  outline: none;
+  padding: 2.9rem;
+  font-size: 1.6rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.filter .filter-projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 8.5rem 3.7rem 5.4rem 3.7rem;
+  box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.1);
+}
+.filter .filter-projects .groups {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.filter .filter-projects .groups .line {
+  width: 1px;
+  background: #BFBFBF;
+}
+.filter .filter-projects .groups .group .form-control {
+  display: flex;
+  flex-direction: column;
+}
+.filter .filter-projects .groups .group .form-control label {
+  font-size: 2rem;
+  line-height: 6.4rem;
+  color: #1A1818;
+}
+.filter .filter-projects .groups .group .form-control input, .filter .filter-projects .groups .group .form-control select {
+  color: #545454;
+  padding: 2.5rem 1.6rem;
+}
+fs .filter .filter-projects .groups .group .form-control input::-moz-placeholder, fs .filter .filter-projects .groups .group .form-control select::-moz-placeholder {
+  color: #545454;
+}
+fs .filter .filter-projects .groups .group .form-control input:-ms-input-placeholder, fs .filter .filter-projects .groups .group .form-control select:-ms-input-placeholder {
+  color: #545454;
+}
+fs .filter .filter-projects .groups .group .form-control input::placeholder, fs .filter .filter-projects .groups .group .form-control select::placeholder {
+  color: #545454;
 }/*# sourceMappingURL=project.css.map */
