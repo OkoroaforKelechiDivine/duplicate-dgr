@@ -688,21 +688,17 @@ select {
 }
 
 .contact-us {
+  /*border: green 3px solid;*/
   display: flex;
-  margin: 12rem 6rem;
-  margin-bottom: 20rem;
+  margin: 12rem 6rem 20rem;
   padding: 12rem 8rem;
-  background: #890006;
-  background-image: url("../Assets/Rectangle.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
+  background: #890006 url("../Assets/Rectangle.png") no-repeat;
   justify-content: space-between;
 }
 @media screen and (max-width: 400px) {
   .contact-us {
-    margin: 5rem 0;
-    margin-bottom: 10rem;
+    margin: 5rem 0 10rem;
     padding: 0;
   }
 }
@@ -711,16 +707,18 @@ select {
 }
 .contact-us .contact {
   display: flex;
+  /*border: green 3px solid;*/
   justify-content: space-between;
   flex-direction: column;
   padding-bottom: 5rem;
 }
 .contact-us .contact h1 {
+  /*border: green 3px solid;*/
   font-family: "Suranna", serif;
   font-size: 6.4rem;
   color: #ffffff;
   font-weight: 300;
-  width: 72%;
+  width: 100%;
   max-width: 42rem;
   line-height: 6.8rem;
 }
