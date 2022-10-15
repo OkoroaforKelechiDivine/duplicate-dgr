@@ -12,7 +12,9 @@
 <body>
     <nav class="navbar" role="navigation">
         <div class="brand-logo">
-            <img src="../Assets/logo.svg" alt="brand-logo">
+            <a href="/index.html">
+                <img src="../Assets/logo.svg" alt="brand-logo">
+            </a>
         </div>
         <div id="toggle-menu" class="toggle-menu" alt="toggle-navbar"></div>
         <ul class="nav-links">
@@ -79,7 +81,7 @@
                         <label for="Projects">Projects</label>
                         <div class="select">
                             <select name="project" id="project">
-                                <option value="Citadel">Citadel</option>
+                                <option class="citadel" value="Citadel">Citadel</option>
                             </select>
                         </div>
                     </div>
@@ -130,9 +132,11 @@
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="area"><img src="../Assets/area.png" alt="">Area(m2)</label>
+                        <label for="area">
+                            <img src="../Assets/area.png" alt=""/>Area(m2)
+                        </label>
                         <div class="range-slider">
-                            <input type="range" name="" id="" min="0" max="100" value="100" class="slider">
+                            <input type="range" name="" min="0" max="100" value="100" class="slider">
                             <p class="min">Min</p>
                             <p class="max">Max</p>
                             <div class="slider-thumb-fixed">
@@ -146,7 +150,7 @@
                     </div>
                 </div>
             </div>
-            <button>Search</button>
+            <button class="search">Search</button>
         </div>
     </div>
 
@@ -222,7 +226,9 @@
     <footer class="main-footer">
         <div class="main-footer">
             <div class="brand-logo">
-                <img src="../Assets/logo.svg" alt="brand-logo">
+                <a href="/index.html">
+                    <img src="../Assets/logo.svg" alt="brand-logo">
+                </a>
             </div>
             <div class="footer-links">
                 <div class="quick-links">

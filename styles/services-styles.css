@@ -453,6 +453,18 @@ footer {
   font-family: "DM Sans", sans-serif;
   margin-top: 3rem;
 }
+
+.text-area{
+  resize: none;
+  font-size: 15px;
+  overflow: hidden;
+  font-family: "DM Sans", sans-serif;
+}
+
+.btn-send{
+  cursor: pointer;
+}
+
 footer .main-footer {
   display: flex;
   justify-content: space-between;

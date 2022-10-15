@@ -227,9 +227,15 @@ select {
 .navbar .brand-logo {
   z-index: 3;
 }
+
+.navigate{
+  cursor: pointer;
+}
+
 .navbar .brand-logo img {
   width: 6rem;
   height: 6rem;
+  cursor: pointer;
 }
 .navbar .toggle-menu {
   display: none;
@@ -1064,14 +1070,15 @@ section.services .service .service-details h1 {
     font-size: 2.4rem;
   }
 }
+
 section.services .service .service-details p {
   font-size: 1.6rem;
   line-height: 3.5rem;
-  margin: 2rem 0;
-  margin-bottom: 3.5rem;
+  margin: 2rem 0 3.5rem;
   color: #545454;
   font-family: "DM Sans", sans-serif;
 }
+
 section.services .service .service-details a {
   text-decoration: underline;
   color: #890006;
@@ -1082,9 +1089,11 @@ section.services .service .service-details a {
 section.services .service .service-details a i {
   transform: scale(0.8);
 }
+
 section.services .service .service-details a:hover {
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
 }
+
 @media screen and (max-width: 768px) {
   section.services .service {
     flex-direction: column;
