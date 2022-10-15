@@ -194,6 +194,11 @@ select {
   .navbar .nav-links li:hover .dropdown li a, .navbar .nav-links li.active .dropdown li a {
     color: #1A1818;
   }
+
+  .text-area{
+    resize: none;
+  }
+
   .navbar .nav-links li:hover .dropdown li .mini-dropdown::before, .navbar .nav-links li.active .dropdown li .mini-dropdown::before {
     content: "";
     position: absolute;
