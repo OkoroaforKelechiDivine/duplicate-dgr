@@ -691,6 +691,7 @@ select {
   /*border: green 3px solid;*/
   display: flex;
   margin: 12rem 6rem 20rem;
+  /*height: 100vh;*/
   padding: 12rem 8rem;
   background-size: cover;
   background: url("../Assets/contact section texture.png") no-repeat;
