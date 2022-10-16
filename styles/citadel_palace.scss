@@ -1,0 +1,173 @@
+@use 'Navbar.scss';
+@use 'Footer.scss';
+@import 'default.scss';
+
+.hero-section-ctp {
+    display: flex;
+    background: linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%), url('../Assets/about-bg.svg');
+    min-height: 100vh;
+
+    form {
+        background-color: $text-white;
+        width: 100%;
+        max-width: 35rem;
+        padding: 2rem;
+ 
+        h2 {
+            font-size: 2.4rem;
+            font-weight: 400;
+            color: #890006;
+        }
+    
+        .input-field {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1rem;
+            margin: 1.5rem 0;
+    
+            input {
+                flex: 1;
+                padding: 1.1rem 1.5rem;
+                border: 1px solid #989898 ;
+                color: #545454;
+                font-size: $fs-xs;
+                font-family: $ff-primary;
+                outline: none;
+    
+                &::placeholder {
+                    color: #545454;
+                    font-size: $fs-xs;
+                    font-family: $ff-primary;
+                }
+            }
+    
+            .phone {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                border: 1px solid #989898 ;
+    
+                .country-code {
+                    position: relative;
+                    padding: .8rem 1.5rem;
+                    width: 30%;
+                    display: flex;
+                    flex:1;
+                    align-items: center;
+                    gap: .3rem;
+                    border-right: 1px solid #989898;
+                    padding-right: 1rem;
+                    img {
+                        width: 1.4rem;
+                    }
+    
+                    span {
+                        font-size: $fs-xs;
+                        font-family: $ff-primary;
+                    }
+    
+    
+                    .cc_dropdown {
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        padding: 0;
+                        list-style: none;
+                        background: #fff;
+                        padding: 1rem;
+                        border: 1px solid rgba($color: #890006, $alpha: 0.05);
+                        box-shadow: 0 0 1px 1px rgba($color: #890006, $alpha: 0.05);
+                        width: 10rem;
+                        max-height: 12rem;
+                        overflow-y: scroll; 
+                        display: none;
+                        
+                        &.active {
+                            display: block;
+                        }
+    
+                        &::-webkit-scrollbar {
+                            width: 3px;
+                        }
+    
+                        &::-webkit-scrollbar-track {
+                            background: rgba($color: #890006, $alpha: 0.05);
+                        }
+    
+                        &::-webkit-scrollbar-thumb {
+                            background: rgba($color: $text-gray-200, $alpha: 1);
+                            border-radius: 30rem;
+                            border: none;
+                        }
+    
+                        li {
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+                            margin: 1rem 0;
+                        }
+                    }
+                }
+                input {
+                    padding: 0 1rem;
+                    border: none;
+                    flex:3;
+                    color: #545454;
+                    font-size: $fs-xs;
+                    font-family: $ff-primary;
+                    outline: none;
+    
+                }
+            }
+        }
+        textarea {
+            padding: 1.1rem 1.5rem;
+            border: 1px solid #989898;
+            width: 100%;
+            min-width: 40rem;
+            max-width: 82rem;
+            min-height: 10rem;
+            max-height: 12rem; 
+    
+            &::placeholder {
+                color: #545454;
+                font-size: $fs-xs;
+                font-family: $ff-primary;
+            }
+        }
+    
+        button {
+            display: block;
+            background-color: #890006;
+            border: none;
+            width: 100%;
+            text-align: center;
+            margin-top: 1.5rem;
+            color: $text-white;
+            padding: 1.1rem 0;
+            font-size: $fs-xs;
+            font-family: $ff-primary;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
