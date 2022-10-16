@@ -693,7 +693,7 @@ select {
   margin: 12rem 6rem 20rem;
   padding: 12rem 8rem;
   background-size: cover;
-  background: #890006;
+  background: #890006 url("https://www.linkedin.com/dms/D4D06AQHqOnEsN2qrSw/messaging-attachmentFile/0/1665910760578?m=AQJwmvvJboxyIgAAAYPgBO0HqH8uFDtl1EaDtgiutPfh6-w2-817LkEfMg&ne=1&v=beta&t=q1qJ1KF5LOVjJEuH8rNxTbtAOUfIF2DV7Qnon_b7Ibw") no-repeat;
   justify-content: space-between;
 }
 @media screen and (max-width: 400px) {
