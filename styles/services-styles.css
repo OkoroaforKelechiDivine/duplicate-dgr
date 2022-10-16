@@ -910,9 +910,10 @@ select {
   border-right: 1px solid #989898;
   padding-right: 1rem;
 }
-.why-dgr .why-dgr-text form .input-field .phone .country-code img {
-  width: 1.4rem;
-}
+/*.why-dgr .why-dgr-text form .input-field .phone .country-code img {*/
+/*  width: 1.4rem;*/
+/*}*/
+
 .why-dgr .why-dgr-text form .input-field .phone .country-code span {
   font-size: 1.4rem;
   font-family: "DM Sans", sans-serif;
