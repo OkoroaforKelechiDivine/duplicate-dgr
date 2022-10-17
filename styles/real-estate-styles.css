@@ -900,7 +900,6 @@ select {
   margin: 12rem 6rem;
   margin-bottom: 20rem;
   padding: 12rem 8rem;
-  /*background: #0E2E51;*/
   background-image: url("../Assets/blue contact form section.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -949,7 +948,7 @@ select {
   text-decoration: none;
   font-family: "DM Sans", sans-serif;
   font-size: 1.4rem;
-  opacity: 0.9;
+  opacity: 0.7;
 }
 .contact-us .contact .contact-address a:nth-child(3) {
   text-decoration: underline;
@@ -1020,16 +1019,6 @@ select {
   justify-content: space-between;
   gap: 2rem;
 }
-
-.property-type select{
-  cursor: pointer;
-}
-
-.text-area{
-  resize: none;
-  overflow: hidden;
-}
-
 .contact-us form .input-field .email-address, .contact-us form .input-field .phone-number, .contact-us form .input-field .property-type, .contact-us form .input-field .full-name {
   flex: 1;
 }

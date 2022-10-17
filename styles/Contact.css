@@ -194,11 +194,6 @@ select {
   .navbar .nav-links li:hover .dropdown li a, .navbar .nav-links li.active .dropdown li a {
     color: #1A1818;
   }
-
-  .text-area{
-    resize: none;
-  }
-
   .navbar .nav-links li:hover .dropdown li .mini-dropdown::before, .navbar .nav-links li.active .dropdown li .mini-dropdown::before {
     content: "";
     position: absolute;
@@ -688,19 +683,21 @@ select {
 }
 
 .contact-us {
-  /*border: green 3px solid;*/
   display: flex;
-  margin: 12rem 6rem 20rem;
-  /*height: 100vh;*/
+  margin: 12rem 6rem;
+  margin-bottom: 20rem;
   padding: 12rem 8rem;
-  background: url("../Assets/contact section texture.png") no-repeat;
+  background: #890006;
+  background-image: url("../Assets/Rectangle.png");
   background-size: cover;
-
+  background-repeat: no-repeat;
+  display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 400px) {
   .contact-us {
-    margin: 5rem 0 10rem;
+    margin: 5rem 0;
+    margin-bottom: 10rem;
     padding: 0;
   }
 }
@@ -709,18 +706,16 @@ select {
 }
 .contact-us .contact {
   display: flex;
-  /*border: green 3px solid;*/
   justify-content: space-between;
   flex-direction: column;
   padding-bottom: 5rem;
 }
 .contact-us .contact h1 {
-  /*border: green 3px solid;*/
   font-family: "Suranna", serif;
   font-size: 6.4rem;
   color: #ffffff;
   font-weight: 300;
-  width: 100%;
+  width: 72%;
   max-width: 42rem;
   line-height: 6.8rem;
 }
@@ -743,7 +738,7 @@ select {
   text-decoration: none;
   font-family: "DM Sans", sans-serif;
   font-size: 1.4rem;
-  opacity: 0.9;
+  opacity: 0.7;
 }
 .contact-us .contact .contact-address a:nth-child(3) {
   text-decoration: underline;

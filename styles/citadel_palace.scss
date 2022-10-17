@@ -260,6 +260,168 @@
     }
 }
 
+.overview-ctp {
+    background: $text-red-400;
+    background-image: url('../Assets/Rectangle.png');
+    width: 100%;
+    display: flex;
+    padding: 6rem;
+    gap: 17rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .illustration {
+        flex: 1;
+
+        img {
+            width: 100%;
+            transform: translateY(-20%);
+        }
+    }
+    
+    .overview-about {
+        flex:1;
+        h1 {
+            font-family: $ff-secondary;
+            font-size: $fs-xxl;
+            font-weight: 400;
+            margin-bottom: 4rem;
+            border-bottom: 0.5px solid #FFA7AB;
+            padding: 2.5rem;
+            color: $text-white;
+        }
+
+        p {
+            font-size: $fs-xs;
+            color: #FFE2E4;
+            line-height: 2.5rem;
+            padding: 0 2.5rem;
+            font-family: $ff-primary;
+
+            @media screen and (max-width: 600px) {
+                font-size: 1.2rem;                            
+            }
+
+        }
+
+        .overview-about-card {
+            margin: 2.5rem;
+            background: $text-white;
+            padding: 4.1rem 5.1rem;
+            width: 100%;
+            max-width: 46rem;
+
+            &>small {
+                font-family: $ff-secondary;
+                font-size: $fs-md;
+                line-height: 4.3rem;
+            }
+
+            &>p {
+                color: $text-red-400;
+                font-size: 4rem;
+                font-family: $ff-primary;
+                font-weight: 700;
+                margin-top: 1.8rem;
+                padding: 0;
+
+                @media screen and (max-width: 600px) {
+                    font-size: 3rem;                            
+                }
+            }
+
+            &>div {
+                display: flex;
+                // align-items: center;
+                // gap: 2rem;
+                font-family: $ff-primary;
+
+                div {
+                    width: 8rem;
+                    margin: 0 1.8rem;
+
+                   &.line {
+                        width: 1.5px;
+                        height: 12rem;
+                        background-color: #BFBFBF;
+                    }
+
+                    small {
+                        color: #545454;
+                        font-size: $fs-xs;
+                        margin-bottom: 0;
+                    }
+
+                    h4 {
+                        color: #1A1818;
+                        font-size: $fs-lg;
+                        margin-top: 1rem;
+
+                        @media screen and (max-width: 600px) {
+                            font-size: 3rem;                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 85rem;
+        position: relative;
+        padding:1rem;
+        padding-bottom: 5rem;
+
+        .illustration {
+
+            img {
+                position: relative;
+                transform: translateY(-50%);
+            }
+        }
+
+        .overview-about {
+            width: 100%;
+            margin-top: -25rem;
+
+            h1 {
+                padding: 0;
+                font-size: $fs-lg;
+            }
+
+            &>p{
+                padding: 0;
+            }
+
+            .overview-about-card {
+                padding: 2.5rem;
+                margin: 0;
+                &>div {
+                    display: flex;
+                    // align-items: center;
+                    // gap: 2rem;
+                    font-family: $ff-primary;
+    
+                    div {
+                        width: 6rem;
+                        margin: 0 1.2rem;
+    
+                       &.line {
+                            width: 1px;
+                            height: 12rem;
+                            background-color: #BFBFBF;
+                       }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
 
 
 
