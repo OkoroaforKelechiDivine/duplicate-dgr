@@ -1,0 +1,378 @@
+@use 'Navbar.scss';
+@use 'Footer.scss';
+@import 'default.scss';
+
+.heroimg {
+    background: linear-gradient(180deg, rgba(26, 24, 24, 0) 0%, rgba(26, 24, 24, 0.9) 100%) , url('../Assets/dgr_proj_illustration.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 50vh;
+    min-height: 45rem;
+    max-height: 55rem;
+    margin: 0;
+    transform: translateY(-2%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    h1 {            
+        color: $text-white;
+        font-family: $ff-secondary;
+        font-size: $fs-xxl;
+        font-weight: $fw-r;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 30vh;
+        min-height: 25rem;
+        max-height: 35rem;  
+        
+        h1 {            
+            font-size: $fs-lg;
+        }
+    }
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: $text-black;
+    height: 12rem;
+    padding: 0 6rem;
+    transform: translateY(-10%);
+
+
+    .back {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        gap: .4rem;
+        color: $text-white;
+        font-size: $fs-xs;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 6rem;
+        font-family: $ff-primary;
+
+        i {
+           font-size: 1.2rem; 
+        }
+    }
+
+    form {
+        width: 100%;
+        max-width:32rem;
+
+        input {
+            border: none;
+            background-color: $text-white;
+            padding: 1.2rem 2.4rem;
+            color: #989898;
+            font-size: $fs-sm;
+            outline: none;
+            font-family: $ff-primary;
+            margin: 0;
+
+            &::placeholder {
+                color: #989898;
+            }
+        }
+
+        button {
+            margin: 0;
+            background: $text-red-400;
+            color: $text-white;
+            padding: 1.2rem 2.4rem;
+            font-size: $fs-sm;
+            border: none;
+        }
+    }
+}
+
+.dev-cards {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+    padding: 6rem;
+    margin-bottom: 15rem;
+    
+    .dev-card{
+        flex-basis: 20rem;
+        height: 20rem;
+        text-decoration: none;
+        .illustration {
+            width: 100%;
+            padding: 2rem;
+            color: $text-white;
+            display: flex;
+            align-items: center;
+
+            &.black {
+                background-color: $text-black;
+            }
+
+            &.red {
+                background-color: $text-red-400;
+            }
+
+            &.lb {
+                background-color: #3780CF;
+            }
+
+            &.db {
+                background-color: #0E2E51;
+            }
+
+            h1 {
+                font-family: $ff-secondary;
+                font-size: 3.2rem;
+                font-weight: 400;
+            }
+        }
+
+        p.caption {
+            font-size: 2.4rem;
+            font-family: $ff-primary;
+            text-align: center;
+            color: $text-black;
+        }
+    }
+
+}
+
+
+.contact-us {
+    display:flex;
+    margin: 12rem 6rem;
+    margin-bottom: 20rem;
+    padding: 12rem 8rem;
+    background-image: url('../Assets/blue contact form section.png');
+    background-size: cover;
+    background-repeat: no-repeat;;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 400px) {
+        margin: 5rem 0;
+        margin-bottom: 10rem;
+        padding: 0;        
+    }
+
+    .contact, form {
+        flex: 1;
+    }
+
+    .contact {
+        display: flex;
+        // justify-content: space-between;
+        flex-direction: column;
+        padding-bottom: 5rem;
+        gap: 5rem;
+        // height: 100%;
+        
+        h1 {
+            font-family: $ff-secondary;
+            font-size: $fs-xxl;
+            color: $text-white;
+            font-weight: $fw-r;
+            line-height: 6.8rem;
+
+            @media screen and (max-width: 600px) {
+                font-size: $fs-lg;
+                line-height: 4rem;
+            }
+        }
+        
+        .contact-address {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                gap: 3.2rem;
+                margin: 3rem 0;
+                color: #F1F1F1;
+                text-decoration: none;
+                font-family: $ff-primary;
+                font-size: $fs-xs;
+                opacity: .7;
+
+                &:nth-child(3) {
+                    text-decoration: underline;
+                }
+
+                @media screen and (max-width: 600px) {
+                    gap: 1.2rem;
+                    margin: 1rem 0;
+
+                    img {
+                        transform: scale(.6);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .social-links {
+            display: flex;
+            align-items: center;
+            gap: 8.5rem;
+            margin-top: 3rem;
+
+            @media screen and (max-width: 600px) {
+                gap: 6rem;
+
+                img {
+                    transform: scale(.7);
+                }
+            }
+        }
+    }
+
+    form {
+        background: $text-white;
+        padding: 8rem;
+        font-family: $ff-primary;
+
+        label {
+            color: #545454;
+            font-size: $fs-xs;
+            font-weight: 500;
+
+            @media screen and (max-width: 600px) {
+                font-size: $fs-xs;
+            }
+        }
+
+        input, textarea, select {
+            border: 1px solid $text-gray-200;
+            padding:1.2rem 2.3rem;
+            font-size: $fs-xs;
+            width:100%;
+            margin-top: 1.2rem;
+            border-radius: .4rem;
+
+            option {
+                font-size: $fs-xs;
+            }
+
+            &::placeholder {
+                color: $text-gray-300;
+            }
+        }
+        
+        .input-field {
+            margin: 3rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+
+            .email-address, .phone-number, .property-type, .full-name {
+                flex: 1;
+            }
+        }
+        
+        textarea {
+            max-width: 100rem;
+        }
+
+        #submit {
+            background: #0E2E51;
+            color: $text-white;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            font-size: $fs-xs;
+            margin-top: 4rem;
+            padding : 1.4rem 0;
+            font-weight: 500;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;        
+        
+        .contact {
+            padding-bottom: 10rem;
+
+            h1{ width: 100%; }
+        }
+
+        form {
+            textarea {
+                max-width: 150rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        margin: 7rem 6rem;
+        padding: 7rem 4rem;
+
+        .contact, form {
+            flex: 1;
+        }
+
+        .contact {
+            padding-bottom: 5rem;
+            
+            h1 {
+                font-size: $fs-lg;
+                color: $text-white;
+                width:100%;
+                max-width: 27rem;
+                line-height: 4rem;
+            }
+            
+            .contact-address {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .social-links {
+                gap: 5rem;
+
+                @media screen and (max-width: 600px) {
+                    display: none;                    
+                }
+            }
+        }
+
+        form {
+            padding: 4rem;
+            
+            .input-field {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            textarea {
+                max-width: 75rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1300px) {
+            form {
+                padding: 3rem 3rem;
+            }       
+    }
+
+    @media screen and (max-width: 600px) {
+        margin: 5rem 0rem;
+        margin-bottom: 10rem;
+        padding: 4rem 2rem;
+
+
+        form {
+            padding: 0 2rem;
+            padding-bottom: 3rem;
+        }
+    }
+}
