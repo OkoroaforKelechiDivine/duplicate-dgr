@@ -1073,6 +1073,11 @@ select {
   line-height: 6.4rem;
   color: #1A1818;
 }
+@media screen and (max-width: 600px) {
+  .property-plans h1 {
+    font-size: 3.6rem;
+  }
+}
 .property-plans .nav-buttons {
   display: flex;
   align-items: center;
@@ -1166,10 +1171,24 @@ select {
     margin-top: 20rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .property-plans {
+    padding: 1rem;
+  }
+  .property-plans .nav-buttons button {
+    padding: 0.3rem 3.5rem;
+    line-height: 5rem;
+  }
+}
 
 .facilities-section {
   padding: 5rem 6rem;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .facilities-section {
+    padding: 1rem;
+  }
 }
 .facilities-section h1 {
   font-size: 4.8rem;
@@ -1243,7 +1262,6 @@ select {
   justify-content: center;
   gap: 4rem;
   position: relative;
-  overflow: scroll;
   width: 100%;
 }
 .gallery .scroll-gallery::-webkit-scrollbar {
@@ -1272,7 +1290,11 @@ select {
   }
 }
 .gallery .scroll-gallery .overflow {
+  overflow: scroll;
   width: 90%;
+}
+.gallery .scroll-gallery .overflow::-webkit-scrollbar {
+  display: none;
 }
 .gallery .scroll-gallery .overflow .images {
   display: flex;
@@ -1280,10 +1302,6 @@ select {
   justify-content: center;
   gap: 5rem;
   width: 120rem;
-  overflow: scroll;
-}
-.gallery .scroll-gallery .overflow .images::-webkit-scrollbar {
-  display: none;
 }
 .gallery .scroll-gallery .overflow .images div {
   flex-basis: 43rem;

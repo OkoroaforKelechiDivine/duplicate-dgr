@@ -432,6 +432,11 @@
         font-size: $fs-xl;
         line-height: 6.4rem;
         color: $text-black;
+
+        @media screen and (max-width: 600px) {
+            font-size: $fs-lg;            
+        }
+
     }
 
     .nav-buttons {
@@ -535,12 +540,26 @@
             margin-top: 20rem;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        padding: 1rem;    
+       
+        .nav-buttons {
+            button {
+                padding: .3rem 3.5rem;
+                line-height: 5rem;
+            }
+        }
+    }
 }
 
 .facilities-section {
     padding: 5rem 6rem;
     width: 100%;
 
+    @media screen and (max-width: 768px) {
+        padding: 1rem;    
+    }
     h1 {
         font-size: $fs-xl;
         font-family: $ff-secondary;
@@ -613,7 +632,6 @@
         justify-content: center;
         gap: 4rem;
         position: relative;
-        overflow: scroll;
         width: 100%;
         
         &::-webkit-scrollbar {
@@ -647,18 +665,20 @@
 
 
         .overflow {
+            overflow: scroll;
             width: 90%;
+            
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
             .images {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 5rem;
                 width: 120rem;
-                overflow: scroll;
     
-                &::-webkit-scrollbar {
-                    display: none;
-                }
     
                 div {
                     flex-basis: 43rem;
