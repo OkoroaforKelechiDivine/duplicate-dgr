@@ -4,17 +4,64 @@
 
 .hero-section-ctp {
     display: flex;
-    background: linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%), url('../Assets/about-bg.svg');
-    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%), url('../Assets/ctp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 7rem);
+    min-height: 72rem;
+    max-height: 80rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 6rem;
+    padding-bottom: 10.4rem;
+    margin-bottom: 25rem;    
+
+    .content {
+        display: flex;
+        color: $text-white;
+        padding-left: 4rem;
+        flex-direction: column;
+        gap: 16.9rem;
+
+        h1 {
+            font-family: $ff-secondary;
+            font-size: $fs-xxl;
+            font-weight: 400;
+        }
+
+        .project-details {
+            display: flex;
+            align-items: center;
+            gap: 20rem;
+
+            div {
+                font-family: $ff-primary;
+                p {
+                    font-weight: $fw-b;
+                    font-size: $fs-md;
+                    line-height: 2.5rem;
+                }
+
+                small {
+                    font-size: $fs-sm;
+                    font-weight: 400;
+                    line-height: 2.5rem;
+                    color: #BFBFBF;
+                }
+            }
+        }
+    }
 
     form {
-        background-color: $text-white;
+        background: $text-white;
         width: 100%;
         max-width: 35rem;
-        padding: 2rem;
+        padding: 3rem 2rem;
         position: absolute;
-        right: 0;
-        bottom: 0;
+        right: 6rem;
+        bottom: -14rem;
+        box-shadow: 0px 40px 100px rgba(0, 0, 0, 0.25);
  
         h2 {
             font-size: 2.4rem;
@@ -26,8 +73,8 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            justify-content: space-between;
-            gap: 1rem;
+            gap: 1.5rem;
+            width: 100%;
             margin: 1.5rem 0;
     
             input {
@@ -38,6 +85,7 @@
                 font-size: $fs-xs;
                 font-family: $ff-primary;
                 outline: none;
+                width: 100%;
     
                 &::placeholder {
                     color: #545454;
@@ -50,7 +98,8 @@
                 flex: 1;
                 display: flex;
                 align-items: center;
-                border: 1px solid #989898 ;
+                border: 1px solid #989898;
+                width: 100%;
     
                 .country-code {
                     position: relative;
@@ -125,14 +174,33 @@
                 }
             }
         }
+
+        select {
+            flex: 1;
+            padding: 1.1rem 1.5rem;
+            border: 1px solid #989898 ;
+            color: #545454;
+            font-size: $fs-xs;
+            font-family: $ff-primary;
+            outline: none;
+            width: 100%;
+            margin: 1.5rem 0;
+            margin-top: 0;
+
+            &::placeholder {
+                color: #545454;
+                font-size: $fs-xs;
+                font-family: $ff-primary;
+            }
+        }
+
         textarea {
             padding: 1.1rem 1.5rem;
             border: 1px solid #989898;
             width: 100%;
-            min-width: 40rem;
-            max-width: 82rem;
-            min-height: 10rem;
-            max-height: 12rem; 
+            max-width: 33rem;
+            min-height: 13rem;
+            max-height: 17rem; 
     
             &::placeholder {
                 color: #545454;
@@ -152,7 +220,43 @@
             padding: 1.1rem 0;
             font-size: $fs-xs;
             font-family: $ff-primary;
+            cursor: pointer;
         }
+    }
+
+    @media screen and (max-width: 1000px) {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 2rem;
+        margin-bottom: 52rem;
+        
+        .content {
+            gap: 2.5rem;
+            padding-left: 0;
+
+            h1 {
+                margin-top: 6rem;
+                font-size: $fs-lg;
+            }
+            .project-details {
+                flex-direction: column;
+                gap: 1.5rem;
+                align-items: flex-start;
+                div {
+                    p {
+                        font-size: $fs-sm;
+                    }
+                }
+            }
+        }
+        
+        form {
+            position: relative;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 30%);
+
+        }        
     }
 }
 

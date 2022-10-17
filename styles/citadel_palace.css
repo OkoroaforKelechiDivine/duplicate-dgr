@@ -669,17 +669,59 @@ select {
 }
 .hero-section-ctp {
   display: flex;
-  background: linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%), url("../Assets/about-bg.svg");
-  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%), url("../Assets/ctp.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 7rem);
+  min-height: 72rem;
+  max-height: 80rem;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 6rem;
+  padding-bottom: 10.4rem;
+  margin-bottom: 25rem;
+}
+.hero-section-ctp .content {
+  display: flex;
+  color: #ffffff;
+  padding-left: 4rem;
+  flex-direction: column;
+  gap: 16.9rem;
+}
+.hero-section-ctp .content h1 {
+  font-family: "Suranna", serif;
+  font-size: 6.4rem;
+  font-weight: 400;
+}
+.hero-section-ctp .content .project-details {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+}
+.hero-section-ctp .content .project-details div {
+  font-family: "DM Sans", sans-serif;
+}
+.hero-section-ctp .content .project-details div p {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.hero-section-ctp .content .project-details div small {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #BFBFBF;
 }
 .hero-section-ctp form {
-  background-color: #ffffff;
+  background: #ffffff;
   width: 100%;
   max-width: 35rem;
-  padding: 2rem;
+  padding: 3rem 2rem;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 6rem;
+  bottom: -14rem;
+  box-shadow: 0px 40px 100px rgba(0, 0, 0, 0.25);
 }
 .hero-section-ctp form h2 {
   font-size: 2.4rem;
@@ -690,8 +732,8 @@ select {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
+  gap: 1.5rem;
+  width: 100%;
   margin: 1.5rem 0;
 }
 .hero-section-ctp form .input-field input {
@@ -702,6 +744,7 @@ select {
   font-size: 1.4rem;
   font-family: "DM Sans", sans-serif;
   outline: none;
+  width: 100%;
 }
 .hero-section-ctp form .input-field input::-moz-placeholder {
   color: #545454;
@@ -723,6 +766,7 @@ select {
   display: flex;
   align-items: center;
   border: 1px solid #989898;
+  width: 100%;
 }
 .hero-section-ctp form .input-field .phone .country-code {
   position: relative;
@@ -786,14 +830,40 @@ select {
   font-family: "DM Sans", sans-serif;
   outline: none;
 }
+.hero-section-ctp form select {
+  flex: 1;
+  padding: 1.1rem 1.5rem;
+  border: 1px solid #989898;
+  color: #545454;
+  font-size: 1.4rem;
+  font-family: "DM Sans", sans-serif;
+  outline: none;
+  width: 100%;
+  margin: 1.5rem 0;
+  margin-top: 0;
+}
+.hero-section-ctp form select::-moz-placeholder {
+  color: #545454;
+  font-size: 1.4rem;
+  font-family: "DM Sans", sans-serif;
+}
+.hero-section-ctp form select:-ms-input-placeholder {
+  color: #545454;
+  font-size: 1.4rem;
+  font-family: "DM Sans", sans-serif;
+}
+.hero-section-ctp form select::placeholder {
+  color: #545454;
+  font-size: 1.4rem;
+  font-family: "DM Sans", sans-serif;
+}
 .hero-section-ctp form textarea {
   padding: 1.1rem 1.5rem;
   border: 1px solid #989898;
   width: 100%;
-  min-width: 40rem;
-  max-width: 82rem;
-  min-height: 10rem;
-  max-height: 12rem;
+  max-width: 33rem;
+  min-height: 13rem;
+  max-height: 17rem;
 }
 .hero-section-ctp form textarea::-moz-placeholder {
   color: #545454;
@@ -821,4 +891,35 @@ select {
   padding: 1.1rem 0;
   font-size: 1.4rem;
   font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .hero-section-ctp {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    margin-bottom: 52rem;
+  }
+  .hero-section-ctp .content {
+    gap: 2.5rem;
+    padding-left: 0;
+  }
+  .hero-section-ctp .content h1 {
+    margin-top: 6rem;
+    font-size: 3.6rem;
+  }
+  .hero-section-ctp .content .project-details {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  .hero-section-ctp .content .project-details div p {
+    font-size: 1.6rem;
+  }
+  .hero-section-ctp form {
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 30%);
+  }
 }/*# sourceMappingURL=citadel_palace.css.map */
