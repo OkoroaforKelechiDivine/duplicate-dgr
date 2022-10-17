@@ -1219,14 +1219,102 @@ select {
   }
 }
 
+.gallery {
+  padding: 10rem 6rem;
+  width: 100%;
+  background: rgba(14, 46, 81, 0.05);
+  margin-bottom: 20rem;
+}
 .gallery h1 {
   font-size: 4.8rem;
   font-family: "Suranna", serif;
   font-weight: 400;
   line-height: 6.4rem;
+  color: #0E2E51;
 }
 @media screen and (max-width: 600px) {
   .gallery h1 {
     font-size: 3.6rem;
+  }
+}
+.gallery .scroll-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+  overflow: scroll;
+  width: 100%;
+}
+.gallery .scroll-gallery::-webkit-scrollbar {
+  display: none;
+}
+.gallery .scroll-gallery button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.gallery .scroll-gallery button:nth-child(1) {
+  left: 0;
+  color: #BFBFBF;
+}
+.gallery .scroll-gallery button:nth-child(2) {
+  right: 0;
+  color: #1A1818;
+}
+@media screen and (max-width: 768px) {
+  .gallery .scroll-gallery button {
+    display: none;
+  }
+}
+.gallery .scroll-gallery .overflow {
+  width: 90%;
+}
+.gallery .scroll-gallery .overflow .images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  width: 120rem;
+  overflow: scroll;
+}
+.gallery .scroll-gallery .overflow .images::-webkit-scrollbar {
+  display: none;
+}
+.gallery .scroll-gallery .overflow .images div {
+  flex-basis: 43rem;
+}
+.gallery .scroll-gallery .overflow .images div img {
+  width: 100%;
+}
+.gallery .slider {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 12rem;
+}
+.gallery .slider .bar {
+  width: 30%;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  height: 2px;
+  background: #0E2E51;
+}
+.gallery .slider .bar:nth-child(2), .gallery .slider .bar:nth-child(3) {
+  background: #BFBFBF;
+}
+@media screen and (max-width: 768px) {
+  .gallery {
+    padding: 5rem 1rem;
+    padding-top: 2rem;
+    margin-bottom: 7rem;
   }
 }/*# sourceMappingURL=citadel_palace.css.map */

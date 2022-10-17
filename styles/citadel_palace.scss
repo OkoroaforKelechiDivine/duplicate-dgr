@@ -591,14 +591,117 @@
 }
 
 .gallery {
+    padding: 10rem 6rem;
+    width: 100%;
+    background: rgba(14, 46, 81, 0.05);
+    margin-bottom: 20rem;
+
     h1 {
         font-size: $fs-xl;
         font-family: $ff-secondary;
         font-weight: 400;
         line-height: 6.4rem;
+        color: #0E2E51;
         @media screen and (max-width: 600px) {
             font-size: $fs-lg;            
         }
+    }
+
+    .scroll-gallery {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        position: relative;
+        overflow: scroll;
+        width: 100%;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 4rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+
+            &:nth-child(1){
+                left:0;
+                color: #BFBFBF;
+            }
+
+            &:nth-child(2){
+                right:0;
+                color: $text-black;
+            }
+
+            @media screen and (max-width: 768px) {
+                display: none; 
+            }
+        }
+
+
+        .overflow {
+            width: 90%;
+            .images {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5rem;
+                width: 120rem;
+                overflow: scroll;
+    
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+    
+                div {
+                    flex-basis: 43rem;
+    
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .slider {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // gap: 1rem;
+        max-width: 12rem;
+
+        .bar {
+            width: 30%;
+            margin: 0 1rem;
+            border-radius: 1rem;
+            height: 2px;
+            background: #0E2E51;
+
+            &:nth-child(2), &:nth-child(3) {
+                background: #BFBFBF;
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 5rem 1rem;
+        padding-top: 2rem;
+        margin-bottom: 7rem;
+           
     }
 }
 
