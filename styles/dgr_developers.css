@@ -708,20 +708,22 @@ select {
   transform: translateY(-10%);
 }
 .search-bar .back {
+  position: absolute;
   display: flex;
   text-decoration: none;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
   color: #ffffff;
   font-size: 1.4rem;
-  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 6rem;
+  text-align: center;
   font-family: "DM Sans", sans-serif;
 }
 .search-bar .back i {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .search-bar form {
   width: 100%;

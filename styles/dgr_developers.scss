@@ -45,20 +45,22 @@
 
 
     .back {
+        position: absolute;
         display: flex;
         text-decoration: none;
         align-items: center;
+        justify-content: center;
         gap: .4rem;
         color: $text-white;
         font-size: $fs-xs;
-        position: absolute;
         top: 50%;
         transform: translateY(-50%);
         left: 6rem;
+        text-align: center;
         font-family: $ff-primary;
 
         i {
-           font-size: 1.2rem; 
+           font-size: 1.1rem; 
         }
     }
 
