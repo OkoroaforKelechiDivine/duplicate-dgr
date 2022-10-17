@@ -925,8 +925,7 @@ select {
 }
 
 .overview-ctp {
-  background: #890006;
-  background-image: url("../Assets/Rectangle.png");
+  background: url("../Assets/contact section texture.png");
   width: 100%;
   display: flex;
   padding: 6rem;
