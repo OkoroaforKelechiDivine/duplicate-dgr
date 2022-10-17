@@ -421,6 +421,31 @@
     }
 }
 
+.property-plans {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 8rem 6rem;
+
+    h1 {
+        font-family: $ff-secondary;
+        font-size: $fs-xl;
+        line-height: 6.4rem;
+        color: $text-black;
+    }
+
+    .nav-buttons {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        button {
+            padding: .7rem 5rem;
+            font-size: $fs-md;
+            line-height: 6.4rem;
+            font-family: $ff-primary;
+        }
+    }
+}
 
 
 

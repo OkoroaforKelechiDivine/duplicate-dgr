@@ -1059,4 +1059,27 @@ select {
     height: 12rem;
     background-color: #BFBFBF;
   }
+}
+
+.property-plans {
+  width: 100%;
+  margin-top: 4rem;
+  padding: 8rem 6rem;
+}
+.property-plans h1 {
+  font-family: "Suranna", serif;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  color: #1A1818;
+}
+.property-plans .nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.property-plans .nav-buttons button {
+  padding: 0.7rem 5rem;
+  font-size: 2rem;
+  line-height: 6.4rem;
+  font-family: "DM Sans", sans-serif;
 }/*# sourceMappingURL=citadel_palace.css.map */
