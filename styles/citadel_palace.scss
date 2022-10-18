@@ -4,8 +4,7 @@
 
 .hero-section-ctp {
     display: flex;
-    background: linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%), url('../Assets/ctp.png');
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%) url('../Assets/ctp.png') no-repeat;
     background-size: cover;
     height: calc(100vh - 7rem);
     min-height: 72rem;
@@ -13,8 +12,7 @@
     position: relative;
     display: flex;
     align-items: flex-end;
-    padding: 0 6rem;
-    padding-bottom: 10.4rem;
+    padding: 0 6rem 10.4rem;
     margin-bottom: 25rem;    
 
     .content {
@@ -184,8 +182,7 @@
             font-family: $ff-primary;
             outline: none;
             width: 100%;
-            margin: 1.5rem 0;
-            margin-top: 0;
+            margin: 0 0 1.5rem;
 
             &::placeholder {
                 color: #545454;
@@ -488,6 +485,7 @@
             top: 50%;
             transform: translateY(-50%);
             font-size: 5rem;
+            //margin-left: -30px;
             font-weight: 100;
             background:none ;
             border: none;
