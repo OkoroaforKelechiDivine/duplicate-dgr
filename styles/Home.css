@@ -85,8 +85,7 @@ select {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 6rem;
-  padding-bottom: 2rem;
+  padding: 0 6rem 2rem;
   border-bottom: 2px solid #BFBFBF;
   background-color: #ffffff;
   margin: 0;
