@@ -939,7 +939,7 @@ select {
 .overview-ctp .illustration img {
   width: 100%;
   transform: translateY(-20%);
-  margin-top: -60rem;
+  margin-top: -30rem;
 }
 .overview-ctp .overview-about {
   flex: 1;
