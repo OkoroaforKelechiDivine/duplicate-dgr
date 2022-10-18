@@ -771,7 +771,7 @@ select {
 .dev-cards {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 50px;
   flex-wrap: wrap;
   padding: 6rem;
   margin-bottom: 15rem;
