@@ -771,19 +771,18 @@ select {
 .dev-cards {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 3rem;
   flex-wrap: wrap;
-  padding: 6rem;
+  padding: 3rem;
   margin-bottom: 15rem;
 }
 @media screen and (max-width: 600px) {
   .dev-cards {
     padding: 3rem 1rem;
-    gap: 5rem;
   }
 }
 .dev-cards .dev-card {
-  flex-basis: 10rem;
+  flex-basis: 20rem;
   height: 20rem;
   text-decoration: none;
   display: flex;
