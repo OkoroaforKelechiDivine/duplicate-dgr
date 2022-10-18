@@ -146,6 +146,78 @@
 
 }
 
+.city-developers {
+    padding: 12rem 6rem;
+    width: 100%;
+    h1 {
+        font-family: $ff-secondary;
+        font-size: $fs-xl;
+        line-height: 6.4rem;
+        color: $text-black;
+
+        @media screen and (max-width: 600px) {
+            font-size: $fs-lg;            
+        }
+    }
+
+    p{
+        margin-bottom: 1.5rem;
+        font-size: $fs-sm;
+        line-height: 2.5rem;
+        font-family: $ff-primary;
+        width: 100%;
+    }
+}
+
+.developer-projects {
+    padding: 12rem 6rem;
+    width: 100%;
+
+    h1 {
+        font-family: $ff-secondary;
+        font-size: $fs-xl;
+        line-height: 6.4rem;
+        color: $text-black;
+
+        @media screen and (max-width: 600px) {
+            font-size: $fs-lg;            
+        }
+    }
+
+    .slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        button {
+            background: none;
+            border: none;
+            font-size: 4rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+
+            &:nth-child(1) {
+                left: 0;
+                color: #BFBFBF;
+            }
+
+            &:nth-child(2) {
+                right: 0;
+                color: $text-black;
+            }
+        }
+        .image {
+            width: 80%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
 
 .contact-us {
     display:flex;
