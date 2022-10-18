@@ -4,6 +4,10 @@ const carouselButtonPrev = document.getElementById('carousel-button-prev');
 const carouselButtonNext = document.getElementById('carousel-button-next');
 const navLinks = document.querySelectorAll('nav .nav-links>.nav-link');
 const animatedLink = document.querySelector('.animated-link');
+const heading = document.querySelector('#heading')
+const caption = document.querySelector('#caption')
+const cta = document.querySelector('#cta')
+
 
 toggleNavButton.addEventListener('click', (e) => {
     // alert('clicked')
@@ -37,18 +41,19 @@ const heroBGs = [
     {
         imgUrl: './Assets/hero-bg.png',
         link: '',
-        to : ''
+        to : '',
+        heading: 'Discover Amazing Properties in Nigeria',
+        caption: ' Finding your dream property just got easier - whether it’s a residential or commercial property.  Our real estate experts will help you operate, negotiate, and arrange the best real estate deals that suit your needs.',
+        cta: 'Explore Properties'
     },
     {
         imgUrl: './Assets/hero-bg-1.jpeg',
         link: '../pages/about.html',
-        to : 'About Us'
+        to : 'About Us',
+        heading: 'Experience The Best Property Management Services',
+        caption: 'Leverage our expert real estate management services to maximize the value of your asset, attract and retain tenants, and improve your property’s efficiency.',
+        cta: 'Find Out More'
     },
-    {
-        imgUrl: './Assets/hero-bg-2.jpeg',
-        link: '../pages/contact.html',
-        to : 'Contact Us'
-    }
 ];
 
 let currentBg = 0;
@@ -57,7 +62,7 @@ const changeBg = (type) => {
     console.log('background changed', currentBg)
     if(type === 'next') {
         currentBg++;
-        if (currentBg+1 > heroBGs.length ){
+        if (currentBg +1> heroBGs.length ){
             currentBg = 0;
             console.log('next-image-generated')
         }
@@ -65,7 +70,7 @@ const changeBg = (type) => {
     if (type === 'prev') {
         currentBg--;
         if (currentBg < 0 ){
-            currentBg = 2;
+            currentBg = 1;
             console.log('prev-image-generated')
         }
     }
@@ -76,6 +81,10 @@ const changeBg = (type) => {
     
     animatedLink.innerText = heroBGs[currentBg].to;
     animatedLink.href = heroBGs[currentBg].link;
+    heading.innerText = heroBGs[currentBg].heading;
+    caption.innerText = heroBGs[currentBg].caption;
+    cta.innerHTML = `${heroBGs[currentBg].cta} <i class="fas fa-arrow-right"></i>`;
+
 }
 
 setInterval(() => {

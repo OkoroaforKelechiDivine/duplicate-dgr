@@ -85,7 +85,8 @@ select {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 6rem 2rem;
+  padding: 0 6rem;
+  padding-bottom: 2rem;
   border-bottom: 2px solid #BFBFBF;
   background-color: #ffffff;
   margin: 0;
@@ -746,7 +747,7 @@ select {
 
 .hero-section h1 {
   width: 90%;
-  max-width: 50rem;
+  max-width: 70rem;
   font-size: 6.4rem;
   line-height: 7rem;
   color: #ffffff;
