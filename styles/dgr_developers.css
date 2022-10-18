@@ -707,6 +707,12 @@ select {
   padding: 0 6rem;
   transform: translateY(-10%);
 }
+@media screen and (max-width: 768px) {
+  .search-bar {
+    padding: 0 1rem;
+    justify-content: flex-end;
+  }
+}
 .search-bar .back {
   position: absolute;
   display: flex;
@@ -721,6 +727,11 @@ select {
   left: 6rem;
   text-align: center;
   font-family: "DM Sans", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .search-bar .back {
+    left: 1rem;
+  }
 }
 .search-bar .back i {
   font-size: 1.1rem;
@@ -765,10 +776,20 @@ select {
   padding: 6rem;
   margin-bottom: 15rem;
 }
+@media screen and (max-width: 600px) {
+  .dev-cards {
+    padding: 3rem 1rem;
+    gap: 5rem;
+  }
+}
 .dev-cards .dev-card {
   flex-basis: 20rem;
   height: 20rem;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
 }
 .dev-cards .dev-card .illustration {
   width: 100%;
@@ -799,11 +820,18 @@ select {
   font-family: "DM Sans", sans-serif;
   text-align: center;
   color: #1A1818;
+  width: 70%;
+  margin-bottom: 2rem;
 }
 
 .city-developers {
   padding: 12rem 6rem;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .city-developers {
+    padding: 5rem 1rem;
+  }
 }
 .city-developers h1 {
   font-family: "Suranna", serif;
@@ -827,6 +855,11 @@ select {
 .developer-projects {
   padding: 12rem 6rem;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .developer-projects {
+    padding: 5rem 1rem;
+  }
 }
 .developer-projects h1 {
   font-family: "Suranna", serif;
@@ -862,11 +895,21 @@ select {
   right: 0;
   color: #1A1818;
 }
+@media screen and (max-width: 620px) {
+  .developer-projects .slider button {
+    font-size: 2rem;
+  }
+}
 .developer-projects .slider .image {
   width: 80%;
 }
 .developer-projects .slider .image img {
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .developer-projects {
+    padding: 5rem 1rem;
+  }
 }
 
 .contact-us {

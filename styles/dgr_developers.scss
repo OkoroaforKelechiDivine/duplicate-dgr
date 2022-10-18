@@ -43,6 +43,11 @@
     padding: 0 6rem;
     transform: translateY(-10%);
 
+    @media screen and (max-width: 768px) {
+        padding:0 1rem;
+        justify-content: flex-end;
+    }
+
 
     .back {
         position: absolute;
@@ -58,6 +63,10 @@
         left: 6rem;
         text-align: center;
         font-family: $ff-primary;
+
+        @media screen and (max-width: 600px) {
+            left: 1rem;            
+        }
 
         i {
            font-size: 1.1rem; 
@@ -101,11 +110,22 @@
     flex-wrap: wrap;
     padding: 6rem;
     margin-bottom: 15rem;
+
+    @media screen and (max-width: 600px) {
+        padding:3rem 1rem;   
+        gap: 5rem;     
+    }
     
     .dev-card{
         flex-basis: 20rem;
         height: 20rem;
         text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+
+
         .illustration {
             width: 100%;
             padding: 2rem;
@@ -141,6 +161,9 @@
             font-family: $ff-primary;
             text-align: center;
             color: $text-black;
+            width: 70%;
+            margin-bottom: 2rem;
+
         }
     }
 
@@ -149,6 +172,11 @@
 .city-developers {
     padding: 12rem 6rem;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+        padding: 5rem 1rem;
+    }
+
     h1 {
         font-family: $ff-secondary;
         font-size: $fs-xl;
@@ -172,6 +200,10 @@
 .developer-projects {
     padding: 12rem 6rem;
     width: 100%;
+
+      @media screen and (max-width: 768px) {
+        padding: 5rem 1rem;
+    }
 
     h1 {
         font-family: $ff-secondary;
@@ -208,6 +240,10 @@
                 right: 0;
                 color: $text-black;
             }
+
+            @media screen and (max-width: 620px) {
+                font-size: 2rem;              
+            }
         }
         .image {
             width: 80%;
@@ -215,6 +251,9 @@
                 width: 100%;
             }
         }
+    }
+    @media screen and (max-width: 768px) {
+        padding: 5rem 1rem;
     }
 }
 
