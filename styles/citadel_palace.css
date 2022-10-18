@@ -1256,10 +1256,11 @@ select {
   margin-bottom: 20rem;
 }
 .gallery h1 {
-  font-size: 4.8rem;
-  font-family: "Suranna", serif;
+  font-family: 'Suranna', sans-serif;
+  font-style: normal;
   font-weight: 400;
-  line-height: 6.4rem;
+  font-size: 48px;
+  line-height: 64px;
   color: #0E2E51;
 }
 @media screen and (max-width: 600px) {
