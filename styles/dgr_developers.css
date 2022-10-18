@@ -783,7 +783,7 @@ select {
   }
 }
 .dev-cards .dev-card {
-  flex-basis: 20rem;
+  flex-basis: 10rem;
   height: 20rem;
   text-decoration: none;
   display: flex;
