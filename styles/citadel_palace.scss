@@ -265,17 +265,19 @@
     background-image: url('../Assets/Rectangle.png');
     width: 100%;
     display: flex;
-    padding: 6rem;
-    gap: 17rem;
+    padding: 2rem 6rem;
+    gap: 10rem;
     align-items: center;
     justify-content: space-between;
 
     .illustration {
         flex: 1;
+        display: flex;
+        justify-content: center;
 
         img {
-            width: 100%;
-            transform: translateY(-20%);
+            width: 90%;
+            transform: translateY(-24rem) ;
         }
     }
     
@@ -378,13 +380,13 @@
 
             img {
                 position: relative;
-                transform: translateY(-50%);
+                transform: translateY(-20rem);
             }
         }
 
         .overview-about {
             width: 100%;
-            margin-top: -25rem;
+            margin-top: -20rem;
 
             h1 {
                 padding: 0;
@@ -409,7 +411,7 @@
                         margin: 0 1.2rem;
     
                        &.line {
-                            width: 1px;
+                            width: 1.8px;
                             height: 12rem;
                             background-color: #BFBFBF;
                        }
@@ -460,6 +462,10 @@
             &:nth-child(2) {
                 background: none;
                 color: #545454;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: $fs-xs;                
             }
         }
     }
@@ -667,6 +673,13 @@
         .overflow {
             overflow: scroll;
             width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media screen  and  (max-width: 1220px) {
+                justify-content: flex-start;                
+            }
             
             &::-webkit-scrollbar {
                 display: none;
@@ -677,7 +690,8 @@
                 align-items: center;
                 justify-content: center;
                 gap: 5rem;
-                width: 120rem;
+                width: 100%;
+                min-width: 120rem;
     
     
                 div {
@@ -720,8 +734,7 @@
     @media screen and (max-width: 768px) {
         padding: 5rem 1rem;
         padding-top: 2rem;
-        margin-bottom: 7rem;
-           
+        margin-bottom: 7rem;       
     }
 }
 

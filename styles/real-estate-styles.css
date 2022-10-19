@@ -36,7 +36,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   width: 100vw;
-  max-width: 200rem;
+  max-width: 160rem;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
@@ -399,7 +399,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   width: 100vw;
-  max-width: 200rem;
+  max-width: 160rem;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
@@ -623,7 +623,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   width: 100vw;
-  max-width: 200rem;
+  max-width: 160rem;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
