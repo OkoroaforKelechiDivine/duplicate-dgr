@@ -85,8 +85,7 @@ select {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 6rem;
-  padding-bottom: 2rem;
+  padding: 0 6rem 2rem;
   border-bottom: 2px solid #BFBFBF;
   background-color: #ffffff;
   margin: 0;
@@ -925,8 +924,8 @@ select {
 }
 
 .overview-ctp {
-  background: #890006;
-  background-image: url("../Assets/Rectangle.png");
+  /*background: #890006;*/
+  background-image: url("../Assets/contact section texture.png");
   width: 100%;
   display: flex;
   padding: 2rem 6rem;
@@ -942,6 +941,7 @@ select {
 .overview-ctp .illustration img {
   width: 90%;
   transform: translateY(-24rem);
+
 }
 .overview-ctp .overview-about {
   flex: 1;
@@ -1026,8 +1026,7 @@ select {
     gap: 0;
     margin-top: 85rem;
     position: relative;
-    padding: 1rem;
-    padding-bottom: 5rem;
+    padding: 1rem 1rem 5rem;
   }
   .overview-ctp .illustration img {
     position: relative;
@@ -1070,9 +1069,11 @@ select {
   position: relative;
 }
 .property-plans h1 {
-  font-family: "Suranna", serif;
-  font-size: 4.8rem;
-  line-height: 6.4rem;
+  font-family: 'Suranna', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
   color: #1A1818;
 }
 @media screen and (max-width: 600px) {
@@ -1086,9 +1087,11 @@ select {
 }
 .property-plans .nav-buttons button {
   padding: 0.7rem 5rem;
-  font-size: 2rem;
-  line-height: 6.4rem;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 64px;
   border: none;
   outline: none;
 }
@@ -1098,6 +1101,11 @@ select {
 }
 .property-plans .nav-buttons button:nth-child(2) {
   background: none;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 64px;
   color: #545454;
 }
 @media screen and (max-width: 768px) {
@@ -1111,6 +1119,7 @@ select {
   align-items: center;
   justify-content: center;
   display: flex;
+  margin-left: 2%;
   position: relative;
   flex-direction: column;
 }
@@ -1132,6 +1141,8 @@ select {
   top: 50%;
   transform: translateY(-50%);
   font-size: 5rem;
+  color: #BFBFBF;
+  /*margin-left: -30px;*/
   font-weight: 100;
   background: none;
   border: none;
@@ -1216,7 +1227,7 @@ select {
   row-gap: 10rem;
   -moz-column-gap: 18rem;
        column-gap: 18rem;
-  width: 100%;
+  width: 110%;
 }
 @media screen and (max-width: 768px) {
   .facilities-section .facilities {
@@ -1224,7 +1235,7 @@ select {
   }
 }
 .facilities-section .facilities .facility {
-  flex-basis: 13rem;
+  flex-basis: 5rem;
   text-align: center;
 }
 .facilities-section .facilities .facility .image {
@@ -1252,10 +1263,11 @@ select {
   margin-bottom: 20rem;
 }
 .gallery h1 {
-  font-size: 4.8rem;
-  font-family: "Suranna", serif;
+  font-family: 'Suranna', sans-serif;
+  font-style: normal;
   font-weight: 400;
-  line-height: 6.4rem;
+  font-size: 48px;
+  line-height: 64px;
   color: #0E2E51;
 }
 @media screen and (max-width: 600px) {
