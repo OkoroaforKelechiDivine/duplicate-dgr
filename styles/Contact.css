@@ -687,7 +687,7 @@ select {
   margin: 12rem 6rem 20rem;
   padding: 12rem 8rem;
   background-size: cover;
-  background: #890006 url("../Assets/contact section texture.png") no-repeat;
+  background: url("../Assets/contact section texture.png") no-repeat;
   display: flex;
   justify-content: space-between;
 }
