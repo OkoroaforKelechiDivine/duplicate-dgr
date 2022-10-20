@@ -47,7 +47,7 @@ const heroBGs = [
         cta: 'Explore Properties'
     },
     {
-        imgUrl: './Assets/hero-bg-1.jpeg',
+        imgUrl: './Assets/aerial-side-view.jpg',
         link: '../pages/citadel_palace.html',
         to : 'Halima',
         heading: 'Experience The Best Property Management Services',
