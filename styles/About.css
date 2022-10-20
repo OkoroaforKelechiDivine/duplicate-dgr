@@ -85,14 +85,13 @@ select {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 6rem;
-  padding-bottom: 2rem;
+  padding: 0 6rem 2rem;
   border-bottom: 2px solid #BFBFBF;
   background-color: #ffffff;
   margin: 0;
   height: 10rem;
 }
-@media screen and (min-width: 77rem) {
+@media screen and (max-width: 50rem) {
   .navbar .nav-links li:hover .dropdown li:nth-child(2).active .mini-dropdown {
     transform: translateY(-4rem);
   }
@@ -759,7 +758,7 @@ select {
   }
 }
 .mission .mission-text {
-  border-top: 1px solid #FFA7AB;
+  border-top: 0.5px solid #FFA7AB;
   padding: 5rem 5rem 0 11rem;
   font-family: "DM Sans", sans-serif;
   flex: 1.5;
@@ -877,11 +876,12 @@ select {
 }
 .services-section .services {
   display: flex;
+  column-gap: 0;
   flex-wrap: wrap;
   gap: 3.5rem;
   align-items: center;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-bottom: 3rem;
 }
 @media screen and (min-width: 76.8rem) and (max-width: 120rem) {
@@ -932,6 +932,7 @@ select {
 }
 .services-section .services .service:nth-child(1) {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/service_1.png");
+  /*width: ;*/
 }
 .services-section .services .service:nth-child(2) {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/service_2.png");

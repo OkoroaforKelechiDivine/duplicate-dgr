@@ -1067,8 +1067,7 @@ section.services .service .service-details h1 {
 section.services .service .service-details p {
   font-size: 1.6rem;
   line-height: 3.5rem;
-  margin: 2rem 0;
-  margin-bottom: 3.5rem;
+  margin: 2rem 0 3.5rem;
   color: #545454;
   font-family: "DM Sans", sans-serif;
 }
