@@ -91,7 +91,9 @@ select {
   margin: 0;
   height: 10rem;
 }
-@media screen and (min-width: 77rem) {
+
+/* Initial min-width is 70rem*/
+@media screen and (min-width: 20rem) {
   .navbar .nav-links li:hover .dropdown li:nth-child(2).active .mini-dropdown {
     transform: translateY(-4rem);
   }
@@ -246,7 +248,9 @@ select {
 .navbar .toggle-menu.active {
   border: 2px solid #1A1818;
 }
-@media screen and (max-width: 77rem) {
+
+/*Initial max-width is 77rem*/
+@media screen and (max-width: 50rem) {
   .navbar .toggle-menu {
     display: block;
   }
@@ -327,7 +331,9 @@ select {
 .navbar .nav-links li:hover .dropdown li.active .mini-dropdown, .navbar .nav-links li.active .dropdown li.active .mini-dropdown {
   display: block;
 }
-@media screen and (max-width: 77rem) {
+
+/* Initial screen width is 77rem*/
+@media screen and (max-width: 50rem) {
   .navbar .nav-links {
     display: none;
     background: #ffffff;
@@ -687,10 +693,8 @@ select {
   justify-content: center;
   flex-direction: column;
   min-height: calc(100vh - 7rem);
-  background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.7) 85.5%), url("../Assets/front-view halimah.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.7) 85.5%) url("../Assets/front-view halimah.jpg") no-repeat center;
   text-align: center;
   position: relative;
   padding-bottom: 10rem;
@@ -990,10 +994,7 @@ section.services {
   background: rgba(255, 226, 228, 0.23);
 }
 section.services.starred {
-  background: rgba(255, 226, 228, 0.23);
-  background-image: url("../Assets/star.png");
-  background-repeat: no-repeat;
-  background-position: top right;
+  background: rgba(255, 226, 228, 0.23) url("../Assets/star.png") no-repeat top right;
 }
 @media screen and (max-width: 768px) {
   section.services.starred {
