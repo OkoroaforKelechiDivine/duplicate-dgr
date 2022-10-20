@@ -48,8 +48,8 @@ const heroBGs = [
     },
     {
         imgUrl: './Assets/hero-bg-1.jpeg',
-        link: '../pages/about.html',
-        to : 'About Us',
+        link: '../pages/citadel_palace.html',
+        to : 'Halima',
         heading: 'Experience The Best Property Management Services',
         caption: 'Leverage our expert real estate management services to maximize the value of your asset, attract and retain tenants, and improve your property’s efficiency.',
         cta: 'Find Out More'
