@@ -85,7 +85,8 @@ select {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 6rem 2rem;
+  padding: 0 6rem;
+  padding-bottom: 2rem;
   border-bottom: 2px solid #BFBFBF;
   background-color: #ffffff;
   margin: 0;
@@ -677,8 +678,7 @@ select {
   position: relative;
   display: flex;
   align-items: flex-end;
-  padding: 0 6rem;
-  padding-bottom: 10.4rem;
+  padding: 0 6rem 10.4rem;
   margin-bottom: 25rem;
 }
 .hero-section-ctp .content {
@@ -838,8 +838,7 @@ select {
   font-family: "DM Sans", sans-serif;
   outline: none;
   width: 100%;
-  margin: 1.5rem 0;
-  margin-top: 0;
+  margin: 0 0 1.5rem;
 }
 .hero-section-ctp form select::-moz-placeholder {
   color: #545454;
@@ -924,7 +923,6 @@ select {
 }
 
 .overview-ctp {
-  /*background: #890006;*/
   background-image: url("../Assets/contact section texture.png");
   width: 100%;
   display: flex;
@@ -941,7 +939,6 @@ select {
 .overview-ctp .illustration img {
   width: 90%;
   transform: translateY(-24rem);
-
 }
 .overview-ctp .overview-about {
   flex: 1;
@@ -1069,11 +1066,9 @@ select {
   position: relative;
 }
 .property-plans h1 {
-  font-family: 'Suranna', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 64px;
+  font-family: "Suranna", serif;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
   color: #1A1818;
 }
 @media screen and (max-width: 600px) {
@@ -1087,11 +1082,9 @@ select {
 }
 .property-plans .nav-buttons button {
   padding: 0.7rem 5rem;
-  font-family: 'DM Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 64px;
+  font-size: 2rem;
+  line-height: 6.4rem;
+  font-family: "DM Sans", sans-serif;
   border: none;
   outline: none;
 }
@@ -1101,11 +1094,6 @@ select {
 }
 .property-plans .nav-buttons button:nth-child(2) {
   background: none;
-  font-family: 'DM Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 64px;
   color: #545454;
 }
 @media screen and (max-width: 768px) {
@@ -1119,7 +1107,6 @@ select {
   align-items: center;
   justify-content: center;
   display: flex;
-  margin-left: 2%;
   position: relative;
   flex-direction: column;
 }
@@ -1141,8 +1128,6 @@ select {
   top: 50%;
   transform: translateY(-50%);
   font-size: 5rem;
-  color: #BFBFBF;
-  /*margin-left: -30px;*/
   font-weight: 100;
   background: none;
   border: none;
@@ -1227,7 +1212,7 @@ select {
   row-gap: 10rem;
   -moz-column-gap: 18rem;
        column-gap: 18rem;
-  width: 110%;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .facilities-section .facilities {
@@ -1235,7 +1220,7 @@ select {
   }
 }
 .facilities-section .facilities .facility {
-  flex-basis: 5rem;
+  flex-basis: 13rem;
   text-align: center;
 }
 .facilities-section .facilities .facility .image {
@@ -1263,11 +1248,10 @@ select {
   margin-bottom: 20rem;
 }
 .gallery h1 {
-  font-family: 'Suranna', sans-serif;
-  font-style: normal;
+  font-size: 4.8rem;
+  font-family: "Suranna", serif;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 64px;
+  line-height: 6.4rem;
   color: #0E2E51;
 }
 @media screen and (max-width: 600px) {
@@ -1332,7 +1316,7 @@ select {
   min-width: 120rem;
 }
 .gallery .scroll-gallery .overflow .images div {
-  flex-basis: 43rem;
+  flex-basis: 38rem;
 }
 .gallery .scroll-gallery .overflow .images div img {
   width: 100%;
