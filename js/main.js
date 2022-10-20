@@ -56,7 +56,7 @@ const heroBGs = [
     },
 
     {
-        imgUrl: './Assets/halima by constix.jpg',
+        imgUrl: './Assets/halima by constrix.jpg',
         link: '../pages/citadel_palace.html',
         to : 'Halima',
         heading: 'Halim a by constrix',
