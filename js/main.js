@@ -54,13 +54,12 @@ const heroBGs = [
         caption: 'Leverage our expert real estate management services to maximize the value of your asset, attract and retain tenants, and improve your property’s efficiency.',
         cta: 'Find Out More'
     },
-
     {
-        imgUrl: './Assets/halima by constix.jpg',
+        imgUrl: './Assets/halima by constrix.jpg',
         link: '../pages/citadel_palace.html',
         to : 'Halima',
-        heading: 'Halim a by constrix',
-        caption: 'plce holder',
+        heading: 'Halima by constrix',
+        caption: 'place holder',
         cta: 'Find Out More'
     },
 ];
