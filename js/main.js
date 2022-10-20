@@ -59,8 +59,8 @@ const heroBGs = [
         imgUrl: './Assets/halima by constrix.jpg',
         link: '../pages/citadel_palace.html',
         to : 'Halima',
-        heading: 'Halim a by constrix',
-        caption: 'plce holder',
+        heading: 'Halima by constrix',
+        caption: 'place holder',
         cta: 'Find Out More'
     },
 ];
