@@ -759,7 +759,7 @@ select {
   }
 }
 .mission .mission-text {
-  border-top: 1px solid #FFA7AB;
+  border-top: 0.5px solid #FFA7AB;
   padding: 5rem 5rem 0 11rem;
   font-family: "DM Sans", sans-serif;
   flex: 1.5;
