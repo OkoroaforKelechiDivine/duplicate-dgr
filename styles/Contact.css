@@ -684,20 +684,16 @@ select {
 
 .contact-us {
   display: flex;
-  margin: 12rem 6rem;
-  margin-bottom: 20rem;
+  margin: 12rem 6rem 20rem;
   padding: 12rem 8rem;
-  background: #890006;
-  background-image: url("../Assets/contact section texture.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background: #890006 url("../Assets/contact section texture.png") no-repeat;
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 400px) {
   .contact-us {
-    margin: 5rem 0;
-    margin-bottom: 10rem;
+    margin: 5rem 0 10rem;
     padding: 0;
   }
 }
@@ -738,7 +734,7 @@ select {
   text-decoration: none;
   font-family: "DM Sans", sans-serif;
   font-size: 1.4rem;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .contact-us .contact .contact-address a:nth-child(3) {
   text-decoration: underline;
