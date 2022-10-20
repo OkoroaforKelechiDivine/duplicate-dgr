@@ -39,7 +39,7 @@ miniMenu.forEach(drpdn => {
 // Carousel 
 const heroBGs = [
     {
-        imgUrl: './Assets/hero-bg.png',
+        imgUrl: './Assets/front-view halimah.jpg',
         link: '',
         to : '',
         heading: 'Discover Amazing Properties in Nigeria',
