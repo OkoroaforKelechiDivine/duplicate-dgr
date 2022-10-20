@@ -18,19 +18,15 @@
 
 .contact-us {
     display:flex;
-    margin: 12rem 6rem;
-    margin-bottom: 20rem;
+    margin: 12rem 6rem 20rem;
     padding: 12rem 8rem;
-    background: $text-red-400;
-    background-image: url('../Assets/Rectangle.png');
     background-size: cover;
-    background-repeat: no-repeat;;
+    background: url('../Assets/contact section texture.png') no-repeat;;
     display: flex;
     justify-content: space-between;
 
     @media screen and (max-width: 400px) {
-        margin: 5rem 0;
-        margin-bottom: 10rem;
+        margin: 5rem 0 10rem;
         padding: 0;        
     }
 
