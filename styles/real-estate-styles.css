@@ -259,9 +259,11 @@ select {
   list-style: none;
   font-family: "Suranna", serif;
 }
+
 .navbar .nav-links li {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
+
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
 }

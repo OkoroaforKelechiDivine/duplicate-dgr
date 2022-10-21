@@ -344,7 +344,7 @@ select {
     padding-top: 10rem;
     align-items: start;
     font-family: "Suranna", serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     transition: all 1s;
   }
   .navbar .nav-links.active {
