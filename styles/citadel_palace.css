@@ -997,11 +997,11 @@ select {
   width: 8rem;
   margin: 0 1.8rem;
 }
-.overview-ctp .overview-about .overview-about-card > div div.line {
-  width: 1.5px;
-  height: 12rem;
-  background-color: #BFBFBF;
-}
+/*.overview-ctp .overview-about .overview-about-card > div div.line {*/
+/*  width: 2px;*/
+/*  height: 12rem;*/
+/*  background-color: #BFBFBF;*/
+/*}*/
 .overview-ctp .overview-about .overview-about-card > div div small {
   color: #545454;
   font-size: 1.4rem;
@@ -1052,13 +1052,21 @@ select {
     width: 6rem;
     margin: 0 1.2rem;
   }
-  .overview-ctp .overview-about .overview-about-card > div div.line {
-    width: 2px;
-    height: 12rem;
-    background-color: #BFBFBF;
+  .line{
+    border-left: 2px solid #BFBFBF;
+    height: 100px;
   }
 }
 
+
+.line{
+  border-left: 2px solid #BFBFBF;
+  height: 100px;
+  /*position:absolute;*/
+  /*left: 853px;*/
+  /*Width: 90px;*/
+  /*Top:  1654px;*/
+}
 .property-plans {
   width: 100%;
   margin-top: 4rem;
