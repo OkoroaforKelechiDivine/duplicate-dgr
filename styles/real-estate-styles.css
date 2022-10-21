@@ -851,7 +851,7 @@ select {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/bas.png");
 }
 .services-section .services .service.ren {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/ren.png");
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/rent-a-house.jpg");
 }
 .services-section .services .service.npd {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/npd.png");

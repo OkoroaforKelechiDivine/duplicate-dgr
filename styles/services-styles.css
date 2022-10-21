@@ -668,7 +668,7 @@ select {
   }
 }
 .heroimg {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../Assets/reb-hero-img.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../Assets/marketing-house-img.jpeg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 50vh;
