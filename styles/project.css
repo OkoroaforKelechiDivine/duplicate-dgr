@@ -162,7 +162,7 @@ select {
     padding: 2rem 3rem;
   }
   .navbar .nav-links li:hover .dropdown li, .navbar .nav-links li.active .dropdown li {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 2rem 0;
     cursor: pointer;
   }
