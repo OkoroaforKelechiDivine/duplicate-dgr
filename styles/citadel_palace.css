@@ -938,6 +938,7 @@ select {
 }
 .overview-ctp .illustration img {
   width: 90%;
+  margin-top: 130px;
   transform: translateY(-24rem);
 }
 .overview-ctp .overview-about {
@@ -948,9 +949,10 @@ select {
   font-size: 6.4rem;
   font-weight: 400;
   margin-bottom: 4rem;
-  border-bottom: 0.5px solid #FFA7AB;
+  border-bottom: 1px solid #FFA7AB;
   padding: 2.5rem;
-  color: #ffffff;
+  Line-height: 6.4rem;
+  color: #FFFFFF;
 }
 .overview-ctp .overview-about p {
   font-size: 1.4rem;
