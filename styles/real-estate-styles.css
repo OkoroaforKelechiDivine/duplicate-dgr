@@ -259,9 +259,11 @@ select {
   list-style: none;
   font-family: "Suranna", serif;
 }
+
 .navbar .nav-links li {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
+
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
 }
@@ -320,7 +322,7 @@ select {
 .navbar .nav-links li:hover .dropdown li .mini-dropdown, .navbar .nav-links li.active .dropdown li .mini-dropdown {
   display: none;
   list-style: none;
-  padding: 0rem 4rem;
+  padding: 0 4rem;
 }
 .navbar .nav-links li:hover .dropdown li .mini-dropdown li, .navbar .nav-links li.active .dropdown li .mini-dropdown li {
   margin: 1.5rem 0;
@@ -344,7 +346,7 @@ select {
     padding-top: 10rem;
     align-items: start;
     font-family: "Suranna", serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     transition: all 1s;
   }
   .navbar .nav-links.active {

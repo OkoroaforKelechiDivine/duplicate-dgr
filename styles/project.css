@@ -110,7 +110,7 @@ select {
     font-family: "DM Sans", sans-serif;
   }
   .navbar .nav-links li {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
     transition: 0.5s;
   }
@@ -162,7 +162,7 @@ select {
     padding: 2rem 3rem;
   }
   .navbar .nav-links li:hover .dropdown li, .navbar .nav-links li.active .dropdown li {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 2rem 0;
     cursor: pointer;
   }
@@ -259,9 +259,11 @@ select {
   list-style: none;
   font-family: "Suranna", serif;
 }
+
 .navbar .nav-links li {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
+
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
 }
