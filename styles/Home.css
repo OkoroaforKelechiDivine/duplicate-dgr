@@ -91,9 +91,7 @@ select {
   margin: 0;
   height: 10rem;
 }
-
-/* Initial min-width is 70rem*/
-@media screen and (min-width: 20rem) {
+@media screen and (min-width: 992px) {
   .navbar .nav-links li:hover .dropdown li:nth-child(2).active .mini-dropdown {
     transform: translateY(-4rem);
   }
@@ -225,7 +223,6 @@ select {
     display: none;
   }
 }
-
 .navbar .brand-logo {
   z-index: 3;
 }
@@ -249,9 +246,7 @@ select {
 .navbar .toggle-menu.active {
   border: 2px solid #1A1818;
 }
-
-/*Initial max-width is 77rem*/
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 991px) {
   .navbar .toggle-menu {
     display: block;
   }
@@ -259,19 +254,15 @@ select {
 .navbar .nav-links {
   display: inline-flex;
   align-items: center;
-  gap: 4rem;
   list-style: none;
   font-family: "Suranna", serif;
 }
-
 .navbar .nav-links li {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
-
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
 }
-
 .navbar .nav-links li:hover i, .navbar .nav-links li:focus i, .navbar .nav-links li.active i {
   transform: rotate(180deg) scale(0.7);
 }
@@ -282,18 +273,15 @@ select {
 .navbar .nav-links li > a i {
   transform: scale(0.7);
 }
-
 .navbar .nav-links li .dropdown {
   display: none;
 }
-
 .navbar .nav-links li .dropdown li i {
   transform: scale(0.7);
-  transition-delay: 1s;
+  transition: 0.3s;
 }
 .navbar .nav-links li:hover .dropdown, .navbar .nav-links li.active .dropdown {
   display: block;
-  /*transition-delay: 1s;*/
   list-style: none;
   padding: 1rem 3rem;
 }
@@ -330,7 +318,7 @@ select {
 .navbar .nav-links li:hover .dropdown li .mini-dropdown, .navbar .nav-links li.active .dropdown li .mini-dropdown {
   display: none;
   list-style: none;
-  padding: 0 4rem;
+  padding: 0rem 4rem;
 }
 .navbar .nav-links li:hover .dropdown li .mini-dropdown li, .navbar .nav-links li.active .dropdown li .mini-dropdown li {
   margin: 1.5rem 0;
@@ -338,9 +326,7 @@ select {
 .navbar .nav-links li:hover .dropdown li.active .mini-dropdown, .navbar .nav-links li.active .dropdown li.active .mini-dropdown {
   display: block;
 }
-
-/* Initial screen width is 77rem*/
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 991px) {
   .navbar .nav-links {
     display: none;
     background: #ffffff;
@@ -459,7 +445,8 @@ footer {
   display: flex;
   width: 100%;
   background: #1A1818;
-  padding: 5rem 6rem 0;
+  padding: 5rem 6rem;
+  padding-bottom: 0;
   flex-direction: column;
   font-family: "DM Sans", sans-serif;
   margin-top: 3rem;
@@ -940,7 +927,6 @@ select {
   border-top: 1px solid #BFBFBF;
   padding: 4rem 0 4rem 12rem;
   margin-top: 10rem;
-
 }
 .mission .mission-text p {
   font-size: 1.6rem;
@@ -964,8 +950,7 @@ select {
 @media screen and (max-width: 998px) {
   .mission {
     flex-direction: column;
-    padding: 3.4rem 2rem;
-    padding-right: 0;
+    padding: 3.4rem 0 3.4rem 2rem;
   }
   .mission .title {
     flex: 1;
@@ -982,9 +967,8 @@ select {
     transform: translate(-19%, -22%) scale(0.4);
   }
   .mission .mission-text {
-    padding: 0;
     margin-top: 0;
-    padding-top: 1rem;
+    padding: 1rem 0 0;
   }
   .mission .mission-text p {
     line-height: 3rem;
@@ -1168,10 +1152,10 @@ section.services.s_03 .service .service-details a {
 .featured-projects .header h1 {
   font-size: 4.8rem;
   line-height: 7rem;
-  width: 55%;
+  width: 100%;
   font-family: "Suranna", serif;
   color: #1A1818;
-  border-bottom: 1px solid #BFBFBF;
+  border-bottom: 2px solid #BFBFBF;
   padding-bottom: 2rem;
   font-weight: 400;
 }
@@ -1185,7 +1169,7 @@ section.services.s_03 .service .service-details a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10%;
+  gap: 20%;
 }
 .featured-projects .featured-project .illustration {
   flex: 1;

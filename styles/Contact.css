@@ -85,14 +85,13 @@ select {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 6rem;
-  padding-bottom: 2rem;
+  padding: 0 6rem 2rem;
   border-bottom: 2px solid #BFBFBF;
   background-color: #ffffff;
   margin: 0;
   height: 10rem;
 }
-@media screen and (min-width: 77rem) {
+@media screen and (min-width: 992px) {
   .navbar .nav-links li:hover .dropdown li:nth-child(2).active .mini-dropdown {
     transform: translateY(-4rem);
   }
@@ -247,7 +246,7 @@ select {
 .navbar .toggle-menu.active {
   border: 2px solid #1A1818;
 }
-@media screen and (max-width: 77rem) {
+@media screen and (max-width: 991px) {
   .navbar .toggle-menu {
     display: block;
   }
@@ -255,12 +254,11 @@ select {
 .navbar .nav-links {
   display: inline-flex;
   align-items: center;
-  gap: 4rem;
   list-style: none;
   font-family: "Suranna", serif;
 }
 .navbar .nav-links li {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
@@ -320,7 +318,7 @@ select {
 .navbar .nav-links li:hover .dropdown li .mini-dropdown, .navbar .nav-links li.active .dropdown li .mini-dropdown {
   display: none;
   list-style: none;
-  padding: 0 4rem;
+  padding: 0rem 4rem;
 }
 .navbar .nav-links li:hover .dropdown li .mini-dropdown li, .navbar .nav-links li.active .dropdown li .mini-dropdown li {
   margin: 1.5rem 0;
@@ -328,7 +326,7 @@ select {
 .navbar .nav-links li:hover .dropdown li.active .mini-dropdown, .navbar .nav-links li.active .dropdown li.active .mini-dropdown {
   display: block;
 }
-@media screen and (max-width: 77rem) {
+@media screen and (max-width: 991px) {
   .navbar .nav-links {
     display: none;
     background: #ffffff;
@@ -344,7 +342,7 @@ select {
     padding-top: 10rem;
     align-items: start;
     font-family: "Suranna", serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     transition: all 1s;
   }
   .navbar .nav-links.active {
@@ -734,7 +732,7 @@ select {
   text-decoration: none;
   font-family: "DM Sans", sans-serif;
   font-size: 1.4rem;
-  opacity: 0.9;
+  opacity: 0.7;
 }
 .contact-us .contact .contact-address a:nth-child(3) {
   text-decoration: underline;

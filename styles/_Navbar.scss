@@ -11,7 +11,7 @@
     margin: 0;
     height: 10rem;
 
-    @media screen and (min-width: 77rem) {
+    @media screen and (min-width: 992px) {
 
         & .nav-links li:hover .dropdown li:nth-child(2).active .mini-dropdown {
             transform: translateY(-4.0rem);
@@ -212,15 +212,17 @@
             border: 2px solid $text-black;
         } 
 
-        @media screen and (max-width: 77rem) {
+        @media screen and (max-width: 991px) {
             display: block;
         }
     }
 
+
+
     .nav-links {
         display: inline-flex;
         align-items: center;
-        gap: 4rem;
+        // gap: 4rem;
         list-style: none;
         font-family: $ff-secondary;
 
@@ -316,7 +318,7 @@
                 }
             }
         }  
-        @media screen and (max-width: 77rem) {
+        @media screen and (max-width: 991px) {
             display: none;
             background: $text-white;
             height: auto;

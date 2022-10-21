@@ -91,9 +91,7 @@ select {
   margin: 0;
   height: 10rem;
 }
-
-/* Initial min-width is 70rem*/
-@media screen and (min-width: 20rem) {
+@media screen and (min-width: 992px) {
   .navbar .nav-links li:hover .dropdown li:nth-child(2).active .mini-dropdown {
     transform: translateY(-4rem);
   }
@@ -111,7 +109,7 @@ select {
     font-family: "DM Sans", sans-serif;
   }
   .navbar .nav-links li {
-    font-size: 1.8rem;
+    font-size: 2rem;
     position: relative;
     transition: 0.5s;
   }
@@ -248,9 +246,7 @@ select {
 .navbar .toggle-menu.active {
   border: 2px solid #1A1818;
 }
-
-/*Initial max-width is 77rem*/
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 991px) {
   .navbar .toggle-menu {
     display: block;
   }
@@ -258,12 +254,11 @@ select {
 .navbar .nav-links {
   display: inline-flex;
   align-items: center;
-  gap: 4rem;
   list-style: none;
   font-family: "Suranna", serif;
 }
 .navbar .nav-links li {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
@@ -331,9 +326,7 @@ select {
 .navbar .nav-links li:hover .dropdown li.active .mini-dropdown, .navbar .nav-links li.active .dropdown li.active .mini-dropdown {
   display: block;
 }
-
-/* Initial screen width is 77rem*/
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 991px) {
   .navbar .nav-links {
     display: none;
     background: #ffffff;
@@ -371,6 +364,7 @@ select {
     left: -3rem;
   }
 }
+
 /* 
 color palette  
 */
@@ -881,12 +875,11 @@ select {
 }
 .services-section .services {
   display: flex;
-  column-gap: 0;
   flex-wrap: wrap;
   gap: 3.5rem;
   align-items: center;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: 3rem;
 }
 @media screen and (min-width: 76.8rem) and (max-width: 120rem) {
@@ -937,7 +930,6 @@ select {
 }
 .services-section .services .service:nth-child(1) {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/service_1.png");
-  /*width: ;*/
 }
 .services-section .services .service:nth-child(2) {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/service_2.png");
