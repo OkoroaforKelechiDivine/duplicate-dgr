@@ -925,6 +925,7 @@ select {
 .overview-ctp {
   background-image: url("../Assets/contact section texture.png");
   width: 100%;
+  background-size: cover;
   display: flex;
   padding: 2rem 6rem;
   gap: 10rem;
@@ -942,6 +943,7 @@ select {
   transform: translateY(-24rem);
 }
 .overview-ctp .overview-about {
+  /*background-size: cover;*/
   flex: 1;
 }
 .overview-ctp .overview-about h1 {
