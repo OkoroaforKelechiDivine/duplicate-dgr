@@ -776,6 +776,15 @@ select {
   padding: 3rem;
   margin-bottom: 15rem;
 }
+
+.dev-cards a{
+  border: 1px solid red;
+  border-radius: 20px;
+}
+
+.dev-cards img{
+  margin-top: 20px;
+}
 @media screen and (max-width: 600px) {
   .dev-cards {
     padding: 3rem 1rem;
@@ -820,6 +829,8 @@ select {
   text-align: center;
   color: #1A1818;
   width: 70%;
+  margin-top: 50px;
+  line-height: 20px;
   margin-bottom: 2rem;
 }
 
