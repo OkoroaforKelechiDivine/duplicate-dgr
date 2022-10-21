@@ -260,81 +260,81 @@
                     align-items: center;
                     border: 1px solid #989898 ;
 
-                    .country-code {
-                        position: relative;
-                        padding: .8rem 1.5rem;
-                        width: 30%;
-                        display: flex;
-                        flex:1;
-                        align-items: center;
-                        gap: .3rem;
-                        border-right: 1px solid #989898;
-                        padding-right: 1rem;
-                        img {
-                            width: 1.4rem;
-                        }
-
-                        span {
-                            font-size: $fs-xs;
-                            font-family: $ff-primary;
-                        }
-
-
-                        .cc_dropdown {
-                            position: absolute;
-                            left: 0;
-                            top: 100%;
-                            padding: 0;
-                            list-style: none;
-                            background: #fff;
-                            padding: 1rem;
-                            border: 1px solid rgba($color: #890006, $alpha: 0.05);
-                            box-shadow: 0 0 1px 1px rgba($color: #890006, $alpha: 0.05);
-                            width: 10rem;
-                            max-height: 12rem;
-                            overflow-y: scroll; 
-                            display: none;
-                            
-                            &.active {
-                                display: block;
-                            }
-
-                            &::-webkit-scrollbar {
-                                width: 3px;
-                            }
-
-                            &::-webkit-scrollbar-track {
-                                background: rgba($color: #890006, $alpha: 0.05);
-                            }
-
-                            &::-webkit-scrollbar-thumb {
-                                background: rgba($color: $text-gray-200, $alpha: 1);
-                                border-radius: 30rem;
-                                border: none;
-                            }
-
-                            li {
-                                display: flex;
-                                align-items: center;
-                                gap: 1rem;
-                                margin: 1rem 0;
-
-                                img {
-                                    width: 1.4rem;
-                                }
-                            }
-                        }
-                    }
-                    input {
-                        padding: 0 1rem;
-                        border: none;
-                        flex:3;
-                        color: #545454;
-                        font-size: $fs-xs;
-                        font-family: $ff-primary;
-                        outline: none;
-
-                    }
+                //    .country-code {
+                //        position: relative;
+                //        padding: .8rem 1.5rem;
+                //        width: 30%;
+                //        display: flex;
+                //        flex:1;
+                //        align-items: center;
+                //        gap: .3rem;
+                //        border-right: 1px solid #989898;
+                //        padding-right: 1rem;
+                //        img {
+                //            width: 1.4rem;
+                //        }
+                //
+                //        span {
+                //            font-size: $fs-xs;
+                //            font-family: $ff-primary;
+                //        }
+                //
+                //
+                //        .cc_dropdown {
+                //            position: absolute;
+                //            left: 0;
+                //            top: 100%;
+                //            padding: 0;
+                //            list-style: none;
+                //            background: #fff;
+                //            padding: 1rem;
+                //            border: 1px solid rgba($color: #890006, $alpha: 0.05);
+                //            box-shadow: 0 0 1px 1px rgba($color: #890006, $alpha: 0.05);
+                //            width: 10rem;
+                //            max-height: 12rem;
+                //            overflow-y: scroll;
+                //            display: none;
+                //
+                //            &.active {
+                //                display: block;
+                //            }
+                //
+                //            &::-webkit-scrollbar {
+                //                width: 3px;
+                //            }
+                //
+                //            &::-webkit-scrollbar-track {
+                //                background: rgba($color: #890006, $alpha: 0.05);
+                //            }
+                //
+                //            &::-webkit-scrollbar-thumb {
+                //                background: rgba($color: $text-gray-200, $alpha: 1);
+                //                border-radius: 30rem;
+                //                border: none;
+                //            }
+                //
+                //            li {
+                //                display: flex;
+                //                align-items: center;
+                //                gap: 1rem;
+                //                margin: 1rem 0;
+                //
+                //                img {
+                //                    width: 1.4rem;
+                //                }
+                //            }
+                //        }
+                //    }
+                //    input {
+                //        padding: 0 1rem;
+                //        border: none;
+                //        flex:3;
+                //        color: #545454;
+                //        font-size: $fs-xs;
+                //        font-family: $ff-primary;
+                //        outline: none;
+                //
+                //    }
                 }
             }
             textarea {
