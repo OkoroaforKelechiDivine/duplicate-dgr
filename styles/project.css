@@ -1032,7 +1032,7 @@ select {
 }
 .projects-section .project-card {
   flex: 1;
-  flex-basis: 35rem;
+  flex-basis: 40rem;
   height: 43rem;
   padding: 3.8rem 3.8rem 0;
   display: flex;
