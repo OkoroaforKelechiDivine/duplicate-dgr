@@ -670,7 +670,7 @@ select {
   }
 }
 .heroimg {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../Assets/marketing-house-img.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../Assets/new-home.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 50vh;

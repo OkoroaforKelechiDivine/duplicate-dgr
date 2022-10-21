@@ -280,12 +280,14 @@ select {
 .navbar .nav-links li > a i {
   transform: scale(0.7);
 }
+
 .navbar .nav-links li .dropdown {
   display: none;
 }
+
 .navbar .nav-links li .dropdown li i {
   transform: scale(0.7);
-  transition: 0.3s;
+  /*transition: 0.7s;*/
 }
 .navbar .nav-links li:hover .dropdown, .navbar .nav-links li.active .dropdown {
   display: block;
@@ -298,23 +300,23 @@ select {
 .navbar .nav-links li:hover .dropdown li span, .navbar .nav-links li.active .dropdown li span {
   display: flex;
   align-items: center;
-  opacity: 0.7;
+  /*opacity: 0.7;*/
 }
 .navbar .nav-links li:hover .dropdown li span img, .navbar .nav-links li.active .dropdown li span img {
   width: 2rem;
   margin-right: 1rem;
-  opacity: 0.7;
+  /*opacity: 0.7;*/
 }
 .navbar .nav-links li:hover .dropdown li span i, .navbar .nav-links li.active .dropdown li span i {
   transform: scale(0.7);
-  transition: 0.3s;
+  /*transition: 0.3s;*/
   margin-left: 0.5rem;
 }
 .navbar .nav-links li:hover .dropdown li.active span, .navbar .nav-links li.active .dropdown li.active span {
-  opacity: 1;
+  /*opacity: 1;*/
 }
 .navbar .nav-links li:hover .dropdown li.active span img, .navbar .nav-links li.active .dropdown li.active span img {
-  opacity: 1;
+  /*opacity: 1;*/
 }
 .navbar .nav-links li:hover .dropdown li.active span i, .navbar .nav-links li.active .dropdown li.active span i {
   transform: rotate(180deg) scale(0.7);
