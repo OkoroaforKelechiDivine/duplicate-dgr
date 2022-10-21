@@ -802,6 +802,12 @@ select {
     gap: 2.2rem;
   }
 }
+
+textarea{
+  resize: none;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 600px) {
   .services-section .services {
     justify-content: center;
@@ -909,8 +915,7 @@ select {
 }
 @media screen and (max-width: 400px) {
   .contact-us {
-    margin: 5rem 0;
-    margin-bottom: 10rem;
+    margin: 5rem 0 10rem;
     padding: 0;
   }
 }
