@@ -669,7 +669,7 @@ select {
 }
 .hero-section-ctp {
   display: flex;
-  background: linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%), url("../Assets/front-view halimah.jpg");
+  background: linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%), url("../Assets/front-view-halimah.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 7rem);

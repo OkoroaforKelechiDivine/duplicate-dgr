@@ -694,7 +694,7 @@ select {
   flex-direction: column;
   min-height: calc(100vh - 7rem);
   background-size: cover;
-  background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.7) 85.5%) url("../Assets/front-view halimah.jpg") no-repeat center;
+  background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.7) 85.5%) url("../Assets/front-view-halimah.jpg") no-repeat center;
   text-align: center;
   position: relative;
   padding-bottom: 10rem;
