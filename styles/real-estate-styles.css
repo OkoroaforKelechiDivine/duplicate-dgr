@@ -884,7 +884,7 @@ select {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/pmg.png");
 }
 .services-section .services .service.smm {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/smm.png");
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/marketing-house-img.jpeg");
 }
 .services-section .services .service:nth-child(odd), .services-section .services .service:nth-child(even) {
   background-repeat: no-repeat;
