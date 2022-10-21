@@ -3,8 +3,7 @@
 @import 'default.scss';
 
 .heroimg {
-    background: linear-gradient(rgba($color: #000000, $alpha: 0.1), rgba($color: #000000, $alpha: 0.4)) , url('../Assets/reb-hero-img.png');
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba($color: #000000, $alpha: 0.1), rgba($color: #000000, $alpha: 0.4)) url('../Assets/marketing-house-img.jpeg') no-repeat;
     background-size: 100% 100%;
     height: 50vh;
     min-height: 45rem;
