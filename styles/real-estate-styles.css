@@ -802,6 +802,12 @@ select {
     gap: 2.2rem;
   }
 }
+
+textarea{
+  resize: none;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 600px) {
   .services-section .services {
     justify-content: center;
@@ -899,8 +905,7 @@ select {
 
 .contact-us {
   display: flex;
-  margin: 12rem 6rem;
-  margin-bottom: 20rem;
+  margin: 12rem 6rem 20rem;
   padding: 12rem 8rem;
   background-image: url("../Assets/blue contact form section.png");
   background-size: cover;
@@ -910,8 +915,7 @@ select {
 }
 @media screen and (max-width: 400px) {
   .contact-us {
-    margin: 5rem 0;
-    margin-bottom: 10rem;
+    margin: 5rem 0 10rem;
     padding: 0;
   }
 }
@@ -950,7 +954,7 @@ select {
   text-decoration: none;
   font-family: "DM Sans", sans-serif;
   font-size: 1.4rem;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .contact-us .contact .contact-address a:nth-child(3) {
   text-decoration: underline;
@@ -1103,12 +1107,10 @@ select {
 }
 @media screen and (max-width: 600px) {
   .contact-us {
-    margin: 5rem 0rem;
-    margin-bottom: 10rem;
+    margin: 5rem 0 10rem;
     padding: 4rem 2rem;
   }
   .contact-us form {
-    padding: 0 2rem;
-    padding-bottom: 3rem;
+    padding: 0 2rem 3rem;
   }
 }/*# sourceMappingURL=real-estate-styles.css.map */
