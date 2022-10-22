@@ -23,12 +23,10 @@ navLinks.forEach((link, idx) => {
     })
 })
 
-console.log(window.innerWidth)
-
 miniMenu.forEach(drpdn => {
     drpdn.addEventListener('click', () => {
         console.log('clicked');
-        if(window.innerWidth > 1000) {
+        if(window.innerWidth > 992) {
             miniMenu.forEach(drpdn => drpdn.parentElement.classList.remove('active'));
         }
         drpdn.parentElement.classList.toggle('active');
@@ -70,7 +68,7 @@ const changeBg = (type) => {
     console.log('background changed', currentBg)
     if(type === 'next') {
         currentBg++;
-        if (currentBg +1> heroBGs.length ){
+        if (currentBg+1> heroBGs.length ){
             currentBg = 0;
             console.log('next-image-generated')
         }
@@ -78,7 +76,7 @@ const changeBg = (type) => {
     if (type === 'prev') {
         currentBg--;
         if (currentBg < 0 ){
-            currentBg = 1;
+            currentBg = 2;
             console.log('prev-image-generated')
         }
     }

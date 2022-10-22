@@ -319,27 +319,28 @@
             }
         }  
         @media screen and (max-width: 991px) {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
             background: $text-white;
             height: auto;
             min-height: 100vh;
             width: calc(100% + 6rem);
+            top: 0%;
+            left: -120%;
+            bottom: 0;
+            right: 0;
             gap: 2rem;
-            flex-direction: column;
             text-align: left;
-            position: absolute;
-            top: 0;
-            left: 0;
-            // margin: 0;
             padding-top: 10rem;
             align-items: start;
             font-family: $ff-secondary;
             font-size: $fs-md;
+            z-index: 2;
             transition: all 1s;
             
             &.active {
-                display: flex;
-                z-index: 2;
+                left: -3rem;                
             }
         }
     }
@@ -356,7 +357,7 @@
         .nav-links {
             padding-top: 12rem;
             width: calc(100% + 3rem);
-            left: -3rem;
+            // left: -3rem;
         }
     }
 }
