@@ -1149,21 +1149,25 @@ section.services.s_03 .service .service-details a {
     padding: 8rem 2rem;
   }
 }
+
 .featured-projects .header {
   width: 100%;
   max-width: 100rem;
   margin-bottom: 6rem;
+  gap: 10%;
 }
+
 .featured-projects .header h1 {
   font-size: 4.8rem;
   line-height: 7rem;
-  width: 100%;
+  width: 70%;
   font-family: "Suranna", serif;
   color: #1A1818;
-  border-bottom: 2px solid #BFBFBF;
+  border-bottom: 1px solid #BFBFBF;
   padding-bottom: 2rem;
   font-weight: 400;
 }
+
 @media screen and (max-width: 600px) {
   .featured-projects .header h1 {
     font-size: 3.6rem;
