@@ -31,12 +31,12 @@
             gap: 4rem;
             list-style: none;
             font-family: $ff-primary;
-    
+
             li {
                 font-size: $fs-md;
                 position: relative;
                 transition: all 2s;
-    
+
                 &:hover , &:focus , &.active {
                     transition: all 2s;
 
@@ -53,13 +53,13 @@
 
                 &>a {
                     text-decoration: none;
-                    color: $text-black; 
-                    
+                    color: $text-black;
+
                     i {
                         transform: scale(.7);
                     }
                 }
-    
+
                 &:nth-child(3) .dropdown {
                     width: 53rem;
                     height: 31.5rem;
@@ -202,7 +202,7 @@
         border-radius: .4rem;
         cursor: pointer;
         z-index: 3;
-        
+
         &::after {
             content: url('../Assets/icon-open.svg');
         }
@@ -210,10 +210,10 @@
         &.active::after {
             content: url('../Assets/icon-close.png');
         }
-        
+
         &.active {
             border: 2px solid $text-black;
-        } 
+        }
 
         @media screen and (max-width: 991px) {
             display: block;
@@ -244,8 +244,8 @@
 
             &>a {
                 text-decoration: none;
-                color: $text-black; 
-                
+                color: $text-black;
+
                 i {
                     transform: scale(.7);
                 }
@@ -272,13 +272,13 @@
                         display: flex;
                         align-items: center;
                         opacity: .7;
-    
+
                         img {
                             width: $fs-md;
                             margin-right: 1rem;
                             opacity: .7;
                         }
-    
+
                         i {
                             transform: scale(.7);
                             transition: .3s;
@@ -290,7 +290,7 @@
                     &.active{
                         span {
                             opacity: 1;
-    
+
                             img {
                                 opacity: 1;
                             }
@@ -316,11 +316,11 @@
 
                     &.active .mini-dropdown {
                         display: block;
-                    
+
                     }
                 }
             }
-        }  
+        }
         @media screen and (max-width: 991px) {
             display: flex;
             flex-direction: column;
@@ -341,16 +341,16 @@
             font-size: $fs-md;
             z-index: 2;
             transition: all 1s;
-            
+
             &.active {
-                left: -3rem;                
+                left: -3rem;
             }
         }
     }
 
     @media screen and (max-width: 600px) {
         padding: 2rem;
-        
+
         .brand-logo {
             img {
                 width: 4.5rem;

@@ -109,7 +109,7 @@ select {
     font-family: "DM Sans", sans-serif;
   }
   .navbar .nav-links li {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
     transition: all 2s;
   }
@@ -262,7 +262,7 @@ select {
   font-family: "Suranna", serif;
 }
 .navbar .nav-links li {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
@@ -671,8 +671,7 @@ select {
   }
 }
 .heroimg {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../Assets/marketing-house-img.jpeg");
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../Assets/new-home.jpg") no-repeat;
   background-size: 100% 100%;
   height: 50vh;
   min-height: 45rem;
@@ -803,9 +802,12 @@ select {
     gap: 2.2rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .services-section .services {
-    justify-content: center;
+    justify-content: left;
+  }
+  .services-section .services .service{
+    flex-basis: 32rem !important;
   }
 }
 .services-section .services .service {
@@ -814,14 +816,14 @@ select {
   align-items: flex-start;
   justify-content: flex-end;
   height: 32rem;
-  flex-basis: 28rem;
+  flex-basis: 30rem;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 2rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .services-section .services .service {
-    flex-basis: 26rem;
+    flex-basis: 30rem;
   }
 }
 .services-section .services .service h1 {
@@ -850,11 +852,13 @@ select {
 .services-section .services .service a:hover {
   text-decoration: underline;
 }
+
 .services-section .services .service.bas {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/bas.png");
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/house-for-sale.jpg");
 }
+
 .services-section .services .service.ren {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/ren.png");
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/rent-a-house.jpg");
 }
 .services-section .services .service.npd {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/npd.png");
@@ -887,7 +891,7 @@ select {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/pmg.png");
 }
 .services-section .services .service.smm {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/smm.png");
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.6) 75%), url("../Assets/marketing-house-img.jpeg");
 }
 .services-section .services .service:nth-child(odd), .services-section .services .service:nth-child(even) {
   background-repeat: no-repeat;
@@ -900,8 +904,7 @@ select {
 
 .contact-us {
   display: flex;
-  margin: 12rem 6rem;
-  margin-bottom: 20rem;
+  margin: 12rem 6rem 20rem;
   padding: 12rem 8rem;
   background-image: url("../Assets/blue contact form section.png");
   background-size: cover;
@@ -911,8 +914,7 @@ select {
 }
 @media screen and (max-width: 400px) {
   .contact-us {
-    margin: 5rem 0;
-    margin-bottom: 10rem;
+    margin: 5rem 0 10rem;
     padding: 0;
   }
 }

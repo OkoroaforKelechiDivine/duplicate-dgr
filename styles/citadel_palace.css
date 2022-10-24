@@ -46,7 +46,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -70,12 +70,12 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -109,7 +109,7 @@ select {
     font-family: "DM Sans", sans-serif;
   }
   .navbar .nav-links li {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
     transition: all 2s;
   }
@@ -262,7 +262,7 @@ select {
   font-family: "Suranna", serif;
 }
 .navbar .nav-links li {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
@@ -339,7 +339,7 @@ select {
     height: auto;
     min-height: 100vh;
     width: calc(100% + 6rem);
-    top: 0%;
+    top: 0;
     left: -120%;
     bottom: 0;
     right: 0;
@@ -412,7 +412,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -436,12 +436,12 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -450,8 +450,7 @@ footer {
   display: flex;
   width: 100%;
   background: #1A1818;
-  padding: 5rem 6rem;
-  padding-bottom: 0;
+  padding: 5rem 6rem 0;
   flex-direction: column;
   font-family: "DM Sans", sans-serif;
   margin-top: 3rem;
@@ -571,8 +570,7 @@ footer .copyright {
 }
 @media screen and (max-width: 600px) {
   footer {
-    padding: 5rem 1rem;
-    padding-bottom: 0;
+    padding: 5rem 1rem 0;
   }
   footer .main-footer .brand-logo img {
     padding: 0.8rem;
@@ -636,7 +634,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -660,19 +658,19 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
 .hero-section-ctp {
   display: flex;
-  background: linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%) url("../Assets/front-view-halimah.jpg") no-repeat;
+  background: linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%), url("../Assets/front-view-halimah.jpg") no-repeat;
   background-size: cover;
   height: calc(100vh - 7rem);
   min-height: 72rem;
@@ -771,14 +769,13 @@ select {
 }
 .hero-section-ctp form .input-field .phone .country-code {
   position: relative;
-  padding: 0.8rem 1.5rem;
   width: 30%;
   display: flex;
   flex: 1;
   align-items: center;
   gap: 0.3rem;
   border-right: 1px solid #989898;
-  padding-right: 1rem;
+  padding: 0.8rem 1rem 0.8rem 1.5rem;
 }
 .hero-section-ctp form .input-field .phone .country-code img {
   width: 1.4rem;
@@ -927,12 +924,14 @@ select {
 .overview-ctp {
   background-image: url("../Assets/contact section texture.png");
   width: 100%;
+  background-size: cover;
   display: flex;
   padding: 2rem 6rem;
   gap: 10rem;
   align-items: center;
   justify-content: space-between;
 }
+
 .overview-ctp .illustration {
   flex: 1;
   display: flex;
@@ -940,6 +939,7 @@ select {
 }
 .overview-ctp .illustration img {
   width: 90%;
+  margin-top: 150px;
   transform: translateY(-24rem);
 }
 .overview-ctp .overview-about {
@@ -950,7 +950,7 @@ select {
   font-size: 6.4rem;
   font-weight: 400;
   margin-bottom: 4rem;
-  border-bottom: 0.5px solid #FFA7AB;
+  border-bottom: 1px solid #FFA7AB;
   padding: 2.5rem;
   color: #ffffff;
 }
@@ -969,9 +969,9 @@ select {
 .overview-ctp .overview-about .overview-about-card {
   margin: 2.5rem;
   background: #ffffff;
-  padding: 4.1rem 5.1rem;
+  padding: 2rem 5.1rem;
   width: 100%;
-  max-width: 46rem;
+  max-width: 50rem;
 }
 .overview-ctp .overview-about .overview-about-card > small {
   font-family: "Suranna", serif;
@@ -999,11 +999,13 @@ select {
   width: 8rem;
   margin: 0 1.8rem;
 }
+
 .overview-ctp .overview-about .overview-about-card > div div.line {
-  width: 1.5px;
-  height: 12rem;
-  background-color: #BFBFBF;
+  border-left: 2px solid #BFBFBF;
+  height: 100px;
+  left: 50%;
 }
+
 .overview-ctp .overview-about .overview-about-card > div div small {
   color: #545454;
   font-size: 1.4rem;
@@ -1055,7 +1057,7 @@ select {
     margin: 0 1.2rem;
   }
   .overview-ctp .overview-about .overview-about-card > div div.line {
-    width: 1.8px;
+    width: 2px;
     height: 12rem;
     background-color: #BFBFBF;
   }
@@ -1212,8 +1214,9 @@ select {
   justify-content: flex-start;
   flex-wrap: wrap;
   row-gap: 10rem;
+  /*gap: 200px;*/
   -moz-column-gap: 18rem;
-       column-gap: 18rem;
+  column-gap: 15rem;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -1321,7 +1324,8 @@ select {
   flex-basis: 38rem;
 }
 .gallery .scroll-gallery .overflow .images div img {
-  width: 100%;
+  width: 500px;
+  height: 350px;
 }
 .gallery .slider {
   position: relative;
@@ -1333,6 +1337,71 @@ select {
   justify-content: center;
   max-width: 12rem;
 }
+
+.slider-holder*/
+/*{*/
+/*  width: 800px;*/
+/*  height: 400px;*/
+/*  !*background-color: yellow;*!*/
+/*  margin-left: auto;*/
+/*  margin-right: auto;*/
+/*  margin-top: 0px;*/
+/*  text-align: center;*/
+/*  overflow: hidden;*/
+/*}*/
+
+/*.image-holder{*/
+/*  width: 2400px;*/
+/*  background-color: red;*/
+/*  height: 400px;*/
+/*  clear: both;*/
+/*  position: relative;*/
+
+/*  -webkit-transition: left 2s;*/
+/*  -moz-transition: left 2s;*/
+/*  -o-transition: left 2s;*/
+/*  transition: left 2s;*/
+/*}*/
+
+/*.slider-image{*/
+/*  float: left;*/
+/*  margin: 0px;*/
+/*  padding: 0px;*/
+/*  position: relative;*/
+/*}*/
+
+/*#slider-image-1:target ~ .image-holder*/
+/*{*/
+/*  left: 0px;*/
+/*}*/
+
+/*#slider-image-2:target ~ .image-holder*/
+/*{*/
+/*  left: -800px;*/
+/*}*/
+
+/*#slider-image-3:target ~ .image-holder*/
+/*{*/
+/*  left: -1600px;*/
+/*}*/
+
+/*.button-holder*/
+/*{*/
+/*  position: absolute;*/
+/*  top: 450px;*/
+/*  margin-left: 100px;*/
+/*}*/
+
+/*.slider-change*/
+/*{*/
+/*  display: inline-block;*/
+/*  height: 10px;*/
+/*  width: 10px;*/
+/*  border-radius: 5px;*/
+/*  background-color: brown;*/
+/*}
+/**/
+
 .gallery .slider .bar {
   width: 30%;
   margin: 0 1rem;
@@ -1345,8 +1414,7 @@ select {
 }
 @media screen and (max-width: 768px) {
   .gallery {
-    padding: 5rem 1rem;
-    padding-top: 2rem;
+    padding: 2rem 1rem 5rem;
     margin-bottom: 7rem;
   }
 }/*# sourceMappingURL=citadel_palace.css.map */

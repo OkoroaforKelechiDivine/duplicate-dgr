@@ -109,7 +109,7 @@ select {
     font-family: "DM Sans", sans-serif;
   }
   .navbar .nav-links li {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
     transition: all 2s;
   }
@@ -262,7 +262,7 @@ select {
   font-family: "Suranna", serif;
 }
 .navbar .nav-links li {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
@@ -839,7 +839,6 @@ select {
   font-family: "Suranna", serif;
   font-size: 4.8rem;
   line-height: 6.4rem;
-  color: #1A1818;
 }
 @media screen and (max-width: 600px) {
   .city-developers h1 {
@@ -850,6 +849,7 @@ select {
   margin-bottom: 1.5rem;
   font-size: 1.6rem;
   line-height: 2.5rem;
+  color: #5E5E5E;
   font-family: "DM Sans", sans-serif;
   width: 100%;
 }

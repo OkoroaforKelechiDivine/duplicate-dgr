@@ -27,7 +27,7 @@
 
     @media screen and (max-width: 400px) {
         margin: 5rem 0 10rem;
-        padding: 0;        
+        padding: 0;
     }
 
     .contact, form {
@@ -39,7 +39,7 @@
         justify-content: space-between;
         flex-direction: column;
         padding-bottom: 5rem;
-        
+
         h1 {
             font-family: $ff-secondary;
             font-size: $fs-xxl;
@@ -54,7 +54,7 @@
                 line-height: 4rem;
             }
         }
-        
+
         .contact-address {
             display: flex;
             flex-direction: column;
@@ -128,7 +128,7 @@
                 color: $text-gray-300;
             }
         }
-        
+
         .input-field {
             margin: 3rem 0;
             display: flex;
@@ -140,7 +140,7 @@
                 flex: 1;
             }
         }
-        
+
         textarea {
             max-width: 100rem;
         }
@@ -159,8 +159,8 @@
     }
 
     @media screen and (max-width: 1000px) {
-        flex-direction: column;        
-        
+        flex-direction: column;
+
         .contact {
             padding-bottom: 10rem;
 
@@ -184,8 +184,8 @@
         }
 
         .contact {
-        
-            
+
+
             h1 {
                 font-size: $fs-lg;
                 color: $text-white;
@@ -193,7 +193,7 @@
                 max-width: 27rem;
                 line-height: 4rem;
             }
-            
+
             .contact-address {
                 display: flex;
                 flex-direction: column;
@@ -206,12 +206,12 @@
 
         form {
             padding: 4rem;
-            
+
             .input-field {
                 flex-direction: column;
                 align-items: stretch;
             }
-            
+
             textarea {
                 max-width: 75rem;
             }
@@ -219,14 +219,13 @@
     }
 
     @media screen and (min-width: 768px) and (max-width: 1300px) {
-            form {
-                padding: 6rem 3rem;
-            }       
+        form {
+            padding: 6rem 3rem;
+        }
     }
 
     @media screen and (max-width: 600px) {
-        margin: 5rem 0rem;
-        margin-bottom: 10rem;
+        margin: 5rem 0rem 10rem;
         padding: 4rem 2rem;
 
 

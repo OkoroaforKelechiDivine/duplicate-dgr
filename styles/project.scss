@@ -193,8 +193,7 @@
                             transform: translateY(-50%) rotate(90deg);
                         }
 
-                    }
-                
+                    }      
                 
                     .range-slider {
                         max-width: 30em;
@@ -272,8 +271,7 @@
                         background: $text-red-400;
                         border-radius: inherit;
                         transition: 0.3s;
-                    }
-            
+                    }  
                     
                     .range-slider .tooltip-fixed {
                         position: absolute;
@@ -359,8 +357,6 @@
                     .range-slider .max {
                         right: -.7em;
                     }
-            
-
                 }
             }
         }
@@ -374,6 +370,7 @@
             border: none;
             outline: none;
             margin-top: 6rem;
+            cursor: pointer;
         }
     }
 }
@@ -408,6 +405,11 @@
         @media screen and (max-width: 600px) {
             padding: 1.2rem;
             padding-bottom: 0; 
+        }
+
+        a {
+            text-decoration: none;
+            color: $text-white;
         }
 
         h2 {

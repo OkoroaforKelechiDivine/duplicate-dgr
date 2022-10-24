@@ -46,7 +46,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -70,12 +70,12 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -109,7 +109,7 @@ select {
     font-family: "DM Sans", sans-serif;
   }
   .navbar .nav-links li {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
     transition: all 2s;
   }
@@ -262,7 +262,7 @@ select {
   font-family: "Suranna", serif;
 }
 .navbar .nav-links li {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
@@ -370,8 +370,8 @@ select {
   }
 }
 
-/* 
-color palette  
+/*
+color palette
 */
 /* font weight variables */
 /* opacity */
@@ -412,7 +412,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -436,12 +436,12 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -450,8 +450,7 @@ footer {
   display: flex;
   width: 100%;
   background: #1A1818;
-  padding: 5rem 6rem;
-  padding-bottom: 0;
+  padding: 5rem 6rem 0;
   flex-direction: column;
   font-family: "DM Sans", sans-serif;
   margin-top: 3rem;
@@ -571,8 +570,7 @@ footer .copyright {
 }
 @media screen and (max-width: 600px) {
   footer {
-    padding: 5rem 1rem;
-    padding-bottom: 0;
+    padding: 5rem 1rem 0;
   }
   footer .main-footer .brand-logo img {
     padding: 0.8rem;
@@ -594,8 +592,8 @@ footer .copyright {
   }
 }
 
-/* 
-color palette  
+/*
+color palette
 */
 /* font weight variables */
 /* opacity */
@@ -636,7 +634,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -660,12 +658,12 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -681,7 +679,7 @@ select {
   width: 100%;
   height: 100vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -877,8 +875,7 @@ select {
 }
 @media screen and (max-width: 600px) {
   .contact-us {
-    margin: 5rem 0rem;
-    margin-bottom: 10rem;
+    margin: 5rem 0 10rem;
     padding: 4rem 2rem;
   }
   .contact-us form {

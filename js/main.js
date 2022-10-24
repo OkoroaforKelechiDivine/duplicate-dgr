@@ -62,7 +62,7 @@ const heroBGs = [
     },
 ];
 
-let currentBg = 0;
+let currentBg = 1;
 
 const changeBg = (type) => {
     console.log('background changed', currentBg)
@@ -93,9 +93,11 @@ const changeBg = (type) => {
 
 }
 
+const timeout = 5000
+
 setInterval(() => {
     changeBg('next')
-}, 6000);
+}, timeout);
 
 carouselButtonNext.addEventListener('click', () => changeBg('next'))
 

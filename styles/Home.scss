@@ -24,7 +24,7 @@
     flex-direction: column;
     min-height: calc(100vh - 7rem);
     background-size: cover;
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.7) 85.5%) url('../Assets/front-view-halimah.jpg') no-repeat center;
+    background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.7) 85.5%), url('../Assets/front-view-halimah.jpg') no-repeat center;
     text-align: center;
     position: relative;
     padding-bottom: 10rem;
@@ -145,11 +145,11 @@
         text-align: left;
         align-items: start;
         // justify-content: start;
-        
+
         .hero-content {
             align-items: start;
         }
-        
+
         h1 {
             font-size: $fs-lg;
             line-height: 4.3rem;
@@ -174,20 +174,20 @@
             color: #fff;
             font-size: $fs-md;
             cursor: pointer;
-    
-    
-    
+
+
+
             &:first-of-type {
                 left: none;
                 border-color: $text-gray-300;
                 color: $text-gray-300
             }
-    
+
             &:last-of-type {
                 right: none;
                 margin-left: 1rem;
             }
-        }   
+        }
     }
 }
 
@@ -289,34 +289,34 @@
         padding: 3.4rem 0 3.4rem 2rem;
 
         .title {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        h1 {
-            font-size: $fs-lg;
-            color: $text-red-400;
-            font-weight: $fw-r;
-            line-height: 4.2rem;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            h1 {
+                font-size: $fs-lg;
+                color: $text-red-400;
+                font-weight: $fw-r;
+                line-height: 4.2rem;
+            }
+
+            img {
+                transform: translate(-19%, -22%) scale(.4);
+            }
         }
 
-        img {
-            transform: translate(-19%, -22%) scale(.4);
-        }
-    }
+        .mission-text {
+            margin-top: 0;
+            padding: 1rem 0 0;
 
-    .mission-text {
-        margin-top: 0;
-        padding: 1rem 0 0;
+            p {
+                line-height: 3rem;
+                font-size: $fs-xs;
+            }
 
-        p {
-            line-height: 3rem;
-            font-size: $fs-xs;
+            button {
+                font-size: $fs-xs;
+            }
         }
-
-        button {
-            font-size: $fs-xs;
-        }
-    }
 
     }
 }
@@ -340,7 +340,7 @@ section.services {
         width: 100%;
         max-width: 100rem;
         margin-bottom: 6rem;
-        
+
         h1 {
             font-size: $fs-xl;
             line-height: 7rem;
@@ -351,8 +351,8 @@ section.services {
             padding-bottom: 2rem;
 
             @media screen and (max-width: 600px) {
-                font-size: $fs-lg;   
-                padding-bottom: 0;            
+                font-size: $fs-lg;
+                padding-bottom: 0;
             }
         }
     }
@@ -364,13 +364,13 @@ section.services {
         gap: 20%;
 
         .illustration {
-          flex: 1; 
+            flex: 1;
 
-          img {
-            width: 100%;
-            max-height: 80rem;
-            box-shadow: 15px 15px 2px 12px rgba($color: $text-white, $alpha: 1);
-          } 
+            img {
+                width: 100%;
+                max-height: 80rem;
+                box-shadow: 15px 15px 2px 12px rgba($color: $text-white, $alpha: 1);
+            }
         }
 
         .service-details {
@@ -421,25 +421,25 @@ section.services {
         }
 
         @media screen and (max-width:768px) {
-            flex-direction: column; 
-            gap: 4rem;    
-            
+            flex-direction: column;
+            gap: 4rem;
+
             .illustration {
-                flex: 1; 
-      
+                flex: 1;
+
                 img {
-                  width: 100%;
-                  max-height: 80rem;
-                  box-shadow: 8px 8px 0px 8px rgba($color: $text-white, $alpha: 1);
-                } 
-              }
+                    width: 100%;
+                    max-height: 80rem;
+                    box-shadow: 8px 8px 0px 8px rgba($color: $text-white, $alpha: 1);
+                }
+            }
         }
     }
 
     @media screen and (max-width: 600px) {
         padding: 8rem 2rem;
     }
-    
+
 }
 
 div.service.service-01 {
@@ -452,25 +452,25 @@ section.services.s_02, section.services.s_04 {
     background: transparent;
     .service {
         flex-direction: row-reverse;
-        
+
         .illustration {
-            flex: 1; 
-  
+            flex: 1;
+
             img {
-              width: 100%;
-              max-height: 80rem;
-              box-shadow: 15px 15px 5px 12px rgba($color: $text-gray-200, $alpha: .7);
-            
-              @media screen and (max-width: 600px) {
-                box-shadow: 8px 8px 3px 8px rgba($color: $text-gray-200, $alpha: .7);
-              }
+                width: 100%;
+                max-height: 80rem;
+                box-shadow: 15px 15px 5px 12px rgba($color: $text-gray-200, $alpha: .7);
+
+                @media screen and (max-width: 600px) {
+                    box-shadow: 8px 8px 3px 8px rgba($color: $text-gray-200, $alpha: .7);
+                }
             }
-            
-            
-          }
+
+
+        }
 
         @media screen and (max-width:768px) {
-            flex-direction: column;            
+            flex-direction: column;
         }
 
         .service-details {
@@ -507,7 +507,7 @@ section.services.s_03 {
         width: 100%;
         max-width: 100rem;
         margin-bottom: 6rem;
-        
+
         h1 {
             font-size: $fs-xl;
             line-height: 7rem;
@@ -519,7 +519,7 @@ section.services.s_03 {
             font-weight: 400;
 
             @media screen and (max-width: 600px) {
-                font-size: $fs-lg;  
+                font-size: $fs-lg;
                 padding-bottom: .2rem;
             }
         }
@@ -532,13 +532,13 @@ section.services.s_03 {
         gap: 10%;
 
         .illustration {
-          flex: 1; 
+            flex: 1;
 
-          img {
-            width: 100%;
-            max-height: 80rem;
-            box-shadow: 15px 15px 5px 15px $text-gray-200;
-          } 
+            img {
+                width: 100%;
+                max-height: 80rem;
+                box-shadow: 15px 15px 5px 15px $text-gray-200;
+            }
         }
 
         .about-featured-project {
@@ -551,7 +551,7 @@ section.services.s_03 {
 
             p {
                 font-size: $fs-sm;
-                font-family: $ff-primary; 
+                font-family: $ff-primary;
                 opacity: .7;
             }
 
@@ -612,15 +612,15 @@ section.services.s_03 {
         @media screen and (max-width: 768px) {
             flex-direction: column;
             gap: 4rem;
-            
+
             .illustration {
-                flex: 1; 
-      
+                flex: 1;
+
                 img {
-                  width: 100%;
-                  max-height: 80rem;
-                  box-shadow: 7px 7px 5px 7px $text-gray-200;
-                } 
+                    width: 100%;
+                    max-height: 80rem;
+                    box-shadow: 7px 7px 5px 7px $text-gray-200;
+                }
             }
 
             .about-featured-project h1 {
@@ -641,9 +641,8 @@ section.services.s_03 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(137, 0, 6, 0.16) 0%, rgba(0, 0, 0, 0.6) 85.5%), url('../Assets/luxury.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(137, 0, 6, 0.16) 0%, rgba(0, 0, 0, 0.6) 85.5%), url('../Assets/luxury.png') no-repeat;
     padding: 0 3rem;
     h1 {
         font-size: clamp($fs-md, 7vw , $fs-xl);
@@ -670,7 +669,7 @@ section.services.s_03 {
 
     @media screen and (max-width: 600px) {
         padding: 7.4rem 0;
-        text-align: left;        
+        text-align: left;
     }
 
     .subscribe {
@@ -686,7 +685,7 @@ section.services.s_03 {
         @media screen and (max-width: 600px) {
             padding: 6rem 2rem;
             justify-content: start;
-            align-items: start;            
+            align-items: start;
         }
 
         h1 {
@@ -699,11 +698,11 @@ section.services.s_03 {
             margin: 0;
 
             @media screen and (max-width: 600px) {
-                font-size: $fs-lg;  
+                font-size: $fs-lg;
                 line-height: 4.2rem;
                 width: 100%;
-                max-width: 21rem; 
-                text-align: left;             
+                max-width: 21rem;
+                text-align: left;
             }
         }
 
@@ -717,10 +716,10 @@ section.services.s_03 {
             line-height: 2.5rem;
             color: #FFEBEC;
 
-            
+
 
             @media screen and (max-width: 600px) {
-                text-align: left; 
+                text-align: left;
                 margin: 3rem 0;
             }
         }
@@ -734,7 +733,7 @@ section.services.s_03 {
 
             @media screen and (max-width: 600px) {
                 flex-direction: column;
-                gap: 2.3rem;   
+                gap: 2.3rem;
                 margin-top: .9rem;
             }
 

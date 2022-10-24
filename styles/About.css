@@ -46,7 +46,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -70,12 +70,12 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -109,7 +109,7 @@ select {
     font-family: "DM Sans", sans-serif;
   }
   .navbar .nav-links li {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
     transition: all 2s;
   }
@@ -262,7 +262,7 @@ select {
   font-family: "Suranna", serif;
 }
 .navbar .nav-links li {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
@@ -412,7 +412,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -436,12 +436,12 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -450,8 +450,7 @@ footer {
   display: flex;
   width: 100%;
   background: #1A1818;
-  padding: 5rem 6rem;
-  padding-bottom: 0;
+  padding: 5rem 6rem 0;
   flex-direction: column;
   font-family: "DM Sans", sans-serif;
   margin-top: 3rem;
@@ -571,8 +570,7 @@ footer .copyright {
 }
 @media screen and (max-width: 600px) {
   footer {
-    padding: 5rem 1rem;
-    padding-bottom: 0;
+    padding: 5rem 1rem 0;
   }
   footer .main-footer .brand-logo img {
     padding: 0.8rem;
@@ -636,7 +634,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -660,12 +658,12 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -679,8 +677,7 @@ select {
   z-index: -1;
 }
 .hero-section-abp .heroimg {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Assets/hero-img.png");
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Assets/hero-img.png") no-repeat;
   background-size: 100% 100%;
   height: 50vh;
   min-height: 45rem;
@@ -762,7 +759,7 @@ select {
   }
 }
 .mission .mission-text {
-  border-top: 0.5px solid #FFA7AB;
+  border-top: 1px solid #FFA7AB;
   padding: 5rem 5rem 0 11rem;
   font-family: "DM Sans", sans-serif;
   flex: 1.5;
@@ -814,7 +811,7 @@ select {
   width: 80%;
 }
 .vision .vision-text p {
-  color: #1A1818;
+  /*color: #1A1818;*/
   font-family: "DM Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 2.5rem;
@@ -898,14 +895,14 @@ select {
   align-items: flex-start;
   justify-content: flex-end;
   height: 32rem;
-  flex-basis: 28rem;
+  flex-basis: 30rem;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 2rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .services-section .services .service {
-    flex-basis: 26rem;
+    flex-basis: 30rem;
   }
 }
 .services-section .services .service h1 {

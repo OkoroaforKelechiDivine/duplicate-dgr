@@ -4,8 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Suranna&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
-/* 
-color palette  
+/*
+color palette
 */
 /* font weight variables */
 /* opacity */
@@ -46,7 +46,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -70,12 +70,12 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -109,7 +109,7 @@ select {
     font-family: "DM Sans", sans-serif;
   }
   .navbar .nav-links li {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
     transition: all 2s;
   }
@@ -262,7 +262,7 @@ select {
   font-family: "Suranna", serif;
 }
 .navbar .nav-links li {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
@@ -339,7 +339,7 @@ select {
     height: auto;
     min-height: 100vh;
     width: calc(100% + 6rem);
-    top: 0%;
+    top: 0;
     left: -120%;
     bottom: 0;
     right: 0;
@@ -370,8 +370,8 @@ select {
   }
 }
 
-/* 
-color palette  
+/*
+color palette
 */
 /* font weight variables */
 /* opacity */
@@ -412,7 +412,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -436,12 +436,12 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -450,8 +450,7 @@ footer {
   display: flex;
   width: 100%;
   background: #1A1818;
-  padding: 5rem 6rem;
-  padding-bottom: 0;
+  padding: 5rem 6rem 0;
   flex-direction: column;
   font-family: "DM Sans", sans-serif;
   margin-top: 3rem;
@@ -571,8 +570,7 @@ footer .copyright {
 }
 @media screen and (max-width: 600px) {
   footer {
-    padding: 5rem 1rem;
-    padding-bottom: 0;
+    padding: 5rem 1rem 0;
   }
   footer .main-footer .brand-logo img {
     padding: 0.8rem;
@@ -594,8 +592,8 @@ footer .copyright {
   }
 }
 
-/* 
-color palette  
+/*
+color palette
 */
 /* font weight variables */
 /* opacity */
@@ -636,7 +634,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -660,12 +658,12 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -681,7 +679,7 @@ select {
   width: 100%;
   height: 100vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -693,12 +691,12 @@ select {
   flex-direction: column;
   min-height: calc(100vh - 7rem);
   background-size: cover;
-  background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.7) 85.5%) url("../Assets/front-view-halimah.jpg") no-repeat center;
+  background: linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.7) 85.5%), url("../Assets/front-view-halimah.jpg") no-repeat center;
   text-align: center;
   position: relative;
   padding-bottom: 10rem;
   -webkit-animation: animateBg 18s ease-in-out infinite;
-          animation: animateBg 18s ease-in-out infinite;
+  animation: animateBg 18s ease-in-out infinite;
 }
 .hero-section .animated-link {
   position: absolute;
@@ -938,7 +936,7 @@ select {
   font-family: "DM Sans", sans-serif;
   line-height: 4rem;
 }
-.mission .mission-text button{
+.mission .mission-text button {
   background: #890006;
   border: none;
   padding: 1.4rem 4rem;
@@ -947,15 +945,9 @@ select {
   color: #ffffff;
   transition: 0.5s;
 }
-
-button a{
-  color: white;
-  text-decoration: none;
-}
-
 .mission .mission-text button:hover {
   color: #890006;
-  /*background: transparent;*/
+  background: transparent;
   box-shadow: 0 0 5px;
 }
 @media screen and (max-width: 998px) {
@@ -1155,25 +1147,21 @@ section.services.s_03 .service .service-details a {
     padding: 8rem 2rem;
   }
 }
-
 .featured-projects .header {
   width: 100%;
   max-width: 100rem;
   margin-bottom: 6rem;
-  gap: 10%;
 }
-
 .featured-projects .header h1 {
   font-size: 4.8rem;
   line-height: 7rem;
-  width: 70%;
+  width: 100%;
   font-family: "Suranna", serif;
   color: #1A1818;
-  border-bottom: 1px solid #BFBFBF;
+  border-bottom: 2px solid #BFBFBF;
   padding-bottom: 2rem;
   font-weight: 400;
 }
-
 @media screen and (max-width: 600px) {
   .featured-projects .header h1 {
     font-size: 3.6rem;
@@ -1184,7 +1172,7 @@ section.services.s_03 .service .service-details a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20%;
+  gap: 10%;
 }
 .featured-projects .featured-project .illustration {
   flex: 1;
@@ -1281,9 +1269,8 @@ section.services.s_03 .service .service-details a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, rgba(137, 0, 6, 0.16) 0%, rgba(0, 0, 0, 0.6) 85.5%), url("../Assets/luxury.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(180deg, rgba(137, 0, 6, 0.16) 0%, rgba(0, 0, 0, 0.6) 85.5%), url("../Assets/luxury.png") no-repeat;
   padding: 0 3rem;
 }
 .luxury h1 {

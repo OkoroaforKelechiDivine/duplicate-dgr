@@ -109,7 +109,7 @@ select {
     font-family: "DM Sans", sans-serif;
   }
   .navbar .nav-links li {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
     transition: all 2s;
   }
@@ -262,7 +262,7 @@ select {
   font-family: "Suranna", serif;
 }
 .navbar .nav-links li {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .navbar .nav-links li:hover a, .navbar .nav-links li:focus a, .navbar .nav-links li.active a {
   color: #890006;
@@ -1032,10 +1032,9 @@ select {
 }
 .projects-section .project-card {
   flex: 1;
-  flex-basis: 43rem;
+  flex-basis: 36rem;
   height: 43rem;
-  padding: 3.8rem;
-  padding-bottom: 0;
+  padding: 3.8rem 3.8rem 0;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -1043,12 +1042,28 @@ select {
   color: #ffffff;
   font-family: "DM Sans", sans-serif;
 }
+
+.project-card {
+  position: relative;
+}
+
+.project-card a:after {
+  content: "";
+  display: block ;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
 @media screen and (max-width: 600px) {
   .projects-section .project-card {
-    padding: 1.2rem;
-    padding-bottom: 0;
+    padding: 1.2rem 1.2rem 0;
   }
 }
+
 .projects-section .project-card h2 {
   font-family: "Suranna", serif;
   font-size: 3.6rem;
@@ -1056,16 +1071,24 @@ select {
   font-weight: 400;
   line-height: 4.031rem;
 }
-.projects-section .project-card > p {
-  font-size: 1.6rem;
+
+.project-card p {
+  font-size: 16px;
   line-height: 2.5rem;
 }
+
+.project-card a{
+  color: white;
+  text-decoration: none;
+}
+
 .projects-section .project-card div {
   display: flex;
   gap: 4.1rem;
   align-items: center;
   margin: 0;
 }
+
 @media screen and (max-width: 600px) {
   .projects-section .project-card div {
     gap: 2rem;
