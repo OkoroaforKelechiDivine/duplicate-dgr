@@ -938,7 +938,7 @@ select {
   font-family: "DM Sans", sans-serif;
   line-height: 4rem;
 }
-.mission .mission-text button {
+.mission .mission-text button{
   background: #890006;
   border: none;
   padding: 1.4rem 4rem;
@@ -947,9 +947,15 @@ select {
   color: #ffffff;
   transition: 0.5s;
 }
+
+button a{
+  color: white;
+  text-decoration: none;
+}
+
 .mission .mission-text button:hover {
   color: #890006;
-  background: transparent;
+  /*background: transparent;*/
   box-shadow: 0 0 5px;
 }
 @media screen and (max-width: 998px) {
