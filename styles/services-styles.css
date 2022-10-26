@@ -739,6 +739,12 @@ select {
 .ret-details .overview-illustration img {
   transform: translate(7rem, 7rem);
 }
+
+.main{
+  line-height: 30px;
+  font-size: 1.6rem;
+}
+
 .ret-details .ret-details-text p {
   font-size: 1.4rem;
   line-height: 2.5rem;
@@ -748,6 +754,12 @@ select {
 .ret-details .ret-details-text .title {
   color: #989898;
 }
+
+.ret-details-text h1{
+  font-size: 2rem;
+}
+
+
 @media screen and (max-width: 768px) {
   .ret-details {
     flex-direction: column;

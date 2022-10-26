@@ -1005,6 +1005,12 @@ select {
   margin-top: 1.2rem;
   border-radius: 0.4rem;
 }
+
+textarea{
+  overflow: hidden;
+  resize: none;
+}
+
 .contact-us form input option, .contact-us form textarea option, .contact-us form select option {
   font-size: 1.4rem;
 }
