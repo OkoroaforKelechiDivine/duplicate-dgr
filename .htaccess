@@ -1,0 +1,28 @@
+# Disable MutliViews
+Options -Multiviews
+
+ErrorDocument 404 /index.html
+
+RewriteEngine on
+
+# Remove www subdomain and redirect to HTTPS
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Remove "index.html" from all URLs
+RewriteRule ^(|.+/)index\.html$ /$1 [R=301,L]
+
+#disable .html for singular pages
+
+RewriteEngine on
+
+# Remove .html (or htm) from visible URL (permanent redirect)
+RewriteCond %{REQUEST_URI} ^/(.+)\.html?$ [nocase]
+RewriteRule ^ /%1 [L,R=301]
+
+# Quietly point back to the HTML file (temporary/undefined redirect):
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [END]

@@ -46,7 +46,7 @@ const heroBGs = [
     },
     {
         imgUrl: './Assets/aerial-side-view.jpg',
-        link: '../pages/citadel_palace.html',
+        link: '../pages/halima.html',
         to : 'Halima',
         heading: 'Experience The Best Property Management Services',
         caption: 'Leverage our expert real estate management services to maximize the value of your asset, attract and retain tenants, and improve your property’s efficiency.',
@@ -54,7 +54,7 @@ const heroBGs = [
     },
     {
         imgUrl: './Assets/halima-by-constrix.jpg',
-        link: '../pages/citadel_palace.html',
+        link: '../pages/halima.html',
         to : 'Halima',
         heading: 'Halima by constrix',
         caption: 'place holder',
