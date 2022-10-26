@@ -393,8 +393,7 @@
         flex: 1;
         flex-basis: 43rem;
         height: 43rem;
-        padding:3.8rem;
-        padding-bottom: 0;
+        padding: 3.8rem 3.8rem 0;
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
@@ -403,8 +402,7 @@
         font-family: $ff-primary;
 
         @media screen and (max-width: 600px) {
-            padding: 1.2rem;
-            padding-bottom: 0; 
+            padding: 1.2rem 1.2rem 0;
         }
 
         a {

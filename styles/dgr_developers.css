@@ -905,9 +905,46 @@ select {
 .developer-projects .slider .image {
   width: 80%;
 }
-.developer-projects .slider .image img {
+
+.developer-projects .slider .image img{
   width: 100%;
+  z-index: 20;
+  filter: blur(0px) brightness(50%);
 }
+
+.image h1{
+  position: absolute;
+  margin-top: -300px;
+  color: white;
+  font-family: "Suranna", serif;
+  font-size: 3.6rem;
+  margin-left: 50px;
+  font-weight: 400;
+}
+
+.image p{
+  position: absolute;
+  margin-top: -230px;
+  color: white;
+  font-size: 25px;
+  font-family: "Suranna", serif;
+  margin-left: 50px;
+  font-weight: 400;
+}
+
+.image a{
+  position: absolute;
+  margin-top: -190px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Suranna", serif;
+  margin-left: 50px;
+  font-weight: 400;
+}
+
+
+
 @media screen and (max-width: 768px) {
   .developer-projects {
     padding: 5rem 1rem;
