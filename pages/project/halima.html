@@ -93,22 +93,7 @@
                 <input type="email" name="email" placeholder="Email" required>
             </div>
             <div class="input-field">
-<!--                <input type="text" name="address" placeholder="Address">-->
                 <input type="tel" name="phone" placeholder="Phone number">
-<!--                <div class="phone">-->
-<!--                    <div class="country-code">-->
-<!--                        <img src="../Assets/ng.png" id="current_country_flag" alt="NG"> <span id="current_country_code">+234</span> <i class="fas fa-chevron-down"></i>-->
-<!--                        <ul class="cc_dropdown">-->
-<!--                            <li class="country_code"><img src="../Assets/favicon.ico" id="country_flag_option" alt="NG"> <span id="country_code_option">+234</span></li>-->
-<!--                            <li class="country_code"><img src="../Assets/ng.png" id="country_flag_option" alt="NG"> <span id="country_code_option">+255</span></li>-->
-<!--                            <li class="country_code"><img src="../Assets/ng.png" id="country_flag_option" alt="NG"> <span id="country_code_option">+226</span></li>-->
-<!--                            <li class="country_code"><img src="../Assets/ng.png" id="country_flag_option" alt="NG"> <span id="country_code_option">+99</span></li>-->
-<!--                            <li class="country_code"><img src="../Assets/ng.png" id="country_flag_option" alt="NG"> <span id="country_code_option">+237</span></li>-->
-<!--                            <li class="country_code"><img src="../Assets/ng.png" id="country_flag_option" alt="NG"> <span id="country_code_option">+556</span></li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                    <input type="number" name="phone-number" placeholder="00-000-0000">-->
-<!--                </div>-->
             </div>
             <select name="" id="">
                 <option value="Down Payment">Down Payment</option>
@@ -159,21 +144,23 @@
     <section class="property-plans">
         <h1>Property Plans</h1>
         <div class="nav-buttons">
-            <button>2D Plan</button>
-            <button>Master Plan</button>
+            <button class="d_plan active previ">2D Plan</button>
+            <button class="mas_plan nexti">Master Plan</button>
         </div>
-        <div class="illustration">
-            <img src="../../Assets/property-plans.svg" alt="Property Plans">
+        <div class="illustration scroll-field">
+            <div class="scroll-element">
+                <img id="image" src="../../Assets/property-plans.svg" alt="Property Plans">
+                <img id="image" src="../../Assets/dgr_proj_illustration.jpg" alt="Property Plans">
+            </div>
             <div class="chevron-buttons">
-                <button><i class="fas fa-chevron-left"></i></button>
-                <button><i class="fas fa-chevron-right"></i></button>
+                <button class="previ"><i class="fas fa-chevron-left"></i></button>
+                <button class="nexti" ><i class="fas fa-chevron-right"></i></button>
             </div>
             <div class="arrow-buttons">
-                <button type="button" id="carousel-button-prev" class="carousel-button"><i class="fas fa-arrow-left"></i></button>
-                <button type="button" id="carousel-button-next" class="carousel-button"><i class="fas fa-arrow-right"></i></button>
+                <button class="previ" type="button" id="carousel-button-prev" class="carousel-button"><i class="fas fa-arrow-left"></i></button>
+                <button class="nexti" type="button" id="carousel-button-next" class="carousel-button"><i class="fas fa-arrow-right"></i></button>
             </div>
         </div>
-
     </section>
 
     <section class="facilities-section">
@@ -249,13 +236,12 @@
     <section class="gallery">
         <h1>Explore Gallery</h1>
         <div class="scroll-gallery">
-            <button><i class="fas fa-chevron-left"></i></button>
-            <button><i class="fas fa-chevron-right"></i></button>
+            <button class="previ"><i class="fas fa-chevron-left"></i></button>
+            <button class="nexti"><i class="fas fa-chevron-right"></i></button>
             <div class="overflow">
                 <div class="images">
                     <div class="image"><img src="../../Assets/halimah-featured-projects.png" alt="scroll-gallery-image"></div>
                     <div class="image"><img src="../../Assets/halimah%20side%20view.jpg" alt="scroll-gallery-image"></div>
-<!--                    <div class="image"><img src="../Assets/front-view-halimah.jpg" alt="scroll-gallery-image"></div>-->
                     <div class="image"><img src="../../Assets/halima-by-constrix.jpg" alt="scroll-gallery-image"></div>
                 </div>
             </div>
@@ -282,7 +268,6 @@
                         <li class="link"><a href="index.html">Project</a></li>
                         <li class="link"><a href="#">Blog</a></li>
                         <li class="link"><a href="../contact.html">Contact Us</a></li>
-<!--                        <li class="link"><a href="#">Privacy Policy</a></li>-->
                     </ul>
                 </div>
                 <div class="services">
@@ -313,8 +298,74 @@
         <hr />
         <p class="copyright">2022 DGR Real Estate - All Rights Reserved</p>
     </footer>
+    
     <script src="../../js/codeoptions.js"></script>
     <script src="../../js/main.js"></script>
+    <script>        
+        const pp_ScrollButtons = document.querySelector('.property-plans').querySelectorAll('button')
+        halimaScrollGallery.querySelectorAll('button').forEach(button => {
+        halimaScrollGallery.style.scrollBehavior = 'smooth';
+       
+
+        const initScrollImages = document.querySelectorAll('.images .image img')
+        let curr = 0
+        button.addEventListener('click', () => {
+            const scrollElement = halimaScrollGallery.querySelector('.overflow');
+            const img = document.querySelector('.images .image')
+            console.log(initScrollImages)
+            if(button.classList.contains('previ')) {
+                scrollElement.parentElement.scrollLeft = 0;
+                scrollElement.scrollLeft = 0;
+                scrollElement.scrollLeft <= 5 ? button.style.color = '#BFBFBF' : button.style.color = '#1A1818';
+                halimaScrollGallery.querySelectorAll('button')[1].style.color = '#1A1818'
+            }
+
+            if(button.classList.contains('nexti')) {    
+                const item = initScrollImages[curr]
+                const imgDiv = document.createElement('div')
+                const newImg = document.createElement('img')
+                imgDiv.classList.add('image')                
+                newImg.src = item.src
+                newImg.alt = item.alt
+                imgDiv.appendChild(newImg)
+                console.log(document.querySelectorAll('.images .image img'))
+                scrollElement.querySelector('.images').appendChild(imgDiv);
+                curr < initScrollImages.length-1 ? curr++ : curr = 0;
+                scrollElement.scrollLeft += img.offsetWidth + 50;
+                halimaScrollGallery.querySelectorAll('button')[0].style.color = '#1A1818'
+                setTimeout(() => document.querySelectorAll('.images .image')[0].remove(), 200)
+            }
+        })
+    })
+        pp_ScrollButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const img = document.querySelector('.scroll-element #image')
+                document.querySelector('.illustration.scroll-field').querySelectorAll('button').forEach(button => button.style.color = '#1A1818')
+                const btn_d = document.querySelector('.d_plan')
+                const btn_mas = document.querySelector('.mas_plan')
+
+                if(button.classList.contains('previ')){
+                    scrollElement.scrollLeft -= img.offsetWidth + 17;
+                    scrollElement.scrollLeft <= 5 ? button.style.color = '#BFBFBBF' : button.style.color = '#1A1818';
+                    btn_d.classList.add('active')
+                    btn_mas.classList.remove('active')
+                    pp_ScrollButtons[2].style.color = '#BFBFBF'
+                    btn_d.style.color = '#fff'
+                    btn_mas.style.color = '#545454'
+                }
+
+                if(button.classList.contains('nexti')){
+                    scrollElement.scrollLeft += img.offsetWidth + 15;
+                    scrollElement.scrollLeft >= img.offsetWidth*1  ? button.style.color = '#BFBFBBF' : button.style.color = '#1A1818';
+                    btn_d.classList.remove('active')
+                    btn_mas.classList.add('active')
+                    pp_ScrollButtons[3].style.color = '#BFBFBF'
+                    btn_mas.style.color = '#fff'
+                    btn_d.style.color = '#545454'
+                }
+            })
+        })
+    </script>
     <script src="//code.tidio.co/wjzzootyijlnrl4d9rpnvbd7rojnmcug.js" async></script>
 </body>
 </html>
