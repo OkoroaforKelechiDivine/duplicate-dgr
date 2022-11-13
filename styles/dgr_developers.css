@@ -879,6 +879,7 @@ select {
   align-items: center;
   justify-content: center;
   position: relative;
+  width: 100%;
 }
 .developer-projects .slider button {
   background: none;
@@ -893,6 +894,7 @@ select {
   left: 0;
   color: #BFBFBF;
 }
+
 .developer-projects .slider button:nth-child(2) {
   right: 0;
   color: #1A1818;
@@ -902,19 +904,53 @@ select {
     font-size: 2rem;
   }
 }
-.developer-projects .slider .image {
+
+.scroll-element {
+  display: flex;
+  align-items: center;
   width: 80%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  gap: 2.5rem;
 }
 
-.developer-projects .slider .image img{
-  width: 100%;
-  z-index: 20;
-  filter: blur(0px) brightness(50%);
+.scroll-element .image:nth-child(2) {
+  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../Assets/001-household.png');
+}
+
+.scroll-element .image:nth-child(3) {
+  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../Assets/003-mortgage-1\ 1.svg');
+}
+
+.scroll-element .image:nth-child(4) {
+  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../Assets/about-ren.png');
+}
+
+.scroll-element .image:nth-child(5) {
+  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../Assets/why-dgr.png');
+}
+
+.scroll-element .image:nth-child(odd), .scroll-element .image:nth-child(even) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.scroll-element .image {
+  min-width: 100%;
+  height: 40rem;
+  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../Assets/dev_proj_1.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.scroll-element::-webkit-scrollbar {
+  display: none;
 }
 
 .image h1{
-  position: absolute;
-  margin-top: -300px;
   color: white;
   font-family: "Suranna", serif;
   font-size: 3.6rem;
@@ -923,8 +959,6 @@ select {
 }
 
 .image p{
-  position: absolute;
-  margin-top: -230px;
   color: white;
   font-size: 25px;
   font-family: "Suranna", serif;
@@ -933,8 +967,6 @@ select {
 }
 
 .image a{
-  position: absolute;
-  margin-top: -190px;
   color: white;
   font-size: 16px;
   text-decoration: none;
