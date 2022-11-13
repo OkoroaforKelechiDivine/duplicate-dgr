@@ -225,7 +225,6 @@
     .nav-links {
         display: inline-flex;
         align-items: center;
-        // gap: 4rem;
         list-style: none;
         font-family: $ff-secondary;
 
@@ -307,7 +306,7 @@
                     .mini-dropdown {
                         display: none;
                         list-style: none;
-                        padding:0rem 4rem;
+                        padding:0 4rem;
 
                         li {
                             margin: 1.5rem 0;
@@ -329,7 +328,7 @@
             height: auto;
             min-height: 100vh;
             width: calc(100% + 6rem);
-            top: 0%;
+            top: 0;
             left: -120%;
             bottom: 0;
             right: 0;
@@ -361,7 +360,6 @@
         .nav-links {
             padding-top: 12rem;
             width: calc(100% + 3rem);
-            // left: -3rem;
         }
     }
 }
