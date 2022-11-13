@@ -4,10 +4,16 @@ const carouselButtonPrev = document.getElementById('carousel-button-prev');
 const carouselButtonNext = document.getElementById('carousel-button-next');
 const navLinks = document.querySelectorAll('nav .nav-links>.nav-link');
 const animatedLink = document.querySelector('.animated-link');
-const heading = document.querySelector('#heading')
-const caption = document.querySelector('#caption')
-const cta = document.querySelector('#cta')
+const heading = document.querySelector('#heading');
+const caption = document.querySelector('#caption');
+const cta = document.querySelector('#cta');
+const halimaScrollGallery = document.querySelector('.scroll-gallery');
+const scrollElement = document.querySelector('.scroll-element');
 
+
+document.querySelector('body').style.visibility = false;
+
+window.addEventListener('DOMContentLoaded',() => document.querySelector('body').style.visibility = false);
 
 toggleNavButton.addEventListener('click', (e) => {
     // alert('clicked')
@@ -54,7 +60,7 @@ const heroBGs = [
     },
     {
         imgUrl: './Assets/halima-by-constrix.jpg',
-        link: '../pages/halima.html',
+        link: '../pages/project/halima.html',
         to : 'Halima',
         heading: 'Halima by constrix',
         caption: 'place holder',
@@ -92,6 +98,7 @@ const changeBg = (type) => {
     cta.innerHTML = `${heroBGs[currentBg].cta} <i class="fas fa-arrow-right"></i>`;
 
 }
+
 
 const timeout = 5000
 
