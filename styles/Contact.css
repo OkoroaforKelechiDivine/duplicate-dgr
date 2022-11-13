@@ -808,6 +808,11 @@ select {
 }
 .contact-us form textarea {
   max-width: 100rem;
+  font-family: "DM Sans", sans-serif;
+  color: #484646;
+  resize: none;
+  overflow: hidden;
+  font-size: 1.6rem;
 }
 .contact-us form #submit {
   background: #890006;
