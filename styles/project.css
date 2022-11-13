@@ -1006,6 +1006,7 @@ select {
 .filter .filter-projects button {
   background: #890006;
   width: 100%;
+  cursor: pointer;
   max-width: 500px;
   color: #ffffff;
   font-size: 1.4rem;
