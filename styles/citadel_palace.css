@@ -1084,22 +1084,25 @@ select {
   display: flex;
   align-items: center;
 }
-.property-plans .nav-buttons button {
+.property-plans .nav-buttons>button {
   padding: 0.7rem 5rem;
   font-size: 2rem;
   line-height: 6.4rem;
   font-family: "DM Sans", sans-serif;
   border: none;
   outline: none;
-}
-.property-plans .nav-buttons button:nth-child(1) {
-  background-color: #890006;
-  color: #ffffff;
-}
-.property-plans .nav-buttons button:nth-child(2) {
+  cursor: pointer;
   background: none;
   color: #545454;
+  transition: 1s;
 }
+
+.property-plans .nav-buttons>button.active {
+  color: #fff;
+  background-color: #890006;
+}
+
+
 @media screen and (max-width: 768px) {
   .property-plans .nav-buttons button {
     font-size: 1.4rem;
@@ -1135,6 +1138,7 @@ select {
   font-weight: 100;
   background: none;
   border: none;
+ 
   cursor: pointer;
 }
 .property-plans .chevron-buttons button:nth-child(1) {
@@ -1297,12 +1301,30 @@ select {
     display: none;
   }
 }
+
+.scroll-element {
+  display: flex;
+  width: 80%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  gap: 2.5rem;
+}
+
+.scroll-element::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-element img#image {
+  width: 100%;
+}
+
 .gallery .scroll-gallery .overflow {
   overflow: scroll;
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
+  scroll-behavior: smooth;
 }
 @media screen and (max-width: 1220px) {
   .gallery .scroll-gallery .overflow {
@@ -1320,12 +1342,13 @@ select {
   width: 100%;
   min-width: 120rem;
 }
-.gallery .scroll-gallery .overflow .images div {
-  flex-basis: 38rem;
+.gallery .scroll-gallery .overflow .images .image {
+  min-width: 38rem;
 }
-.gallery .scroll-gallery .overflow .images div img {
-  width: 500px;
-  height: 350px;
+.gallery .scroll-gallery .overflow .images .image img {
+  min-width: 38rem;
+  max-width: 38rem;
+  height: 310px;
 }
 .gallery .slider {
   position: relative;
@@ -1338,7 +1361,7 @@ select {
   max-width: 12rem;
 }
 
-.slider-holder*/
+/* .slider-holder*/ */
 /*{*/
 /*  width: 800px;*/
 /*  height: 400px;*/

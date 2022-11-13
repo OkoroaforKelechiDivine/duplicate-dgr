@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="../Assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>DGR || Developers</title>
+
+   
 </head>
 <body>
     <nav class="navbar" role="navigation">
@@ -93,14 +95,35 @@
 
     <div class="developer-projects">
         <h1>Developers Projects</h1>
-        <div class="slider">
-            <button><i class="fas fa-chevron-left"></i></button>
-            <button><i class="fas fa-chevron-right"></i></button>
-            <div class="image">
-                <img src="../Assets/dev_proj_1.png" alt="developer-projects-1">
-                <h1>The Developer's Project</h1>
-                <p>Lagos, Nigeria</p>
-                <a href="project/halima.html">View more <i class="fas fa-chevron-right"></i></a>
+        <div class="slider illustration scroll-field">
+            <button class="previ"><i class="fas fa-chevron-left"></i></button>
+            <button class="nexti"><i class="fas fa-chevron-right"></i></button>
+            <div class="scroll-element">
+                <div class="image" id="image">
+                    <h1>The Developer's Project</h1>
+                    <p>Lagos, Nigeria</p>
+                    <a href="project/halima.html">View more <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="image" id="image">
+                    <h1>The Developer's Project</h1>
+                    <p>Lagos, Nigeria</p>
+                    <a href="project/halima.html">View more <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="image" id="image">
+                    <h1>The Developer's Project</h1>
+                    <p>Lagos, Nigeria</p>
+                    <a href="project/halima.html">View more <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="image" id="image">
+                    <h1>The Developer's Project</h1>
+                    <p>Lagos, Nigeria</p>
+                    <a href="project/halima.html">View more <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="image" id="image">
+                    <h1>The Developer's Project</h1>
+                    <p>Lagos, Nigeria</p>
+                    <a href="project/halima.html">View more <i class="fas fa-chevron-right"></i></a>
+                </div>
             </div>
         </div>
     </div>
@@ -166,7 +189,6 @@
                         <li class="link"><a href="project/index.html">Project</a></li>
                         <li class="link"><a href="#">Blog</a></li>
                         <li class="link"><a href="./contact.html">Contact Us</a></li>
-<!--                        <li class="link"><a href="#">Privacy Policy</a></li>-->
                     </ul>
                 </div>
                 <div class="services">
@@ -197,8 +219,27 @@
         <hr />
         <p class="copyright">2022 DGR Real Estate - All Rights Reserved</p>
     </footer>
+    <script defer>
+        document.querySelector('.illustration.scroll-field').querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', () => {
+            const img = document.querySelector('.scroll-element #image')
+            document.querySelector('.illustration.scroll-field').querySelectorAll('button').forEach(button => button.style.color = '#1A1818')
+
+            if(button.classList.contains('previ')){
+                scrollElement.scrollLeft -= img.offsetWidth + 17;
+                scrollElement.scrollLeft <= img.offsetWidth + 15 ? button.style.color = '#BFBFBF' : button.style.color = '#1A1818';
+            }
+
+            if(button.classList.contains('nexti')){
+                scrollElement.scrollLeft += img.offsetWidth + 15;
+                scrollElement.scrollLeft >= img.offsetWidth*4  ? button.style.color = '#BFBFBF' : button.style.color = '#1A1818';
+            }
+        })
+    })
+    </script>
     <script src="../js/main.js"></script>
     <script src="../js/slider.js"></script>
+    <script src="../js/devSearch.js"></script>
     <script src="//code.tidio.co/wjzzootyijlnrl4d9rpnvbd7rojnmcug.js" async></script>
 </body>
 </html>

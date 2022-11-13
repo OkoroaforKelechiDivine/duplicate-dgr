@@ -101,14 +101,14 @@
     
                 .country-code {
                     position: relative;
-                    padding: .8rem 1.5rem;
                     width: 30%;
                     display: flex;
                     flex:1;
                     align-items: center;
                     gap: .3rem;
                     border-right: 1px solid #989898;
-                    padding-right: 1rem;
+                    padding: .8rem 1rem .8rem 1.5rem;
+
                     img {
                         width: 1.4rem;
                     }
@@ -330,8 +330,6 @@
 
             &>div {
                 display: flex;
-                // align-items: center;
-                // gap: 2rem;
                 font-family: $ff-primary;
 
                 div {
@@ -397,8 +395,6 @@
                 margin: 0;
                 &>div {
                     display: flex;
-                    // align-items: center;
-                    // gap: 2rem;
                     font-family: $ff-primary;
     
                     div {
@@ -439,7 +435,6 @@
     .nav-buttons {
         display: flex;
         align-items: center;
-        // gap: 3rem;
 
         button {
             padding: .7rem 5rem;
@@ -491,7 +486,6 @@
             top: 50%;
             transform: translateY(-50%);
             font-size: 5rem;
-            //margin-left: -30px;
             font-weight: 100;
             background:none ;
             border: none;
@@ -710,7 +704,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        // gap: 1rem;
         max-width: 12rem;
 
         .bar {
@@ -728,26 +721,7 @@
     }
 
     @media screen and (max-width: 768px) {
-        padding: 5rem 1rem;
-        padding-top: 2rem;
+        padding: 2rem 1rem 5rem;
         margin-bottom: 7rem;       
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
