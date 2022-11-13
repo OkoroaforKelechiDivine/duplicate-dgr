@@ -4,8 +4,7 @@ footer {
     display: flex;
     width: 100%;
     background: $text-black;
-    padding: 5rem 6rem;
-    padding-bottom: 0;
+    padding: 5rem 6rem 0;
     flex-direction: column;
     font-family: $ff-primary;
     margin-top: 3rem;
@@ -14,7 +13,6 @@ footer {
         display: flex;
         justify-content: space-between;
         gap:7rem;
-        // flex-wrap: wrap;
 
         .footer-links, .brand-logo, .contact {
             flex-basis: 26rem;
@@ -140,8 +138,7 @@ footer {
     }
 
     @media screen and (max-width: 600px) {
-        padding: 5rem 1rem;
-        padding-bottom: 0;
+        padding: 5rem 1rem 0;
 
         .main-footer .brand-logo img {
             padding: .8rem;

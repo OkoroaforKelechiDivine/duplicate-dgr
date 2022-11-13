@@ -11,8 +11,7 @@
     z-index: -1;
 
     .heroimg {
-        background: linear-gradient(rgba($color: #000000, $alpha: 0.4), rgba($color: #000000, $alpha: 0.4)) , url('../Assets/hero-img.png');
-        background-repeat: no-repeat;
+        background: linear-gradient(rgba($color: #000000, $alpha: 0.4), rgba($color: #000000, $alpha: 0.4)) url('../Assets/hero-img.png') no-repeat;
         background-size: 100% 100%;
         height: 50vh;
         min-height: 45rem;
@@ -95,7 +94,6 @@
     }
 
     .mission-text {
-        // text-align: right;
         border-top: 0.5px solid #FFA7AB;
         padding: 5rem 5rem 0 11rem ;
         font-family: $ff-primary;
@@ -109,7 +107,6 @@
         align-items: start;
         padding: 5rem 2rem;
         .mission-text {
-            // text-align: right;
             flex: 1;
         }
     }
@@ -332,7 +329,6 @@
             font-family: $ff-secondary;
             color: $text-white;
             font-weight: $fw-r;
-            // line-height: 2rem;
             margin: 0;
 
             @media screen and (max-width: 600px) {
