@@ -309,14 +309,24 @@
 
         const initScrollImages = document.querySelectorAll('.images .image img')
         let curr = 0
+        let currRev = 2
         button.addEventListener('click', () => {
             const scrollElement = halimaScrollGallery.querySelector('.overflow');
             const img = document.querySelector('.images .image')
             console.log(initScrollImages)
             if(button.classList.contains('previ')) {
-                scrollElement.parentElement.scrollLeft = 0;
-                scrollElement.scrollLeft = 0;
-                scrollElement.scrollLeft <= 5 ? button.style.color = '#BFBFBF' : button.style.color = '#1A1818';
+                const item = initScrollImages[currRev]
+                const imgDiv = document.createElement('div')
+                const newImg = document.createElement('img')
+                imgDiv.classList.add('image')                
+                newImg.src = item.src
+                newImg.alt = item.alt
+                imgDiv.appendChild(newImg)
+                scrollElement.querySelector('.images').prepend(imgDiv)
+                currRev <= 0 ? currRev = 2 : currRev--;
+                scrollElement.scrollLeft += img.offsetWidth + 50;
+                halimaScrollGallery.querySelectorAll('button')[0].style.color = '#1A1818'
+                setTimeout(() => document.querySelectorAll('.images .image')[document.querySelectorAll('.images .image').length - 1].remove(), 20)
                 halimaScrollGallery.querySelectorAll('button')[1].style.color = '#1A1818'
             }
 
