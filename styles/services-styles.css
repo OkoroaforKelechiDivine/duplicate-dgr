@@ -905,10 +905,15 @@ select {
   padding: 1.1rem 1.5rem;
   border: 1px solid #989898;
   width: 100%;
+  font-family: "DM Sans", sans-serif;
   min-width: 40rem;
   max-width: 82rem;
   min-height: 10rem;
   max-height: 12rem;
+  color: #484646;
+  resize: none;
+  overflow: hidden;
+  font-size: 1.6rem;
 }
 .why-dgr .why-dgr-text form textarea::-moz-placeholder {
   color: #545454;
