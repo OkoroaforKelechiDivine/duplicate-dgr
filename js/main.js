@@ -12,15 +12,12 @@ const scrollElement = document.querySelector('.scroll-element');
 
 
 document.querySelector('body').style.visibility = false;
-
 window.addEventListener('DOMContentLoaded',() => document.querySelector('body').style.visibility = false);
 
 toggleNavButton.addEventListener('click', (e) => {
-    // alert('clicked')
     e.target.classList.toggle('active');
     document.querySelector('.nav-links').classList.toggle('active');
 });
-
 
 navLinks.forEach((link, idx) => {
     link.addEventListener('click', () => {
@@ -39,7 +36,6 @@ miniMenu.forEach(drpdn => {
     })
 })
 
-
 // Carousel 
 const heroBGs = [
     {
@@ -52,7 +48,7 @@ const heroBGs = [
     },
     {
         imgUrl: './Assets/aerial-side-view.jpg',
-        link: '../pages/halima.html',
+        link: '../pages/ruisseau-residence.html',
         to : 'Halima',
         heading: 'Experience The Best Property Management Services',
         caption: 'Leverage our expert real estate management services to maximize the value of your asset, attract and retain tenants, and improve your property’s efficiency.',
@@ -60,7 +56,7 @@ const heroBGs = [
     },
     {
         imgUrl: './Assets/halima-by-constrix.jpg',
-        link: '../pages/project/halima.html',
+        link: '../pages/project/ruisseau-residence.html',
         to : 'Halima',
         heading: 'Halima by constrix',
         caption: 'place holder',
@@ -90,15 +86,13 @@ const changeBg = (type) => {
     document.querySelector('.hero-section').style.background = `linear-gradient(180deg, rgba(137, 0, 6, 0.46) 0%, rgba(0, 0, 0, 0.7) 85.5%), url(${heroBGs[currentBg].imgUrl})`;
     document.querySelector('.hero-section').style.backgroundRepeat = 'no-repeat';
     document.querySelector('.hero-section').style.backgroundSize = `cover`;
-    
+
     animatedLink.innerText = heroBGs[currentBg].to;
     animatedLink.href = heroBGs[currentBg].link;
     heading.innerText = heroBGs[currentBg].heading;
     caption.innerText = heroBGs[currentBg].caption;
     cta.innerHTML = `${heroBGs[currentBg].cta} <i class="fas fa-arrow-right"></i>`;
-
 }
-
 
 const timeout = 5000
 
@@ -107,5 +101,4 @@ setInterval(() => {
 }, timeout);
 
 carouselButtonNext.addEventListener('click', () => changeBg('next'))
-
 carouselButtonPrev.addEventListener('click', () => changeBg('prev'))

@@ -668,10 +668,11 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
 .hero-section-ctp {
   display: flex;
-  background: linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%), url("../Assets/front-view-halimah.jpg") no-repeat;
-  background-size: cover;
+  /*background: linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%), url("../folders/BAMPROPERTIES/REUSSIUES.jpg") no-repeat;*/
+  /*background-size: cover;*/
   height: calc(100vh - 7rem);
   min-height: 72rem;
   max-height: 80rem;
@@ -681,6 +682,7 @@ select {
   padding: 0 6rem 10.4rem;
   margin-bottom: 25rem;
 }
+
 .hero-section-ctp .content {
   display: flex;
   color: #ffffff;
@@ -937,11 +939,13 @@ select {
   display: flex;
   justify-content: center;
 }
+
 .overview-ctp .illustration img {
   width: 90%;
   margin-top: 150px;
   transform: translateY(-24rem);
 }
+
 .overview-ctp .overview-about {
   flex: 1;
 }
@@ -1254,8 +1258,9 @@ select {
   padding: 10rem 6rem;
   width: 100%;
   background: rgba(14, 46, 81, 0.05);
-  margin-bottom: 20rem;
+  margin-bottom: 5rem;
 }
+
 .gallery h1 {
   font-size: 4.8rem;
   font-family: "Suranna", serif;
@@ -1440,4 +1445,10 @@ select {
     padding: 2rem 1rem 5rem;
     margin-bottom: 7rem;
   }
-}/*# sourceMappingURL=citadel_palace.css.map */
+}
+
+.amenities td{
+  padding-top: 200px;
+}
+
+/*# sourceMappingURL=citadel_palace.css.map */

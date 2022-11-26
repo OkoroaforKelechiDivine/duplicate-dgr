@@ -671,8 +671,7 @@ select {
   }
 }
 .heroimg {
-  background: linear-gradient(180deg, rgba(26, 24, 24, 0) 0%, rgba(26, 24, 24, 0.9) 100%), url("../Assets/dgr_proj_illustration.jpg");
-  background-repeat: no-repeat;
+  background: linear-gradient(180deg, rgba(26, 24, 24, 0) 0%, rgba(26, 24, 24, 0.9) 100%), url("../Assets/dgr_proj_illustration.jpg") no-repeat;
   background-size: 100% 100%;
   height: 50vh;
   min-height: 45rem;
@@ -776,23 +775,28 @@ select {
   align-items: center;
   gap: 3rem;
   flex-wrap: wrap;
-  padding: 3rem;
+  padding: inherit;
   margin-bottom: 15rem;
 }
+
 @media screen and (max-width: 600px) {
   .dev-cards {
     padding: 3rem 1rem;
   }
 }
+
 .dev-cards .dev-card {
-  flex-basis: 20rem;
+  flex-basis: 30rem;
   height: 20rem;
+  margin-top: 20px;
+  margin-left: 20px;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 5rem;
 }
+
 .dev-cards .dev-card .illustration {
   width: 100%;
   padding: 2rem;
@@ -800,6 +804,7 @@ select {
   display: flex;
   align-items: center;
 }
+
 .dev-cards .dev-card .illustration.black {
   background-color: #1A1818;
 }
@@ -812,13 +817,15 @@ select {
 .dev-cards .dev-card .illustration.db {
   background-color: #0E2E51;
 }
+
 .dev-cards .dev-card .illustration h1 {
   font-family: "Suranna", serif;
   font-size: 3.2rem;
   font-weight: 400;
 }
+
 .dev-cards .dev-card p.caption {
-  font-size: 2.4rem;
+  font-size: 20px;
   font-family: "DM Sans", sans-serif;
   text-align: center;
   color: #1A1818;
@@ -826,25 +833,44 @@ select {
   margin-bottom: 2rem;
 }
 
+.dev-cards img{
+  width: 250px;
+  height: 120px;
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  -khtml-box-shadow: 10px 10px 5px #ccc;
+  border-radius: 30px;
+}
+
 .city-developers {
-  padding: 12rem 6rem;
+  padding: 1rem 6rem;
   width: 100%;
 }
+
+.header-class{
+  font-size: 30px;
+  margin-bottom: -20px;
+}
+
 @media screen and (max-width: 768px) {
   .city-developers {
     padding: 5rem 1rem;
   }
 }
+
 .city-developers h1 {
   font-family: "Suranna", serif;
   font-size: 4.8rem;
   line-height: 6.4rem;
 }
+
 @media screen and (max-width: 600px) {
   .city-developers h1 {
     font-size: 3.6rem;
   }
 }
+
 .city-developers p {
   margin-bottom: 1.5rem;
   font-size: 1.6rem;
@@ -855,7 +881,7 @@ select {
 }
 
 .developer-projects {
-  padding: 12rem 6rem;
+  padding: 5rem 6rem;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -915,19 +941,20 @@ select {
 }
 
 .scroll-element .image:nth-child(2) {
-  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../Assets/001-household.png');
+  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../folders/BILAADREALTY/sapphire/sapphire4.jpg');
+  background-size: cover;
 }
 
 .scroll-element .image:nth-child(3) {
-  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../Assets/003-mortgage-1\ 1.svg');
+  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../folders/BAMPROPERTIES/REUSSIUES-copy.png');
 }
 
 .scroll-element .image:nth-child(4) {
-  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../Assets/about-ren.png');
+  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../folders/BAMPROPERTIES/REUSSIUES-copy.png');
 }
 
 .scroll-element .image:nth-child(5) {
-  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../Assets/why-dgr.png');
+  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../folders/BAMPROPERTIES/REUSSIUES.jpg');
 }
 
 .scroll-element .image:nth-child(odd), .scroll-element .image:nth-child(even) {
@@ -939,7 +966,7 @@ select {
 .scroll-element .image {
   min-width: 100%;
   height: 40rem;
-  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../Assets/dev_proj_1.png');
+  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../folders/BAMPROPERTIES/REUSSIUES.jpg');
   display: flex;
   flex-direction: column;
   justify-content: center;

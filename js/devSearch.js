@@ -4,60 +4,43 @@ const input = form.querySelector('input');
 
 const devCards = [
     {
-        imgUrl: "../../Assets/logo.svg",
-        caption: "City Developers"
+        imgUrl: "../../folders/BAMPROPERTIES/BAM_logo.png",
+        caption: "Bam properties",
+        href: "../bam-properties.html"
     },
     {
-        imgUrl: "../../Assets/logo.svg",
-        caption: "Town Developers"
+        imgUrl: "../../folders/BILAADREALTY/bilaald.jpg",
+        caption: "Bilaad Realty",
+        href: "../bilaald-realty.html"
+
     },
     {
-        imgUrl: "../../Assets/logo.svg",
-        caption: "Cave Developers"
+        imgUrl: "../../folders/CONSTRIX/Constrix_logo.jpg",
+        caption: "Constrix"
     },
     {
-        imgUrl: "../../Assets/logo.svg",
-        caption: "Town Developers"
+        imgUrl: "../../folders/COSGROVE/Cosgrove.jpg",
+        caption: "CosGrove"
     },
     {
-        imgUrl: "../../Assets/logo.svg",
-        caption: "Cave Developers"
+        imgUrl: "../../folders/DANTATA_TOWN_DEVELOPMENT/DANTATA-GARDEN.jpg",
+        caption: "Dantata Town Development"
     },
     {
-        imgUrl: "../../Assets/logo.svg",
-        caption: "Town Developers"
+        imgUrl: "../../folders/PRIMEROSELAGOS/Primrose.jpg",
+        caption: "Primerose Lagos"
     },
     {
-        imgUrl: "../../Assets/logo.svg",
-        caption: "Cave Developers"
-    },
-    {
-        imgUrl: "../../Assets/logo.svg",
-        caption: "Land Developers"
-    },
-    {
-        imgUrl: "../../Assets/logo.svg",
-        caption: "Cave Developers"
-    },
-    {
-        imgUrl: "../../Assets/logo.svg",
-        caption: "Cave Developers"
-    },
-    {
-        imgUrl: "../../Assets/logo.svg",
-        caption: "City Developers"
-    },
-    {
-        imgUrl: "../../Assets/logo.svg",
-        caption: "City Developers"
-    },
+        imgUrl: "../../folders/URBAN_SHELTER/Urban_shelter.jpg",
+        caption: "Urban Shelter"
+    }
 ]
 
 function displayCards(cards) {
     document.querySelectorAll('.dev-card').forEach(card => card.remove())
     cards.forEach(card => {
         const newCard = document.createElement('a')
-        newCard.href = "../city-developers.html"
+        newCard.href = "../bam-properties.html"
         newCard.classList.add("dev-card")
         newCard.innerHTML = `
                             <img src=${card.imgUrl} alt=""/>
@@ -73,13 +56,8 @@ form.addEventListener('submit', e => {
     // Search Functionality Goes here
     const newCards = devCards.filter(card => card.caption.toLowerCase().includes(searchQuery.trim().toLowerCase()))
     console.log(newCards)
-    if(newCards.length === 0){
-        const text = document.createTextNode("None Found!!")
-        list.append(text)
-    }
-
     displayCards(newCards)
-    form.querySelector('input').value = "";    
+    form.querySelector('input').value = "";
 })
 
 displayCards(devCards)
