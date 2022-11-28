@@ -982,6 +982,11 @@ select {
   font-size: 2rem;
   line-height: 4.3rem;
 }
+
+.paragraph-text{
+  font-size: 14px;
+}
+
 .overview-ctp .overview-about .overview-about-card > p {
   color: #890006;
   font-size: 4rem;
@@ -1366,7 +1371,7 @@ select {
   max-width: 12rem;
 }
 
-/* .slider-holder*/ */
+/* .slider-holder*/
 /*{*/
 /*  width: 800px;*/
 /*  height: 400px;*/
