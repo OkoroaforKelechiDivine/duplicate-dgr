@@ -871,6 +871,10 @@ select {
   }
 }
 
+.city-developers h2{
+  font-size: 20px;
+}
+
 .city-developers p {
   margin-bottom: 1.5rem;
   font-size: 1.6rem;
@@ -941,7 +945,7 @@ select {
 }
 
 .scroll-element .image:nth-child(2) {
-  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../folders/BILAADREALTY/sapphire/sapphire4.jpg');
+  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../folders/BAMPROPERTIES/BAM_logo.png');
   background-size: cover;
 }
 
@@ -949,13 +953,13 @@ select {
   background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../folders/BAMPROPERTIES/REUSSIUES-copy.png');
 }
 
-.scroll-element .image:nth-child(4) {
-  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../folders/BAMPROPERTIES/REUSSIUES-copy.png');
-}
+/*.scroll-element .image:nth-child(4) {*/
+/*  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../folders/BAMPROPERTIES/REUSSIUES-copy.png');*/
+/*}*/
 
-.scroll-element .image:nth-child(5) {
-  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../folders/BAMPROPERTIES/REUSSIUES.jpg');
-}
+/*.scroll-element .image:nth-child(5) {*/
+/*  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url('../folders/BAMPROPERTIES/REUSSIUES.jpg');*/
+/*}*/
 
 .scroll-element .image:nth-child(odd), .scroll-element .image:nth-child(even) {
   background-size: cover;

@@ -22,14 +22,13 @@ filterToggle.addEventListener('click' , () => {
 })
 
 function customSlider() {
-    // alert('working')
-    //Get the percentage
+    // Get by percentage.
     const maxVal = slider.getAttribute("max");
     const maxVal2 = slider_2.getAttribute("max");
     const val = (slider.value / maxVal) * 100 + "%";
     const val2 = (slider_2.value / maxVal2) * 100 + "%";
 
-    // Dislay the value in the tooltip
+    // Display the value in the tooltip
     tooltip.innerHTML = (slider.value * 2000000).toLocaleString();
     tooltip_2.innerHTML = (slider_2.value * 1000).toLocaleString();
     // Set the thumb and progress to the current value

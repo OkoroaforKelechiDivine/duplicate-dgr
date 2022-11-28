@@ -48,7 +48,7 @@ const heroBGs = [
     },
     {
         imgUrl: './Assets/aerial-side-view.jpg',
-        link: '../pages/ruisseau-residence.html',
+        link: '',
         to : 'Halima',
         heading: 'Experience The Best Property Management Services',
         caption: 'Leverage our expert real estate management services to maximize the value of your asset, attract and retain tenants, and improve your property’s efficiency.',
@@ -56,7 +56,7 @@ const heroBGs = [
     },
     {
         imgUrl: './Assets/halima-by-constrix.jpg',
-        link: '../pages/project/ruisseau-residence.html',
+        link: '',
         to : 'Halima',
         heading: 'Halima by constrix',
         caption: 'place holder',
@@ -67,12 +67,10 @@ const heroBGs = [
 let currentBg = 1;
 
 const changeBg = (type) => {
-    console.log('background changed', currentBg)
     if(type === 'next') {
         currentBg++;
-        if (currentBg+1> heroBGs.length ){
+        if (currentBg + 1 > heroBGs.length ){
             currentBg = 0;
-            console.log('next-image-generated')
         }
     } 
     if (type === 'prev') {
