@@ -22,7 +22,7 @@ const devCards = [
     {
         imgUrl: "../../folders/COSGROVE/Cosgrove.jpg",
         caption: "CosGrove",
-        link: "../developers/consgrove.html"
+        link: "../developers/cosgrove.html"
     },
     {
         imgUrl: "../../folders/DANTATA_TOWN_DEVELOPMENT/DANTATA-GARDEN.jpg",
@@ -32,15 +32,14 @@ const devCards = [
     {
         imgUrl: "../../folders/PRIMEROSELAGOS/Primrose.jpg",
         caption: "Primerose Lagos",
-        link: "../developers/aald-realty.html"
+        link: "../developers/prime-lagos.html"
     },
     {
         imgUrl: "../../folders/URBAN_SHELTER/Urban_shelter.jpg",
         caption: "Urban Shelter",
-        link: "../developers/bi-realty.html"
+        link: "../developers/urban-shelter.html"
     }
 ]
-
 function displayCards(cards) {
     document.querySelectorAll('.dev-card').forEach(card => card.remove())
     cards.forEach(card => {

@@ -9,8 +9,6 @@ const containerEl = document.querySelectorAll(".range-slider");
 const price = containerEl[0].querySelector(".tooltip");
 const area = containerEl[1].querySelector(".tooltip");
 
-
-
 console.log(filter);
 console.log(projects);
 
