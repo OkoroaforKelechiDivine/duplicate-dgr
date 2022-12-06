@@ -44,7 +44,6 @@ function displayCards(cards) {
     document.querySelectorAll('.dev-card').forEach(card => card.remove())
     cards.forEach(card => {
         const newCard = document.createElement('a')
-        //For everytime it's get any object from the devCards, it picks the 'link' and assign it with the object
         newCard.href = card.link
         newCard.classList.add("dev-card")
         newCard.innerHTML = `

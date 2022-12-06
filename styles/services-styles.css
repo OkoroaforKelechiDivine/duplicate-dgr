@@ -450,8 +450,7 @@ footer {
   display: flex;
   width: 100%;
   background: #1A1818;
-  padding: 5rem 6rem;
-  padding-bottom: 0;
+  padding: 5rem 6rem 0;
   flex-direction: column;
   font-family: "DM Sans", sans-serif;
   margin-top: 3rem;
@@ -571,8 +570,7 @@ footer .copyright {
 }
 @media screen and (max-width: 600px) {
   footer {
-    padding: 5rem 1rem;
-    padding-bottom: 0;
+    padding: 5rem 1rem 0;
   }
   footer .main-footer .brand-logo img {
     padding: 0.8rem;
