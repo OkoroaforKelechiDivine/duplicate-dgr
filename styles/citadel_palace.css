@@ -722,7 +722,7 @@ select {
   position: absolute;
   right: 6rem;
   bottom: -14rem;
-  box-shadow: 0px 40px 100px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.25);
 }
 .hero-section-ctp form h2 {
   font-size: 2.4rem;
@@ -742,24 +742,24 @@ select {
   padding: 1.1rem 1.5rem;
   border: 1px solid #989898;
   color: #545454;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
   outline: none;
   width: 100%;
 }
 .hero-section-ctp form .input-field input::-moz-placeholder {
   color: #545454;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
 }
 .hero-section-ctp form .input-field input:-ms-input-placeholder {
   color: #545454;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
 }
 .hero-section-ctp form .input-field input::placeholder {
   color: #545454;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
 }
 .hero-section-ctp form .input-field .phone {
@@ -783,7 +783,7 @@ select {
   width: 1.4rem;
 }
 .hero-section-ctp form .input-field .phone .country-code span {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
 }
 .hero-section-ctp form .input-field .phone .country-code .cc_dropdown {
@@ -866,19 +866,26 @@ select {
 }
 .hero-section-ctp form textarea::-moz-placeholder {
   color: #545454;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
 }
 .hero-section-ctp form textarea:-ms-input-placeholder {
   color: #545454;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
 }
 .hero-section-ctp form textarea::placeholder {
   color: #545454;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
 }
+
+.hero-section-form .text-area{
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+  color: #545454;
+}
+
 .hero-section-ctp form button {
   display: block;
   background-color: #890006;
