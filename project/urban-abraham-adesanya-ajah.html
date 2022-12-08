@@ -87,7 +87,8 @@
                 </div>
             </div>
         </div>
-        <form class="hero-section-form">
+
+        <form method="POST" name="projectform" id="projectform" action="../forms/projectsform.php">
             <div class="input-field">
                 <input type="text" name="fullname" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email" required>
@@ -95,13 +96,13 @@
             <div class="input-field">
                 <input type="tel" name="phone" placeholder="Phone number">
             </div>
-            <select name="" id="">
+            <select name="downpayment" id="">
                 <option value="Down Payment">Down Payment</option>
                 <option value="Inquiry">Inquiry</option>
                 <option value="Other">Other</option>
             </select>
             <textarea class="text-area" name="message" id="message" placeholder="Enter your message "></textarea>
-            <button type="submit" value="send">Make An Enquiry</button>
+            <button style="cursor: pointer" type="submit" value="send">Make An Enquiry</button>
         </form>
     </div>
 
@@ -242,11 +243,11 @@
             <div class="overflow">
                 <div class="images">
                     <div class="image"><img src="../folders/URBAN_SHELTER/urban3bedroomterraceduplex.png" alt="scroll-gallery-image"></div>
-                    <div class="image"><img src=".../folders/URBAN_SHELTER/urban 1 bedroom apartment.png" alt="scroll-gallery-image"></div>
+                    <div class="image"><img src="../folders/URBAN_SHELTER/urban 1 bedroom apartment.png" alt="scroll-gallery-image"></div>
                     <div class="image"><img src="../folders/URBAN_SHELTER/urban 2 bedroom apartment.png" alt="scroll-gallery-image"></div>
                     <div class="image"><img src="../folders/URBAN_SHELTER/urban 3 bedroom apartent.png" alt="scroll-gallery-image"></div>
                     <div class="image"><img src="../folders/URBAN_SHELTER/urban 4 bedrom semi detached duplex.png" alt="scroll-gallery-image"></div>
-                    <div class="image"><img src=".../folders/URBAN_SHELTER/urban 4 bedroom detached duplex.png" alt="scroll-gallery-image"></div>
+                    <div class="image"><img src="../folders/URBAN_SHELTER/urban 4 bedroom detached duplex.png" alt="scroll-gallery-image"></div>
                     <div class="image"><img src="../folders/URBAN_SHELTER/urban 3bedroom terace duplex.png" alt="scroll-gallery-image"></div>
                     <div class="image"><img src="../folders/URBAN_SHELTER/urban 2 bedroom terrace duplex.png" alt="scroll-gallery-image"></div>
                     <div class="image"><img src="../folders/URBAN_SHELTER/urban-3bedroom apartment.png" alt="scroll-gallery-image"></div>
@@ -263,7 +264,7 @@
     </section>
 
     <h1 style="text-align: left; margin: 0 6rem; font-size: 4.8rem; font-family: 'Suranna', serif; font-weight: 400; ">About the Developer
-        <div class="image" id="image"
+        <div class="about-the-developer" id="image"
          style="
          max-width: 50%;
          height: 35rem;
