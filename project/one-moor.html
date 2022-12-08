@@ -87,7 +87,8 @@
                 </div>
             </div>
         </div>
-        <form class="hero-section-form">
+
+        <form method="POST" name="projectform" id="projectform" action="../forms/projectsform.php">
             <div class="input-field">
                 <input type="text" name="fullname" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email" required>
@@ -95,13 +96,13 @@
             <div class="input-field">
                 <input type="tel" name="phone" placeholder="Phone number">
             </div>
-            <select name="" id="">
+            <select name="downpayment" id="">
                 <option value="Down Payment">Down Payment</option>
                 <option value="Inquiry">Inquiry</option>
                 <option value="Other">Other</option>
             </select>
             <textarea class="text-area" name="message" id="message" placeholder="Enter your message "></textarea>
-            <button type="submit" value="send">Make An Enquiry</button>
+            <button style="cursor:pointer;" type="submit" value="send">Make An Enquiry</button>
         </form>
     </div>
 
@@ -225,7 +226,7 @@
     </section>
 
     <h1 style="text-align: left; margin: 0 6rem; font-size: 4.8rem; font-family: 'Suranna', serif; font-weight: 400; ">About the Developer
-        <div class="image" id="image"
+        <div class="about-the-developer" id="image"
          style="
          max-width: 50%;
          height: 50rem;

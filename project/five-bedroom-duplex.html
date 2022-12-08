@@ -87,7 +87,8 @@
                 </div>
             </div>
         </div>
-        <form class="hero-section-form">
+
+        <form method="POST" name="projectform" id="projectform" action="../forms/projectsform.php">
             <div class="input-field">
                 <input type="text" name="fullname" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email" required>
@@ -95,13 +96,13 @@
             <div class="input-field">
                 <input type="tel" name="phone" placeholder="Phone number">
             </div>
-            <select name="" id="">
+            <select name="downpayment" id="">
                 <option value="Down Payment">Down Payment</option>
                 <option value="Inquiry">Inquiry</option>
                 <option value="Other">Other</option>
             </select>
             <textarea class="text-area" name="message" id="message" placeholder="Enter your message "></textarea>
-            <button type="submit" value="send">Make An Enquiry</button>
+            <button style="cursor:pointer;" type="submit" value="send">Make An Enquiry</button>
         </form>
     </div>
 
@@ -127,7 +128,6 @@
                         <h4>6%</h4>
                     </div>
 
-<!--                     Line 1055 is for mobile responsiveness-->
                     <div class="line"></div>
                     <div class="items">
                         <small>Installments Years</small>
@@ -263,31 +263,31 @@
     </section>
 
     <h1 style="text-align: left; margin: 0 6rem; font-size: 4.8rem; font-family: 'Suranna', serif; font-weight: 400; ">About the Developer
-        <div class="image" id="image"
+        <div class="about-the-developer" id="image"
          style="
          max-width: 50%;
          height: 35rem;
          background-position: center;
          background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(../folders/DANTATA_TOWN_DEVELOPMENT/DANTATA-GARDEN.jpg) no-repeat;
          background-size:  contain;
-         /*align-items: center;*/
          margin-bottom: 20rem;
          padding-top: 15rem;
          background-position: top;
          padding-left: 5rem;
          padding-right: 5rem;
-         "
-    >
+         ">
 
         <p style="color: white; font-size: 14px">
             Dantata town developers limited is a limited liability company that was established to provide
             technical and cost- effective engineering services for both public and private institutions.
         </p>
-        <a style=
+            <div class="alone">
+        <a class="learn-more" style=
                    "color: white; font-size: 14px; text-decoration: none;
                    transition: .2s ease-in" href="../developers/dantata.html">
-            Learn more about the developer & projects
+            Learn more about the<span> developer & projects</span>
             <i class="fas fa-chevron-right"></i></a>
+            </div>
     </div>
     </h1>
 

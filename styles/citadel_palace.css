@@ -747,6 +747,13 @@ select {
   outline: none;
   width: 100%;
 }
+
+.text-area{
+  color: #545454;
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+}
+
 .hero-section-ctp form .input-field input::-moz-placeholder {
   color: #545454;
   font-size: 1.6rem;
@@ -1449,6 +1456,17 @@ select {
   height: 2px;
   background: #0E2E51;
 }
+
+@media screen and (max-width: 991px) {
+  .about-the-developer{
+    max-width: 100% !important;
+    height: 55rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+}
+
 .gallery .slider .bar:nth-child(2), .gallery .slider .bar:nth-child(3) {
   background: #BFBFBF;
 }
