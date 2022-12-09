@@ -1,0 +1,365 @@
+@import 'default.scss';
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 6rem 2rem;
+    border-bottom: 2px solid $text-gray-200;
+    background-color: $text-white;
+    margin: 0;
+    height: 10rem;
+
+    @media screen and (min-width: 992px) {
+
+        & .nav-links li:hover .dropdown li:nth-child(2).active .mini-dropdown {
+            transform: translateY(-4.0rem);
+        }
+
+        & .nav-links li:hover .dropdown li:nth-child(1).active .mini-dropdown {
+            transform: translateY(-0.4rem);
+        }
+
+        & .nav-links li:hover .dropdown li.active .mini-dropdown {
+            display: none;
+        }
+
+        .nav-links {
+            display: inline-flex;
+            align-items: center;
+            gap: 4rem;
+            list-style: none;
+            font-family: $ff-primary;
+
+            li {
+                font-size: $fs-md;
+                position: relative;
+                transition: all 2s;
+
+                &:hover , &:focus , &.active {
+                    transition: all 2s;
+
+                    &>a {
+                        color: $text-red-400;
+                        padding-bottom: .5rem;
+                        border-bottom: 1px solid $text-red-400;
+                    }
+
+                    i {
+                        transform: rotate(180deg) scale(.7);
+                    }
+                }
+
+                &>a {
+                    text-decoration: none;
+                    color: $text-black;
+
+                    i {
+                        transform: scale(.7);
+                    }
+                }
+
+                &:nth-child(3) .dropdown {
+                    width: 53rem;
+                    height: 31.5rem;
+                }
+
+                .dropdown {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 140%;
+                    background: $text-white;
+                    width: 30rem;
+                    transition: 1s;
+                    z-index: 2;
+                    box-shadow: 0 0 20px 8px rgba($color: #000000, $alpha: .2);
+                    transition: 1s;
+
+
+
+                    li {
+                        &:hover, &:focus, &.active {
+                            &>a {
+                                border-bottom: none;
+                                padding-bottom: inherit;
+                                color: $text-red-400;
+                            }
+                        }
+                        i {
+                            transform: scale(.7);
+                            transition: .5s
+                        }
+
+                        &:nth-child(2) {
+                            &:hover .dropdown, &.active .dropdown {
+                                li {
+                                    .mini-dropdown {
+                                        transform: translateY(-5rem);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover .dropdown, &.active .dropdown {
+                    display: block;
+                    list-style: none;
+                    padding: 2rem 3rem;
+                    li {
+                        font-size: $fs-sm;
+                        margin: 2rem 0;
+                        cursor: pointer;
+                        span {
+                            display: flex;
+                            align-items: center;
+                            opacity: .55;
+                            font-size: $fs-sm;
+
+                            img {
+                                width: $fs-md;
+                                margin-right: 1rem;
+                                opacity: .55;
+                            }
+
+                            i {
+                                transform: scale(.7);
+                                transition: .3s;
+                                margin-left: .5rem;
+                            }
+
+                        }
+
+                        &.active{
+                            span {
+                                opacity: 1;
+
+                                img {
+                                    opacity: 1;
+                                }
+                                i {
+                                    transform: rotate(180deg) scale(.7);
+                                }
+                            }
+                        }
+
+                        a {
+                            color: $text-black;
+                        }
+
+                        .mini-dropdown::before {
+                            content: "";
+                            position: absolute;
+                            left: -3%;
+                            height: 100%;
+                            width: 2px;
+                            background: $text-gray-400;
+                        }
+                        .mini-dropdown {
+                            display: none;
+                            list-style: none;
+                            padding:0;
+                            position: absolute;
+                            left: 43%;
+                            top: 0;
+
+                            li {
+                                margin: 1.5rem 0;
+                                width: 100%;
+
+                                &:hover>a{
+                                    color: $text-red-400;
+                                }
+                            }
+                        }
+
+                        &.active .mini-dropdown {
+                            display: block;
+
+                        }
+                    }
+                }
+            }
+        }
+        & .nav-links li:hover .dropdown {
+            display: none;
+        }
+    }
+
+    .brand-logo {
+        z-index: 3;
+        img {
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+
+    .toggle-menu {
+        display: none;
+        padding: .5rem .98rem;
+        border-radius: .4rem;
+        cursor: pointer;
+        z-index: 3;
+
+        &::after {
+            content: url('../Assets/icon-open.svg');
+        }
+
+        &.active::after {
+            content: url('../Assets/icon-close.png');
+        }
+
+        &.active {
+            border: 2px solid $text-black;
+        }
+
+        @media screen and (max-width: 991px) {
+            display: block;
+        }
+    }
+
+
+
+    .nav-links {
+        display: inline-flex;
+        align-items: center;
+        list-style: none;
+        font-family: $ff-secondary;
+
+        li {
+            font-size: $fs-md;
+
+            &:hover , &:focus , &.active {
+                a {
+                    color: $text-red-400;
+                }
+
+                i {
+                    transform: rotate(180deg) scale(.7);
+                }
+            }
+
+            &>a {
+                text-decoration: none;
+                color: $text-black;
+
+                i {
+                    transform: scale(.7);
+                }
+            }
+
+            .dropdown {
+                display: none;
+
+                li {
+                    i {
+                        transform: scale(.7);
+                        transition: .3s
+                    }
+                }
+            }
+
+            &:hover .dropdown, &.active .dropdown {
+                display: block;
+                list-style: none;
+                padding: 1rem 3rem;
+                li {
+                    margin: .8rem 0;
+                    span {
+                        display: flex;
+                        align-items: center;
+                        opacity: .7;
+
+                        img {
+                            width: $fs-md;
+                            margin-right: 1rem;
+                            opacity: .7;
+                        }
+
+                        i {
+                            transform: scale(.7);
+                            transition: .3s;
+                            margin-left: .5rem;
+                        }
+
+                    }
+
+                    &.active{
+                        span {
+                            opacity: 1;
+
+                            img {
+                                opacity: 1;
+                            }
+                            i {
+                                transform: rotate(180deg) scale(.7);
+                            }
+                        }
+                    }
+
+                    a {
+                        color: $text-black;
+                    }
+
+                    .mini-dropdown {
+                        display: none;
+                        list-style: none;
+                        padding:0 4rem;
+
+                        li {
+                            margin: 1.5rem 0;
+                        }
+                    }
+
+                    &.active .mini-dropdown {
+                        display: block;
+
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            background: $text-white;
+            height: auto;
+            min-height: 100vh;
+            width: calc(100% + 6rem);
+            top: 0;
+            left: -120%;
+            bottom: 0;
+            right: 0;
+            gap: 2rem;
+            text-align: left;
+            padding-top: 10rem;
+            align-items: start;
+            font-family: $ff-secondary;
+            font-size: $fs-md;
+            z-index: 2;
+            transition: all 1s;
+
+            &.active {
+                left: -3rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 2rem;
+
+        .brand-logo {
+            img {
+                width: 4.5rem;
+                height: 4.5rem;
+            }
+        }
+
+        .nav-links {
+            padding-top: 12rem;
+            width: calc(100% + 3rem);
+        }
+    }
+}

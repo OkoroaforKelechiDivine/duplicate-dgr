@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/citadel_palace.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DGR || Urban Abraham Adesanya</title>
+</head>
+<body>
+    <nav class="navbar" role="navigation">
+        <div class="brand-logo">
+            <a href="/index.html">
+                <img src="../Assets/logo.png" alt="brand-logo">
+            </a>
+        </div>
+        <div id="toggle-menu" class="toggle-menu" alt="toggle-navbar"></div>
+        <ul class="nav-links">
+            <li class="nav-link"><a href="../index.html">Home</a></li>
+            <li class="nav-link active"><a href="../about.html">About</a></li>
+            <li class="nav-link">
+                <a href="../brokerage/index.html">Brokerage <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown">
+                    <li class="active">
+                        <span><img src="../Assets/real-estate%201.svg" alt=""> Residential <i class="fas fa-chevron-down"></i></span>
+                        <ul class="mini-dropdown">
+                            <li><a href="../brokerage/re-sale.html">Re-Sale</a></li>
+                            <li><a href="../brokerage/rental.html">Rentals</a></li>
+                            <li><a href="../brokerage/new-projects_devs.html">New Projects (Developers)</a></li>
+                            <li><a href="../brokerage/corporate-home.html">Corporate Homes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span><img src="../Assets/003-mortgage-1%201.svg" alt="">Commercial <i class="fas fa-chevron-down"></i></span>
+                        <ul class="mini-dropdown">
+                            <li><a href="../brokerage/retail.html">Retail</a></li>
+                            <li><a href="../brokerage/industrial-property.html">Industrial Property</a></li>
+                            <li><a href="../brokerage/office-space.html">Official Space</a></li>
+                            <li><a href="../brokerage/medical-properties.html">Medical Properties</a></li>
+                            <li><a href="../brokerage/banking-properties.html">Banking Properties</a></li>
+                            <li><a href="../brokerage/agricultural-properties.html">Agricultural Property</a></li>
+                            <li><a href="../brokerage/land-properties.html">Lands Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-link">
+                <a href="../management/index.html">Management<i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="../management/property-management.html">Property Management</a></li>
+                    <li><a href="../management/sales-marketing-management.html">Sales & Marketing Management</a></li>
+                </ul>
+            </li>
+            <li class="nav-link"><a href="../investment.html">Investment</a></li>
+            <li class="nav-link">
+                <a href="../development/index.html">Development<i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="../developers/index.html">Developers</a></li>
+                </ul>
+            </li>
+            <li class="nav-link"><a href="index.html">Project</a></li>
+            <li class="nav-link"><a href="">Blog</a></li>
+            <li class="nav-link"><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Max Winslow and the House of Secrets -->
+    <div class="hero-section-ctp" style="background:linear-gradient(180deg, rgba(26, 24, 24, 0) -17.23%, rgba(0, 0, 0, 0.9) 100%), url(/folders/URBAN_SHELTER/urban3bedroomterraceduplex.png) no-repeat; background-size:cover;">
+        <div class="content">
+            <h1 class="main-heading">
+                Urban Abraham Adesanya Ajah
+            </h1>
+            <div class="project-details">
+                <div>
+                    <p>Location</p>
+                    <small>Lagos, Nigeria</small>
+                </div>
+                <div>
+                    <p>Size</p>
+                    <small>Several options available</small>
+                </div>
+                <div>
+                    <p>Type</p>
+                    <small>Residential</small>
+                </div>
+            </div>
+        </div>
+
+        <form method="POST" name="projectform" id="projectform" action="../forms/projectsform.php">
+            <div class="input-field">
+                <input type="text" name="fullname" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-field">
+                <input type="tel" name="phone" placeholder="Phone number">
+            </div>
+            <select name="downpayment" id="">
+                <option value="Down Payment">Down Payment</option>
+                <option value="Inquiry">Inquiry</option>
+                <option value="Other">Other</option>
+            </select>
+            <textarea class="text-area" name="message" id="message" placeholder="Enter your message "></textarea>
+            <button style="cursor: pointer" type="submit" value="send">Make An Enquiry</button>
+        </form>
+    </div>
+
+    <section class="overview-ctp">
+        <div class="illustration">
+            <img src="../folders/URBAN_SHELTER/urban-3bedroom apartment.png" alt="main-illustration-overview"/>
+        </div>
+        <div class="overview-about">
+            <h1>Overview</h1>
+            <p>
+                Exclusive estate in Abraham Adesanya, Ajah, Lagos, Nigeria, designed and developed by Urban Heights.
+            </p>
+            <div class="overview-about-card">
+                <small>Starting Price</small>
+                <p id="price">150,000,000 NGN</p>
+                <div class="benefits">
+                    <div class="items">
+                        <small>Prices vary by property</small>
+                        <h4></h4>
+                    </div>
+
+<!--                     Line 1055 is for mobile responsiveness-->
+                    <div class="line"></div>
+                    <div class="items">
+                        <small>Installments Plans available</small>
+                        <h4></h4>
+                    </div>
+                    <div class="line"></div>
+                    <div class="items">
+                        <small>Coming Soon</small>
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="property-plans">
+        <h1>Property Plans</h1>
+        <p>We offer one-bed, two-bed, three-bed and four-bed options in duplexes apartments, and terraces in this estae. Explore the 2d plans below</p>
+        <div class="illustration scroll-field">
+            <div class="scroll-element">
+                <img id="image" src="../folders/URBAN_SHELTER/urban 2 bedroom terrace duplex.png" alt="Property Plans">
+                <img id="image" src="../folders/URBAN_SHELTER/urban 4 bedroom detached duplex.png" alt="Property Plans">
+                <img id="image" src="../folders/URBAN_SHELTER/urban 1.png" alt="Property Plans">
+                <img id="image" src="../folders/URBAN_SHELTER/urban 2 1 bedroom apartment .png" alt="Property Plans">
+                <img id="image" src="../folders/URBAN_SHELTER/urban-3bedroom apartment.png" alt="Property Plans">
+                <img id="image" src="../folders/URBAN_SHELTER/urban 3bedroom terace duplex.png" alt="Property Plans">
+            </div>
+            <div class="chevron-buttons">
+                <button class="previ"><i class="fas fa-chevron-left"></i></button>
+                <button class="nexti" ><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="arrow-buttons">
+                <button class="previ" type="button" id="carousel-button-prev" class="carousel-button"><i class="fas fa-arrow-left"></i></button>
+                <button class="nexti" type="button" id="carousel-button-next" class="carousel-button"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="facilities-section">
+        <h1>Facilities</h1>
+        <div class="facilities">
+
+            <div class="facility">
+                <div class="image">
+                    <img src="../Assets/elevator.png" alt="elevator.png">
+                </div>
+                <p class="caption">
+                    Semi-detached duplex
+                </p>
+            </div>
+
+            <div class="facility">
+                <div class="image">
+                    <img src="../Assets/bed.png" alt="bedrooms">
+                </div>
+                <p class="caption">
+                    4 bedrooms ensuite
+                </p>
+            </div>
+
+            <div class="facility">
+                <div class="image">
+                    <img src="../Assets/security-camera.png" alt="security-camera">
+                </div>
+                <p class="caption">
+                    Security management
+                </p>
+            </div>
+
+            <div class="facility">
+                <div class="image">
+                    <img src="../Assets/bed.png" alt="bedrooms">
+                </div>
+                <p class="caption">
+                    Additional room for maid room/study
+                </p>
+            </div>
+
+            <div class="facility">
+                <div class="image">
+                    <img src="../Assets/swimming.png" alt="Pool">
+                </div>
+                <p class="caption">
+                    Uninterrupted water supply
+                </p>
+            </div>
+
+            <div class="facility">
+                <div class="image">
+                    <img src="../Assets/001-household.png" alt="Bathroom">
+                </div>
+                <p class="caption">
+                    Maintenance management
+                </p>
+            </div>
+
+            <div class="facility">
+                <div class="image">
+                    <img src="../Assets/elevator.png" alt="elevator.png">
+                </div>
+                <p class="caption">
+                   Energy management
+                </p>
+            </div>
+        </div>
+
+        <h1>Full list of facilities</h1>
+        <div><img src="../folders/URBAN_SHELTER/features.png" alt="scroll-gallery-image"></div>
+    </section> -->
+
+    <section class="gallery">
+        <h1>Explore Gallery</h1>
+        <div class="scroll-gallery">
+            <button class="previ"><i class="fas fa-chevron-left"></i></button>
+            <button class="nexti"><i class="fas fa-chevron-right"></i></button>
+            <div class="overflow">
+                <div class="images">
+                    <div class="image"><img src="../folders/URBAN_SHELTER/urban3bedroomterraceduplex.png" alt="scroll-gallery-image"></div>
+                    <div class="image"><img src="../folders/URBAN_SHELTER/urban 1 bedroom apartment.png" alt="scroll-gallery-image"></div>
+                    <div class="image"><img src="../folders/URBAN_SHELTER/urban 2 bedroom apartment.png" alt="scroll-gallery-image"></div>
+                    <div class="image"><img src="../folders/URBAN_SHELTER/urban 3 bedroom apartent.png" alt="scroll-gallery-image"></div>
+                    <div class="image"><img src="../folders/URBAN_SHELTER/urban 4 bedrom semi detached duplex.png" alt="scroll-gallery-image"></div>
+                    <div class="image"><img src="../folders/URBAN_SHELTER/urban 4 bedroom detached duplex.png" alt="scroll-gallery-image"></div>
+                    <div class="image"><img src="../folders/URBAN_SHELTER/urban 3bedroom terace duplex.png" alt="scroll-gallery-image"></div>
+                    <div class="image"><img src="../folders/URBAN_SHELTER/urban 2 bedroom terrace duplex.png" alt="scroll-gallery-image"></div>
+                    <div class="image"><img src="../folders/URBAN_SHELTER/urban-3bedroom apartment.png" alt="scroll-gallery-image"></div>
+                    <div class="image"><img src="../folders/URBAN_SHELTER/urban 2 1 bedroom apartment .png" alt="scroll-gallery-image"></div>
+                    <div class="image"><img src="../folders/URBAN_SHELTER/urban 1.png" alt="scroll-gallery-image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </section>
+
+    <h1 style="text-align: left; margin: 0 6rem; font-size: 4.8rem; font-family: 'Suranna', serif; font-weight: 400; ">About the Developer
+        <div class="about-the-developer" id="image"
+         style="
+         max-width: 50%;
+         height: 35rem;
+         background-position: center;
+         background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(../folders/URBAN_SHELTER/Urban_shelter.jpg) no-repeat;
+         background-size:  contain;
+         /*align-items: center;*/
+         margin-bottom: 20rem;
+         padding-top: 15rem;
+         background-position: top;
+         padding-left: 5rem;
+         padding-right: 5rem;
+         "
+    >
+
+        <p style="color: white; font-size: 14px">
+            Urban Shelter Limited is a property development corporation with headquarters in Abuja Nigeria.
+            With over 25 years of experience in integrated property development and management,
+            the company has been driven to make itself a household name in the property industry.
+        </p>
+        <a style=
+                   "color: white; font-size: 14px; text-decoration: none;
+                   transition: .2s ease-in" href="../developers/urban-shelter.html">
+            Learn more about the developer & projects
+            <i class="fas fa-chevron-right"></i></a>
+    </div>
+    </h1>
+
+    <footer class="main-footer">
+        <div class="main-footer">
+            <div class="brand-logo">
+                <a href="/index.html">
+                    <img src="../Assets/logo.png" alt="brand-logo">
+                </a>
+            </div>
+            <div class="footer-links">
+                <div class="quick-links">
+                    <p>Quick Links</p>
+                    <ul>
+                        <li class="link"><a href="../about.html">About DGR</a></li>
+                        <li class="link"><a href="index.html">Project</a></li>
+                        <li class="link"><a href="#">Blog</a></li>
+                        <li class="link"><a href="../contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="services">
+                    <p>Services</p>
+                    <ul>
+                        <li class="link"><a href="../brokerage/index.html">Brokerage</a></li>
+                        <li class="link"><a href="../management/index.html">Management</a></li>
+                        <li class="link"><a href="../investment.html">Investment</a></li>
+                        <li class="link"><a href="../development/index.html">Development</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="contact">
+                <p>Contact</p>
+                <a href="tel:+2349012339894"><img src="../Assets/path.svg" alt="phone">+2349012339894</a>
+                <a href="mailto: info@dgr-estate.com"><img src="../Assets/mail.svg" alt="mail">info@dgr-estate.com</a>
+                <a><img src="../Assets/location.svg" alt="location">21 Blantyre crescent, Off Ahmadu bello way, Wuse, Abuja</a>
+                <hr />
+                <div class="social-links">
+                    <a href=""><img src="../Assets/facebook.svg" alt="facebook"></a>
+                    <a href=""><img src="../Assets/twitter.svg" alt="twitter"></a>
+                    <a href=""><img src="../Assets/ig.svg" alt="Instagram"></a>
+                    <a href=""><img src="../Assets/linkedin.svg" alt="linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <p class="copyright"><script>document.write(new Date().getFullYear());</script> DGR Real Estate - All Rights Reserved</p>
+    </footer>
+    
+    <script src="../js/codeoptions.js"></script>
+    <script src="../js/main.js"></script>
+    <script>        
+        const pp_ScrollButtons = document.querySelector('.property-plans').querySelectorAll('button')
+        halimaScrollGallery.querySelectorAll('button').forEach(button => {
+        halimaScrollGallery.style.scrollBehavior = 'smooth';
+       
+
+        const initScrollImages = document.querySelectorAll('.images .image img')
+        let curr = 0
+        let currRev = 2
+        button.addEventListener('click', () => {
+            const scrollElement = halimaScrollGallery.querySelector('.overflow');
+            const img = document.querySelector('.images .image')
+            console.log(initScrollImages)
+            if(button.classList.contains('previ')) {
+                const item = initScrollImages[currRev]
+                const imgDiv = document.createElement('div')
+                const newImg = document.createElement('img')
+                imgDiv.classList.add('image')                
+                newImg.src = item.src
+                newImg.alt = item.alt
+                imgDiv.appendChild(newImg)
+                scrollElement.querySelector('.images').prepend(imgDiv)
+                currRev <= 0 ? currRev = 2 : currRev--;
+                scrollElement.scrollLeft += img.offsetWidth + 50;
+                halimaScrollGallery.querySelectorAll('button')[0].style.color = '#1A1818'
+                setTimeout(() => document.querySelectorAll('.images .image')[document.querySelectorAll('.images .image').length - 1].remove(), 20)
+                halimaScrollGallery.querySelectorAll('button')[1].style.color = '#1A1818'
+            }
+
+            if(button.classList.contains('nexti')) {    
+                const item = initScrollImages[curr]
+                const imgDiv = document.createElement('div')
+                const newImg = document.createElement('img')
+                imgDiv.classList.add('image')                
+                newImg.src = item.src
+                newImg.alt = item.alt
+                imgDiv.appendChild(newImg)
+                console.log(document.querySelectorAll('.images .image img'))
+                scrollElement.querySelector('.images').appendChild(imgDiv);
+                curr < initScrollImages.length-1 ? curr++ : curr = 0;
+                scrollElement.scrollLeft += img.offsetWidth + 50;
+                halimaScrollGallery.querySelectorAll('button')[0].style.color = '#1A1818'
+                setTimeout(() => document.querySelectorAll('.images .image')[0].remove(), 200)
+            }
+        })
+    })
+        pp_ScrollButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const img = document.querySelector('.scroll-element #image')
+                document.querySelector('.illustration.scroll-field').querySelectorAll('button').forEach(button => button.style.color = '#1A1818')
+                const btn_d = document.querySelector('.d_plan')
+                const btn_mas = document.querySelector('.mas_plan')
+
+                if(button.classList.contains('previ')){
+                    scrollElement.scrollLeft -= img.offsetWidth + 17;
+                    scrollElement.scrollLeft <= 5 ? button.style.color = '#BFBFBBF' : button.style.color = '#1A1818';
+                    btn_d.classList.add('active')
+                    btn_mas.classList.remove('active')
+                    pp_ScrollButtons[2].style.color = '#BFBFBF'
+                    btn_d.style.color = '#fff'
+                    btn_mas.style.color = '#545454'
+                }
+
+                if(button.classList.contains('nexti')){
+                    scrollElement.scrollLeft += img.offsetWidth + 15;
+                    scrollElement.scrollLeft >= img.offsetWidth*1  ? button.style.color = '#BFBFBBF' : button.style.color = '#1A1818';
+                    btn_d.classList.remove('active')
+                    btn_mas.classList.add('active')
+                    pp_ScrollButtons[3].style.color = '#BFBFBF'
+                    btn_mas.style.color = '#fff'
+                    btn_d.style.color = '#545454'
+                }
+            })
+        })
+    </script>
+    <script src="//code.tidio.co/wjzzootyijlnrl4d9rpnvbd7rojnmcug.js" async></script>
+</body>
+</html>
