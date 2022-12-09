@@ -60,7 +60,7 @@ const heroBGs = [
         to : 'Halima',
         heading: 'Halima by constrix',
         caption: 'Nestled in the highbrow and highly sought-after neighborhood of Maitama District, Halima is luxury personified. Consisting of 11 units of 7-bedroom mansion fitted with the most advanced home technology systems, this whimsical family home with a backyard full of the wonders of nature and an amazing view that overlooks the city’s skyline is worth breaking the bank for. The estate is surrounded by a stunning landscape and offers luxury amenities in abundance',
-        // cta: 'Find Out More'
+        cta: 'Explore Properties'
     },
     {
         imgUrl: '../folders/COSGROVE/acacia.jpg',
@@ -68,7 +68,7 @@ const heroBGs = [
         to : 'Acacia',
         heading: 'Acacia by Cosgrove',
         caption: 'This is a functional 4-bedroom terrace sitting on a built-up area of 284m2. It offers two livng areas, a spacious master bedroom and three other bedrooms — all en-suite. It also offers a 3-car parking space & a maid’s room.',
-        // cta: 'Find Out More'
+        cta: 'Explore Properties'
     },
 ];
 
