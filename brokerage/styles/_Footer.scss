@@ -1,0 +1,166 @@
+@import 'default.scss';
+
+footer {
+    display: flex;
+    width: 100%;
+    background: $text-black;
+    padding: 5rem 6rem 0;
+    flex-direction: column;
+    font-family: $ff-primary;
+    margin-top: 3rem;
+
+    .main-footer {
+        display: flex;
+        justify-content: space-between;
+        gap:7rem;
+
+        .footer-links, .brand-logo, .contact {
+            flex-basis: 26rem;
+        }
+
+        .brand-logo, .contact {
+            flex: 1;
+        }
+
+        .brand-logo img {
+            padding: 1rem;
+            background: $text-white;
+            width: 8rem;
+            height: 8rem;
+            border-radius: .7rem;
+        }
+
+        .footer-links {
+            flex: 2;
+            display: flex;
+            justify-content: space-around;
+            gap: 5rem;
+        }
+        .quick-links, .services {
+            p {
+                font-weight: $fw-b;
+                font-size: $fs-md;
+                color: $text-white;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    margin: 3rem 0;
+                    a {
+                        color: $text-gray-200;
+                        font-size: $fs-xs;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            margin-right: 3rem;
+
+            p {
+                font-weight: $fw-b;
+                font-size: $fs-md;
+                color: $text-white;
+                margin-bottom: .8rem;
+            }
+
+            &>a {
+                display: inline-flex;
+                gap: 1rem;
+                color: $text-gray-200;
+                font-size: $fs-xs;
+                margin: 1.5rem 0;
+                text-decoration: none;
+
+                &:nth-child(3) {
+                    text-decoration: underline;
+                }
+
+                img {
+                    width: 1.9rem;
+                    text-decoration: none;
+                }
+            }
+
+            hr {
+                width: 100%;
+                height: 1px;
+                background-color: #545454;
+                border: none;
+            }
+
+            .social-links {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-top: 2.5rem;
+
+                @media screen and (max-width: 600px) {
+                    margin-top: 1.5rem;
+                }
+
+                img {
+                    width: 2.2rem;
+                    height: 2.2rem;
+                }
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            align-items: start;
+            gap:3rem;
+
+            .footer-links, .brand-logo, .contact {
+                flex-basis: 0;
+            }
+        }
+    }
+
+    &>hr {
+        margin-top: 5rem;
+        width: 100%;
+        width: 100%;
+        height: 1px;
+        background-color: #545454;
+        border: none;
+    }
+
+    .copyright {
+        text-align: center;
+        padding: 3.5rem 0;
+        color: $text-gray-200;
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 5rem 1rem 0;
+
+        .main-footer .brand-logo img {
+            padding: .8rem;
+            width: 6rem;
+            height: 6rem;
+            border-radius: .4rem;
+        }
+
+        .main-footer {
+            margin-bottom: 3rem;
+        }
+
+        .main-footer .contact>a img {
+            width: 1.9rem;
+        }
+
+        &>hr {
+            margin-top: 3rem;
+        }
+
+        .copyright {
+            padding: 2rem 0;
+        }
+    }
+}
