@@ -40,16 +40,16 @@ miniMenu.forEach(drpdn => {
 const heroBGs = [
     {
         imgUrl: './Assets/front-view-halimah.jpg',
-        link: '',
-        to : '',
+        link: '/project/index.html',
+        to : 'Explore ...',
         heading: 'Discover Amazing Properties in Nigeria',
         caption: ' Finding your dream property just got easier - whether it’s a residential or commercial property.  Our real estate experts will help you operate, negotiate, and arrange the best real estate deals that suit your needs.',
         cta: 'Explore Properties'
     },
     {
         imgUrl: './Assets/aerial-side-view.jpg',
-        link: '',
-        to : '',
+        link: '/project/index.html',
+        to : 'More ...',
         heading: 'Experience The Best Property Management Services',
         caption: 'Leverage our expert real estate management services to maximize the value of your asset, attract and retain tenants, and improve your property’s efficiency.',
         cta: 'Find Out More'
@@ -60,7 +60,7 @@ const heroBGs = [
         to : 'Halima',
         heading: 'Halima by constrix',
         caption: 'Nestled in the highbrow and highly sought-after neighborhood of Maitama District, Halima is luxury personified. Consisting of 11 units of 7-bedroom mansion fitted with the most advanced home technology systems, this whimsical family home with a backyard full of the wonders of nature and an amazing view that overlooks the city’s skyline is worth breaking the bank for. The estate is surrounded by a stunning landscape and offers luxury amenities in abundance',
-        cta: 'Explore Properties'
+        cta: 'Find Out More '
     },
     {
         imgUrl: '../folders/COSGROVE/acacia.jpg',
@@ -68,7 +68,7 @@ const heroBGs = [
         to : 'Acacia',
         heading: 'Acacia by Cosgrove',
         caption: 'This is a functional 4-bedroom terrace sitting on a built-up area of 284m2. It offers two livng areas, a spacious master bedroom and three other bedrooms — all en-suite. It also offers a 3-car parking space & a maid’s room.',
-        cta: 'Explore Properties'
+        cta: 'Find Out More'
     },
 ];
 
@@ -98,6 +98,7 @@ const changeBg = (type) => {
     heading.innerText = heroBGs[currentBg].heading;
     caption.innerText = heroBGs[currentBg].caption;
     cta.innerHTML = `${heroBGs[currentBg].cta} <i class="fas fa-arrow-right"></i>`;
+    cta.href = heroBGs[currentBg].link;
 }
 
 const timeout = 7400

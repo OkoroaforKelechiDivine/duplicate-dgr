@@ -181,7 +181,7 @@ if(
 
 		if ($success) {
 
-			header('Location: https://dgr-estate.com/thank-you');
+			header('Location: thank-you.html');
 
 		} else {
 

@@ -29,7 +29,6 @@ const filterProjects = () => {
         console.log(stp.toLowerCase());
 
         item.style.display = 'none';
-        // alert(parseInt(item.querySelector('.specs .price').innerText) >= stpr - 10000000);
         if((item.querySelector('h2').innerText.toLowerCase().includes(stp.toLowerCase())) || (item.querySelector('.location').innerText.toLowerCase().includes(stl.toLowerCase())) || (item.querySelector('.location').innerText.toLowerCase().includes(stc.toLowerCase()))) {
             console.log('found');
             item.style.display = 'flex';

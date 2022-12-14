@@ -9,7 +9,6 @@ currentCountryCode.addEventListener('click', () => {
 
 countryCodeOptions.forEach(option => {
     option.addEventListener('click', () => {
-        // alert('clicked');
         currentCountryFlag.src = option.children[0].src;
         currentCountryCode.innerText = option.children[1].innerText;
         console.log(option.children[1].innerText)

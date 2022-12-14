@@ -12,7 +12,6 @@ const devCards = [
         imgUrl: "../../folders/BILAADREALTY/bilaald.jpg",
         caption: "Bilaad Realty",
         link: "../developers/bilaald-realty.html"
-
     },
     {
         imgUrl: "../../folders/CONSTRIX/Constrix_logo.jpg",
@@ -51,19 +50,15 @@ function displayCards(cards) {
                             <img src=${card.imgUrl} alt=""/>
                             <p class="caption">${card.caption}</p> 
                             `
-        console.log(newCard.innerHTML)
         list.append(newCard)
-    })
-}
+})}
+
+displayCards(devCards)
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-    const searchQuery = input.value;
-    // Search Functionality Goes here
+    const searchQuery = input.value
     const newCards = devCards.filter(card => card.caption.toLowerCase().includes(searchQuery.trim().toLowerCase()))
-    console.log(newCards)
     displayCards(newCards)
-    form.querySelector('input').value = "";
+    form.querySelector('input').value = "";   
 })
-
-displayCards(devCards)
