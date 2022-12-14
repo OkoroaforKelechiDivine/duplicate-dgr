@@ -31,7 +31,7 @@ const devCards = [
     {
         imgUrl: "../../folders/PRIMEROSELAGOS/Primrose.jpg",
         caption: "Primerose Lagos",
-        link: "../developers/prime-lagos.html"
+        link: "../developers/primerose-development-company.html"
     },
     {
         imgUrl: "../../folders/URBAN_SHELTER/Urban_shelter.jpg",
